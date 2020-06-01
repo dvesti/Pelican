@@ -84,8 +84,10 @@ master branch on&amp;nbsp;GitHub.&lt;/p&gt;
 &lt;h3 id="using-the-tasks-framework"&gt;Using The Tasks Framework&lt;a class="headerlink" href="#using-the-tasks-framework" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;div class="admonition warning"&gt;
 &lt;p class="admonition-title"&gt;Windows&amp;nbsp;Users&lt;/p&gt;
-&lt;p&gt;The tasks framework is set up with commands for a Linux system. If you intend to use the tasks framework on your Windows system, a number of changes will be required.  If you feel like helping us out with this, we will gladly accept a &lt;span class="caps"&gt;PR&lt;/span&gt; to address&amp;nbsp;this!&lt;/p&gt;
 &lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The tasks framework is set up with commands for a Linux system. If you intend to use the tasks framework on your Windows system, a number of changes will be required.  If you feel like helping us out with this, we will gladly accept a &lt;span class="caps"&gt;PR&lt;/span&gt; to address&amp;nbsp;this!&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;If you are using the Python &lt;code&gt;invoke&lt;/code&gt; framework, then this work is already done for you by
 using the &lt;code&gt;theme_sync&lt;/code&gt; task in &lt;code&gt;documentation/tasks.py&lt;/code&gt; file. The &lt;code&gt;invoke&lt;/code&gt; package can
 be installed in the usual&amp;nbsp;manner:&lt;/p&gt;
@@ -137,17 +139,11 @@ subscribing to the &lt;span class="caps"&gt;RSS&lt;/span&gt; feed for this websi
 Feed icon under &lt;code&gt;Stay In Touch&lt;/code&gt;, your browser will handle the information according to
 any plugins present in your browser. Once this link is visible, simply copy it into
 your favorite &lt;span class="caps"&gt;RSS&lt;/span&gt; reader and you will be notified by that &lt;span class="caps"&gt;RSS&lt;/span&gt; reader when there is a
-new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></category><category term="pelican-theme"></category><category term="new-releases"></category></entry><entry><title>Elegant Is Safe</title><link href="https://dvesti.github.io/Pelican/2019/12/02/elegant-is-safe/" rel="alternate"></link><published>2019-12-02T11:45:00+02:00</published><updated>2019-12-02T11:45:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-02:/Pelican/2019/12/02/elegant-is-safe/</id><summary type="html"></summary><content type="html">&lt;p&gt;Static sites are usually safer than server side rendered sites. There can be some edge cases though even for a static&amp;nbsp;site.&lt;/p&gt;
-&lt;p&gt;We came to know about a potential security issue that involves, &lt;code&gt;target="_blank"&lt;/code&gt;. We have updated our code to follow the recommended&amp;nbsp;fix.&lt;/p&gt;
-&lt;p&gt;You can read more about the issue and its fix at these&amp;nbsp;links,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href="https://mathiasbynens.github.io/rel-noopener/"&gt;About rel=noopener&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md"&gt;react/jsx-no-target-blank&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><category term="101 — Quick Start"></category><category term="security"></category></entry><entry><title>Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</title><link href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" rel="alternate"></link><published>2019-01-11T17:30:47+01:00</published><updated>2019-01-11T17:30:47+01:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:dvesti.github.io,2019-01-11:/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/</id><summary type="html">&lt;div class="toc"&gt;
+new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></category><category term="pelican-theme"></category><category term="new-releases"></category></entry><entry><title>Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</title><link href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" rel="alternate"></link><published>2019-01-11T17:30:47+01:00</published><updated>2019-01-11T17:30:47+01:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:dvesti.github.io,2019-01-11:/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#the-approach"&gt;The&amp;nbsp;approach&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#how-does-it-work-under-the-hood"&gt;How does it work under the hood?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#how-does-it-work-under-the-hood"&gt;How does it work under the&amp;nbsp;hood&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#setup"&gt;Setup&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#automation-workflow"&gt;Automation workflow&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/li&gt;
@@ -155,17 +151,15 @@ new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></
 &lt;li&gt;&lt;a href="#deployment"&gt;Deployment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#blog-is-ready"&gt;Blog is&amp;nbsp;ready!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#blog-is-ready"&gt;Blog is&amp;nbsp;ready&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We&amp;#8217;re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#the-approach"&gt;The&amp;nbsp;approach&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#how-does-it-work-under-the-hood"&gt;How does it work under the hood?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#how-does-it-work-under-the-hood"&gt;How does it work under the&amp;nbsp;hood&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#setup"&gt;Setup&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#automation-workflow"&gt;Automation workflow&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/li&gt;
@@ -173,15 +167,13 @@ new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></
 &lt;li&gt;&lt;a href="#deployment"&gt;Deployment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#blog-is-ready"&gt;Blog is&amp;nbsp;ready!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#blog-is-ready"&gt;Blog is&amp;nbsp;ready&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We&amp;#8217;re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download plugins, theme, doing configuration,&amp;nbsp;etc.&lt;/p&gt;
 &lt;p&gt;Based on this feedback, a new &amp;#8216;blog-o-matic&amp;#8217; approach has been&amp;nbsp;tested:&lt;/p&gt;
-&lt;h1 id="the-approach"&gt;The approach&lt;a class="headerlink" href="#the-approach" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="the-approach"&gt;The approach&lt;a class="headerlink" href="#the-approach" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/iranzo/blog-o-matic/"&gt;Blog-o-Matic&lt;/a&gt;, uses several discussed topics so&amp;nbsp;far:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com"&gt;Github&lt;/a&gt; and &lt;span class="caps"&gt;GH&lt;/span&gt; Pages for hosting the source and the&amp;nbsp;website&lt;/li&gt;
@@ -192,7 +184,7 @@ new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></
 &lt;/ul&gt;
 &lt;p&gt;The setup process is outlined at its &lt;a href="https://github.com/iranzo/blog-o-matic/"&gt;&lt;span class="caps"&gt;README&lt;/span&gt;.md&lt;/a&gt; and just requires a few steps to setup that, from that point, will allow you to get your website published each time you commit a new document to the content&amp;nbsp;folder.&lt;/p&gt;
 &lt;p&gt;You can also check the &amp;#8216;generated&amp;#8217; website after installation via &lt;a href="https://iranzo.github.io/blog-o-matic"&gt;https://iranzo.github.io/blog-o-matic&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id="how-does-it-work-under-the-hood"&gt;How does it work under the hood?&lt;a class="headerlink" href="#how-does-it-work-under-the-hood" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="how-does-it-work-under-the-hood"&gt;How does it work under the hood&lt;a class="headerlink" href="#how-does-it-work-under-the-hood" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The repository, contains already the required setups and configurations for setting up a blog using github&amp;nbsp;pages.&lt;/p&gt;
 &lt;p&gt;It requires some manual steps like configuring authentication token in order for automation to &amp;#8216;push&amp;#8217; to github the &amp;#8216;rendered webpage&amp;#8217;, plus enabling &amp;#8216;Travis &lt;span class="caps"&gt;CI&lt;/span&gt;&amp;#8217; automation for doing that&amp;nbsp;step.&lt;/p&gt;
 &lt;p&gt;Check the updated &lt;a href="https://github.com/iranzo/blog-o-matic"&gt;&lt;span class="caps"&gt;README&lt;/span&gt; on Blog-o-Matic&lt;/a&gt; if you&amp;#8217;re interested in the setup, but thing&amp;nbsp;is:&lt;/p&gt;
@@ -222,7 +214,7 @@ new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></
 &lt;li&gt;Update the checked out git config to use https so that we can use the token defined in environment variable &lt;code&gt;GHTOKEN&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Regenerate website and push to&amp;nbsp;github&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id="blog-is-ready"&gt;Blog is ready!&lt;a class="headerlink" href="#blog-is-ready" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="blog-is-ready"&gt;Blog is ready&lt;a class="headerlink" href="#blog-is-ready" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;At this point, Travis &lt;span class="caps"&gt;CI&lt;/span&gt; will have built the blog with the sample content &lt;code&gt;content/welcome.md&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Keep adding new files to your new repository in the &lt;code&gt;content/&lt;/code&gt; folder and check the configuration settings in &lt;code&gt;pelicanconf.py&lt;/code&gt; to customize your name, twitter, &lt;span class="caps"&gt;SEO&lt;/span&gt;,&amp;nbsp;etc&lt;/p&gt;
 &lt;p&gt;Bear in mind, that at this point you&amp;#8217;re using a regular Elegant setup with Pelican and some Pelican Plugins, so refer to &lt;code&gt;peru.yaml&lt;/code&gt; for the URLs containing the files and extra information that might be helpful for you to learn on the features and customization&amp;nbsp;possibilities.&lt;/p&gt;

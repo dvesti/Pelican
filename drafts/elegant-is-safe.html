@@ -10,27 +10,26 @@
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-        <meta name="author" content="Jack De Winter" />
+        <meta name="author" content="Talha Mansoor" />
 
-        <meta name="description" content="Once you have determined that you want to update to the latest release of Elegant, the process is usually quite simple. There are wo main ways to get the Elegant theme: as a standalone repository and as part of the Pelican-Themes repository. Via the Pelican-Themes Repository If you installed the …
-" />
+        <meta name="description" content="" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="pelican-theme, new-releases, 101 — Quick Start, " />
+<meta name="keywords" content="security, 101 — Quick Start, " />
 
-<meta property="og:title" content="Updating Elegant To the Latest Release "/>
-<meta property="og:url" content="https://dvesti.github.io/Pelican/2019/12/06/updating-elegant-to-the-latest-release/" />
-<meta property="og:description" content="Once you have determined that you want to update to the latest release of Elegant, the process is usually quite simple. There are wo main ways to get the Elegant theme: as a standalone repository and as part of the Pelican-Themes repository. Via the Pelican-Themes Repository If you installed the …" />
+<meta property="og:title" content="Elegant Is Safe "/>
+<meta property="og:url" content="https://dvesti.github.io/Pelican/drafts/elegant-is-safe.html" />
+<meta property="og:description" content="" />
 <meta property="og:site_name" content="Pelican-200" />
-<meta property="og:article:author" content="Jack De Winter" />
-<meta property="og:article:published_time" content="2019-12-06T00:00:00+02:00" />
-<meta name="twitter:title" content="Updating Elegant To the Latest Release ">
-<meta name="twitter:description" content="Once you have determined that you want to update to the latest release of Elegant, the process is usually quite simple. There are wo main ways to get the Elegant theme: as a standalone repository and as part of the Pelican-Themes repository. Via the Pelican-Themes Repository If you installed the …">
+<meta property="og:article:author" content="Talha Mansoor" />
+<meta property="og:article:published_time" content="2019-12-02T11:45:00+02:00" />
+<meta name="twitter:title" content="Elegant Is Safe ">
+<meta name="twitter:description" content="">
 <meta property="og:image" content="/theme/images/apple-touch-icon-152x152.png" />
 <meta name="twitter:image" content="/theme/images/apple-touch-icon-152x152.png" >
 
-        <title>Updating Elegant To the Latest Release  · Pelican-200
+        <title>Elegant Is Safe  · Pelican-200
 </title>
         <link rel="shortcut icon" href="https://dvesti.github.io/Pelican/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-152x152.png" type="image/png" />
@@ -83,8 +82,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://dvesti.github.io/Pelican/2019/12/06/updating-elegant-to-the-latest-release/">
-                Updating Elegant To the Latest&nbsp;Release
+            <a href="https://dvesti.github.io/Pelican/drafts/elegant-is-safe.html">
+                Elegant Is&nbsp;Safe
             </a>
         </h1>
     </header>
@@ -93,112 +92,13 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
             
-            <p>Once you have determined that you want to update to the latest release of Elegant, the
-process is usually quite simple. There are wo main ways to get the Elegant theme: as
-a standalone repository and as part of the Pelican-Themes&nbsp;repository.</p>
-<h2 id="via-the-pelican-themes-repository">Via the Pelican-Themes Repository<a class="headerlink" href="#via-the-pelican-themes-repository" title="Permanent link"> </a></h2>
-<p>If you installed the Elegant theme as part of the Pelican-Themes repository, all of
-the themes available in that project will be located at a level one down from the
-directory where you installed the repository into. For example, if you installed
-the repository with the following&nbsp;command:</p>
-<div class="highlight"><pre><span></span>git clone --recursive https://github.com/getpelican/pelican-themes ../blog-themes
-<span class="nb">cd</span> ../blog-themes
-git submodule update --init elegant
-git submodule update --remote elegant
-</pre></div>
-
-
-<p>it installed every theme known to the project in the current directory where the command
-was executed from. Along with (at last count) 125 other themes, the Elegant theme is
-located under the <code>elegant</code> directory.</p>
-<h2 id="replacing-with-the-pelican-themes-repository">Replacing With the Pelican-Themes Repository<a class="headerlink" href="#replacing-with-the-pelican-themes-repository" title="Permanent link"> </a></h2>
-<p>The Elegant theme is included into the Pelican-Themes project by using a git concept
-called sub-modules. Because of the ways that sub-modules work, if you want to update
-one sub-module in a project, it is almost always desired to remove the sub-module that
-you want to update and clone it in again. This is accomplished with the following&nbsp;script:</p>
-<div class="highlight"><pre><span></span>rm -rf ../blog-themes/elegant
-git clone --jobs <span class="m">8</span> --recurse-submodules --depth <span class="m">1</span> --shallow-submodules https://github.com/Pelican-Elegant/elegant.git ../blog-themes/elegant
-</pre></div>
-
-
-<p>Assuming the <code>blog-themes</code> directory is at the same level as your Pelican directory, the
-script removes the Elegant directory under the <code>blog-themes</code> directory, only to recreate
-it using the <code>git clone</code> command on the next&nbsp;line.</p>
-<p>Note that this also has the benefit of updating your Elegant theme to the latest theme
-based on Elegant&#8217;s repository, instead of relying on the Pelican-Themes repository.
-There is often a lag between when a release is made in Elegant&#8217;s repository and when
-it is available &#8220;automatically&#8221; through the Pelican-Themes repository. By using this
-method of updating the repository, you keep the directory structure of the Pelican-Themes
-repository while making sure you have the latest release of&nbsp;Elegant.</p>
-<h2 id="via-a-standalone-repository">Via a Standalone Repository<a class="headerlink" href="#via-a-standalone-repository" title="Permanent link"> </a></h2>
-<p>If you installed the Elegant theme as a standalone repository, you most likely followed
-directions like the following to clone the Elegant&nbsp;repository:</p>
-<div class="highlight"><pre><span></span>mkdir ../blog-theme/Elegant
-git clone https://github.com/Pelican-Elegant/elegant ../blog-theme/Elegant
-</pre></div>
-
-
-<p>For this example, the assumption is that the Pelican directory where your website is
-stored is at the same level as the <code>blog-theme</code> directory. As such, the <code>../blog-theme</code>
-part of the path gets us to the theme part of the directory tree. It is possible to just
-leave the path at that, but it is recommended to add the <code>/Elegant</code> at the end as a
-reminder of the repository&nbsp;name.</p>
-<p>If the Elegant theme was installed in this manner, you can either update your local
-repository or recreate your repository as noted in the following two&nbsp;sections.</p>
-<h3 id="updating-a-standalone-theme">Updating a Standalone Theme<a class="headerlink" href="#updating-a-standalone-theme" title="Permanent link"> </a></h3>
-<p>The <code>master</code> branch of Elegant&#8217;s Git repository always contains the latest release. To
-update to that release, go into the Elegant theme directory (<code>../blog-theme/Elegant</code>
-from the example above), and enter the following&nbsp;command.</p>
-<div class="highlight"><pre><span></span>git pull origin master
-</pre></div>
-
-
-<p>Note that this is the most effective way of updating your standalone repository if you
-have not made any changes to the the theme. If you have made some changes, you may be
-required to merge the changes in your local repository with any changes in the release
-version you pulled down with this&nbsp;command.</p>
-<h3 id="recreate-a-standalone-theme">Recreate a Standalone Theme<a class="headerlink" href="#recreate-a-standalone-theme" title="Permanent link"> </a></h3>
-<p>If you are lucky, you will not reach a time where you believe, even a tiny bit, that you
-have messed up the contents of your theme repository. If you have made any changes to the
-base Elegant theme, it is inevitable that at some point you will need to reset the
-repository to a known good state. Assuming that the repository is in the directory
-<code>../blog-theme/Elegant</code>, per the example above, executing the following&nbsp;command:</p>
-<div class="highlight"><pre><span></span>rmdir -rf ../blog-theme/Elegant
-</pre></div>
-
-
-<p>will remove the entire theme from your local system. Once this is done, you can follow
-the clone directions in the example at the top of this section on standalone
-repositories to restore the Elegant theme directory to the same state as Elegant&#8217;s
-master branch on&nbsp;GitHub.</p>
-<h3 id="using-the-tasks-framework">Using The Tasks Framework<a class="headerlink" href="#using-the-tasks-framework" title="Permanent link"> </a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Windows&nbsp;Users</p>
-</div>
-<blockquote>
-<p>The tasks framework is set up with commands for a Linux system. If you intend to use the tasks framework on your Windows system, a number of changes will be required.  If you feel like helping us out with this, we will gladly accept a <span class="caps">PR</span> to address&nbsp;this!</p>
-</blockquote>
-<p>If you are using the Python <code>invoke</code> framework, then this work is already done for you by
-using the <code>theme_sync</code> task in <code>documentation/tasks.py</code> file. The <code>invoke</code> package can
-be installed in the usual&nbsp;manner:</p>
-<div class="highlight"><pre><span></span>pip install invoke
-</pre></div>
-
-
-<p>Once installed, typing <code>invoke theme_sync</code> will execute that task as defined in the
-file <code>tasks.py</code> as&nbsp;follows:</p>
-<div class="highlight"><pre><span></span><span class="nd">@task</span>
-<span class="k">def</span> <span class="nf">theme_sync</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Make a fresh shallow copy of pelican-elegant theme&quot;&quot;&quot;</span>
-    <span class="n">c</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;rm -rf themes&quot;</span><span class="p">)</span>
-    <span class="n">c</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-        <span class="s2">&quot;git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git themes/elegant&quot;</span>
-    <span class="p">)</span>
-</pre></div>
-
-
-<p>Note that this script makes a couple of assumptions about where you are invoking the
-task from and where you have your themes stored. If you are okay with that, give it a&nbsp;try!</p>
+            <p>Static sites are usually safer than server side rendered sites. There can be some edge cases though even for a static&nbsp;site.</p>
+<p>We came to know about a potential security issue that involves, <code>target="_blank"</code>. We have updated our code to follow the recommended&nbsp;fix.</p>
+<p>You can read more about the issue and its fix at these&nbsp;links,</p>
+<ol>
+<li><a href="https://mathiasbynens.github.io/rel-noopener/">About rel=noopener</a> <!-- yaspeller ignore --></li>
+<li><a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md">react/jsx-no-target-blank</a></li>
+</ol>
 
 
              
@@ -206,10 +106,10 @@ task from and where you have your themes stored. If you are okay with that, give
             
                 <hr />
     <div class="author-blurb">
-        <a href="http://jackdewinter.github.io" target="_blank" rel="nofollow noopener noreferrer">
-            <span class="author-name">Jack De Winter</span>
+        <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
+            <span class="author-name">Talha Mansoor</span>
         </a>
-        ever evolving, ever learning
+        is the creator and lead developer of Elegant theme.
     </div>
 
             
@@ -224,16 +124,12 @@ task from and where you have your themes stored. If you are okay with that, give
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-12-06T00:00:00+02:00">Dec 06, 2019</time>
+            <time itemprop="dateCreated" datetime="2019-12-02T11:45:00+02:00">Dec 02, 2019</time>
             <h4>Category</h4>
             <a class="category-link" href="https://dvesti.github.io/Pelican/categories#101-quick-start-ref">101 — Quick Start</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://dvesti.github.io/Pelican/tags#new-releases-ref">new-releases
-                    <span class="superscript">2</span>
-</a></li>
-                <li><a href="https://dvesti.github.io/Pelican/tags#pelican-theme-ref">pelican-theme
-                    <span class="superscript">3</span>
+                <li><a href="https://dvesti.github.io/Pelican/tags#security-ref">security
 </a></li>
             </ul>
 <h4>Stay in Touch</h4>

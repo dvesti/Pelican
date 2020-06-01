@@ -12,7 +12,7 @@
 
         <meta name="author" content="Pablo Iranzo Gómez" />
 
-        <meta name="description" content="Introduction The approach How does it work under the hood? Setup Automation workflow Preparation Validation Deployment Blog is ready! Introduction We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …
+        <meta name="description" content="Introduction The approach How does it work under the hood Setup Automation workflow Preparation Validation Deployment Blog is ready Introduction We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -21,12 +21,12 @@
 
 <meta property="og:title" content="Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps. "/>
 <meta property="og:url" content="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" />
-<meta property="og:description" content="Introduction The approach How does it work under the hood? Setup Automation workflow Preparation Validation Deployment Blog is ready! Introduction We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …" />
+<meta property="og:description" content="Introduction The approach How does it work under the hood Setup Automation workflow Preparation Validation Deployment Blog is ready Introduction We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …" />
 <meta property="og:site_name" content="Pelican-200" />
 <meta property="og:article:author" content="Pablo Iranzo Gómez" />
 <meta property="og:article:published_time" content="2019-01-11T17:30:47+01:00" />
 <meta name="twitter:title" content="Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps. ">
-<meta name="twitter:description" content="Introduction The approach How does it work under the hood? Setup Automation workflow Preparation Validation Deployment Blog is ready! Introduction We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …">
+<meta name="twitter:description" content="Introduction The approach How does it work under the hood Setup Automation workflow Preparation Validation Deployment Blog is ready Introduction We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …">
 <meta property="og:image" content="/theme/images/apple-touch-icon-152x152.png" />
 <meta name="twitter:image" content="/theme/images/apple-touch-icon-152x152.png" >
 
@@ -97,7 +97,7 @@
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#the-approach">The&nbsp;approach</a></li>
-<li><a href="#how-does-it-work-under-the-hood">How does it work under the hood?</a><ul>
+<li><a href="#how-does-it-work-under-the-hood">How does it work under the&nbsp;hood</a></li>
 <li><a href="#setup">Setup</a></li>
 <li><a href="#automation-workflow">Automation workflow</a><ul>
 <li><a href="#preparation">Preparation</a></li>
@@ -105,15 +105,13 @@
 <li><a href="#deployment">Deployment</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#blog-is-ready">Blog is&nbsp;ready!</a></li>
+<li><a href="#blog-is-ready">Blog is&nbsp;ready</a></li>
 </ul>
 </div>
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> </a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> </a></h2>
 <p>We&#8217;re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download plugins, theme, doing configuration,&nbsp;etc.</p>
 <p>Based on this feedback, a new &#8216;blog-o-matic&#8217; approach has been&nbsp;tested:</p>
-<h1 id="the-approach">The approach<a class="headerlink" href="#the-approach" title="Permanent link"> </a></h1>
+<h2 id="the-approach">The approach<a class="headerlink" href="#the-approach" title="Permanent link"> </a></h2>
 <p><a href="https://github.com/iranzo/blog-o-matic/">Blog-o-Matic</a>, uses several discussed topics so&nbsp;far:</p>
 <ul>
 <li><a href="https://github.com">Github</a> and <span class="caps">GH</span> Pages for hosting the source and the&nbsp;website</li>
@@ -124,7 +122,7 @@
 </ul>
 <p>The setup process is outlined at its <a href="https://github.com/iranzo/blog-o-matic/"><span class="caps">README</span>.md</a> and just requires a few steps to setup that, from that point, will allow you to get your website published each time you commit a new document to the content&nbsp;folder.</p>
 <p>You can also check the &#8216;generated&#8217; website after installation via <a href="https://iranzo.github.io/blog-o-matic">https://iranzo.github.io/blog-o-matic</a></p>
-<h1 id="how-does-it-work-under-the-hood">How does it work under the hood?<a class="headerlink" href="#how-does-it-work-under-the-hood" title="Permanent link"> </a></h1>
+<h2 id="how-does-it-work-under-the-hood">How does it work under the hood<a class="headerlink" href="#how-does-it-work-under-the-hood" title="Permanent link"> </a></h2>
 <p>The repository, contains already the required setups and configurations for setting up a blog using github&nbsp;pages.</p>
 <p>It requires some manual steps like configuring authentication token in order for automation to &#8216;push&#8217; to github the &#8216;rendered webpage&#8217;, plus enabling &#8216;Travis <span class="caps">CI</span>&#8217; automation for doing that&nbsp;step.</p>
 <p>Check the updated <a href="https://github.com/iranzo/blog-o-matic"><span class="caps">README</span> on Blog-o-Matic</a> if you&#8217;re interested in the setup, but thing&nbsp;is:</p>
@@ -154,7 +152,7 @@
 <li>Update the checked out git config to use https so that we can use the token defined in environment variable <code>GHTOKEN</code></li>
 <li>Regenerate website and push to&nbsp;github</li>
 </ul>
-<h1 id="blog-is-ready">Blog is ready!<a class="headerlink" href="#blog-is-ready" title="Permanent link"> </a></h1>
+<h2 id="blog-is-ready">Blog is ready<a class="headerlink" href="#blog-is-ready" title="Permanent link"> </a></h2>
 <p>At this point, Travis <span class="caps">CI</span> will have built the blog with the sample content <code>content/welcome.md</code>.</p>
 <p>Keep adding new files to your new repository in the <code>content/</code> folder and check the configuration settings in <code>pelicanconf.py</code> to customize your name, twitter, <span class="caps">SEO</span>,&nbsp;etc</p>
 <p>Bear in mind, that at this point you&#8217;re using a regular Elegant setup with Pelican and some Pelican Plugins, so refer to <code>peru.yaml</code> for the URLs containing the files and extra information that might be helpful for you to learn on the features and customization&nbsp;possibilities.</p>
