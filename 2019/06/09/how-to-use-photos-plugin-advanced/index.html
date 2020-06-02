@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?fc5adb95">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Talha Mansoor" />
+
+        <meta name="description" content="Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the author to manually add a link for each photo, this feature provides basic gallery behavior at low cost to the author.
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="pelican-theme, pelican-plugin, photo gallery, Supported Plugins, photos, gallery, photogallery" />
+
+<meta property="og:title" content="Advanced Configuration for an Image Gallery Article "/>
+<meta property="og:url" content="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/" />
+<meta property="og:description" content="Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the author to manually add a link for each photo, this feature provides basic gallery behavior at low cost to the author." />
+<meta property="og:site_name" content="Pelican-200" />
+<meta property="og:article:author" content="Talha Mansoor" />
+<meta property="og:article:published_time" content="2019-06-09T10:49:00+03:00" />
+<meta name="twitter:title" content="Advanced Configuration for an Image Gallery Article ">
+<meta name="twitter:description" content="Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the author to manually add a link for each photo, this feature provides basic gallery behavior at low cost to the author.">
+<meta property="og:image" content="/theme/images/apple-touch-icon-152x152.png" />
+<meta name="twitter:image" content="/theme/images/apple-touch-icon-152x152.png" >
+
+        <title>Advanced Configuration for an Image Gallery Article  · Pelican-200
+</title>
+        <link rel="shortcut icon" href="https://dvesti.github.io/Pelican/theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://dvesti.github.io/Pelican/theme/images/apple-touch-icon-180x180.png" type="image/png" />
+        <link href="https://dvesti.github.io/Pelican/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Pelican-200 - Full Atom Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://dvesti.github.io/Pelican/"><span class=site-name>Pelican-200</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://dvesti.github.io/Pelican
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://dvesti.github.io/Pelican/categories">Categories</a></li>
+                                <li ><a href="https://dvesti.github.io/Pelican/tags">Tags</a></li>
+                                <li ><a href="https://dvesti.github.io/Pelican/archives">Archives</a></li>
+                                <li><form class="navbar-search" action="https://dvesti.github.io/Pelican/search" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/">
+                Advanced Configuration for an Image Gallery&nbsp;Article
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#including-gallery-photos-in-articles">Including Gallery Photos in Articles</a><ul>
+<li><a href="#adding-a-single-photos-to-an-article">Adding a Single Photos to an Article</a></li>
+</ul>
+</li>
+<li><a href="#modifying-image-display-in-galleries">Modifying Image Display in Galleries</a></li>
+<li><a href="#caching-processed-images">Caching Processed Images</a></li>
+<li><a href="#advanced-configuration-values">Advanced Configuration Values</a><ul>
+<li><a href="#jpg-specific-exif-configuration-values"><span class="caps">JPG</span> Specific <span class="caps">EXIF</span> Configuration Values</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+            
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> </a></h2>
+<p>This article continues the documentation of the Photo Gallery configuration documented in the
+article <a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/">Creating a Photo Gallery Article</a>.</p>
+<p>While getting started with a default photo gallery is relatively easy (one configuration
+variable and a metadata field per article), enabling some of the more advanced features
+requires a little more effort. This effort will allow for the inclusion of single gallery
+photos into articles and the fine tuning of the image transformations used to render the
+photos for the photo galleries and articles. Together these changes will give you the power
+to customize your photo gallery to your requirements.</p>
+<h2 id="including-gallery-photos-in-articles">Including Gallery Photos in Articles<a class="headerlink" href="#including-gallery-photos-in-articles" title="Permanent link"> </a></h2>
+<p>Prior to including single gallery photos in articles, the <code>PHOTO_LIBRARY</code> configuration
+variable must first be set to the full path of the directory containing all of the galleries.
+For example, in the previous article,
+<a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/#article-metadata">Creating a Photo Gallery Article</a>,
+the gallery was added to the article as follows:</p>
+<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span> <span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance</span>
+</pre></div>
+<p>Assuming that you have installed a standard installation of Pelican in the directory
+<code>/home/stuff/blog-content</code> and inferring from the above metadata that all photo galleries are
+located in the <code>content/gallery-source</code> directory, the full path to the galleries should be as follows:</p>
+<div class="highlight"><pre><span></span><span class="n">PHOTO_LIBRARY</span> <span class="o">=</span> <span class="s1">'/home/stuff/blog-content/website/content/gallery-source'</span>
+</pre></div>
+<h3 id="adding-a-single-photos-to-an-article">Adding a Single Photos to an Article<a class="headerlink" href="#adding-a-single-photos-to-an-article" title="Permanent link"> </a></h3>
+<p>Once the above configuration has been completed, add a photo into the body of an article using
+the following format: <code>{photo}folder/image.jpg</code>. The <code>{photo}</code> part of the format calls out
+this image as part of a gallery, and instructs the <code>Photos</code> plugin to resize a photo
+specifically for use in articles. The <code>folder</code> part refers to the folder representing the
+gallery, and the <code>image.jpg</code> is the filename of the photo within the <code>folder</code> directory.</p>
+<p>For example, say you want to highlight one of the photos, <code>photo-1.jpg</code>, that was contained
+within the <code>dragondance</code> gallery presented in your article. To include it in a Markdown
+article, add the following text to the article:</p>
+<div class="highlight"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">first</span> <span class="n">image</span><span class="p">]({</span><span class="n">photo</span><span class="p">}</span><span class="n">dragondance</span><span class="o">/</span><span class="n">photo</span><span class="o">-</span><span class="mf">1.</span><span class="n">jpg</span><span class="p">)</span>
+</pre></div>
+<p>In addition, using the prefix <code>{lightbox}</code> instead of <code>{photo}</code> will cause the thumbnail of the
+photo to be displayed in the article. Clicking on the thumbnail will bring up the full sized
+image from the photo gallery, similar to how it was displayed in the photo gallery.</p>
+<h2 id="modifying-image-display-in-galleries">Modifying Image Display in Galleries<a class="headerlink" href="#modifying-image-display-in-galleries" title="Permanent link"> </a></h2>
+<p>There is a small amount of configuration that is available to modify how a single photo is
+displayed in the galleries. These modifications include specifying captions for one or more
+photos, specifying <span class="caps">EXIF</span> information for one or more photos, and specifying one or more photos
+to not display as part of the gallery.</p>
+<p>All three of these modifications are controlled by text files that are located in the same
+source directory as the photos. These text files provide extra information that is used when
+the article containing the specified photo gallery is being generated.</p>
+<p>For the first two choices, there are two distinct files: <code>exif.txt</code> and <code>captions.txt</code>. In
+both cases, the file format is simply the name of the image, a colon, and the information to
+associate with the photo.</p>
+<p>For example, the information in the <code>exif.txt</code> may be:</p>
+<div class="highlight"><pre><span></span>best.jpg: Canon EOS 5D Mark II - 20mm f/8 1/250s ISO 100
+</pre></div>
+<p>and the information in the <code>captions.txt</code> file may be:</p>
+<div class="highlight"><pre><span></span>best.jpg: My best photo ever! How lucky of me!
+</pre></div>
+<p>Elegant will display both of these pieces of information at the bottom of the popup for an
+individual image.</p>
+<p>To remove keep the photo file in a gallery, but not show it as part of the gallery, the
+<code>blacklist.txt</code> file is used. Even simpler than the previous two files, the file format is
+simply the name of the photo to exclude, one photo to a line.</p>
+<p>For example, to keep the file <code>this-file-will-be-skipped.jpg</code> in the gallery directory but not
+display it as part of the gallery, the <code>blacklist.txt</code> file would look like this:</p>
+<div class="highlight"><pre><span></span>this-file-will-be-skipped.jpg
+</pre></div>
+<h2 id="caching-processed-images">Caching Processed Images<a class="headerlink" href="#caching-processed-images" title="Permanent link"> </a></h2>
+<p>To reduce the need to reprocess images to fit into the gallery, article, and thumbnail sizes,
+the <code>Photo</code> plugin only processes images if the output file is not already present in the
+destination directory. As such, to apply any configuration changes to images that have already
+been processed, their destination images need to deleted from the relevant directories under
+the <code>photos</code> directory from the Pelican output.</p>
+<p>As both of the following sections change configuration variables that affect how the images
+are processed, this note on caching applies to any changes of configuration variables
+specified in the following sections.</p>
+<h2 id="advanced-configuration-values">Advanced Configuration Values<a class="headerlink" href="#advanced-configuration-values" title="Permanent link"> </a></h2>
+<p>The definitive list of the values and their defaults is located on the
+<a href="https://github.com/getpelican/pelican-plugins/blob/master/photos/README.md">Photos Plugins</a> webpage.</p>
+<p>The definitive list has been pared down, tested, and documented with specific focus on the
+Elegant theme. Testing was performed using the list from the Photos Plugin webpage along
+with the source code for the Photos Plugin. Any significant difference between the behavior
+documented below and the definitive list is usually attributed to differences between the
+source code and the documentation for the Photos Plugin.</p>
+<p>As a decent part of this information is presented after testing and research, please feel free
+to contact us if you see different behavior than is documented here.</p>
+<table>
+<thead>
+<tr>
+<th>Configuration Name</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PHOTO_GALLERY</code></td>
+<td><code>(1024, 768, 80)</code></td>
+<td>Three attributes, describing the maximum width, the maximum height, and the quality of the resized image. The specific set of attributes applies to the maximum size of the photo displayed when the reader clicks on a gallery’s thumbnail image in the article. Note that the quality of the resized image only applies to <span class="caps">JPG</span> images.</td>
+</tr>
+<tr>
+<td><code>PHOTO_ARTICLE</code></td>
+<td><code>(760, 506, 80)</code></td>
+<td>The same attributes as <code>PHOTO_GALLERY</code>, but for the size of a photo from a gallery used in an article.</td>
+</tr>
+<tr>
+<td><code>PHOTO_THUMB</code></td>
+<td><code>(192, 144, 60)</code></td>
+<td>The same attributes as <code>PHOTO_GALLERY</code>, but for the size of the thumbnails used to show the contents of the gallery.</td>
+</tr>
+<tr>
+<td><code>PHOTO_SQUARE_THUMB</code></td>
+<td><code>False</code></td>
+<td>This setting controls whether or not the thumbnails retain their aspect ratio when resized. If this setting is <code>True</code>, the thumbnails will not retain their aspect ratio and will be cropped to fit into the rectangle defined by the <code>PHOTO_THUMB</code> configuration variable.</td>
+</tr>
+<tr>
+<td><code>PHOTO_RESIZE_JOBS</code></td>
+<td><code>1</code></td>
+<td>Number of resize jobs to be run in parallel. If installed on a Windows machine, <a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/#pelican-on-windows">read this</a>.</td>
+</tr>
+<tr>
+<td><code>PHOTO_WATERMARK</code></td>
+<td><code>True</code></td>
+<td>Add a watermark to all photos in articles and pages. The watermarks added are controlled by the <code>PHOTO_WATERMARK_TEXT</code> and <code>PHOTO_WATERMARK_IMG</code> configuration variables described below. Note that if both are specified, both will be used.</td>
+</tr>
+<tr>
+<td><code>PHOTO_WATERMARK_TEXT</code></td>
+<td><code>SITENAME</code></td>
+<td>Text to use for the watermark.</td>
+</tr>
+<tr>
+<td><code>PHOTO_WATERMARK_TEXT_COLOR</code></td>
+<td><code>(255, 255, 255)</code></td>
+<td>Color of the text used for the watermark.</td>
+</tr>
+<tr>
+<td><code>PHOTO_WATERMARK_IMG</code></td>
+<td><code>''</code></td>
+<td>Full path to the image to use as a watermark.</td>
+</tr>
+<tr>
+<td><code>PHOTO_WATERMARK_IMG_SIZE</code></td>
+<td><code>False</code></td>
+<td>Size to apply to the watermark image, expressed as <code>(width,height)</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jpg-specific-exif-configuration-values"><span class="caps">JPG</span> Specific <span class="caps">EXIF</span> Configuration Values<a class="headerlink" href="#jpg-specific-exif-configuration-values" title="Permanent link"> </a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <a href="https://github.com/getpelican/pelican-plugins/blob/master/photos/README.md">photos plugin</a> requires the Python <code>piexif</code> package to provide control over any <a href="https://photographylife.com/what-is-exif-data"><span class="caps">EXIF</span></a> information in the images.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Configuration Name</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PHOTO_EXIF_KEEP</code></td>
+<td><code>False</code></td>
+<td>Keep the <span class="caps">EXIF</span> information from the input photo.</td>
+</tr>
+<tr>
+<td><code>PHOTO_EXIF_REMOVE_GPS</code></td>
+<td><code>False</code></td>
+<td>Remove any <span class="caps">EXIF</span> <span class="caps">GPS</span> information from the photos.</td>
+</tr>
+<tr>
+<td><code>PHOTO_EXIF_AUTOROTATE</code></td>
+<td><code>True</code></td>
+<td>Use the <span class="caps">EXIF</span> orientation field to determine how to rotate the photo so all photos are in a standard orientation.</td>
+</tr>
+<tr>
+<td><code>PHOTO_EXIF_COPYRIGHT</code></td>
+<td><code>False</code></td>
+<td>If not <code>False</code> and no existing copyright information is provided in the image, attach an author and license to the file. Choices include: - <span class="caps">COPYRIGHT</span>, <a href="https://creativecommons.org/share-your-work/public-domain/cc0/"><span class="caps">CC0</span></a>, <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/"><span class="caps">CC</span>-<span class="caps">BY</span>-<span class="caps">NC</span>-<span class="caps">ND</span></a>, <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><span class="caps">CC</span>-<span class="caps">BY</span>-<span class="caps">NC</span>-<span class="caps">SA</span></a>, <a href="https://creativecommons.org/licenses/by/4.0"><span class="caps">CC</span>-<span class="caps">BY</span></a>, <a href="https://creativecommons.org/licenses/by-sa/4.0"><span class="caps">CC</span>-<span class="caps">BY</span>-<span class="caps">SA</span></a>, <a href="https://creativecommons.org/licenses/by-nc/4.0/"><span class="caps">CC</span>-<span class="caps">BY</span>-<span class="caps">NC</span></a>, <a href="https://creativecommons.org/licenses/by-nd/4.0"><span class="caps">CC</span>-<span class="caps">BY</span>-<span class="caps">ND</span></a></td>
+</tr>
+<tr>
+<td><code>PHOTO_EXIF_COPYRIGHT_AUTHOR</code></td>
+<td><code>SITENAME</code></td>
+<td>If <code>PHOTO_EXIF_COPYRIGHT</code> is not <code>False</code> and no copyright author is present in the image, use this value as the author.</td>
+</tr>
+</tbody>
+</table>
+
+
+             
+ 
+                <p id="post-share-links">
+    Like this post? Share on:
+      <a href="https://twitter.com/intent/tweet?text=Advanced%20Configuration%20for%20an%20Image%20Gallery%C2%A0Article%20&url=https%3A//dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/&hashtags=pelican-theme,pelican-plugin,photo-gallery" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Advanced%20Configuration%20for%20an%20Image%20Gallery%C2%A0Article%20&amp;body=https%3A//dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
+                <hr />
+    <div class="author-blurb">
+        <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
+            <span class="author-name">Talha Mansoor</span>
+        </a>
+        is the creator and lead developer of Elegant theme.
+    </div>
+    <div class="author-blurb">
+        <a href="http://jackdewinter.github.io" target="_blank" rel="nofollow noopener noreferrer">
+            <span class="author-name">Jack De Winter</span>
+        </a>
+        ever evolving, ever learning
+    </div>
+
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Keep Reading</h2>
+<ul class="related-posts-list">
+<li><a href="https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/" title="How To Improve the Download Time For Your Pages">How To Improve the Download Time For Your Pages</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/" title="Add Social Sharing Links">Add Social Sharing Links</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/" title="Creating a Photo Gallery Article">Creating a Photo Gallery Article</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/12/05/getting-notified-about-new-releases/" title="Получать Извещения — Getting Notified About New Releases">Получать Извещения — Getting Notified About New Releases</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/12/06/updating-elegant-to-the-latest-release/" title="Обновить Тему — Updating Elegant To the Latest Release">Обновить Тему — Updating Elegant To the Latest Release</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/01/12/disable-comments-per-article/" title="Previous: Comments — Disable Comments in an Article">Comments — Disable Comments in an Article</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/" title="Next: Creating a Photo Gallery Article">Creating a Photo Gallery Article</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+    <h4>Reading Time</h4>
+    <p>~5 min read</p>
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2019-06-09T10:49:00+03:00">Sun 09 June 2019</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://dvesti.github.io/Pelican/categories#supported-plugins-ref">Supported Plugins</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://dvesti.github.io/Pelican/tags#pelican-plugin-ref">pelican-plugin
+                    <span class="superscript">8</span>
+</a></li>
+                <li><a href="https://dvesti.github.io/Pelican/tags#pelican-theme-ref">pelican-theme
+                    <span class="superscript">10</span>
+</a></li>
+                <li><a href="https://dvesti.github.io/Pelican/tags#photo-gallery-ref">photo gallery
+                    <span class="superscript">2</span>
+</a></li>
+            </ul>
+<h4>Stay in Touch</h4>
+<div id="sidebar-social-link">
+    <a href="github" title="https://github.com/dvesti" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+    <a href="https://github.com/Pelican-Elegant/elegant/milestones" title="Elegant Project Roadmap" target="_blank" rel="nofollow noopener noreferrer">
+        <svg onload="w()" xmlns="http://www.w3.org/2000/svg" aria-label="Calendar" role="img" viewBox="0 0 512 512" font-family="monospace" text-anchor="middle" fill="#667777"><script type="text/ecmascript"><![CDATA[w=()=>{c=0;for (i in e={weekday:"long",month:"short",day:'numeric'}) document.getElementsByTagName('text')[c++].textContent=(new Date).toLocaleString(undefined,{[i]:e[i]})}]]></script><defs><clipPath id="c"><rect width="512" height="512" rx="15%"/></clipPath></defs><g clip-path="url(#c)"><rect width="512" height="512" fill="#dee"/><rect width="512" height="180" fill="#d34"/></g><g id="b"><circle fill="#eab" cx="384" cy="100" r="14" id="a"/><use x="43"/><use x="86"/></g><use y="43"/><text font-size="64" x="256" y="480" id="w">Sunday</text><text fill="#fff" font-size="140" x="140" y="164" id="m">FEB</text><text font-size="256" x="256" y="400" id="d">29</text></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        
+&copy; Copyright 2020 by Dvesti and licensed under a  <a rel="license nofollow noopener noreferrer"
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+  Creative Commons Attribution 4.0 International License</a>.
+  
+    </div>
+
+    <div>
+        <span class="site-name">Pelican-200</span> - The Best Pelican Theme
+    </div>
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://dvesti.github.io/Pelican/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>
