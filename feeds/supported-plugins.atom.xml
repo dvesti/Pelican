@@ -1,53 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Supported Plugins</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/supported-plugins.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2020-02-02T20:53:00+02:00</updated><subtitle>The Best Pelican Theme</subtitle><entry><title>Code Snippets — Include code from file</title><link href="https://dvesti.github.io/Pelican/2020/02/02/code-snippets-include-code-from-file/" rel="alternate"></link><published>2020-02-02T20:53:00+02:00</published><updated>2020-02-02T20:53:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-02:/Pelican/2020/02/02/code-snippets-include-code-from-file/</id><summary type="html">&lt;p&gt;Elegant supports &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags#include-code"&gt;&lt;code&gt;liquid_tags.include_code&lt;/code&gt; plugin&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="example-1"&gt;Example 1&lt;a class="headerlink" href="#example-1" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code square-root.py lang:python Calculate square root of 8&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;
-
-&lt;h2 id="example-2-without-filename"&gt;Example 2 &amp;#8212; Without Filename&lt;a class="headerlink" href="#example-2-without-filename" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code alias-sed.fish :hidefilename: Fish Shell alias for sed&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;
-
-&lt;h2 id="example-3-without-download-link"&gt;Example 3 &amp;#8212; Without Download Link&lt;a class="headerlink" href="#example-3-without-download-link" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code alias-sed.fish :hidelink: Fish Shell alias for sed&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;
-
-&lt;h2 id="example-4-without-filename-and-download-link"&gt;Example 4 &amp;#8212; Without Filename and Download …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;Elegant supports &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags#include-code"&gt;&lt;code&gt;liquid_tags.include_code&lt;/code&gt; plugin&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="example-1"&gt;Example 1&lt;a class="headerlink" href="#example-1" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code square-root.py lang:python Calculate square root of 8&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;
-
-&lt;h2 id="example-2-without-filename"&gt;Example 2 &amp;#8212; Without Filename&lt;a class="headerlink" href="#example-2-without-filename" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code alias-sed.fish :hidefilename: Fish Shell alias for sed&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;
-
-&lt;h2 id="example-3-without-download-link"&gt;Example 3 &amp;#8212; Without Download Link&lt;a class="headerlink" href="#example-3-without-download-link" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code alias-sed.fish :hidelink: Fish Shell alias for sed&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;
-
-&lt;h2 id="example-4-without-filename-and-download-link"&gt;Example 4 &amp;#8212; Without Filename and Download Link&lt;a class="headerlink" href="#example-4-without-filename-and-download-link" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code alias-sed.fish :hidefilename: :hidelink: Fish Shell alias for sed&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;
-
-&lt;h2 id="example-5-without-metadata"&gt;Example 5 &amp;#8212; Without Metadata&lt;a class="headerlink" href="#example-5-without-metadata" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;!-- yaspeller ignore:start --&gt;
-
-&lt;p&gt;{% include_code square-root.js lang:js :hideall: Compute square-root&amp;nbsp;%}&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;</content><category term="Supported Plugins"></category><category term="code-snippets"></category><category term="plugins"></category><category term="liquid-tags"></category></entry><entry><title>Displaying Multi-Part Articles - Part 2</title><link href="https://dvesti.github.io/Pelican/2019/12/08/how-to-use-series-plugin-2/" rel="alternate"></link><published>2019-12-08T00:00:00+02:00</published><updated>2019-12-08T00:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-12-08:/Pelican/2019/12/08/how-to-use-series-plugin-2/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;h2 id="and-now-back-to-your-regular-programming"&gt;And Now Back to Your Regular Programming&lt;a class="headerlink" href="#and-now-back-to-your-regular-programming" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Supported Plugins</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/supported-plugins.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2019-12-08T00:00:00+02:00</updated><subtitle>The Best Pelican Theme</subtitle><entry><title>Displaying Multi-Part Articles - Part 2</title><link href="https://dvesti.github.io/Pelican/2019/12/08/how-to-use-series-plugin-2/" rel="alternate"></link><published>2019-12-08T00:00:00+02:00</published><updated>2019-12-08T00:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-12-08:/Pelican/2019/12/08/how-to-use-series-plugin-2/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;h2 id="and-now-back-to-your-regular-programming"&gt;And Now Back to Your Regular Programming&lt;a class="headerlink" href="#and-now-back-to-your-regular-programming" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To show how this feature works, with a concrete example, this article was purposefully
 split into two parts. The first part of this article can be accessed by looking under
 the section labelled &lt;code&gt;Article Series&lt;/code&gt; on the right toolbar. This &lt;code&gt;Part 1&lt;/code&gt; article is

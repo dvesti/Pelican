@@ -502,43 +502,6 @@ in your configuration. It is a dictionary that has two keys &lt;code&gt;title&lt
 &lt;p&gt;Value of &lt;code&gt;title&lt;/code&gt; is displayed in the header of the home page, like
 in the above example it is &amp;#8220;I design and build software products for iOS and
 &lt;span class="caps"&gt;OSX&lt;/span&gt;&amp;#8221;.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;details&lt;/code&gt; is the text that appears under &amp;#8220;About me&amp;#8221; heading. You can add raw &lt;span class="caps"&gt;HTML&lt;/span&gt; to&amp;nbsp;it.&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Главная — обо мне — Home Page — Write About Me</title><link href="https://dvesti.github.io/Pelican/2019/07/01/write-about-me2/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/write-about-me2/</id><summary type="html">&lt;div class="admonition important"&gt;
-&lt;p class="admonition-title"&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican&amp;nbsp;configuration.  &lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;To write about me section, create a page. See &lt;a href="http://docs.getpelican.com/en/stable/content.html#pages"&gt;Pelican documentation&lt;/a&gt; on how to create a&amp;nbsp;page.&lt;/p&gt;
-&lt;p&gt;The slug of the page should be &lt;code&gt;landing-page-about-hidden&lt;/code&gt; and &lt;code&gt;status&lt;/code&gt; should be &lt;code&gt;hidden&lt;/code&gt;.&amp;nbsp;Example,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
-&lt;span class="nt"&gt;author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Talha Mansoor …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition important"&gt;
-&lt;p class="admonition-title"&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican&amp;nbsp;configuration.  &lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;To write about me section, create a page. See &lt;a href="http://docs.getpelican.com/en/stable/content.html#pages"&gt;Pelican documentation&lt;/a&gt; on how to create a&amp;nbsp;page.&lt;/p&gt;
-&lt;p&gt;The slug of the page should be &lt;code&gt;landing-page-about-hidden&lt;/code&gt; and &lt;code&gt;status&lt;/code&gt; should be &lt;code&gt;hidden&lt;/code&gt;.&amp;nbsp;Example,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
-&lt;span class="nt"&gt;author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Talha Mansoor&lt;/span&gt;
-&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;What Is Elegant&lt;/span&gt;
-&lt;span class="nt"&gt;layout&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;page&lt;/span&gt;
-&lt;span class="nt"&gt;date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;2019-01-14 7:30:47 +0100&lt;/span&gt;
-&lt;span class="nt"&gt;status&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;hidden&lt;/span&gt;
-&lt;span class="nt"&gt;slug&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;landing-page-about-hidden&lt;/span&gt;
-&lt;span class="nn"&gt;---&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;The content of this will become your &amp;#8220;About me&amp;#8221; section, and title will become the heading. You can write content in any markup language, like Markdown, AsciiDoc or reST, as long as Pelican has supports&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
-&lt;h3 id="deprecated"&gt;Deprecated&lt;a class="headerlink" href="#deprecated" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;div class="admonition danger"&gt;
-&lt;p class="admonition-title"&gt;Warning: Legacy&amp;nbsp;Variable&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;LANDING_PAGE_ABOUT&lt;/code&gt; was available in Elegant V2.5.0. It has since been passed out in favour of &lt;code&gt;landing-page-about-hidden&lt;/code&gt;. The new method lets you write &amp;#8220;About Me&amp;#8221; in your favourite markup&amp;nbsp;language.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;You can write up your own About me section using &lt;code&gt;LANDING_PAGE_ABOUT&lt;/code&gt; variable
-in your configuration. It is a dictionary that has two keys &lt;code&gt;title&lt;/code&gt; and
-&lt;code&gt;details&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Value of &lt;code&gt;title&lt;/code&gt; is displayed in the header of the home page, like
-in the above example it is &amp;#8220;I design and build software products for iOS and
-&lt;span class="caps"&gt;OSX&lt;/span&gt;&amp;#8221;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;details&lt;/code&gt; is the text that appears under &amp;#8220;About me&amp;#8221; heading. You can add raw &lt;span class="caps"&gt;HTML&lt;/span&gt; to&amp;nbsp;it.&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Write Welcome Message</title><link href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/write-welcome-message/</id><content type="html">&lt;p&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. It will be displayed as the welcome heading. For&amp;nbsp;example,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;LANDING_PAGE_TITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;I design and build software products for iOS and OSX&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;

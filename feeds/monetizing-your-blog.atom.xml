@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Monetizing Your Blog</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/monetizing-your-blog.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2019-07-14T07:30:47+01:00</updated><subtitle>The Best Pelican Theme</subtitle><entry><title>BestAzon Support</title><link href="https://dvesti.github.io/Pelican/2019/07/14/amazon-bestazon/" rel="alternate"></link><published>2019-07-14T07:30:47+01:00</published><updated>2019-07-14T07:30:47+01:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:dvesti.github.io,2019-07-14:/Pelican/2019/07/14/amazon-bestazon/</id><summary type="html">&lt;p&gt;Elegant supports &lt;a href="https://bestazon.io/"&gt;BestAzon&lt;/a&gt;, so that you may monetize your traffic using affiliate links from&amp;nbsp;Amazon.&lt;/p&gt;
+&lt;p&gt;Similar to &lt;a href="https://dvesti.github.io/Pelican/2019/01/02/amazon-onelink/"&gt;Amazon One Link&lt;/a&gt;, BestAzon provides technology that redirects Amazon links to each country shop by using your associate&amp;nbsp;tags&lt;/p&gt;
+&lt;p&gt;Elegant loads the script for BestAzon and inserts your configuration if &lt;code&gt;AMAZON_BESTAZON&lt;/code&gt; is&amp;nbsp;defined …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant supports &lt;a href="https://bestazon.io/"&gt;BestAzon&lt;/a&gt;, so that you may monetize your traffic using affiliate links from&amp;nbsp;Amazon.&lt;/p&gt;
+&lt;p&gt;Similar to &lt;a href="https://dvesti.github.io/Pelican/2019/01/02/amazon-onelink/"&gt;Amazon One Link&lt;/a&gt;, BestAzon provides technology that redirects Amazon links to each country shop by using your associate&amp;nbsp;tags&lt;/p&gt;
+&lt;p&gt;Elegant loads the script for BestAzon and inserts your configuration if &lt;code&gt;AMAZON_BESTAZON&lt;/code&gt; is&amp;nbsp;defined.&lt;/p&gt;
+&lt;p&gt;Follow &lt;a href="https://bestazon.io"&gt;https://bestazon.io&lt;/a&gt; to generate the configuration based on your tag id&amp;#8217;s&amp;nbsp;first.&lt;/p&gt;
+&lt;p&gt;Then in your Pelican configuration, preferably in the file &lt;code&gt;publishconf.py&lt;/code&gt;, set &lt;code&gt;AMAZON_BESTAZON&lt;/code&gt; to your BestAzon configuration, for&amp;nbsp;example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;AMAZON_BESTAZON&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&amp;quot;var BestAzon_Configuration = {&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_US&amp;quot;: &amp;quot;redken01-20&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_CA&amp;quot;: &amp;quot;redken03-20&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_GB&amp;quot;: &amp;quot;redken01-21&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_DE&amp;quot;: &amp;quot;redken06-21&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_FR&amp;quot;: &amp;quot;redken07-21&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_ES&amp;quot;: &amp;quot;redken-21&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_IT&amp;quot;: &amp;quot;redken0d-21&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_JP&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_IN&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_CN&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_MX&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Amzn_AfiliateID_BR&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Custom_Class&amp;quot;: &amp;quot; BestAzon_Amazon_Link &amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_New_Window&amp;quot;: &amp;quot;1&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Link_Follow&amp;quot;: &amp;quot;1&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Product_Link&amp;quot;: &amp;quot;1&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Tracking&amp;quot;: &amp;quot;1&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Footer&amp;quot;: &amp;quot;1&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Link_Keywords&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Hide_Redirect_Link&amp;quot;: &amp;quot;1&amp;quot;,&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;Conf_Source&amp;quot;: &amp;quot;BestAzonScript&amp;quot;&lt;/span&gt;
+&lt;span class="s2"&gt;};&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If this variable is defined, Elegant will load the BestAzon script that enables the link&amp;nbsp;substitution.&lt;/p&gt;
+&lt;p&gt;Now, when international visitors of your site click on a link on your site to buy from Amazon, they are redirected to their local or nearest Amazon market&amp;nbsp;place.&lt;/p&gt;
+&lt;p&gt;This is an optional feature. If you do not set the variable then BestAzon script is not added to the rendered&amp;nbsp;output.&lt;/p&gt;
+&lt;p&gt;You, as a content creator, should be aware of &lt;span class="caps"&gt;GDPR&lt;/span&gt; or other regulations.
+&lt;a href="https://affiliate-program.amazon.com/help/operating/agreement"&gt;Section 5 of the Operating
+Agreement&lt;/a&gt; for
+Amazon Associates states that you need to disclose your affiliation with Amazon and that you earn from qualifying&amp;nbsp;purchases.&lt;/p&gt;
+&lt;p&gt;To conform to this rule in the agreement, Elegant automatically adds the disclaimer in the footer of the website if &lt;code&gt;AMAZON_BESTAZON&lt;/code&gt; variable is set. It looks like&amp;nbsp;this,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Amazon OneLink Disclosure" src="https://dvesti.github.io/Pelican/images/amazon-online-disclaimer.png" /&gt;&lt;/p&gt;</content><category term="Monetizing Your Blog"></category><category term="amazon"></category><category term="affiliates"></category><category term="income"></category></entry><entry><title>Amazon OneLink Support</title><link href="https://dvesti.github.io/Pelican/2019/01/02/amazon-onelink/" rel="alternate"></link><published>2019-01-02T22:47:47+01:00</published><updated>2019-01-02T22:47:47+01:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:dvesti.github.io,2019-01-02:/Pelican/2019/01/02/amazon-onelink/</id><summary type="html">&lt;p&gt;Elegant supports &lt;a href="https://affiliate-program.amazon.com/onelink/"&gt;Amazon OneLink&lt;/a&gt;, so that you may monetize your traffic using affiliate&amp;nbsp;links.&lt;/p&gt;
+&lt;p&gt;Visit Amazon website and create your OneLink account. Amazon will provide you a code snippet similar to&amp;nbsp;following,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;amzn-assoc-ad-$UUID&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;
+  &lt;span class="na"&gt;async&lt;/span&gt;
+  &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;amp;adInstanceId=$UUID&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;script …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Elegant supports &lt;a href="https://affiliate-program.amazon.com/onelink/"&gt;Amazon OneLink&lt;/a&gt;, so that you may monetize your traffic using affiliate&amp;nbsp;links.&lt;/p&gt;
+&lt;p&gt;Visit Amazon website and create your OneLink account. Amazon will provide you a code snippet similar to&amp;nbsp;following,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;amzn-assoc-ad-$UUID&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;
+  &lt;span class="na"&gt;async&lt;/span&gt;
+  &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;amp;adInstanceId=$UUID&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Pay close attention to the &lt;code&gt;amzn-assoc-ad-&lt;/code&gt; part. The value following it is your Amazon OneLink&amp;nbsp;id.&lt;/p&gt;
+&lt;p&gt;In your pelican configuration, preferably in the file &lt;code&gt;publishconf.py&lt;/code&gt;, set &lt;code&gt;AMAZON_ONELINK&lt;/code&gt; to your Amazon OneLink id, for&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;AMAZON_ONELINK&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;b63a2115-85f7-43a9-b169-5f4c8c275655&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;When the site is generated, &lt;code&gt;$UUID&lt;/code&gt; in the snippet above is substituted with your id. Thus, ensuring that correct referral code is passed to the&amp;nbsp;script.&lt;/p&gt;
+&lt;p&gt;Now, when international visitors of your site click on a link on your site to buy from Amazon, they are redirected to their local or nearest Amazon market place.
+For example, original link (Python&amp;nbsp;book):&lt;/p&gt;
+&lt;p&gt;This is an optional feature. If you do not set the variable then Amazon OneLink script is not added to the rendered&amp;nbsp;output.&lt;/p&gt;
+&lt;p&gt;You, as a content creator, should be aware of &lt;span class="caps"&gt;GDPR&lt;/span&gt; or other regulations.
+&lt;a href="https://affiliate-program.amazon.com/help/operating/agreement"&gt;Section 5 of the Operating
+Agreement&lt;/a&gt; for
+Amazon Associates states that you need to disclose your affiliation with Amazon and that you earn from qualifying&amp;nbsp;purchases.&lt;/p&gt;
+&lt;p&gt;To conform to this rule in the agreement, Elegant automatically adds the disclaimer in the footer of the website if &lt;code&gt;AMAZON_ONELINK&lt;/code&gt; variable is set. It looks like&amp;nbsp;this,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Amazon OneLink Disclosure" src="https://dvesti.github.io/Pelican/images/amazon-online-disclaimer.png" /&gt;&lt;/p&gt;</content><category term="Monetizing Your Blog"></category><category term="amazon"></category><category term="affiliates"></category><category term="income"></category></entry></feed>

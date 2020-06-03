@@ -39,7 +39,7 @@
 &lt;h2 id="how-does-it-work"&gt;How does it work?&lt;a class="headerlink" href="#how-does-it-work" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Gulp and PostCSS, takes all the &lt;span class="caps"&gt;CSS&lt;/span&gt; files present inside &lt;code&gt;static/css&lt;/code&gt; folder. It applies PostCSS plugins on it like &lt;span class="caps"&gt;CSS&lt;/span&gt;&amp;nbsp;compression.&lt;/p&gt;
 &lt;p&gt;It then writes the generated version in &lt;code&gt;static/css/elegant.prod.css&lt;/code&gt; file. This is the file a Pelican blog uses when it uses Elegant&amp;nbsp;theme.&lt;/p&gt;
-&lt;p&gt;If user has enabled &lt;a href="https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/"&gt;&lt;code&gt;assets&lt;/code&gt; plugin&lt;/a&gt;, then this file is again made to go through webassets cssmin filter. Although this step is redundant because &lt;code&gt;elegant.prod.css&lt;/code&gt; is already compressed. But it is necessary in case user has decided &lt;a href="https://dvesti.github.io/Pelican/2019/07/03/customize-style/"&gt;to customize the theme using &lt;code&gt;custom.css&lt;/code&gt;&lt;/a&gt;. In which, assets cssmin filter will combine &lt;code&gt;elegant.prod.css&lt;/code&gt; and &lt;code&gt;custom.css&lt;/code&gt; into one file &lt;code&gt;style.min.css&lt;/code&gt;.&lt;/p&gt;</content><category term="Contributing"></category><category term="postcss"></category><category term="gulp"></category></entry><entry><title>Using ‘yaspeller’ with Elegant</title><link href="https://dvesti.github.io/Pelican/2019/08/04/ya-speller-for-elegant/" rel="alternate"></link><published>2019-08-04T23:17:00+03:00</published><updated>2019-08-04T23:17:00+03:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-08-04:/Pelican/2019/08/04/ya-speller-for-elegant/</id><summary type="html">&lt;p&gt;Elegant use the &amp;#8216;yaspeller&amp;#8217; tool to scan for spelling mistakes.  This article gives more information about the tool and how to run it&amp;nbsp;locally.&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;If user has enabled &lt;a href="https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/"&gt;&lt;code&gt;assets&lt;/code&gt; plugin&lt;/a&gt;, then this file is again made to go through webassets cssmin filter. Although this step is redundant because &lt;code&gt;elegant.prod.css&lt;/code&gt; is already compressed. But it is necessary in case user has decided &lt;a href="https://dvesti.github.io/Pelican/2019/07/03/customize-style/"&gt;to customize the theme using &lt;code&gt;custom.css&lt;/code&gt;&lt;/a&gt;. In which, assets cssmin filter will combine &lt;code&gt;elegant.prod.css&lt;/code&gt; and &lt;code&gt;custom.css&lt;/code&gt; into one file &lt;code&gt;style.min.css&lt;/code&gt;.&lt;/p&gt;</content><category term="Contributing"></category><category term="postcss"></category><category term="gulp"></category></entry><entry><title>Using ‘yaspeller’ with Elegant</title><link href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/" rel="alternate"></link><published>2019-08-04T23:17:00+03:00</published><updated>2019-08-04T23:17:00+03:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-08-04:/Pelican/2019/08/04/yaspeller-for-elegant/</id><summary type="html">&lt;p&gt;Elegant use the &amp;#8216;yaspeller&amp;#8217; tool to scan for spelling mistakes.  This article gives more information about the tool and how to run it&amp;nbsp;locally.&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;Even with most code editors having a spell checker installed and active by default, there is a
 need to have the Elegant builds verify spelling against a known dictionary. The spell check
 tool that was decided on by the team is the
@@ -58,7 +58,7 @@ this `yaspeller` tool is cool
 &lt;p&gt;While &lt;code&gt;yaspeller&lt;/code&gt; is a useful tool, it is not foolproof. When scanning the documentation
 files, it often requires a bit of assistance in determining how to properly handle words which
 do not appear in the standard dictionary.&lt;/p&gt;
-&lt;h2 id="what-to-do-with-spelling-mistakes"&gt;What To Do With Spelling Mistakes?&lt;a class="headerlink" href="#what-to-do-with-spelling-mistakes" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="what-to-do-with-spelling-mistakes"&gt;What To Do With Spelling Mistakes&lt;a class="headerlink" href="#what-to-do-with-spelling-mistakes" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;There are typically 4 categories of spelling mistakes: an honest mistake, a word to be added
 to the project dictionary, a single situational misspelling, and intentional misspellings
 within a block of text.&lt;/p&gt;
@@ -115,7 +115,7 @@ to the user, such as the following:&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;!-- yaspeller ignore:end --&gt;
-&lt;p&gt;If you look at the &lt;a href="https://dvesti.github.io/Pelican/Contributing/ya-spell-check.md"&gt;Markdown for this article&lt;/a&gt;,
+&lt;p&gt;If you look at the &lt;a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/"&gt;Markdown for this article&lt;/a&gt;,
 notice how the table is surrounded with two &lt;span class="caps"&gt;HTML&lt;/span&gt; comments:
 &lt;code&gt;&amp;lt;!-- yaspeller ignore:start --&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;!-- yaspeller ignore:end --&amp;gt;&lt;/code&gt; with blank lines between
 the comments and the block they are there to ignore.&lt;/p&gt;
@@ -123,7 +123,7 @@ the comments and the block they are there to ignore.&lt;/p&gt;
 that generates this file, as it has been told to ignore everything starting with the first
 comment and ending with the second comment. If these are removed, the &lt;code&gt;yaspeller&lt;/code&gt; tool will
 output the following errors:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[ERR] /enlistments/elegant/documentation/content/Contributing/ya-spell-check.md 3450 ms
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[ERR] /enlistments/elegant/documentation/content/articles/Contributing/ya-spell-check.md 3450 ms
 -----
 Typos: 2
 1. def (129:3)
@@ -133,7 +133,7 @@ Capitalization: 1
 1. abc (128:3, suggest: ABC)
 -----
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="why-spell-check-locally"&gt;Why Spell Check Locally?&lt;a class="headerlink" href="#why-spell-check-locally" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="why-spell-check-locally"&gt;Why Spell Check Locally&lt;a class="headerlink" href="#why-spell-check-locally" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Similar to the other checks that are performed on every submission, a spell check failure will
 cause the build to fail.&lt;/p&gt;
 &lt;p&gt;Addressing any failures reported locally by this tool results in a smaller turn around time in
@@ -142,14 +142,14 @@ in a Pull Request, as you have already dealt with any errors that this tool may�
 &lt;h3 id="prerequisites-for-local-installation"&gt;Prerequisites For Local Installation&lt;a class="headerlink" href="#prerequisites-for-local-installation" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Either &lt;a href="https://nodejs.org/en/download/"&gt;Node.js&lt;/a&gt; or
 &lt;a href="https://yarnpkg.com/en/docs/install"&gt;Yarn&lt;/a&gt; must be installed on your system.&lt;/p&gt;
-&lt;h3 id="how-do-i-install-it-locally"&gt;How Do I Install It Locally?&lt;a class="headerlink" href="#how-do-i-install-it-locally" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="how-do-i-install-it-locally"&gt;How Do I Install It Locally&lt;a class="headerlink" href="#how-do-i-install-it-locally" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;You can install the &lt;code&gt;yaspeller&lt;/code&gt; package using either &lt;span class="caps"&gt;NPM&lt;/span&gt; (Node.js) or Yarn as follows:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm install -g yaspeller
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;span class="caps"&gt;OR&lt;/span&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yarn global add yaspeller
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id="how-do-i-use-it-locally"&gt;How Do I Use It Locally?&lt;a class="headerlink" href="#how-do-i-use-it-locally" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="how-do-i-use-it-locally"&gt;How Do I Use It Locally&lt;a class="headerlink" href="#how-do-i-use-it-locally" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;To invoke the &lt;code&gt;yaspeller&lt;/code&gt; package for the documentation files for the Elegant project, go to
 the root directory of your local repository and enter the following command:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yaspeller --only-errors documentation/content/ *.md
@@ -227,7 +227,7 @@ executed as part of your normal &lt;code&gt;git commit&lt;/code&gt; process.&lt;
 &lt;h4 id="running-the-spell-checker-locally"&gt;Running the Spell Checker Locally&lt;a class="headerlink" href="#running-the-spell-checker-locally" title="Permanent link"&gt; &lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;As the dictionary in the environment that you develop changes in may be different than other
 contributors, the team has elected to include a the
-&lt;a href="https://dvesti.github.io/Pelican/2019/08/04/ya-speller-for-elegant/"&gt;yaspeller tool&lt;/a&gt;
+&lt;a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/"&gt;yaspeller tool&lt;/a&gt;
 as part of our build pipeline. While this does not integrate with your local repository
 like the Pre-commit tool, running this locally can help shorten the cycle for ensuring that
 your spelling is spot on!&lt;/p&gt;
@@ -297,7 +297,7 @@ sure that the submitted changes are solid.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;install pre-requisites for building&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/"&gt;Pre-commit&lt;/a&gt; on the project source&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/08/04/ya-speller-for-elegant/"&gt;yaspeller&lt;/a&gt; on the project source&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/"&gt;yaspeller&lt;/a&gt; on the project source&lt;/li&gt;
 &lt;li&gt;publish for the documentation site&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://pypi.org/project/Online-W3C-Validator/"&gt;w3c_validator&lt;/a&gt; on the documentation site &lt;!-- yaspeller ignore --&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://pypi.org/project/html5validator/"&gt;html5validator&lt;/a&gt; on the documentation site &lt;!-- yaspeller ignore --&gt;&lt;/li&gt;
