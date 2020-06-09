@@ -10,10 +10,22 @@
 
         <meta name="author" content="Dmitriev" />
 
-        <meta name="description" content="Блог сайта Dmitriev.ee" />
+        <meta name="description" content="Search results for Pelican-200 blog.
+" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
-        <title>Pelican-200 - 3 июля 2019 archives</title>
+
+<meta property="og:title" content="Search · Pelican-200"/>
+<meta name="twitter:title" content="Search · Pelican-200">
+<meta property="og:url" content="https://blog.dmitriev.ee/search}" />
+<meta property="og:description" content="Search results for Pelican-200 blog" />
+<meta name="twitter:description" content="Search results for Pelican-200 blog">
+<meta property="og:site_name" content="Pelican-200" />
+<meta property="og:article:author" content="Dmitriev" />
+<meta property="og:image" content="/theme/images/apple-touch-icon-152x152.png" />
+<meta name="twitter:image" content="/theme/images/apple-touch-icon-152x152.png" >
+        <title>Поиск · Pelican-200
+</title>
         <link rel="shortcut icon" href="https://blog.dmitriev.ee/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="https://blog.dmitriev.ee/theme/images/apple-touch-icon-152x152.png" type="image/png" />
         <link rel="apple-touch-icon" href="https://blog.dmitriev.ee/theme/images/apple-touch-icon.png"  type="image/png" />
@@ -60,34 +72,17 @@
                 <div class="row-fluid">
                     <div class="span1"></div>
                     <div class="span10">
-<h1>Archives for 3 июля 2019</h1>
+<div class="row-fluid">
+    <header id="lunr-search-result-heading" class="page-header span10 offset2">
+    </header>
+</div>
 
-<dl>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/version-3-0-0-release-notes/">Version&nbsp;3.0.0</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/code-style-for-jinja2/">Code Style for&nbsp;Jinja2</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/contribution-license/">Contributions&nbsp;License</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/git-tips-for-beginners/">Git Tips for&nbsp;Beginners</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/metadata/">Metadata</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/change-labels/">Change&nbsp;Labels</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/change-syntax-highlight-theme/">Code Snippets &#8212; Change&nbsp;Theme</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/customize-style/">Customize&nbsp;Style</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/custom-404-page/">Custom 404 Error&nbsp;Page</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/invitation-to-participate/">Приглашение к&nbsp;участию</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/look-and-feel/">Why Does Elegant Look The Way It&nbsp;Does?</a></dd>
-    <dt>Ср, 03 июл. 2019 г.</dt>
-    <dd><a href="https://blog.dmitriev.ee/2019/07/03/add-search/">Add Search to Your&nbsp;Site</a></dd>
-</dl>
+<div class="row-fluid">
+    <div class="span8 offset2">
+        <div id="lunr-search-result" >
+        </div>
+    </div>
+</div>
                     </div>
                     <div class="span1"></div>
                 </div>
@@ -112,7 +107,8 @@
         Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
         Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
     </div>
-</footer>        <script src="//code.jquery.com/jquery.min.js"></script>
+</footer>        <script src="https://blog.dmitriev.ee/tipuesearch_content.js"></script>
+        <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script src="https://blog.dmitriev.ee/theme/js/elegant.prod.9e9d5ce754.js"></script>
         <script>
@@ -121,6 +117,7 @@
                 return (query.length > 0);
             }
         </script>
+
     </body>
     <!-- Theme: Elegant built for Pelican
         License : MIT -->
