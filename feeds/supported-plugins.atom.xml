@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Supported Plugins</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/supported-plugins.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2019-12-08T00:00:00+02:00</updated><subtitle>О теме Elegant для Pelican</subtitle><entry><title>Много-страничная статья — Часть 2</title><link href="https://dvesti.github.io/Pelican/2019/12/08/how-to-use-series-plugin-2/" rel="alternate"></link><published>2019-12-08T00:00:00+02:00</published><updated>2019-12-08T00:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-12-08:/Pelican/2019/12/08/how-to-use-series-plugin-2/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;h2 id="and-now-back-to-your-regular-programming"&gt;And Now Back to Your Regular Programming&lt;a class="headerlink" href="#and-now-back-to-your-regular-programming" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Supported Plugins</title><link href="https://blog.dmitriev.ee/" rel="alternate"></link><link href="https://blog.dmitriev.ee/feeds/supported-plugins.atom.xml" rel="self"></link><id>https://blog.dmitriev.ee/</id><updated>2019-12-08T00:00:00+02:00</updated><subtitle>О теме Elegant для Pelican</subtitle><entry><title>Много-страничная статья — Часть 2</title><link href="https://blog.dmitriev.ee/2019/12/08/how-to-use-series-plugin-2/" rel="alternate"></link><published>2019-12-08T00:00:00+02:00</published><updated>2019-12-08T00:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:blog.dmitriev.ee,2019-12-08:/2019/12/08/how-to-use-series-plugin-2/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;h2 id="and-now-back-to-your-regular-programming"&gt;And Now Back to Your Regular Programming&lt;a class="headerlink" href="#and-now-back-to-your-regular-programming" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To show how this feature works, with a concrete example, this article was purposefully
 split into two parts. The first part of this article can be accessed by looking under
 the section labelled &lt;code&gt;Article Series&lt;/code&gt; on the right toolbar. This &lt;code&gt;Part 1&lt;/code&gt; article is
@@ -9,7 +9,7 @@ previous&amp;nbsp;article.&lt;/p&gt;
 &lt;h2 id="article-metadata"&gt;Article Metadata&lt;a class="headerlink" href="#article-metadata" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Once the configuration for Series is enabled in the configuration file, using this feature for
 a given set of articles requires that the article contains the &lt;code&gt;series&lt;/code&gt;
-&lt;a href="https://dvesti.github.io/Pelican/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field&amp;nbsp;value.&lt;/p&gt;
+&lt;a href="https://blog.dmitriev.ee/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field&amp;nbsp;value.&lt;/p&gt;
 &lt;p&gt;The text assigned to the &lt;code&gt;series&lt;/code&gt; metadata field is the title of the series. When the page is
 created, Pelican provides Elegant with a list of all pages that have the same value for the
 &lt;code&gt;series&lt;/code&gt; metadata field. By default, Elegant sorts that list according to the publish date for
@@ -22,7 +22,7 @@ page presented in &lt;em&gt;italics&lt;/em&gt; and the other pages presented as 
 
 &lt;p&gt;If there is a reason to override the ordering of the articles, the &lt;code&gt;series_index&lt;/code&gt; metadata
 field is required. It is recommended that you use the part number you want displayed for the
-article as the value to assign to the&amp;nbsp;field.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-plugin"></category><category term="navigation"></category><category term="web-design"></category></entry><entry><title>Много-страничная статья — Часть 1</title><link href="https://dvesti.github.io/Pelican/2019/12/07/how-to-use-series-plugin/" rel="alternate"></link><published>2019-12-07T00:00:00+02:00</published><updated>2019-12-07T00:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-12-07:/Pelican/2019/12/07/how-to-use-series-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When writing articles about certain topics, it is advantageous to split a single article into
+article as the value to assign to the&amp;nbsp;field.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-plugin"></category><category term="navigation"></category><category term="web-design"></category></entry><entry><title>Много-страничная статья — Часть 1</title><link href="https://blog.dmitriev.ee/2019/12/07/how-to-use-series-plugin/" rel="alternate"></link><published>2019-12-07T00:00:00+02:00</published><updated>2019-12-07T00:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:blog.dmitriev.ee,2019-12-07:/2019/12/07/how-to-use-series-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When writing articles about certain topics, it is advantageous to split a single article into
 multiple articles. Without splitting the article up, the author would be forced to cram all
 of the content into a denser and much longer article, reducing its effectiveness and
 readability in the process. Splitting the article allows the author to focus on a specific
@@ -34,7 +34,7 @@ point for each of the articles in the series. The text for the article is prefac
 navigation easier, the current article is presented in italics, with the other articles being
 presented as links to their respective&amp;nbsp;articles.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the Series section may look&amp;nbsp;like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="series example in the sidebar" src="https://dvesti.github.io/Pelican/images/elegant-theme_multi-part-sidebar.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="series example in the sidebar" src="https://blog.dmitriev.ee/images/elegant-theme_multi-part-sidebar.png" /&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable the reading time for your articles, you need to add &lt;code&gt;series&lt;/code&gt; to the &lt;code&gt;PLUGINS&lt;/code&gt;
 configuration variable in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
@@ -53,14 +53,14 @@ the Series section, regardless of the&amp;nbsp;series.&lt;/p&gt;
 split into two parts. The second part of this article can be accessed by looking under
 the section labelled &lt;code&gt;Article Series&lt;/code&gt; on the right toolbar. This &lt;code&gt;Part 1&lt;/code&gt; article is
 displayed using italicized text, while the following &lt;code&gt;Part 2&lt;/code&gt; article is shown using
-normal text. Click on the &lt;code&gt;Part 2&lt;/code&gt; article on the right toolbar to go to the next&amp;nbsp;article.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-plugin"></category><category term="navigation"></category><category term="web-design"></category></entry><entry><title>Add A Reading Time Estimate to Your Articles</title><link href="https://dvesti.github.io/Pelican/2019/07/15/add-reading-time-estimate/" rel="alternate"></link><published>2019-07-15T20:08:00+03:00</published><updated>2019-07-15T20:08:00+03:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-07-15:/Pelican/2019/07/15/add-reading-time-estimate/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide an estimate of the reading time for your articles, giving the user the ability to gauge how long the articles&amp;nbsp;are.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When you go to articles on a number of popular websites, the articles will present an estimate
+normal text. Click on the &lt;code&gt;Part 2&lt;/code&gt; article on the right toolbar to go to the next&amp;nbsp;article.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-plugin"></category><category term="navigation"></category><category term="web-design"></category></entry><entry><title>Add A Reading Time Estimate to Your Articles</title><link href="https://blog.dmitriev.ee/2019/07/15/add-reading-time-estimate/" rel="alternate"></link><published>2019-07-15T20:08:00+03:00</published><updated>2019-07-15T20:08:00+03:00</updated><author><name>Jack De Winter</name></author><id>tag:blog.dmitriev.ee,2019-07-15:/2019/07/15/add-reading-time-estimate/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide an estimate of the reading time for your articles, giving the user the ability to gauge how long the articles&amp;nbsp;are.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When you go to articles on a number of popular websites, the articles will present an estimate
 to the reader on the amount of time it will take to read the article. This estimate is
 typically based on the average reading speed of an adult being roughly 265 words per minute
 while retaining&amp;nbsp;comprehension.&lt;/p&gt;
 &lt;p&gt;Elegant provides this feature, adding a &lt;code&gt;Reading Time&lt;/code&gt; section at the top of the right sidebar
 with the estimate for the current&amp;nbsp;article.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the Reading Time Estimate section may look&amp;nbsp;like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Reading Time Section" src="https://dvesti.github.io/Pelican/images/elegant-theme_reading-time.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Reading Time Section" src="https://blog.dmitriev.ee/images/elegant-theme_reading-time.png" /&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable the reading time for your articles, you need to add &lt;code&gt;post_stats&lt;/code&gt; to the &lt;code&gt;PLUGINS&lt;/code&gt;
 configuration variable in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
@@ -81,7 +81,7 @@ lower limit for this feature. If not supplied, the default value for this variab
 &lt;p&gt;If the estimated reading time is less than or equal to &lt;code&gt;READING_TIME_LOWER_LIMIT&lt;/code&gt; value, the Reading Time section
 will not be included for the&amp;nbsp;article.&lt;/p&gt;
 &lt;p&gt;Given the default of &lt;code&gt;4&lt;/code&gt; for this variable, this section
-will only be visible for articles that have an estimated reading time of 5 minutes or&amp;nbsp;more.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="reading time"></category><category term="stats"></category></entry><entry><title>Creating a Photo Gallery Article</title><link href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/" rel="alternate"></link><published>2019-06-09T10:49:00+03:00</published><updated>2019-06-09T10:49:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-06-09:/Pelican/2019/06/09/how-to-use-photos-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the article&amp;#8217;s author to manually add a link for each photo, this feature provides basic gallery behavior with almost no cost to the&amp;nbsp;author.&lt;/p&gt;</summary><content type="html">
+will only be visible for articles that have an estimated reading time of 5 minutes or&amp;nbsp;more.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="reading time"></category><category term="stats"></category></entry><entry><title>Creating a Photo Gallery Article</title><link href="https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin/" rel="alternate"></link><published>2019-06-09T10:49:00+03:00</published><updated>2019-06-09T10:49:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:blog.dmitriev.ee,2019-06-09:/2019/06/09/how-to-use-photos-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the article&amp;#8217;s author to manually add a link for each photo, this feature provides basic gallery behavior with almost no cost to the&amp;nbsp;author.&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;In many cases, when an author writes an article and includes an image, there is a specific
 reason that the image needs to be in that exact place. A good example of this is the image
 at the end of this section, specifically part of this first section to give an early visual
@@ -97,7 +97,7 @@ viewing one or more of the full images, clicking on the respective thumbnail cre
 the size of the browser to display the image in. That window has a number of simple controls,
 such as a close button, a previous image button and a next image button.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the Image Gallery section of such an article may look like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo Gallery Demonstration" src="https://dvesti.github.io/Pelican/articles/images/elegant-theme_photo-gallery.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo Gallery Demonstration" src="https://blog.dmitriev.ee/articles/images/elegant-theme_photo-gallery.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Note that the photo gallery itself will be placed at the end of any text presented for the article.&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable the Photo Gallery plugin, add &lt;code&gt;photos&lt;/code&gt; to the &lt;code&gt;PLUGINS&lt;/code&gt; configuration variable in
@@ -123,7 +123,7 @@ thread without invoking any of the multiprocessing code.&lt;/p&gt;
 &lt;h2 id="article-metadata"&gt;Article Metadata&lt;a class="headerlink" href="#article-metadata" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Once the configuration for Photo Gallery is enabled in the configuration file, using this
 feature for a given article requires that the article contains the &lt;code&gt;gallery&lt;/code&gt;
-&lt;a href="https://dvesti.github.io/Pelican/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field value.&lt;/p&gt;
+&lt;a href="https://blog.dmitriev.ee/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field value.&lt;/p&gt;
 &lt;p&gt;The text assigned to the &lt;code&gt;gallery&lt;/code&gt; metadata field is the location of the directory where the
 images to be displayed resides. This location is relative to the article in which the
 &lt;code&gt;gallery&lt;/code&gt; metadata field is placed.&lt;/p&gt;
@@ -154,16 +154,16 @@ photo gallery is not required, but when including multiple galleries, is often 
 &lt;h1 id="advanced-configuration"&gt;Advanced Configuration&lt;a class="headerlink" href="#advanced-configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
 &lt;div class="admonition warning"&gt;
 &lt;p class="admonition-title"&gt;Warning&lt;/p&gt;
-&lt;p&gt;Processing a quantity of photos in the 10,000s range can take multiple hours to complete. To reduce the effort needed to publish photo galleries, the &lt;code&gt;Photo&lt;/code&gt; plugin will only process images if the output file is not already present in the destination directory. For more information, please refer to the &lt;a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/#caching-processed-images"&gt;Caching Image Processing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Processing a quantity of photos in the 10,000s range can take multiple hours to complete. To reduce the effort needed to publish photo galleries, the &lt;code&gt;Photo&lt;/code&gt; plugin will only process images if the output file is not already present in the destination directory. For more information, please refer to the &lt;a href="https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin-advanced/#caching-processed-images"&gt;Caching Image Processing&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Using the above configuration, a photo gallery will be added to the end of the article
 containing the &lt;code&gt;gallery&lt;/code&gt; metadata using default settings. For additional ways to use photo
 galleries and for modifications to those default settings, please consult the sibling article
 on
-&lt;a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/"&gt;Advanced Configuration&lt;/a&gt; .&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="photo gallery"></category></entry><entry><title>Advanced Configuration for an Image Gallery Article</title><link href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/" rel="alternate"></link><published>2019-06-09T10:49:00+03:00</published><updated>2019-06-09T10:49:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-06-09:/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the author to manually add a link for each photo, this feature provides basic gallery behavior at low cost to the&amp;nbsp;author.&lt;/p&gt;</summary><content type="html">
+&lt;a href="https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin-advanced/"&gt;Advanced Configuration&lt;/a&gt; .&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="photo gallery"></category></entry><entry><title>Advanced Configuration for an Image Gallery Article</title><link href="https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin-advanced/" rel="alternate"></link><published>2019-06-09T10:49:00+03:00</published><updated>2019-06-09T10:49:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:blog.dmitriev.ee,2019-06-09:/2019/06/09/how-to-use-photos-plugin-advanced/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the author to manually add a link for each photo, this feature provides basic gallery behavior at low cost to the&amp;nbsp;author.&lt;/p&gt;</summary><content type="html">
 &lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This article continues the documentation of the Photo Gallery configuration documented in the
-article &lt;a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/"&gt;Creating a Photo Gallery Article&lt;/a&gt;.&lt;/p&gt;
+article &lt;a href="https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin/"&gt;Creating a Photo Gallery Article&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;While getting started with a default photo gallery is relatively easy (one configuration
 variable and a metadata field per article), enabling some of the more advanced features
 requires a little more effort. This effort will allow for the inclusion of single gallery
@@ -174,7 +174,7 @@ to customize your photo gallery to your requirements.&lt;/p&gt;
 &lt;p&gt;Prior to including single gallery photos in articles, the &lt;code&gt;PHOTO_LIBRARY&lt;/code&gt; configuration
 variable must first be set to the full path of the directory containing all of the galleries.
 For example, in the previous article,
-&lt;a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/#article-metadata"&gt;Creating a Photo Gallery Article&lt;/a&gt;,
+&lt;a href="https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin/#article-metadata"&gt;Creating a Photo Gallery Article&lt;/a&gt;,
 the gallery was added to the article as follows:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -274,7 +274,7 @@ to contact us if you see different behavior than is documented here.&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;PHOTO_RESIZE_JOBS&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Number of resize jobs to be run in parallel. If installed on a Windows machine, &lt;a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/#pelican-on-windows"&gt;read this&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;Number of resize jobs to be run in parallel. If installed on a Windows machine, &lt;a href="https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin/#pelican-on-windows"&gt;read this&lt;/a&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;PHOTO_WATERMARK&lt;/code&gt;&lt;/td&gt;
@@ -343,15 +343,15 @@ to contact us if you see different behavior than is documented here.&lt;/p&gt;
 &lt;td&gt;If &lt;code&gt;PHOTO_EXIF_COPYRIGHT&lt;/code&gt; is not &lt;code&gt;False&lt;/code&gt; and no copyright author is present in the image, use this value as the author.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="photo gallery"></category></entry><entry><title>Add Author Blurbs to Your Articles</title><link href="https://dvesti.github.io/Pelican/2018/12/07/adding-author-blurbs/" rel="alternate"></link><published>2018-12-07T11:00:00+02:00</published><updated>2018-12-07T11:00:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2018-12-07:/Pelican/2018/12/07/adding-author-blurbs/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide author blurbs for articles, relaying extra information on the authors of the&amp;nbsp;articles.&lt;/p&gt;</summary><content type="html">
+&lt;/table&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="photo gallery"></category></entry><entry><title>Add Author Blurbs to Your Articles</title><link href="https://blog.dmitriev.ee/2018/12/07/adding-author-blurbs/" rel="alternate"></link><published>2018-12-07T11:00:00+02:00</published><updated>2018-12-07T11:00:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:blog.dmitriev.ee,2018-12-07:/2018/12/07/adding-author-blurbs/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide author blurbs for articles, relaying extra information on the authors of the&amp;nbsp;articles.&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;On websites where the author of an article may vary, many sites include a quick blurb about
 the author with the article. This blurb will typically be at the start of the article or the
 end of the article, and provides extra information for readers on the author.&lt;/p&gt;
 &lt;p&gt;Elegant provides
 this feature, adding a section for any recognized articles at the end of the article.&lt;/p&gt;
 &lt;p&gt;Here are two examples of what the Author Blurbs may look like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Author Blurb 1" src="https://dvesti.github.io/Pelican/images/author-blurb.png"/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Author Blurb 2" src="https://dvesti.github.io/Pelican/images/author-blurb2.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Author Blurb 1" src="https://blog.dmitriev.ee/images/author-blurb.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Author Blurb 2" src="https://blog.dmitriev.ee/images/author-blurb2.png"/&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable author blurbs for your articles, you need to define an &lt;code&gt;AUTHORS&lt;/code&gt; configuration variable
 in your Pelican configuration. The &lt;code&gt;AUTHORS&lt;/code&gt; configuration variable for the Elegant
@@ -389,7 +389,7 @@ above example, Talha’s &lt;code&gt;avatar&lt;/code&gt; &lt;span class="caps"&g
 &lt;h2 id="article-metadata"&gt;Article Metadata&lt;a class="headerlink" href="#article-metadata" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;While the configuration for Author Blurbs is centralized in the configuration file, enabling
 this feature for a given article requires that the article contains either the &lt;code&gt;author&lt;/code&gt; or
-&lt;code&gt;authors&lt;/code&gt; &lt;a href="https://dvesti.github.io/Pelican/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field values. If neither
+&lt;code&gt;authors&lt;/code&gt; &lt;a href="https://blog.dmitriev.ee/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field values. If neither
 of these values are provided, the &lt;code&gt;AUTHOR&lt;/code&gt; configuration variable will be used as a default.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'Pablo Iranzo Gómez'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -415,10 +415,10 @@ author is not found, it will be silently ignored.&lt;/p&gt;
 &lt;p&gt;For more information on Python dictionaries, refer to this comprehensive article on &lt;a href="https://realpython.com/python-dicts/"&gt;Python dictionaries&lt;/a&gt;. &lt;a class="footnote-backref" href="#fnref:python-dictionary" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="Supported Plugins"></category><category term="web-design"></category><category term="metadata"></category><category term="authors"></category></entry><entry><title>Displaying a Series Information for Your Multipart Articles</title><link href="https://dvesti.github.io/Pelican/2014/04/20/how-to-use-multi-part-plugin/" rel="alternate"></link><published>2014-04-20T18:18:00+03:00</published><updated>2014-04-20T18:18:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-20:/Pelican/2014/04/20/how-to-use-multi-part-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;div class="admonition important"&gt;
+&lt;/div&gt;</content><category term="Supported Plugins"></category><category term="web-design"></category><category term="metadata"></category><category term="authors"></category></entry><entry><title>Displaying a Series Information for Your Multipart Articles</title><link href="https://blog.dmitriev.ee/2014/04/20/how-to-use-multi-part-plugin/" rel="alternate"></link><published>2014-04-20T18:18:00+03:00</published><updated>2014-04-20T18:18:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:blog.dmitriev.ee,2014-04-20:/2014/04/20/how-to-use-multi-part-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the&amp;nbsp;series.&lt;/p&gt;</summary><content type="html">&lt;div class="admonition important"&gt;
 &lt;p class="admonition-title"&gt;Deprecation&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;multi-part&lt;/code&gt; plugin has been deprecated in favor of the &lt;code&gt;series&lt;/code&gt;
-plugin. For an up-to-date article on using the &lt;code&gt;series&lt;/code&gt; plugin, &lt;a href="https://dvesti.github.io/Pelican/2019/12/07/how-to-use-series-plugin/"&gt;go
+plugin. For an up-to-date article on using the &lt;code&gt;series&lt;/code&gt; plugin, &lt;a href="https://blog.dmitriev.ee/2019/12/07/how-to-use-series-plugin/"&gt;go
 here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;When writing articles about certain topics, it is advantageous to split a single article into
@@ -433,7 +433,7 @@ point for each of the articles in the series. The text for the article is prefac
 navigation easier, the current article is presented in italics, with the other articles being
 presented as links to their respective&amp;nbsp;articles.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the Series section may look&amp;nbsp;like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="series example in the sidebar" src="https://dvesti.github.io/Pelican/images/elegant-theme_multi-part-sidebar.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="series example in the sidebar" src="https://blog.dmitriev.ee/images/elegant-theme_multi-part-sidebar.png" /&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable the reading time for your articles, you need to add &lt;code&gt;multi-part&lt;/code&gt; to the &lt;code&gt;PLUGINS&lt;/code&gt;
 configuration variable in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
@@ -450,7 +450,7 @@ the Series section, regardless of the&amp;nbsp;series.&lt;/p&gt;
 &lt;h2 id="article-metadata"&gt;Article Metadata&lt;a class="headerlink" href="#article-metadata" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Once the configuration for Series is enabled in the configuration file, using this feature for
 a given set of articles requires that the article contains the &lt;code&gt;series&lt;/code&gt;
-&lt;a href="https://dvesti.github.io/Pelican/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field&amp;nbsp;value.&lt;/p&gt;
+&lt;a href="https://blog.dmitriev.ee/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field&amp;nbsp;value.&lt;/p&gt;
 &lt;p&gt;The text assigned to the &lt;code&gt;series&lt;/code&gt; metadata field is the title of the series. When the page is
 created, Pelican provides Elegant with a list of all pages that have the same value for the
 &lt;code&gt;series&lt;/code&gt; metadata field. By default, Elegant sorts that list according to the publish date for
@@ -463,7 +463,7 @@ page presented in &lt;em&gt;italics&lt;/em&gt; and the other pages presented as 
 
 &lt;p&gt;If there is a reason to override the ordering of the articles, the &lt;code&gt;series_index&lt;/code&gt; metadata
 field is required. It is recommended that you use the part number you want displayed for the
-article as the value to assign to the&amp;nbsp;field.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-plugin"></category><category term="navigation"></category><category term="web-design"></category><category term="deprecated"></category></entry><entry><title>Add Social Sharing Links</title><link href="https://dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/" rel="alternate"></link><published>2014-03-24T20:14:00+02:00</published><updated>2014-03-24T20:14:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-03-24:/Pelican/2014/03/24/how-to-use-social-sharing-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide Social Media sharing links for each of your articles. These links provide a simple way to share on various Social Media platforms while endeavoring to not track users in the&amp;nbsp;process.&lt;/p&gt;</summary><content type="html">&lt;p&gt;No blog is complete without buttons or links that invites a reader to share your articles
+article as the value to assign to the&amp;nbsp;field.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-plugin"></category><category term="navigation"></category><category term="web-design"></category><category term="deprecated"></category></entry><entry><title>Add Social Sharing Links</title><link href="https://blog.dmitriev.ee/2014/03/24/how-to-use-social-sharing-plugin/" rel="alternate"></link><published>2014-03-24T20:14:00+02:00</published><updated>2014-03-24T20:14:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:blog.dmitriev.ee,2014-03-24:/2014/03/24/how-to-use-social-sharing-plugin/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide Social Media sharing links for each of your articles. These links provide a simple way to share on various Social Media platforms while endeavoring to not track users in the&amp;nbsp;process.&lt;/p&gt;</summary><content type="html">&lt;p&gt;No blog is complete without buttons or links that invites a reader to share your articles
 with the friend and colleagues on various social media sites. The problem with these buttons
 on many sites is that the buttons are used by big companies to track your web usage, sharing
 that information with various companies. (For a more in-depth talk on this subject, please
@@ -472,7 +472,7 @@ read the &lt;a href="#Online-Trackers-and-Links"&gt;Online Trackers and Links&lt
 provide simple and plain old-school URLs to provide the social media links. These have the
 benefit of not having any ability to be used for online&amp;nbsp;tracking.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the Social Media Sharing section may look&amp;nbsp;like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Share Post plugin in Elegant" src="https://dvesti.github.io/Pelican/images/elegant-theme-share-post-plugin.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Share Post plugin in Elegant" src="https://blog.dmitriev.ee/images/elegant-theme-share-post-plugin.png" /&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable the Social Media Sharing links for your articles, add &lt;code&gt;share_post&lt;/code&gt; to the &lt;code&gt;PLUGINS&lt;/code&gt;
 configuration variable in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
@@ -501,7 +501,7 @@ want to replace&amp;nbsp;it.&lt;/p&gt;
 &lt;h2 id="article-metadata"&gt;Article Metadata&lt;a class="headerlink" href="#article-metadata" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Once the configuration for Sharing Media Links is enabled in the configuration file, using
 this feature to provide links for your readers to share your articles on social media is&amp;nbsp;completed.&lt;/p&gt;
-&lt;p&gt;The only effect any &lt;a href="https://dvesti.github.io/Pelican/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field will have
+&lt;p&gt;The only effect any &lt;a href="https://blog.dmitriev.ee/2019/07/03/metadata/"&gt;metadata&lt;/a&gt; field will have
 on Sharing Media links is to change the text to lead into the Social Media Sharing links.
 As documented above, the &lt;code&gt;SHARE_POST_INTRO&lt;/code&gt; can be used to provide an alternate lead in text
 for the Social Media Sharing links. This text can be further overridden on an
@@ -532,7 +532,7 @@ alien to them, and will make them hesitant to use it. In turn, that will almost 
 result in a decrease in the number of shares of your articles on social&amp;nbsp;networks.&lt;/p&gt;
 &lt;p&gt;Pelican (and therefore Elegant) uses a simple approach to work around this issue. By using
 plain URLs to provide it&amp;#8217;s ability to share with social media sites, the entire widget issue
-is&amp;nbsp;avoided.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="social-media"></category></entry><entry><title>How To Improve the Download Time For Your Pages</title><link href="https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/" rel="alternate"></link><published>2014-03-24T14:09:00+02:00</published><updated>2014-03-24T14:09:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-03-24:/Pelican/2014/03/24/avoid-unnecessary-http-requests/</id><summary type="html">&lt;p&gt;Pelican can be configured to compile multiple assets for your website into one single asset. When these assets are combined together, they are reduce to only their necessary components, and can be fetched by the browser in a single&amp;nbsp;call.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When a webpage is created, webpage authors and static page generators will often grab
+is&amp;nbsp;avoided.&lt;/p&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="social-media"></category></entry><entry><title>How To Improve the Download Time For Your Pages</title><link href="https://blog.dmitriev.ee/2014/03/24/avoid-unnecessary-http-requests/" rel="alternate"></link><published>2014-03-24T14:09:00+02:00</published><updated>2014-03-24T14:09:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:blog.dmitriev.ee,2014-03-24:/2014/03/24/avoid-unnecessary-http-requests/</id><summary type="html">&lt;p&gt;Pelican can be configured to compile multiple assets for your website into one single asset. When these assets are combined together, they are reduce to only their necessary components, and can be fetched by the browser in a single&amp;nbsp;call.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When a webpage is created, webpage authors and static page generators will often grab
 low-level asset files from a trusted location. Between Pelican and Elegant, these files will
 often number between 8 and 15 &lt;span class="caps"&gt;CSS&lt;/span&gt; or JavaScript files. While these files are
 essential to the proper look and feel of a properly designed website, the overhead of this
@@ -540,7 +540,7 @@ content being in separate files is that separate requests are made for each of t
 &lt;div class="admonition important"&gt;
 &lt;p class="admonition-title"&gt;Important&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Elegant comes with a compressed and concatenated &lt;span class="caps"&gt;CSS&lt;/span&gt; stylesheet&lt;/strong&gt;, so that only one request is made to fetch the &lt;span class="caps"&gt;CSS&lt;/span&gt; stylesheets. &lt;strong&gt;Following instruction is redundant for most&amp;nbsp;users.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;But if you have decided to &lt;a href="https://dvesti.github.io/Pelican/2019/07/03/customize-style/"&gt;customize the theme using &lt;code&gt;custom.css&lt;/code&gt;&lt;/a&gt; then follow these&amp;nbsp;instruction.&lt;/p&gt;
+&lt;p&gt;But if you have decided to &lt;a href="https://blog.dmitriev.ee/2019/07/03/customize-style/"&gt;customize the theme using &lt;code&gt;custom.css&lt;/code&gt;&lt;/a&gt; then follow these&amp;nbsp;instruction.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Pelican provides a plugin that takes the various &lt;span class="caps"&gt;CSS&lt;/span&gt; and JavaScript files and compiles each
 group of them into a single file. Not only does this process reduce the number of calls to
@@ -556,13 +556,13 @@ variable in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;The &lt;a href="https://github.com/getpelican/pelican-plugins/blob/master/assets/Readme.rst"&gt;assets plugin&lt;/a&gt; requires the Python &lt;code&gt;webassets&lt;/code&gt; and &lt;code&gt;cssmin&lt;/code&gt; packages to be&amp;nbsp;installed.&lt;/p&gt;
-&lt;/div&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="page-speed"></category></entry><entry><title>Add Previous and Next Article Links</title><link href="https://dvesti.github.io/Pelican/2014/01/27/how-to-show-previous-and-next-article/" rel="alternate"></link><published>2014-01-27T00:02:00+02:00</published><updated>2014-01-27T00:02:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-01-27:/Pelican/2014/01/27/how-to-show-previous-and-next-article/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a Previous and Next article link at the bottom of your articles. This allows for easier navigation through the site if you are looking at articles in published date&amp;nbsp;order.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When reading a series of articles on a website, a reader often desires to view the articles in
+&lt;/div&gt;</content><category term="Supported Plugins"></category><category term="pelican-theme"></category><category term="pelican-plugin"></category><category term="page-speed"></category></entry><entry><title>Add Previous and Next Article Links</title><link href="https://blog.dmitriev.ee/2014/01/27/how-to-show-previous-and-next-article/" rel="alternate"></link><published>2014-01-27T00:02:00+02:00</published><updated>2014-01-27T00:02:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:blog.dmitriev.ee,2014-01-27:/2014/01/27/how-to-show-previous-and-next-article/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a Previous and Next article link at the bottom of your articles. This allows for easier navigation through the site if you are looking at articles in published date&amp;nbsp;order.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When reading a series of articles on a website, a reader often desires to view the articles in
 chronological order by publish&amp;nbsp;date.&lt;/p&gt;
 &lt;p&gt;Elegant provides the ability to provide navigation links to the previous and next articles at
 the bottom of each article. These links provide a powerful way to keep visitors engaged
 and guide them through your&amp;nbsp;site.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the Previous and Next Articles section may look&amp;nbsp;like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Show next and previous articles" src="https://dvesti.github.io/Pelican/images/elegant-theme_previous-next-article.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Show next and previous articles" src="https://blog.dmitriev.ee/images/elegant-theme_previous-next-article.png" /&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable the Previous and Next Article links for your articles, add &lt;code&gt;neighbors&lt;/code&gt; to the
 &lt;code&gt;PLUGINS&lt;/code&gt; configuration variable in your Pelican&amp;nbsp;configuration.&lt;/p&gt;

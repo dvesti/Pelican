@@ -4,840 +4,840 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://dvesti.github.io/Pelican/</loc>
-<lastmod>2020-06-09T19:09:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/</loc>
+<lastmod>2020-06-09T19:38:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/tags</loc>
-<lastmod>2020-06-09T19:09:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/tags</loc>
+<lastmod>2020-06-09T19:38:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/categories</loc>
-<lastmod>2020-06-09T19:09:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/categories</loc>
+<lastmod>2020-06-09T19:38:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/archives</loc>
-<lastmod>2020-06-09T19:09:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/archives</loc>
+<lastmod>2020-06-09T19:38:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/search</loc>
-<lastmod>2020-06-09T19:09:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/search</loc>
+<lastmod>2020-06-09T19:38:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/404.html</loc>
-<lastmod>2020-06-09T19:09:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/404.html</loc>
+<lastmod>2020-06-09T19:38:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/07/04/standard-markdown-examples/</loc>
+<loc>https://blog.dmitriev.ee/2020/07/04/standard-markdown-examples/</loc>
 <lastmod>2020-07-04T19:30:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/02/06/version-530/</loc>
+<loc>https://blog.dmitriev.ee/2020/02/06/version-530/</loc>
 <lastmod>2020-02-06T00:45:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/02/05/enable-commentbox-comments/</loc>
+<loc>https://blog.dmitriev.ee/2020/02/05/enable-commentbox-comments/</loc>
 <lastmod>2020-02-05T22:35:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/02/05/version-521/</loc>
+<loc>https://blog.dmitriev.ee/2020/02/05/version-521/</loc>
 <lastmod>2020-02-05T02:14:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/02/03/version-520/</loc>
+<loc>https://blog.dmitriev.ee/2020/02/03/version-520/</loc>
 <lastmod>2020-02-03T23:59:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/02/03/code-snippets-copy-to-clipboard/</loc>
+<loc>https://blog.dmitriev.ee/2020/02/03/code-snippets-copy-to-clipboard/</loc>
 <lastmod>2020-02-03T19:17:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/02/02/code-snippets-highlight-lines/</loc>
+<loc>https://blog.dmitriev.ee/2020/02/02/code-snippets-highlight-lines/</loc>
 <lastmod>2020-02-02T20:12:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2020/02/02/photoswipe-gallery-using-raw-html/</loc>
+<loc>https://blog.dmitriev.ee/2020/02/02/photoswipe-gallery-using-raw-html/</loc>
 <lastmod>2020-02-02T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/08/how-to-use-series-plugin-2/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/08/how-to-use-series-plugin-2/</loc>
 <lastmod>2019-12-08T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/07/how-to-use-series-plugin/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/07/how-to-use-series-plugin/</loc>
 <lastmod>2019-12-07T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/06/updating-elegant-to-the-latest-release/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/06/updating-elegant-to-the-latest-release/</loc>
 <lastmod>2019-12-06T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/05/version-510/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/05/version-510/</loc>
 <lastmod>2019-12-05T09:17:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/05/applause-button/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/05/applause-button/</loc>
 <lastmod>2019-12-05T08:36:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/05/getting-notified-about-new-releases/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/05/getting-notified-about-new-releases/</loc>
 <lastmod>2019-12-05T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/04/version-501/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/04/version-501/</loc>
 <lastmod>2019-12-04T08:37:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/02/version-500/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/02/version-500/</loc>
 <lastmod>2019-12-02T18:47:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/02/hyperlinks-styles/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/02/hyperlinks-styles/</loc>
 <lastmod>2019-12-02T15:09:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/02/elegant-is-safe/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/02/elegant-is-safe/</loc>
 <lastmod>2019-12-02T11:45:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/02/permalinks-to-headings/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/02/permalinks-to-headings/</loc>
 <lastmod>2019-12-02T11:05:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/01/use-postcss-to-compile-css-style-sheets/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/01/use-postcss-to-compile-css-style-sheets/</loc>
 <lastmod>2019-12-01T23:13:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/01/blockquote-style/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/01/blockquote-style/</loc>
 <lastmod>2019-12-01T18:41:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/12/01/headings-style/</loc>
+<loc>https://blog.dmitriev.ee/2019/12/01/headings-style/</loc>
 <lastmod>2019-12-01T10:38:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/08/23/version-4-0-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/08/23/version-4-0-0-release-notes/</loc>
 <lastmod>2019-08-23T00:39:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/08/18/enable-utterances-comments/</loc>
+<loc>https://blog.dmitriev.ee/2019/08/18/enable-utterances-comments/</loc>
 <lastmod>2019-08-18T00:13:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/08/12/how-to-display-your-social-media-profiles/</loc>
+<loc>https://blog.dmitriev.ee/2019/08/12/how-to-display-your-social-media-profiles/</loc>
 <lastmod>2019-08-12T13:13:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/08/11/tables/</loc>
+<loc>https://blog.dmitriev.ee/2019/08/11/tables/</loc>
 <lastmod>2019-08-11T01:16:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/08/10/clean-url/</loc>
+<loc>https://blog.dmitriev.ee/2019/08/10/clean-url/</loc>
 <lastmod>2019-08-10T20:44:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/</loc>
+<loc>https://blog.dmitriev.ee/2019/08/04/yaspeller-for-elegant/</loc>
 <lastmod>2019-08-04T23:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/08/04/how-to-contribute/</loc>
+<loc>https://blog.dmitriev.ee/2019/08/04/how-to-contribute/</loc>
 <lastmod>2019-08-04T22:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/31/version-3-2-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/31/version-3-2-0-release-notes/</loc>
 <lastmod>2019-07-31T01:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/22/developing-for-elegant/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/22/developing-for-elegant/</loc>
 <lastmod>2019-07-22T23:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/22/use-pre-commit-git-hooks/</loc>
 <lastmod>2019-07-22T23:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/22/elegant-logo/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/22/elegant-logo/</loc>
 <lastmod>2019-07-22T21:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/22/use-commitizen-for-git-commits/</loc>
 <lastmod>2019-07-22T14:15:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/20/fully-automated-version-management-and-release/</loc>
 <lastmod>2019-07-20T23:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/20/git-commit-guidelines/</loc>
 <lastmod>2019-07-20T23:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/19/live-reload-elegant-documentation-using-gulpjs/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/19/live-reload-elegant-documentation-using-gulpjs/</loc>
 <lastmod>2019-07-19T23:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/19/live-reload-elegant-documentation-using-pelican/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/19/live-reload-elegant-documentation-using-pelican/</loc>
 <lastmod>2019-07-19T22:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/19/what-is-live-reload/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/19/what-is-live-reload/</loc>
 <lastmod>2019-07-19T21:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/15/add-reading-time-estimate/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/15/add-reading-time-estimate/</loc>
 <lastmod>2019-07-15T20:08:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/15/version-3-1-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/15/version-3-1-0-release-notes/</loc>
 <lastmod>2019-07-15T03:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/14/amazon-bestazon/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/14/amazon-bestazon/</loc>
 <lastmod>2019-07-14T07:30:47+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/version-3-0-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/version-3-0-0-release-notes/</loc>
 <lastmod>2019-07-03T23:54:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/code-style-for-jinja2/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/code-style-for-jinja2/</loc>
 <lastmod>2019-07-03T22:17:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/contribution-license/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/contribution-license/</loc>
 <lastmod>2019-07-03T22:07:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/git-tips-for-beginners/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/git-tips-for-beginners/</loc>
 <lastmod>2019-07-03T21:57:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/metadata/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/metadata/</loc>
 <lastmod>2019-07-03T20:44:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/change-labels/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/change-labels/</loc>
 <lastmod>2019-07-03T20:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/change-syntax-highlight-theme/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/change-syntax-highlight-theme/</loc>
 <lastmod>2019-07-03T20:18:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/customize-style/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/customize-style/</loc>
 <lastmod>2019-07-03T20:14:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/custom-404-page/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/custom-404-page/</loc>
 <lastmod>2019-07-03T20:07:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/invitation-to-participate/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/invitation-to-participate/</loc>
 <lastmod>2019-07-03T20:07:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/look-and-feel/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/look-and-feel/</loc>
 <lastmod>2019-07-03T20:07:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/03/add-search/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/03/add-search/</loc>
 <lastmod>2019-07-03T19:56:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/01/unique-home-page-features/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/01/unique-home-page-features/</loc>
 <lastmod>2019-07-01T01:22:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/01/projects-list/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/01/projects-list/</loc>
 <lastmod>2019-07-01T01:12:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/01/write-about-me/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/01/write-about-me/</loc>
 <lastmod>2019-07-01T01:12:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/01/write-welcome-message/</loc>
 <lastmod>2019-07-01T01:12:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/07/01/recent-articles-list/</loc>
+<loc>https://blog.dmitriev.ee/2019/07/01/recent-articles-list/</loc>
 <lastmod>2019-07-01T01:10:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/30/comments-thread-id/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/30/comments-thread-id/</loc>
 <lastmod>2019-06-30T22:29:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/30/version-2-5-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/30/version-2-5-0-release-notes/</loc>
 <lastmod>2019-06-30T12:48:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/30/show-host-information/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/30/show-host-information/</loc>
 <lastmod>2019-06-30T11:54:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/30/version-2-4-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/30/version-2-4-0-release-notes/</loc>
 <lastmod>2019-06-30T10:54:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/29/version-2-3-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/29/version-2-3-0-release-notes/</loc>
 <lastmod>2019-06-29T18:31:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/27/website-claim/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/27/website-claim/</loc>
 <lastmod>2019-06-27T00:00:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/09/version-2-2-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/09/version-2-2-0-release-notes/</loc>
 <lastmod>2019-06-09T18:58:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin/</loc>
 <lastmod>2019-06-09T10:49:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/</loc>
+<loc>https://blog.dmitriev.ee/2019/06/09/how-to-use-photos-plugin-advanced/</loc>
 <lastmod>2019-06-09T10:49:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/03/31/how-to-use-heap-analytics/</loc>
+<loc>https://blog.dmitriev.ee/2019/03/31/how-to-use-heap-analytics/</loc>
 <lastmod>2019-03-31T16:45:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/02/10/version-2-1-1-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/02/10/version-2-1-1-release-notes/</loc>
 <lastmod>2019-02-10T17:52:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/02/10/version-2-1-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/02/10/version-2-1-0-release-notes/</loc>
 <lastmod>2019-02-10T11:34:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/02/10/elegant-2-0-0-release-notes/</loc>
+<loc>https://blog.dmitriev.ee/2019/02/10/elegant-2-0-0-release-notes/</loc>
 <lastmod>2019-02-10T05:59:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/01/12/disable-comments-per-article/</loc>
+<loc>https://blog.dmitriev.ee/2019/01/12/disable-comments-per-article/</loc>
 <lastmod>2019-01-12T16:29:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/</loc>
+<loc>https://blog.dmitriev.ee/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/</loc>
 <lastmod>2019-01-11T17:30:47+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/01/05/community-led-project/</loc>
+<loc>https://blog.dmitriev.ee/2019/01/05/community-led-project/</loc>
 <lastmod>2019-01-05T19:40:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2019/01/02/amazon-onelink/</loc>
+<loc>https://blog.dmitriev.ee/2019/01/02/amazon-onelink/</loc>
 <lastmod>2019-01-02T22:47:47+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2018/12/18/warnings-admonition/</loc>
+<loc>https://blog.dmitriev.ee/2018/12/18/warnings-admonition/</loc>
 <lastmod>2018-12-18T09:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2018/12/11/travis-to-trigger-build-in-another-repository/</loc>
+<loc>https://blog.dmitriev.ee/2018/12/11/travis-to-trigger-build-in-another-repository/</loc>
 <lastmod>2018-12-11T21:49:47+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/</loc>
+<loc>https://blog.dmitriev.ee/2018/12/07/travis-ci-and-doc-website/</loc>
 <lastmod>2018-12-07T16:00:47+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2018/12/07/adding-author-blurbs/</loc>
+<loc>https://blog.dmitriev.ee/2018/12/07/adding-author-blurbs/</loc>
 <lastmod>2018-12-07T11:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2018/11/30/article-redirect/</loc>
+<loc>https://blog.dmitriev.ee/2018/11/30/article-redirect/</loc>
 <lastmod>2018-11-30T10:32:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2018/07/05/add-freelists/</loc>
+<loc>https://blog.dmitriev.ee/2018/07/05/add-freelists/</loc>
 <lastmod>2018-07-05T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2017/08/31/sozdanie-novoi-temy-english-creating-a-new-theme/</loc>
+<loc>https://blog.dmitriev.ee/2017/08/31/sozdanie-novoi-temy-english-creating-a-new-theme/</loc>
 <lastmod>2017-08-31T15:43:48+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/06/01/what-people-say-about-elegant/</loc>
+<loc>https://blog.dmitriev.ee/2014/06/01/what-people-say-about-elegant/</loc>
 <lastmod>2014-06-01T23:45:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/24/how-to-set-shortcut-icons/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/24/how-to-set-shortcut-icons/</loc>
 <lastmod>2014-04-24T16:42:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/22/add-license-to-your-site/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/22/add-license-to-your-site/</loc>
 <lastmod>2014-04-22T16:23:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/22/add-site-subtitle/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/22/add-site-subtitle/</loc>
 <lastmod>2014-04-22T16:23:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/22/web-safe-fonts/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/22/web-safe-fonts/</loc>
 <lastmod>2014-04-22T16:23:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/21/enable-disqus-comments/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/21/enable-disqus-comments/</loc>
 <lastmod>2014-04-21T16:39:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/21/invite-visitors-comment/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/21/invite-visitors-comment/</loc>
 <lastmod>2014-04-21T16:39:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/20/how-to-use-multi-part-plugin/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/20/how-to-use-multi-part-plugin/</loc>
 <lastmod>2014-04-20T18:18:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/20/search-engine-and-social-media-optimization/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/20/search-engine-and-social-media-optimization/</loc>
 <lastmod>2014-04-20T16:31:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/04/19/how-does-modified-metadata-works/</loc>
+<loc>https://blog.dmitriev.ee/2014/04/19/how-does-modified-metadata-works/</loc>
 <lastmod>2014-04-19T14:52:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/</loc>
+<loc>https://blog.dmitriev.ee/2014/03/24/how-to-use-social-sharing-plugin/</loc>
 <lastmod>2014-03-24T20:14:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/</loc>
+<loc>https://blog.dmitriev.ee/2014/03/24/avoid-unnecessary-http-requests/</loc>
 <lastmod>2014-03-24T14:09:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/03/24/how-to-customize-elegant/</loc>
+<loc>https://blog.dmitriev.ee/2014/03/24/how-to-customize-elegant/</loc>
 <lastmod>2014-03-24T14:05:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/03/18/how-elegant-displays-table-of-contents/</loc>
+<loc>https://blog.dmitriev.ee/2014/03/18/how-elegant-displays-table-of-contents/</loc>
 <lastmod>2014-03-18T11:03:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/03/17/how-to-show-rss-feeds-icon/</loc>
+<loc>https://blog.dmitriev.ee/2014/03/17/how-to-show-rss-feeds-icon/</loc>
 <lastmod>2014-03-17T15:28:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/</loc>
+<loc>https://blog.dmitriev.ee/2014/01/27/how-to-display-your-social-media-profiles-deprecated/</loc>
 <lastmod>2014-01-27T00:28:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2014/01/27/how-to-show-previous-and-next-article/</loc>
+<loc>https://blog.dmitriev.ee/2014/01/27/how-to-show-previous-and-next-article/</loc>
 <lastmod>2014-01-27T00:02:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/11/11/how-to-use-google-analytics/</loc>
+<loc>https://blog.dmitriev.ee/2013/11/11/how-to-use-google-analytics/</loc>
 <lastmod>2013-11-11T23:05:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/11/11/how-to-use-statcounter-analytics/</loc>
+<loc>https://blog.dmitriev.ee/2013/11/11/how-to-use-statcounter-analytics/</loc>
 <lastmod>2013-11-11T23:05:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/11/05/display-line-numbers-in-code-snippets/</loc>
+<loc>https://blog.dmitriev.ee/2013/11/05/display-line-numbers-in-code-snippets/</loc>
 <lastmod>2013-11-05T17:36:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/add-mailchimp/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/add-mailchimp/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/article-subtitle/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/article-subtitle/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/articles-count-with-every-tag-and-category/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/articles-count-with-every-tag-and-category/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/code-snippets-theme/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/code-snippets-theme/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/collapsible-comments/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/collapsible-comments/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/live-filter-for-tags/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/live-filter-for-tags/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/page-title/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/page-title/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2013/08/27/zero-clutter-categories/</loc>
+<loc>https://blog.dmitriev.ee/2013/08/27/zero-clutter-categories/</loc>
 <lastmod>2013-08-27T23:20:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2010/12/03/moi-pervyi-obzor-my-first-review/</loc>
+<loc>https://blog.dmitriev.ee/2010/12/03/moi-pervyi-obzor-my-first-review/</loc>
 <lastmod>2010-12-03T10:20:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2010/12/03/my-first-post/</loc>
+<loc>https://blog.dmitriev.ee/2010/12/03/my-first-post/</loc>
 <lastmod>2010-12-05T19:30:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/2010/12/03/my-super-post/</loc>
+<loc>https://blog.dmitriev.ee/2010/12/03/my-super-post/</loc>
 <lastmod>2010-12-05T19:30:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
