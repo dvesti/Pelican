@@ -5,42 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://blog.dmitriev.ee/</loc>
-<lastmod>2020-06-09T23:26:29-00:00</lastmod>
+<lastmod>2020-06-09T23:33:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://blog.dmitriev.ee/tags.html</loc>
-<lastmod>2020-06-09T23:26:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/tags</loc>
+<lastmod>2020-06-09T23:33:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.dmitriev.ee/categories</loc>
-<lastmod>2020-06-09T23:26:29-00:00</lastmod>
+<lastmod>2020-06-09T23:33:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.dmitriev.ee/archives</loc>
-<lastmod>2020-06-09T23:26:29-00:00</lastmod>
+<lastmod>2020-06-09T23:33:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://blog.dmitriev.ee/search</loc>
-<lastmod>2020-06-09T23:26:29-00:00</lastmod>
+<loc>https://blog.dmitriev.ee/search.html</loc>
+<lastmod>2020-06-09T23:33:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.dmitriev.ee/404.html</loc>
-<lastmod>2020-06-09T23:26:29-00:00</lastmod>
+<lastmod>2020-06-09T23:33:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

@@ -17,7 +17,7 @@
 
 <meta property="og:title" content="Search · Pelican-200"/>
 <meta name="twitter:title" content="Search · Pelican-200">
-<meta property="og:url" content="https://blog.dmitriev.ee/search" />
+<meta property="og:url" content="https://blog.dmitriev.ee/search.html" />
 <meta property="og:description" content="Search results for Pelican-200 blog" />
 <meta name="twitter:description" content="Search results for Pelican-200 blog">
 <meta property="og:site_name" content="Pelican-200" />
@@ -60,9 +60,9 @@
                                     >Главная</a>
                                 </li>
                                 <li ><a href="https://blog.dmitriev.ee/categories">Категории</a></li>
-                                <li ><a href="https://blog.dmitriev.ee/tags.html">Тэги</a></li>
+                                <li ><a href="https://blog.dmitriev.ee/tags">Тэги</a></li>
                                 <li ><a href="https://blog.dmitriev.ee/archives">Архив</a></li>
-                                <li><form class="navbar-search" action="https://blog.dmitriev.ee/search" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                                <li><form class="navbar-search" action="https://blog.dmitriev.ee/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                             </ul>
                         </div>
                     </div>
