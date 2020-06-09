@@ -162,6 +162,18 @@ LINKS = (
 &lt;ul&gt;
 &lt;li&gt;colons can be used to align columns.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;| Column1 | Column 2 | Column 3
+|---|---|---|
+| Value 1 | Value 2 | Value 3 |
+| Value 4 | Value 5 | Value 6 |
+| Value 7 | Value 8 | Value 9 |
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+&lt;/pre&gt;&lt;/div&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -214,51 +226,30 @@ LINKS = (
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Column1&lt;/p&gt;
-&lt;p&gt;Column 2&lt;/p&gt;
-&lt;p&gt;Column 3&lt;/p&gt;
-&lt;p&gt;Value 1&lt;/p&gt;
-&lt;p&gt;Value 2&lt;/p&gt;
-&lt;p&gt;Value 3&lt;/p&gt;
-&lt;p&gt;Value 4&lt;/p&gt;
-&lt;p&gt;Value 5&lt;/p&gt;
-&lt;p&gt;Value 6&lt;/p&gt;
-&lt;p&gt;Value 7&lt;/p&gt;
-&lt;p&gt;Value 8&lt;/p&gt;
-&lt;p&gt;Value 9&lt;/p&gt;
-&lt;p&gt;Tables&lt;/p&gt;
-&lt;p&gt;Are&lt;/p&gt;
-&lt;p&gt;Cool&lt;/p&gt;
-&lt;p&gt;col 3 is&lt;/p&gt;
-&lt;p&gt;right-aligned&lt;/p&gt;
-&lt;p&gt;$1600&lt;/p&gt;
-&lt;p&gt;col 2 is&lt;/p&gt;
-&lt;p&gt;centered&lt;/p&gt;
-&lt;p&gt;$12&lt;/p&gt;
-&lt;p&gt;zebra stripes&lt;/p&gt;
-&lt;p&gt;are neat&lt;/p&gt;
-&lt;p&gt;$1&lt;/p&gt;
 &lt;hr/&gt;
 &lt;h2 id="links"&gt;Links&lt;a href="#links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="local-links"&gt;Local Links&lt;a href="#local-links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#local-links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{filename}&lt;/code&gt; tag indicates location in the content folder.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[About Page]({filename}/pages/landing-page-about-hidden.md)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[&lt;span class="nt"&gt;About Page\&lt;/span&gt;](&lt;span class="na"&gt;{filename}/pages/landing-page-about-hidden.md&lt;/span&gt;)
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href="https://jackdewinter.github.io/pages/landing-page-about-hidden.html"&gt;About Page&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="remote-links"&gt;Remote Links&lt;a href="#remote-links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#remote-links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;proper &lt;span class="caps"&gt;URL&lt;/span&gt; indicates a remote website&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[Python Package Index](https://pypi.org)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[&lt;span class="nt"&gt;Python Package Index\&lt;/span&gt;](&lt;span class="na"&gt;https://pypi.org&lt;/span&gt;)
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href="https://pypi.org"&gt;Python Package Index&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="download-links"&gt;Download Links&lt;a href="#download-links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#download-links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;download links are not natively supported in Markdown&lt;/li&gt;
 &lt;li&gt;must explicitly create &lt;span class="caps"&gt;HTML&lt;/span&gt; text inline to achieve that Creating a link to a file to download, not display, is not natively supported in markdown.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[Pelican Brag Document (display)]({static}/images/markdown-1/pelican.txt)&lt;br/&gt;
-&lt;a download="" href="https://dvesti.github.io/Pelican/images/pelican.txt"&gt;Pelican Brag Document (download)&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[&lt;span class="nt"&gt;Pelican Brag Document (display)\&lt;/span&gt;](&lt;span class="na"&gt;{static}/images/markdown-1/pelican.txt&lt;/span&gt;)  
+&amp;lt;a href="{static}/images/pelican.txt" download&amp;gt;Pelican Brag Document (download)&amp;lt;/a&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt"&gt;Pelican Brag Document (display)&lt;/a&gt;&lt;br/&gt;
 &lt;a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt"&gt;Pelican Brag Document (download)&lt;/a&gt;&lt;/p&gt;
 &lt;hr/&gt;
@@ -266,7 +257,8 @@ LINKS = (
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{filename}&lt;/code&gt; tag indicates location in the content folder.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![python logo]({static}/images/markdown-1/python_icon.png)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;![&lt;span class="nt"&gt;python logo&lt;/span&gt;](&lt;span class="na"&gt;https://jackdewinter.github.io/images/markdown-1/python_icon.png&lt;/span&gt;)
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img alt="python logo" src="https://jackdewinter.github.io/images/markdown-1/python_icon.png"/&gt;&lt;/p&gt;
 &lt;hr/&gt;
 &lt;div class="footnote"&gt;

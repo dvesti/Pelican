@@ -287,6 +287,18 @@ LINKS = (
 <ul>
 <li>colons can be used to align columns.</li>
 </ul>
+<div class="highlight"><pre><span></span>| Column1 | Column 2 | Column 3
+|---|---|---|
+| Value 1 | Value 2 | Value 3 |
+| Value 4 | Value 5 | Value 6 |
+| Value 7 | Value 8 | Value 9 |
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+</pre></div>
 <table>
 <thead>
 <tr>
@@ -339,51 +351,30 @@ LINKS = (
 </tr>
 </tbody>
 </table>
-<p>Column1</p>
-<p>Column 2</p>
-<p>Column 3</p>
-<p>Value 1</p>
-<p>Value 2</p>
-<p>Value 3</p>
-<p>Value 4</p>
-<p>Value 5</p>
-<p>Value 6</p>
-<p>Value 7</p>
-<p>Value 8</p>
-<p>Value 9</p>
-<p>Tables</p>
-<p>Are</p>
-<p>Cool</p>
-<p>col 3 is</p>
-<p>right-aligned</p>
-<p>$1600</p>
-<p>col 2 is</p>
-<p>centered</p>
-<p>$12</p>
-<p>zebra stripes</p>
-<p>are neat</p>
-<p>$1</p>
 <hr/>
 <h2 id="links">Links<a href="#links" title="Permanent link"></a><a class="headerlink" href="#links" title="Permanent link"> </a></h2>
 <h3 id="local-links">Local Links<a href="#local-links" title="Permanent link"></a><a class="headerlink" href="#local-links" title="Permanent link"> </a></h3>
 <ul>
 <li><code>{filename}</code> tag indicates location in the content folder.</li>
 </ul>
-<p>[About Page]({filename}/pages/landing-page-about-hidden.md)</p>
+<div class="highlight"><pre><span></span>[<span class="nt">About Page\</span>](<span class="na">{filename}/pages/landing-page-about-hidden.md</span>)
+</pre></div>
 <p><a href="https://jackdewinter.github.io/pages/landing-page-about-hidden.html">About Page</a></p>
 <h3 id="remote-links">Remote Links<a href="#remote-links" title="Permanent link"></a><a class="headerlink" href="#remote-links" title="Permanent link"> </a></h3>
 <ul>
 <li>proper <span class="caps">URL</span> indicates a remote website</li>
 </ul>
-<p>[Python Package Index](https://pypi.org)</p>
+<div class="highlight"><pre><span></span>[<span class="nt">Python Package Index\</span>](<span class="na">https://pypi.org</span>)
+</pre></div>
 <p><a href="https://pypi.org">Python Package Index</a></p>
 <h3 id="download-links">Download Links<a href="#download-links" title="Permanent link"></a><a class="headerlink" href="#download-links" title="Permanent link"> </a></h3>
 <ul>
 <li>download links are not natively supported in Markdown</li>
 <li>must explicitly create <span class="caps">HTML</span> text inline to achieve that Creating a link to a file to download, not display, is not natively supported in markdown.</li>
 </ul>
-<p>[Pelican Brag Document (display)]({static}/images/markdown-1/pelican.txt)<br/>
-<a download="" href="https://dvesti.github.io/Pelican/images/pelican.txt">Pelican Brag Document (download)</a></p>
+<div class="highlight"><pre><span></span>[<span class="nt">Pelican Brag Document (display)\</span>](<span class="na">{static}/images/markdown-1/pelican.txt</span>)  
+&lt;a href="{static}/images/pelican.txt" download&gt;Pelican Brag Document (download)&lt;/a&gt;
+</pre></div>
 <p><a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt">Pelican Brag Document (display)</a><br/>
 <a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt">Pelican Brag Document (download)</a></p>
 <hr/>
@@ -391,7 +382,8 @@ LINKS = (
 <ul>
 <li><code>{filename}</code> tag indicates location in the content folder.</li>
 </ul>
-<p>![python logo]({static}/images/markdown-1/python_icon.png)</p>
+<div class="highlight"><pre><span></span>![<span class="nt">python logo</span>](<span class="na">https://jackdewinter.github.io/images/markdown-1/python_icon.png</span>)
+</pre></div>
 <p><img alt="python logo" src="https://jackdewinter.github.io/images/markdown-1/python_icon.png"/></p>
 <hr/>
 <div class="footnote">
@@ -448,7 +440,7 @@ LINKS = (
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>
-            <time itemprop="dateCreated" datetime="2020-07-04T10:20:00+03:00">Сб, 04 июл 2020 г.</time>
+            <time itemprop="dateCreated" datetime="2020-07-04T10:20:00+03:00">Сб, 04 июл. 2020 г.</time>
 
             <h4>Категория</h4>
             <a class="category-link" href="https://dvesti.github.io/Pelican/categories#website-ref">Website</a>
