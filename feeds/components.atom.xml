@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Components</title><link href="https://github.com/dvesti/Pelican/" rel="alternate"></link><link href="https://github.com/dvesti/Pelican/feeds/components.atom.xml" rel="self"></link><id>https://github.com/dvesti/Pelican/</id><updated>2020-02-03T19:17:00+02:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Копируем код в буфер обмена</title><link href="https://github.com/dvesti/Pelican/2020/02/03/code-snippets-copy-to-clipboard/" rel="alternate"></link><published>2020-02-03T19:17:00+02:00</published><updated>2020-02-03T19:17:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2020-02-03:/dvesti/Pelican/2020/02/03/code-snippets-copy-to-clipboard/</id><content type="html">&lt;p&gt;Elegant is the only Pelican theme that comes with a &amp;#8220;Copy To Clipboard&amp;#8221; button
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Components</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/components.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2020-02-03T19:17:00+02:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Копируем код в буфер обмена</title><link href="https://dvesti.github.io/Pelican/2020/02/03/code-snippets-copy-to-clipboard/" rel="alternate"></link><published>2020-02-03T19:17:00+02:00</published><updated>2020-02-03T19:17:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-03:/Pelican/2020/02/03/code-snippets-copy-to-clipboard/</id><content type="html">&lt;p&gt;Elegant is the only Pelican theme that comes with a &amp;#8220;Copy To Clipboard&amp;#8221; button
 on every code&amp;nbsp;snippet.&lt;/p&gt;
 &lt;p&gt;Try it&amp;nbsp;out&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello Clipboard&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;We use excellent JavaScript library, &lt;a href="https://clipboardjs.com/"&gt;clipboard.js&lt;/a&gt; for this feature. Your readers do not need Flash for this&amp;nbsp;feature.&lt;/p&gt;</content><category term="Components"></category><category term="code-snippets"></category><category term="gist"></category><category term="unique"></category></entry><entry><title>Подсветка кода</title><link href="https://github.com/dvesti/Pelican/2020/02/02/code-snippets-highlight-lines/" rel="alternate"></link><published>2020-02-02T20:12:00+02:00</published><updated>2020-02-02T20:12:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2020-02-02:/dvesti/Pelican/2020/02/02/code-snippets-highlight-lines/</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/Python-Markdown/markdown/"&gt;Python-Markdown&lt;/a&gt; uses
+&lt;p&gt;We use excellent JavaScript library, &lt;a href="https://clipboardjs.com/"&gt;clipboard.js&lt;/a&gt; for this feature. Your readers do not need Flash for this&amp;nbsp;feature.&lt;/p&gt;</content><category term="Components"></category><category term="code-snippets"></category><category term="gist"></category><category term="unique"></category></entry><entry><title>Подсветка кода</title><link href="https://dvesti.github.io/Pelican/2020/02/02/code-snippets-highlight-lines/" rel="alternate"></link><published>2020-02-02T20:12:00+02:00</published><updated>2020-02-02T20:12:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-02:/Pelican/2020/02/02/code-snippets-highlight-lines/</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/Python-Markdown/markdown/"&gt;Python-Markdown&lt;/a&gt; uses
 &lt;a href="https://python-markdown.github.io/extensions/code_hilite/"&gt;CodeHilite&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;
 extension for syntax&amp;nbsp;highlighting.&lt;/p&gt;
 &lt;p&gt;This extension lets you highlight specific lines in your code snippets. You can read the instructions &lt;a href="https://python-markdown.github.io/extensions/code_hilite/#colons"&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -49,7 +49,7 @@ extension for syntax&amp;nbsp;highlighting.&lt;/p&gt;
 &lt;span class="hll"&gt;&lt;span class="c1"&gt;# This line is emphasized&lt;/span&gt;
 &lt;/span&gt;&lt;span class="c1"&gt;# This line isn&amp;#39;t&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="Components"></category><category term="markdown"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Фотогалерея — используем PhotoSwipe</title><link href="https://github.com/dvesti/Pelican/2020/02/02/photoswipe-gallery-using-raw-html/" rel="alternate"></link><published>2020-02-02T00:00:00+02:00</published><updated>2020-02-02T00:00:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2020-02-02:/dvesti/Pelican/2020/02/02/photoswipe-gallery-using-raw-html/</id><summary type="html">&lt;p&gt;Elegant integrates with &lt;a href="https://photoswipe.com/"&gt;PhotoSwipe&lt;/a&gt; to create gallery of images. Here is an&amp;nbsp;example.&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="Components"></category><category term="markdown"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Фотогалерея — используем PhotoSwipe</title><link href="https://dvesti.github.io/Pelican/2020/02/02/photoswipe-gallery-using-raw-html/" rel="alternate"></link><published>2020-02-02T00:00:00+02:00</published><updated>2020-02-02T00:00:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-02:/Pelican/2020/02/02/photoswipe-gallery-using-raw-html/</id><summary type="html">&lt;p&gt;Elegant integrates with &lt;a href="https://photoswipe.com/"&gt;PhotoSwipe&lt;/a&gt; to create gallery of images. Here is an&amp;nbsp;example.&lt;/p&gt;
 &lt;div class="elegant-gallery" itemscope itemtype="http://schema.org/ImageGallery"&gt;
     &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
         &lt;a href="https://i.picsum.photos/id/1019/5472/3648.jpg" itemprop="contentUrl" data-size="5472x3648"&gt;
@@ -256,11 +256,11 @@ extension for syntax&amp;nbsp;highlighting.&lt;/p&gt;
 &lt;code&gt;article.content&lt;/code&gt; or &lt;code&gt;page.content&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The user should be able to insert more than one galleries in the article, at any place. (Currently, the &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/photos"&gt;Photos plugin&lt;/a&gt; forces themes to append gallery in the bottom of the&amp;nbsp;article.)&lt;/p&gt;
 &lt;p&gt;Finally, let the user define gallery images and their captions inside an article in a friendly and easy way. Like, as &lt;span class="caps"&gt;YAML&lt;/span&gt; or &lt;span class="caps"&gt;JSON&lt;/span&gt; inside the&amp;nbsp;markdown.&lt;/p&gt;
-&lt;/div&gt;</content><category term="Components"></category><category term="nuances"></category><category term="images"></category><category term="gallery"></category></entry><entry><title>Hyperlinks Styles</title><link href="https://github.com/dvesti/Pelican/2019/12/02/hyperlinks-styles/" rel="alternate"></link><published>2019-12-02T15:09:00+02:00</published><updated>2019-12-02T15:09:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-12-02:/dvesti/Pelican/2019/12/02/hyperlinks-styles/</id><summary type="html"></summary><content type="html">&lt;p&gt;Elegant has three styles for hyperlinks that you can&amp;nbsp;use.&lt;/p&gt;
+&lt;/div&gt;</content><category term="Components"></category><category term="nuances"></category><category term="images"></category><category term="gallery"></category></entry><entry><title>Hyperlinks Styles</title><link href="https://dvesti.github.io/Pelican/2019/12/02/hyperlinks-styles/" rel="alternate"></link><published>2019-12-02T15:09:00+02:00</published><updated>2019-12-02T15:09:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-02:/Pelican/2019/12/02/hyperlinks-styles/</id><summary type="html"></summary><content type="html">&lt;p&gt;Elegant has three styles for hyperlinks that you can&amp;nbsp;use.&lt;/p&gt;
 &lt;h2 id="muted-style"&gt;Muted Style&lt;a class="headerlink" href="#muted-style" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This is the default style of&amp;nbsp;link.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.mozilla.org/en-US/firefox/new/"&gt;Example Link - Use Firefox Browser&lt;/a&gt; to support open web&amp;nbsp;standards.&lt;/p&gt;
-&lt;p&gt;This style is very suitable for long-form articles. To read the rationale behind this choice, read our help article &lt;a href="https://github.com/dvesti/Pelican/2019/07/03/look-and-feel/"&gt;Why Does Elegant Look The Way It Does?&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This style is very suitable for long-form articles. To read the rationale behind this choice, read our help article &lt;a href="https://dvesti.github.io/Pelican/2019/07/03/look-and-feel/"&gt;Why Does Elegant Look The Way It Does?&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="amplified-style"&gt;Amplified Style&lt;a class="headerlink" href="#amplified-style" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We understand not all links should be muted. Some links require&amp;nbsp;attention.&lt;/p&gt;
 &lt;p&gt;&lt;a class="ampl" href="https://www.mozilla.org/en-US/firefox/new/"&gt;Example Link - Use Firefox Browser&lt;/a&gt; to support open web standards. &lt;!-- yaspeller ignore --&gt;&lt;/p&gt;
@@ -277,7 +277,7 @@ MARKDOWN = {
 
 &lt;p&gt;Then use this style using &lt;code&gt;ampl&lt;/code&gt; class.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[Example Link](https://www.mozilla.org/){: class=&amp;quot;ampl&amp;quot;} blah blah
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="style"></category></entry><entry><title>Permalinks To Headings</title><link href="https://github.com/dvesti/Pelican/2019/12/02/permalinks-to-headings/" rel="alternate"></link><published>2019-12-02T11:05:00+02:00</published><updated>2019-12-02T11:05:00+02:00</updated><author><name>Dmitriev</name></author><id>tag:github.com,2019-12-02:/dvesti/Pelican/2019/12/02/permalinks-to-headings/</id><summary type="html"></summary><content type="html">&lt;p&gt;First, you need to enable the &lt;code&gt;toc&lt;/code&gt; extension for Markdown in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="style"></category></entry><entry><title>Permalinks To Headings</title><link href="https://dvesti.github.io/Pelican/2019/12/02/permalinks-to-headings/" rel="alternate"></link><published>2019-12-02T11:05:00+02:00</published><updated>2019-12-02T11:05:00+02:00</updated><author><name>Dmitriev</name></author><id>tag:dvesti.github.io,2019-12-02:/Pelican/2019/12/02/permalinks-to-headings/</id><summary type="html"></summary><content type="html">&lt;p&gt;First, you need to enable the &lt;code&gt;toc&lt;/code&gt; extension for Markdown in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="s1"&gt;&amp;#39;extension_configs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;markdown.extensions.toc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
@@ -301,7 +301,7 @@ MARKDOWN = {
 &lt;p&gt;Hover over following example heading to see the&amp;nbsp;permalink.&lt;/p&gt;
 &lt;h2 id="example-heading"&gt;Example Heading&lt;a class="headerlink" href="#example-heading" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;You would get&amp;nbsp;this,&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Permalinks example using Markdown" src="https://github.com/dvesti/Pelican/images/elegant-theme-toc-permalinks.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Permalinks example using Markdown" src="https://dvesti.github.io/Pelican/images/elegant-theme-toc-permalinks.png" /&gt;&lt;/p&gt;
 &lt;div class="admonition tip recommendation"&gt;
 &lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
 &lt;p&gt;When set to True the paragraph symbol &lt;code&gt;¶&lt;/code&gt; or &lt;code&gt;&amp;amp;para;&lt;/code&gt; is used by Python markdown.
@@ -315,7 +315,7 @@ This becomes part of the &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed
     &lt;span class="p"&gt;}&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="navigation"></category></entry><entry><title>Blockquote Style</title><link href="https://github.com/dvesti/Pelican/2019/12/01/blockquote-style/" rel="alternate"></link><published>2019-12-01T18:41:00+02:00</published><updated>2019-12-01T18:41:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-12-01:/dvesti/Pelican/2019/12/01/blockquote-style/</id><summary type="html"></summary><content type="html">&lt;!-- yaspeller ignore:start --&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="navigation"></category></entry><entry><title>Blockquote Style</title><link href="https://dvesti.github.io/Pelican/2019/12/01/blockquote-style/" rel="alternate"></link><published>2019-12-01T18:41:00+02:00</published><updated>2019-12-01T18:41:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-01:/Pelican/2019/12/01/blockquote-style/</id><summary type="html"></summary><content type="html">&lt;!-- yaspeller ignore:start --&gt;
 
 &lt;p&gt;A blockquote with a single&amp;nbsp;paragraph.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -330,7 +330,7 @@ This becomes part of the &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed
 &lt;p&gt;Ultrices eros in cursus turpis massa tincidunt dui ut ornare. Sem et tortor consequat id porta nibh venenatis. Nulla facilisi morbi tempus iaculis urna id volutpat&amp;nbsp;lacus.&lt;/p&gt;
 &lt;p&gt;Arcu ac tortor dignissim convallis aenean. Mauris pharetra et ultrices neque ornare. Scelerisque fermentum dui faucibus in ornare. Nibh tellus molestie nunc non&amp;nbsp;blandit.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;!-- yaspeller ignore:end --&gt;</content><category term="Components"></category><category term="style"></category><category term="typography"></category></entry><entry><title>Headings Style</title><link href="https://github.com/dvesti/Pelican/2019/12/01/headings-style/" rel="alternate"></link><published>2019-12-01T10:38:00+02:00</published><updated>2019-12-01T10:38:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-12-01:/dvesti/Pelican/2019/12/01/headings-style/</id><summary type="html"></summary><content type="html">&lt;p&gt;Following are the examples of headings as they appear inside an&amp;nbsp;article.&lt;/p&gt;
+&lt;!-- yaspeller ignore:end --&gt;</content><category term="Components"></category><category term="style"></category><category term="typography"></category></entry><entry><title>Headings Style</title><link href="https://dvesti.github.io/Pelican/2019/12/01/headings-style/" rel="alternate"></link><published>2019-12-01T10:38:00+02:00</published><updated>2019-12-01T10:38:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-01:/Pelican/2019/12/01/headings-style/</id><summary type="html"></summary><content type="html">&lt;p&gt;Following are the examples of headings as they appear inside an&amp;nbsp;article.&lt;/p&gt;
 &lt;!-- yaspeller ignore:start --&gt;
 
 &lt;h1 id="heading-1-code-small"&gt;Heading 1 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-1-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
@@ -345,7 +345,7 @@ This becomes part of the &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
 &lt;h6 id="heading-6-code-small"&gt;Heading 6 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-6-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h6&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
-&lt;!-- yaspeller ignore:end --&gt;</content><category term="Components"></category><category term="style"></category><category term="typography"></category></entry><entry><title>Tables</title><link href="https://github.com/dvesti/Pelican/2019/08/11/tables/" rel="alternate"></link><published>2019-08-11T01:16:00+03:00</published><updated>2019-08-11T01:16:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-08-11:/dvesti/Pelican/2019/08/11/tables/</id><content type="html">&lt;p&gt;Tables in Elegant theme have rounded borders and striped alternating&amp;nbsp;rows.&lt;/p&gt;
+&lt;!-- yaspeller ignore:end --&gt;</content><category term="Components"></category><category term="style"></category><category term="typography"></category></entry><entry><title>Tables</title><link href="https://dvesti.github.io/Pelican/2019/08/11/tables/" rel="alternate"></link><published>2019-08-11T01:16:00+03:00</published><updated>2019-08-11T01:16:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-08-11:/Pelican/2019/08/11/tables/</id><content type="html">&lt;p&gt;Tables in Elegant theme have rounded borders and striped alternating&amp;nbsp;rows.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -381,7 +381,7 @@ This becomes part of the &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed
 &lt;td&gt;January 6, 2008&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><category term="Components"></category><category term="remarkable"></category></entry><entry><title>Code Snippets — Change Theme</title><link href="https://github.com/dvesti/Pelican/2019/07/03/change-syntax-highlight-theme/" rel="alternate"></link><published>2019-07-03T20:18:00+03:00</published><updated>2019-07-03T20:18:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-07-03:/dvesti/Pelican/2019/07/03/change-syntax-highlight-theme/</id><summary type="html">&lt;p&gt;Elegant uses &lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized theme&lt;/a&gt; for syntax
+&lt;/table&gt;</content><category term="Components"></category><category term="remarkable"></category></entry><entry><title>Code Snippets — Change Theme</title><link href="https://dvesti.github.io/Pelican/2019/07/03/change-syntax-highlight-theme/" rel="alternate"></link><published>2019-07-03T20:18:00+03:00</published><updated>2019-07-03T20:18:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-03:/Pelican/2019/07/03/change-syntax-highlight-theme/</id><summary type="html">&lt;p&gt;Elegant uses &lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized theme&lt;/a&gt; for syntax
 highlighting. To replace it, copy contents of your preferred theme&amp;#8217;s &lt;span class="caps"&gt;CSS&lt;/span&gt; style
 sheet into &lt;code&gt;custom.css&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Alternatively, you can replace contents of &lt;code&gt;pygments.css&lt;/code&gt; with your theme&amp;#8217;s
@@ -397,10 +397,10 @@ repository&lt;/a&gt; has Pygments &lt;span class="caps"&gt;CSS&lt;/span&gt; of
 Vim themes. &lt;a href="https://github.com/richleland/pygments-css"&gt;This one&lt;/a&gt; has Pygments
 &lt;span class="caps"&gt;CSS&lt;/span&gt; of built-in styles. Do not forget to change &lt;code&gt;.codehilite&lt;/code&gt; &lt;span class="caps"&gt;CSS&lt;/span&gt; class
 identifier to &lt;code&gt;.highlight&lt;/code&gt;. Code blocks in Pelican generated &lt;span class="caps"&gt;HTML&lt;/span&gt; use
-&lt;code&gt;.highlight&lt;/code&gt; class.&lt;/p&gt;</content><category term="Components"></category><category term="unique"></category></entry><entry><title>Home Page — Unique Features</title><link href="https://github.com/dvesti/Pelican/2019/07/01/unique-home-page-features/" rel="alternate"></link><published>2019-07-01T01:22:00+03:00</published><updated>2019-07-01T01:22:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-07-01:/dvesti/Pelican/2019/07/01/unique-home-page-features/</id><summary type="html">&lt;p&gt;This is the page that visitors see when they open your website. Your chance to
+&lt;code&gt;.highlight&lt;/code&gt; class.&lt;/p&gt;</content><category term="Components"></category><category term="unique"></category></entry><entry><title>Home Page — Unique Features</title><link href="https://dvesti.github.io/Pelican/2019/07/01/unique-home-page-features/" rel="alternate"></link><published>2019-07-01T01:22:00+03:00</published><updated>2019-07-01T01:22:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/unique-home-page-features/</id><summary type="html">&lt;p&gt;This is the page that visitors see when they open your website. Your chance to
 make a good and lasting first impression. Most sites just display a list of
 recent posts. Elegant goes the extra mile. Check this&amp;nbsp;out&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Home Page Sample" src="https://github.com/dvesti/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
 &lt;p&gt;You can see three features&amp;nbsp;here,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Welcome&amp;nbsp;Heading&lt;/li&gt;
@@ -408,7 +408,7 @@ recent posts. Elegant goes the extra mile. Check this&amp;nbsp;out&lt;/p&gt;
 &lt;li&gt;My …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;This is the page that visitors see when they open your website. Your chance to
 make a good and lasting first impression. Most sites just display a list of
 recent posts. Elegant goes the extra mile. Check this&amp;nbsp;out&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Home Page Sample" src="https://github.com/dvesti/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
 &lt;p&gt;You can see three features&amp;nbsp;here,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Welcome&amp;nbsp;Heading&lt;/li&gt;
@@ -416,15 +416,15 @@ recent posts. Elegant goes the extra mile. Check this&amp;nbsp;out&lt;/p&gt;
 &lt;li&gt;My&amp;nbsp;Projects&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;There is a third section below these two sections, &amp;#8220;Recent&amp;nbsp;articles&amp;#8221;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Recent Articles Section" src="https://github.com/dvesti/Pelican/images/elegant-theme_recent-posts.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Recent Articles Section" src="https://dvesti.github.io/Pelican/images/elegant-theme_recent-posts.png" /&gt;&lt;/p&gt;
 &lt;h2 id="how-to-set-them-up"&gt;How to set them up&lt;a class="headerlink" href="#how-to-set-them-up" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We have detailed help articles to help you set these sections&amp;nbsp;up&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href="https://github.com/dvesti/Pelican/2019/07/01/write-welcome-message/"&gt;Write Welcome&amp;nbsp;Message&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dvesti/Pelican/2019/07/01/write-about-me/"&gt;Write About&amp;nbsp;Me&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dvesti/Pelican/2019/07/01/projects-list/"&gt;Projects&amp;nbsp;List&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dvesti/Pelican/2019/07/01/recent-articles-list/"&gt;Recent Articles&amp;nbsp;List&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Components"></category><category term="home"></category><category term="remarkable"></category><category term="unique"></category><category term="guide"></category></entry><entry><title>Home Page — Projects List</title><link href="https://github.com/dvesti/Pelican/2019/07/01/projects-list/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-07-01:/dvesti/Pelican/2019/07/01/projects-list/</id><summary type="html">&lt;p&gt;Projects list is read from &lt;code&gt;PROJECTS&lt;/code&gt; in your Pelican configuration
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/"&gt;Write Welcome&amp;nbsp;Message&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-about-me/"&gt;Write About&amp;nbsp;Me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/projects-list/"&gt;Projects&amp;nbsp;List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/recent-articles-list/"&gt;Recent Articles&amp;nbsp;List&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><category term="Components"></category><category term="home"></category><category term="remarkable"></category><category term="unique"></category><category term="guide"></category></entry><entry><title>Home Page — Projects List</title><link href="https://dvesti.github.io/Pelican/2019/07/01/projects-list/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/projects-list/</id><summary type="html">&lt;p&gt;Projects list is read from &lt;code&gt;PROJECTS&lt;/code&gt; in your Pelican configuration
 (&lt;code&gt;pelicanconf.py&lt;/code&gt;) file. It is an array of dictionaries. Each
 dictionary has three&amp;nbsp;keys,&lt;/p&gt;
 &lt;ol&gt;
@@ -465,16 +465,16 @@ is an&amp;nbsp;example,&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Home Page Sample" src="https://github.com/dvesti/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Write About Me</title><link href="https://github.com/dvesti/Pelican/2019/07/01/write-about-me/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-07-01:/dvesti/Pelican/2019/07/01/write-about-me/</id><summary type="html">&lt;div class="admonition important"&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Write About Me</title><link href="https://dvesti.github.io/Pelican/2019/07/01/write-about-me/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/write-about-me/</id><summary type="html">&lt;div class="admonition important"&gt;
 &lt;p class="admonition-title"&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. &lt;a href="https://github.com/dvesti/Pelican/2019/07/01/write-welcome-message/"&gt;Read&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. &lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/"&gt;Read&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;To write about me section, create a page. See &lt;a href="http://docs.getpelican.com/en/stable/content.html#pages"&gt;Pelican documentation&lt;/a&gt; on how to create a&amp;nbsp;page.&lt;/p&gt;
 &lt;p&gt;The slug of the page should be &lt;code&gt;landing-page-about-hidden&lt;/code&gt; and &lt;code&gt;status&lt;/code&gt; should be &lt;code&gt;hidden&lt;/code&gt;.&amp;nbsp;Example,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
 &lt;span class="nt"&gt;author …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition important"&gt;
 &lt;p class="admonition-title"&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. &lt;a href="https://github.com/dvesti/Pelican/2019/07/01/write-welcome-message/"&gt;Read&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. &lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/"&gt;Read&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;To write about me section, create a page. See &lt;a href="http://docs.getpelican.com/en/stable/content.html#pages"&gt;Pelican documentation&lt;/a&gt; on how to create a&amp;nbsp;page.&lt;/p&gt;
 &lt;p&gt;The slug of the page should be &lt;code&gt;landing-page-about-hidden&lt;/code&gt; and &lt;code&gt;status&lt;/code&gt; should be &lt;code&gt;hidden&lt;/code&gt;.&amp;nbsp;Example,&lt;/p&gt;
@@ -490,7 +490,7 @@ is an&amp;nbsp;example,&lt;/p&gt;
 
 
 &lt;p&gt;The content of this will become your &amp;#8220;About me&amp;#8221; section, and title will become the heading. You can write content in any markup language, like Markdown, AsciiDoc or reST, as long as Pelican has supports&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Home Page Sample" src="https://github.com/dvesti/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
 &lt;h3 id="deprecated"&gt;Deprecated&lt;a class="headerlink" href="#deprecated" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;div class="admonition danger"&gt;
 &lt;p class="admonition-title"&gt;Warning: Legacy&amp;nbsp;Variable&lt;/p&gt;
@@ -502,14 +502,14 @@ in your configuration. It is a dictionary that has two keys &lt;code&gt;title&lt
 &lt;p&gt;Value of &lt;code&gt;title&lt;/code&gt; is displayed in the header of the home page, like
 in the above example it is &amp;#8220;I design and build software products for iOS and
 &lt;span class="caps"&gt;OSX&lt;/span&gt;&amp;#8221;.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;details&lt;/code&gt; is the text that appears under &amp;#8220;About me&amp;#8221; heading. You can add raw &lt;span class="caps"&gt;HTML&lt;/span&gt; to&amp;nbsp;it.&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Write Welcome Message</title><link href="https://github.com/dvesti/Pelican/2019/07/01/write-welcome-message/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-07-01:/dvesti/Pelican/2019/07/01/write-welcome-message/</id><content type="html">&lt;p&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. It will be displayed as the welcome heading. For&amp;nbsp;example,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;details&lt;/code&gt; is the text that appears under &amp;#8220;About me&amp;#8221; heading. You can add raw &lt;span class="caps"&gt;HTML&lt;/span&gt; to&amp;nbsp;it.&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Write Welcome Message</title><link href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/write-welcome-message/</id><content type="html">&lt;p&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. It will be displayed as the welcome heading. For&amp;nbsp;example,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;LANDING_PAGE_TITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;I design and build software products for iOS and OSX&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Home Page Sample" src="https://github.com/dvesti/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Recent Articles List</title><link href="https://github.com/dvesti/Pelican/2019/07/01/recent-articles-list/" rel="alternate"></link><published>2019-07-01T01:10:00+03:00</published><updated>2019-07-01T01:10:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-07-01:/dvesti/Pelican/2019/07/01/recent-articles-list/</id><content type="html">&lt;p&gt;Recent articles show last &lt;code&gt;RECENT_ARTICLES_COUNT&lt;/code&gt; whose default value is&amp;nbsp;10.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Recent Articles List</title><link href="https://dvesti.github.io/Pelican/2019/07/01/recent-articles-list/" rel="alternate"></link><published>2019-07-01T01:10:00+03:00</published><updated>2019-07-01T01:10:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/recent-articles-list/</id><content type="html">&lt;p&gt;Recent articles show last &lt;code&gt;RECENT_ARTICLES_COUNT&lt;/code&gt; whose default value is&amp;nbsp;10.&lt;/p&gt;
 &lt;p&gt;It also has a link to &amp;#8220;all posts&amp;#8221;, which takes user to the archives&amp;nbsp;page.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Recent Articles Section" src="https://github.com/dvesti/Pelican/images/elegant-theme_recent-posts.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Footer — Show Your Host Information</title><link href="https://github.com/dvesti/Pelican/2019/06/30/show-host-information/" rel="alternate"></link><published>2019-06-30T11:54:00+03:00</published><updated>2019-06-30T11:54:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2019-06-30:/dvesti/Pelican/2019/06/30/show-host-information/</id><summary type="html">&lt;p&gt;Show the host of your&amp;nbsp;website&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally display the host of your website in the&amp;nbsp;footer.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Recent Articles Section" src="https://dvesti.github.io/Pelican/images/elegant-theme_recent-posts.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Footer — Show Your Host Information</title><link href="https://dvesti.github.io/Pelican/2019/06/30/show-host-information/" rel="alternate"></link><published>2019-06-30T11:54:00+03:00</published><updated>2019-06-30T11:54:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-06-30:/Pelican/2019/06/30/show-host-information/</id><summary type="html">&lt;p&gt;Show the host of your&amp;nbsp;website&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally display the host of your website in the&amp;nbsp;footer.&lt;/p&gt;
 &lt;p&gt;To do so, define a dictionary &lt;code&gt;HOSTED_ON&lt;/code&gt; in your Pelican configuration. It has two&amp;nbsp;keys,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;name&lt;/code&gt;: mandatory. Value type is&amp;nbsp;string&lt;/li&gt;
@@ -524,8 +524,8 @@ in the above example it is &amp;#8220;I design and build software products for i
 
 
 &lt;p&gt;It will appear in the footer&amp;nbsp;as&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Demonstration of HOSTED_ON variable" src="https://github.com/dvesti/Pelican/images/hosted-on.png" /&gt;&lt;/p&gt;
-&lt;p&gt;If &lt;code&gt;url&lt;/code&gt; is present then Elegant will add link to your host in the footer with &lt;code&gt;nofollow&lt;/code&gt; attribute. Otherwise Elegant will display the name without any&amp;nbsp;link.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Warnings and admonition boxes</title><link href="https://github.com/dvesti/Pelican/2018/12/18/warnings-admonition/" rel="alternate"></link><published>2018-12-18T09:00:00+02:00</published><updated>2018-12-18T09:00:00+02:00</updated><author><name>Andy Wegner</name></author><id>tag:github.com,2018-12-18:/dvesti/Pelican/2018/12/18/warnings-admonition/</id><summary type="html">
+&lt;p&gt;&lt;img alt="Demonstration of HOSTED_ON variable" src="https://dvesti.github.io/Pelican/images/hosted-on.png" /&gt;&lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;url&lt;/code&gt; is present then Elegant will add link to your host in the footer with &lt;code&gt;nofollow&lt;/code&gt; attribute. Otherwise Elegant will display the name without any&amp;nbsp;link.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Warnings and admonition boxes</title><link href="https://dvesti.github.io/Pelican/2018/12/18/warnings-admonition/" rel="alternate"></link><published>2018-12-18T09:00:00+02:00</published><updated>2018-12-18T09:00:00+02:00</updated><author><name>Andy Wegner</name></author><id>tag:dvesti.github.io,2018-12-18:/Pelican/2018/12/18/warnings-admonition/</id><summary type="html">
 &lt;p&gt;Sometimes you want to draw your reader’s attention to an important piece of
 information. You can do this using admonitions. Below are a few examples of how
 to do this, and the various styles that are available in Elegant.&lt;/p&gt;
@@ -620,7 +620,7 @@ passing an empty string (&lt;code&gt;""&lt;/code&gt;) after the admonition type
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="admonition important"&gt;
 &lt;p&gt;This box doesn’t require a title, but is still an &lt;code&gt;important&lt;/code&gt; admonition and will be highlighted as such.&lt;/p&gt;
-&lt;/div&gt;</content><category term="Components"></category><category term="admonitions"></category><category term="warning"></category><category term="attention"></category></entry><entry><title>Footer — Add License to your Site</title><link href="https://github.com/dvesti/Pelican/2014/04/22/add-license-to-your-site/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2014-04-22:/dvesti/Pelican/2014/04/22/add-license-to-your-site/</id><summary type="html">&lt;p&gt;You can display your preferred license in the&amp;nbsp;footer&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally define &lt;code&gt;SITE_LICENSE&lt;/code&gt; variable in Pelican configuration. It will appear in the footer of the&amp;nbsp;site.&lt;/p&gt;
+&lt;/div&gt;</content><category term="Components"></category><category term="admonitions"></category><category term="warning"></category><category term="attention"></category></entry><entry><title>Footer — Add License to your Site</title><link href="https://dvesti.github.io/Pelican/2014/04/22/add-license-to-your-site/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-22:/Pelican/2014/04/22/add-license-to-your-site/</id><summary type="html">&lt;p&gt;You can display your preferred license in the&amp;nbsp;footer&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally define &lt;code&gt;SITE_LICENSE&lt;/code&gt; variable in Pelican configuration. It will appear in the footer of the&amp;nbsp;site.&lt;/p&gt;
 &lt;p&gt;For&amp;nbsp;example,&lt;/p&gt;
 &lt;!-- yaspeller ignore:start --&gt;
 
@@ -633,14 +633,14 @@ passing an empty string (&lt;code&gt;""&lt;/code&gt;) after the admonition type
 &lt;!-- yaspeller ignore:end --&gt;
 
 &lt;p&gt;It appears&amp;nbsp;as&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Site License Demonstration" src="https://github.com/dvesti/Pelican/images/elegant-theme_license.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Footer — Add Site Subtitle</title><link href="https://github.com/dvesti/Pelican/2014/04/22/add-site-subtitle/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2014-04-22:/dvesti/Pelican/2014/04/22/add-site-subtitle/</id><summary type="html">&lt;p&gt;You can add and display a site&amp;nbsp;subtitle&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally define &lt;code&gt;SITE_SUBTITLE&lt;/code&gt; variable in Pelican configuration. It will appear in the footer of the&amp;nbsp;site.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Site License Demonstration" src="https://dvesti.github.io/Pelican/images/elegant-theme_license.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Footer — Add Site Subtitle</title><link href="https://dvesti.github.io/Pelican/2014/04/22/add-site-subtitle/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-22:/Pelican/2014/04/22/add-site-subtitle/</id><summary type="html">&lt;p&gt;You can add and display a site&amp;nbsp;subtitle&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally define &lt;code&gt;SITE_SUBTITLE&lt;/code&gt; variable in Pelican configuration. It will appear in the footer of the&amp;nbsp;site.&lt;/p&gt;
 &lt;p&gt;For&amp;nbsp;example,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SITESUBTITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You can, you should, and if you&amp;#39;re brave enough to start, you will.&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;It appears in the footer&amp;nbsp;as&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Site subtitle" src="https://github.com/dvesti/Pelican/images/elegant-theme_site-subtitle.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Web Safe Fonts</title><link href="https://github.com/dvesti/Pelican/2014/04/22/web-safe-fonts/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2014-04-22:/dvesti/Pelican/2014/04/22/web-safe-fonts/</id><summary type="html">&lt;p&gt;Elegant uses commonly available typefaces in every style rule. It has a list of
+&lt;p&gt;&lt;img alt="Site subtitle" src="https://dvesti.github.io/Pelican/images/elegant-theme_site-subtitle.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Web Safe Fonts</title><link href="https://dvesti.github.io/Pelican/2014/04/22/web-safe-fonts/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-22:/Pelican/2014/04/22/web-safe-fonts/</id><summary type="html">&lt;p&gt;Elegant uses commonly available typefaces in every style rule. It has a list of
 closely matching fonts in the fallback&amp;nbsp;list.&lt;/p&gt;
 &lt;p&gt;For examples
 Baskerville &lt;!-- yaspeller ignore --&gt;
@@ -658,7 +658,7 @@ first choice for headings. But if reader does not have
 Baskerville &lt;!-- yaspeller ignore --&gt;
 installed,
 Garamond &lt;!-- yaspeller ignore --&gt;
-will be used. If that too fails then Georgia will be&amp;nbsp;used.&lt;/p&gt;</content><category term="Components"></category><category term="web-design"></category></entry><entry><title>Add A Table Of Contents to Your Articles</title><link href="https://github.com/dvesti/Pelican/2014/03/18/how-elegant-displays-table-of-contents/" rel="alternate"></link><published>2014-03-18T11:03:00+02:00</published><updated>2014-03-18T11:03:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2014-03-18:/dvesti/Pelican/2014/03/18/how-elegant-displays-table-of-contents/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a non-intrusive Table of Contents, giving a cleaner reading experience for the&amp;nbsp;user.&lt;/p&gt;</summary><content type="html">
+will be used. If that too fails then Georgia will be&amp;nbsp;used.&lt;/p&gt;</content><category term="Components"></category><category term="web-design"></category></entry><entry><title>Add A Table Of Contents to Your Articles</title><link href="https://dvesti.github.io/Pelican/2014/03/18/how-elegant-displays-table-of-contents/" rel="alternate"></link><published>2014-03-18T11:03:00+02:00</published><updated>2014-03-18T11:03:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-03-18:/Pelican/2014/03/18/how-elegant-displays-table-of-contents/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a non-intrusive Table of Contents, giving a cleaner reading experience for the&amp;nbsp;user.&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;The key concept driving Elegant’s design is to provide a reading experience that
 is clean with minimal distractions. From that point of view, providing a table of
 contents does not provide any additional information, but only exists to help guide the
@@ -762,7 +762,7 @@ duplicate title:&lt;/p&gt;
 &lt;p&gt;There is &lt;a href="https://github.com/Pelican-Elegant/elegant/issues/54"&gt;no straightforward way&lt;/a&gt; to disable default title generation in reStructuredText. &lt;a class="footnote-backref" href="#fnref:disable-title" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="Components"></category><category term="reST"></category><category term="markdown"></category><category term="navigation"></category><category term="web-design"></category><category term="contents"></category></entry><entry><title>Code Snippets — Display Line Numbers</title><link href="https://github.com/dvesti/Pelican/2013/11/05/display-line-numbers-in-code-snippets/" rel="alternate"></link><published>2013-11-05T17:36:00+02:00</published><updated>2013-11-05T17:36:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2013-11-05:/dvesti/Pelican/2013/11/05/display-line-numbers-in-code-snippets/</id><summary type="html">&lt;p&gt;reStructuredText and Markdown have directives that generate line numbers for code blocks. Use them to display line numbers in code&amp;nbsp;snippets.&lt;/p&gt;</summary><content type="html">&lt;p&gt;reStructuredText and Markdown have directives that generate line numbers for
+&lt;/div&gt;</content><category term="Components"></category><category term="reST"></category><category term="markdown"></category><category term="navigation"></category><category term="web-design"></category><category term="contents"></category></entry><entry><title>Code Snippets — Display Line Numbers</title><link href="https://dvesti.github.io/Pelican/2013/11/05/display-line-numbers-in-code-snippets/" rel="alternate"></link><published>2013-11-05T17:36:00+02:00</published><updated>2013-11-05T17:36:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-11-05:/Pelican/2013/11/05/display-line-numbers-in-code-snippets/</id><summary type="html">&lt;p&gt;reStructuredText and Markdown have directives that generate line numbers for code blocks. Use them to display line numbers in code&amp;nbsp;snippets.&lt;/p&gt;</summary><content type="html">&lt;p&gt;reStructuredText and Markdown have directives that generate line numbers for
 code snippets. Install &lt;a href="http://pygments.org/"&gt;Pygments&lt;/a&gt; to use these&amp;nbsp;directives.&lt;/p&gt;
 &lt;p&gt;Following examples will generate this&amp;nbsp;output,&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
@@ -792,23 +792,23 @@ generate line&amp;nbsp;numbers.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!python&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;example&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="markdown"></category><category term="reST"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Article Subtitle</title><link href="https://github.com/dvesti/Pelican/2013/08/27/article-subtitle/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2013-08-27:/dvesti/Pelican/2013/08/27/article-subtitle/</id><summary type="html">&lt;p&gt;Pelican lets you define title of your article in the metadata. Elegant adds
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="markdown"></category><category term="reST"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Article Subtitle</title><link href="https://dvesti.github.io/Pelican/2013/08/27/article-subtitle/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/article-subtitle/</id><summary type="html">&lt;p&gt;Pelican lets you define title of your article in the metadata. Elegant adds
 subtitle support. Just define &lt;code&gt;subtitle&lt;/code&gt; in your article&amp;#8217;s metadata and it
 will appear along with your title. Here is an&amp;nbsp;example,&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Article subtitle
-example" src="https://github.com/dvesti/Pelican/images/elegant-theme_article-subtitle.png" /&gt;&lt;/p&gt;
+example" src="https://dvesti.github.io/Pelican/images/elegant-theme_article-subtitle.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Article subtitle is displayed with the title in every list. To keep it visibly
 separate …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Pelican lets you define title of your article in the metadata. Elegant adds
 subtitle support. Just define &lt;code&gt;subtitle&lt;/code&gt; in your article&amp;#8217;s metadata and it
 will appear along with your title. Here is an&amp;nbsp;example,&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Article subtitle
-example" src="https://github.com/dvesti/Pelican/images/elegant-theme_article-subtitle.png" /&gt;&lt;/p&gt;
+example" src="https://dvesti.github.io/Pelican/images/elegant-theme_article-subtitle.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Article subtitle is displayed with the title in every list. To keep it visibly
 separate from title, subtitle is enclosed in &lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt; tag. When visible cue
 cannot be used, like in the title attribute of &lt;span class="caps"&gt;HTML&lt;/span&gt; anchor tag &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;, a hyphen
 is inserted between&amp;nbsp;them.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Article title and subtitle separated with a
-hyphen" src="https://github.com/dvesti/Pelican/images/elegant-theme_article-subtitle-hyphen.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Articles Count With Every Tag and Category</title><link href="https://github.com/dvesti/Pelican/2013/08/27/articles-count-with-every-tag-and-category/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2013-08-27:/dvesti/Pelican/2013/08/27/articles-count-with-every-tag-and-category/</id><summary type="html">&lt;p&gt;Readers of an article on your site usually look for other articles on the same
+hyphen" src="https://dvesti.github.io/Pelican/images/elegant-theme_article-subtitle-hyphen.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Articles Count With Every Tag and Category</title><link href="https://dvesti.github.io/Pelican/2013/08/27/articles-count-with-every-tag-and-category/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/articles-count-with-every-tag-and-category/</id><summary type="html">&lt;p&gt;Readers of an article on your site usually look for other articles on the same
 topic. Categories and tags are a way of showing them related articles. Elegant
 displays the count of articles that you have written in a category or tag in a
 non-intrusive&amp;nbsp;manner.&lt;/p&gt;
@@ -822,9 +822,9 @@ superscript. This way visitor will know you have written other articles too on
 the same&amp;nbsp;topic.&lt;/p&gt;
 &lt;p&gt;Check out the&amp;nbsp;screenshots,&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Count of articles in a category is displayed in
-superscript" src="https://github.com/dvesti/Pelican/images/elegant-theme_category-superscript-count.png" /&gt;&lt;/p&gt;
+superscript" src="https://dvesti.github.io/Pelican/images/elegant-theme_category-superscript-count.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Count of articles that have been tagged is displayed in
-superscript" src="https://github.com/dvesti/Pelican/images/elegant-theme_tag-superscript-count.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Code Snippets — Theme</title><link href="https://github.com/dvesti/Pelican/2013/08/27/code-snippets-theme/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2013-08-27:/dvesti/Pelican/2013/08/27/code-snippets-theme/</id><summary type="html">&lt;p&gt;Elegant uses &lt;a href="https://github.com/daveyarwood/gruvbox-pygments"&gt;Pygment port&lt;/a&gt;
+superscript" src="https://dvesti.github.io/Pelican/images/elegant-theme_tag-superscript-count.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Code Snippets — Theme</title><link href="https://dvesti.github.io/Pelican/2013/08/27/code-snippets-theme/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/code-snippets-theme/</id><summary type="html">&lt;p&gt;Elegant uses &lt;a href="https://github.com/daveyarwood/gruvbox-pygments"&gt;Pygment port&lt;/a&gt;
 of &lt;a href="https://github.com/morhetz/gruvbox"&gt;Gruvbox&lt;/a&gt; theme for syntax&amp;nbsp;highlighting.&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
 2
@@ -934,7 +934,7 @@ of &lt;a href="https://github.com/morhetz/gruvbox"&gt;Gruvbox&lt;/a&gt; theme fo
                     &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
                 &lt;span class="p"&gt;});&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="markdown"></category><category term="reST"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Live Filter for Tags</title><link href="https://github.com/dvesti/Pelican/2013/08/27/live-filter-for-tags/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2013-08-27:/dvesti/Pelican/2013/08/27/live-filter-for-tags/</id><summary type="html">&lt;p&gt;Elegant is a minimal theme. Instead of creating separate pages for each tag,
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="markdown"></category><category term="reST"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Live Filter for Tags</title><link href="https://dvesti.github.io/Pelican/2013/08/27/live-filter-for-tags/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/live-filter-for-tags/</id><summary type="html">&lt;p&gt;Elegant is a minimal theme. Instead of creating separate pages for each tag,
 Elegant shows all the tags on a single page. To help visitor find the tags he
 is interested in, Elegant offers live&amp;nbsp;filter.&lt;/p&gt;
 &lt;p&gt;Go to tags page and type your required tag in &amp;#8220;Find a tag&amp;#8221; search …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant is a minimal theme. Instead of creating separate pages for each tag,
@@ -943,19 +943,19 @@ is interested in, Elegant offers live&amp;nbsp;filter.&lt;/p&gt;
 &lt;p&gt;Go to tags page and type your required tag in &amp;#8220;Find a tag&amp;#8221; search box. Elegant
 will automatically filter the&amp;nbsp;list.&lt;/p&gt;
 &lt;p&gt;For example, this is how my tags page looks&amp;nbsp;like&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Tags view unfiltered" src="https://github.com/dvesti/Pelican/images/elegant-theme_tags-live-filter-default.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tags view unfiltered" src="https://dvesti.github.io/Pelican/images/elegant-theme_tags-live-filter-default.png" /&gt;&lt;/p&gt;
 &lt;p&gt;As soon as I type
 &amp;#8220;os&amp;#8221;, &lt;!-- yaspeller ignore --&gt;
 all other tags are filtered&amp;nbsp;out&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Tags view filtered for &amp;quot;os&amp;quot;" src="https://github.com/dvesti/Pelican/images/elegant-theme_tags-live-filter-filtered.png" /&gt; &lt;!-- yaspeller ignore --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tags view filtered for &amp;quot;os&amp;quot;" src="https://dvesti.github.io/Pelican/images/elegant-theme_tags-live-filter-filtered.png" /&gt; &lt;!-- yaspeller ignore --&gt;&lt;/p&gt;
 &lt;p&gt;With live filter, your reader will have no difficulty in picking up his desired
-tag from the list, even if your site has hundreds of&amp;nbsp;tags.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category><category term="search"></category></entry><entry><title>Page Title</title><link href="https://github.com/dvesti/Pelican/2013/08/27/page-title/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2013-08-27:/dvesti/Pelican/2013/08/27/page-title/</id><summary type="html">&lt;p&gt;Elegant follows following format for the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
+tag from the list, even if your site has hundreds of&amp;nbsp;tags.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category><category term="search"></category></entry><entry><title>Page Title</title><link href="https://dvesti.github.io/Pelican/2013/08/27/page-title/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/page-title/</id><summary type="html">&lt;p&gt;Elegant follows following format for the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Article title · Site Name
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img alt="Article title is always visible in the
-tab" src="https://github.com/dvesti/Pelican/images/elegant-theme_page-title.png" /&gt;&lt;/p&gt;
+tab" src="https://dvesti.github.io/Pelican/images/elegant-theme_page-title.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Some sites put site title first and article title later in the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag.
 There is a problem with this approach. When you open too many tabs, browser
 delimits tab&amp;#8217;s title from the end. In such cases …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant follows following format for the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
@@ -964,7 +964,7 @@ delimits tab&amp;#8217;s title from the end. In such cases …&lt;/p&gt;</summar
 
 
 &lt;p&gt;&lt;img alt="Article title is always visible in the
-tab" src="https://github.com/dvesti/Pelican/images/elegant-theme_page-title.png" /&gt;&lt;/p&gt;
+tab" src="https://dvesti.github.io/Pelican/images/elegant-theme_page-title.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Some sites put site title first and article title later in the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag.
 There is a problem with this approach. When you open too many tabs, browser
 delimits tab&amp;#8217;s title from the end. In such cases, only the first few words or
@@ -975,7 +975,7 @@ tab from the content. But with Elegant&amp;#8217;s approach article title will a
 visible, and reader will have less difficultly in identifying the tab he is&amp;nbsp;after.&lt;/p&gt;
 &lt;p&gt;Putting site title before the article title increases your site name
 visibility. Elegant achieves this by putting site name in the top navigation
-bar of every page, where it always stays above the&amp;nbsp;fold.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Zero Clutter Categories</title><link href="https://github.com/dvesti/Pelican/2013/08/27/zero-clutter-categories/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:github.com,2013-08-27:/dvesti/Pelican/2013/08/27/zero-clutter-categories/</id><summary type="html">&lt;p&gt;Pelican by default creates a separate page for each category. Themes list all
+bar of every page, where it always stays above the&amp;nbsp;fold.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Zero Clutter Categories</title><link href="https://dvesti.github.io/Pelican/2013/08/27/zero-clutter-categories/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/zero-clutter-categories/</id><summary type="html">&lt;p&gt;Pelican by default creates a separate page for each category. Themes list all
 the articles filed in that category at its page. Elegant takes a different
 approach which is, &amp;#8220;all Categories but with zero&amp;nbsp;clutter&amp;#8221;.&lt;/p&gt;
 &lt;p&gt;It lists all the categories and their articles on the same page. To reduce
@@ -987,9 +987,9 @@ clutter and utilize space efficiently, each category and its list of articles
 is enclosed in &lt;a href="http://getbootstrap.com/2.3.2/javascript.html#collapse"&gt;collapsible accordions&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here is how categories appear&amp;nbsp;collapsed&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Categories accordions
-collapsed" src="https://github.com/dvesti/Pelican/images/elegant-theme_category-accordions-collapsed.png" /&gt;&lt;/p&gt;
+collapsed" src="https://dvesti.github.io/Pelican/images/elegant-theme_category-accordions-collapsed.png" /&gt;&lt;/p&gt;
 &lt;p&gt;And this is how they appear&amp;nbsp;uncollapsed&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Categories accordions
-uncollapsed" src="https://github.com/dvesti/Pelican/images/elegant-theme_category-accordions-uncollapsed.png" /&gt;&lt;/p&gt;
+uncollapsed" src="https://dvesti.github.io/Pelican/images/elegant-theme_category-accordions-uncollapsed.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Did you notice that categories are listed in ascending alphabetical order and
 articles are sorted by their date in descending&amp;nbsp;order?&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category><category term="clean"></category></entry></feed>
