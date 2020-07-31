@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Connecting With Your Readers</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/connecting-with-your-readers.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2020-02-05T22:35:00+02:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Комментарии — включить CommentBox</title><link href="https://dvesti.github.io/Pelican/2020/02/05/enable-commentbox-comments/" rel="alternate"></link><published>2020-02-05T22:35:00+02:00</published><updated>2020-02-05T22:35:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-05:/Pelican/2020/02/05/enable-commentbox-comments/</id><summary type="html">&lt;p&gt;Elegant offers CommentBox comments out of the box with few unique&amp;nbsp;features&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can use &lt;a href="https://commentbox.io/"&gt;CommentBox&lt;/a&gt; for comments. You have to set &lt;code&gt;COMMENTBOX_PROJECT&lt;/code&gt; to your CommentBox project &lt;span class="caps"&gt;ID&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s it. Elegant will take care of the&amp;nbsp;rest.&lt;/p&gt;
+&lt;p&gt;You can see a working example of CommentBox comments in this&amp;nbsp;article.&lt;/p&gt;
+&lt;h2 id="show-commentbox-comments-by-default"&gt;Show CommentBox comments by default&lt;a class="headerlink" href="#show-commentbox-comments-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Just set &lt;code&gt;COMMENTBOX_PROJECT&lt;/code&gt; variable.&lt;/p&gt;
+&lt;h2 id="hide-commentbox-comments-by-default"&gt;Hide CommentBox comments by default&lt;a class="headerlink" href="#hide-commentbox-comments-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unset &lt;code&gt;COMMENTBOX_PROJECT&lt;/code&gt; variable.&lt;/p&gt;
+&lt;p&gt;This is the default&amp;nbsp;setting.&lt;/p&gt;
+&lt;h2 id="hide-commentbox-comments-by-default-show-on-selected"&gt;Hide CommentBox comments by default. Show on Selected&lt;a class="headerlink" href="#hide-commentbox-comments-by-default-show-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;COMMENTBOX_PROJECT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;COMMENTBOX_FILTER&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide CommentBox form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to show CommentBox form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;commentbox_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;off&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="show-commentbox-comments-by-default-hide-on-selected"&gt;Show CommentBox comments by default. Hide on Selected&lt;a class="headerlink" href="#show-commentbox-comments-by-default-hide-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;COMMENTBOX_PROJECT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;COMMENTBOX_FILTER&lt;/code&gt; or set it to &lt;code&gt;False&lt;/code&gt; which is its default&amp;nbsp;value&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide CommentBox form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to hide CommentBox form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;commentbox_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category></entry><entry><title>Applause Button</title><link href="https://dvesti.github.io/Pelican/2019/12/05/applause-button/" rel="alternate"></link><published>2019-12-05T08:36:00+02:00</published><updated>2019-12-05T08:36:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-05:/Pelican/2019/12/05/applause-button/</id><summary type="html"></summary><content type="html">&lt;p&gt;Elegant supports &lt;a class="ampl" href="https://applause-button.com/"&gt;Applause Button&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="how-to-enable-applause-button"&gt;How To Enable Applause Button&lt;a class="headerlink" href="#how-to-enable-applause-button" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You can enable and disable the button site wide or on specific&amp;nbsp;articles.&lt;/p&gt;
+&lt;h3 id="show-applause-button-in-all-articles"&gt;Show Applause Button in all articles&lt;a class="headerlink" href="#show-applause-button-in-all-articles" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Set &lt;code&gt;APPLAUSE_BUTTON&lt;/code&gt; variable to &lt;code&gt;True&lt;/code&gt; in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
+&lt;h3 id="hide-applause-button-in-all-articles"&gt;Hide Applause Button in all articles&lt;a class="headerlink" href="#hide-applause-button-in-all-articles" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Set &lt;code&gt;APPLAUSE_BUTTON&lt;/code&gt; variable to &lt;code&gt;False&lt;/code&gt; in your Pelican configuration. This is the&amp;nbsp;default.&lt;/p&gt;
+&lt;h3 id="show-applause-button-in-all-articles-hide-on-selected"&gt;Show Applause Button in all articles. Hide on selected&lt;a class="headerlink" href="#show-applause-button-in-all-articles-hide-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Set &lt;code&gt;APPLAUSE_BUTTON&lt;/code&gt; variable to &lt;code&gt;True&lt;/code&gt; in your Pelican configuration. And on specific articles&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;applause_button&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;off&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="hide-applause-button-in-all-articles-show-on-selected"&gt;Hide Applause Button in all articles. Show on selected&lt;a class="headerlink" href="#hide-applause-button-in-all-articles-show-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Set &lt;code&gt;APPLAUSE_BUTTON&lt;/code&gt; variable to &lt;code&gt;False&lt;/code&gt; in your Pelican configuration. And on specific articles&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;applause_button&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="extra-configuration"&gt;Extra Configuration&lt;a class="headerlink" href="#extra-configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;By default Elegant passes the article &lt;span class="caps"&gt;URL&lt;/span&gt; as identifier to the Applause Button server. But you can also set &lt;code&gt;applause_button_id&lt;/code&gt; in your article metadata which is given preference over the article &lt;span class="caps"&gt;URL&lt;/span&gt;.&lt;/p&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category><category term="kudos"></category><category term="reaction"></category></entry><entry><title>Comments — Enable Utterances</title><link href="https://dvesti.github.io/Pelican/2019/08/18/enable-utterances-comments/" rel="alternate"></link><published>2019-08-18T00:13:00+03:00</published><updated>2019-08-18T00:13:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-08-18:/Pelican/2019/08/18/enable-utterances-comments/</id><summary type="html">&lt;p&gt;Elegant offers Utterances comments out of the box with few unique&amp;nbsp;features&lt;/p&gt;</summary><content type="html">&lt;div style="width:150px;height:150px;font-size:100px;float:left;text-align:center;vertical-align: middle;line-height:150px;"&gt;🔮&lt;/div&gt;
+
+&lt;p&gt;You can use &lt;a href="https://utteranc.es/"&gt;Utterances&lt;/a&gt; for comments. You have to set &lt;code&gt;UTTERANCES_REPO&lt;/code&gt; to the repository Utterances will connect&amp;nbsp;to.&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s it. Elegant will take care of the&amp;nbsp;rest.&lt;/p&gt;
+&lt;p&gt;You can see a working example of Utterances comments in this&amp;nbsp;article.&lt;/p&gt;
+&lt;h2 id="extra-customization"&gt;Extra Customization&lt;a class="headerlink" href="#extra-customization" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Besides setting &lt;code&gt;UTTERANCES_REPO&lt;/code&gt;, you also have control over following&amp;nbsp;variables.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;UTTERANCES_THEME&lt;/code&gt;. It&amp;#8217;s default value is &lt;code&gt;github-light&lt;/code&gt;. For other valid values refer to &lt;a href="https://utteranc.es/"&gt;utterances&amp;nbsp;documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UTTERANCES_LABEL&lt;/code&gt;. It&amp;#8217;s empty by default. If set, Utterances will it to the issues it will&amp;nbsp;create.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="admonition warning"&gt;
+&lt;p class="admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p&gt;Label names are case sensitive. The label must exist in your repo. Utterances cannot attach labels that do not&amp;nbsp;exist.&lt;/p&gt;
+&lt;p&gt;Emoji are supported in label&amp;nbsp;names.✨💬✨&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="show-utterances-comments-by-default"&gt;Show Utterances comments by default&lt;a class="headerlink" href="#show-utterances-comments-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Just set &lt;code&gt;UTTERANCES_REPO&lt;/code&gt; variable.&lt;/p&gt;
+&lt;h2 id="hide-utterances-comments-by-default"&gt;Hide Utterances comments by default&lt;a class="headerlink" href="#hide-utterances-comments-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unset &lt;code&gt;UTTERANCES_REPO&lt;/code&gt; variable.&lt;/p&gt;
+&lt;p&gt;This is the default&amp;nbsp;setting.&lt;/p&gt;
+&lt;h2 id="hide-utterances-comments-by-default-show-on-selected"&gt;Hide Utterances comments by default. Show on Selected&lt;a class="headerlink" href="#hide-utterances-comments-by-default-show-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;UTTERANCES_REPO&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;UTTERANCES_FILTER&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide Utterances form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to show Utterances form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;utterances_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;off&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="show-utterances-comments-by-default-hide-on-selected"&gt;Show Utterances comments by default. Hide on Selected&lt;a class="headerlink" href="#show-utterances-comments-by-default-hide-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;UTTERANCES_REPO&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;UTTERANCES_FILTER&lt;/code&gt; or set it to &lt;code&gt;False&lt;/code&gt; which is its default&amp;nbsp;value&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide Utterances form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to hide Utterances form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;utterances_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category></entry><entry><title>How to display your Social Media Profiles</title><link href="https://dvesti.github.io/Pelican/2019/08/12/how-to-display-your-social-media-profiles/" rel="alternate"></link><published>2019-08-12T13:13:00+03:00</published><updated>2019-08-12T13:13:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-08-12:/Pelican/2019/08/12/how-to-display-your-social-media-profiles/</id><summary type="html">&lt;p&gt;Elegant displays links to your social media profiles in sidebar in a customizable&amp;nbsp;manner&lt;/p&gt;</summary><content type="html">&lt;p&gt;Bloggers use different tools to connect with their readers, engage in
+discussion with them, and create a loyal following of fans. These tools range
+from fully blown social web apps like twitter to old school &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feeds.&lt;/p&gt;
+&lt;p&gt;Bloggers usually add a social media widget to their blog which has links to all their
+social media profiles; inviting readers to engage with them else where on the
+web too. Most social widgets are loud and obtrusive. Their colors and placement
+takes away readers&amp;#8217; attention from the actual&amp;nbsp;content.&lt;/p&gt;
+&lt;p&gt;&lt;img class="align-right" style="width: 35%;"
+src="https://dvesti.github.io/Pelican/images/social-profiles-sidebar-svg-default.png" alt="Social
+Profiles in the Sidebar" /&gt;&lt;/p&gt;
+&lt;p&gt;Elegant understands the importance of readers engagement but it makes sure
+not to push author&amp;#8217;s &lt;em&gt;&amp;#8220;online social karma&amp;#8221;&lt;/em&gt; down readers&amp;#8217;&amp;nbsp;throats.&lt;/p&gt;
+&lt;p&gt;Elegant displays the widget in the sidebar. Each icon is a link to a social
+media profile with an optional title attribute. Icons use muted color which
+changes when user hovers over them. On hover, icon is also scaled up in&amp;nbsp;size.&lt;/p&gt;
+&lt;p&gt;Here is an example of hovering over
+LinkedIn &lt;!-- yaspeller ignore --&gt;
+icon.&lt;/p&gt;
+&lt;p&gt;&lt;img style="width:35%;"
+src="https://dvesti.github.io/Pelican/images/social-profiles-sidebar-svg-hover-linkedin.png" alt="Hover over LinkedIn in the Sidebar" /&gt;&lt;/p&gt;
+&lt;p&gt;Following image shows these icons in&amp;nbsp;color.&lt;/p&gt;
+&lt;p&gt;&lt;img style="width:35%;"
+src="https://dvesti.github.io/Pelican/images/social-profiles-sidebar-svg-hover.png" alt="Social Profiles in color" /&gt;&lt;/p&gt;
+&lt;p&gt;These &lt;span class="caps"&gt;SVG&lt;/span&gt; icons are &lt;a href="https://github.com/edent/SuperTinyIcons"&gt;Super Tiny&lt;/a&gt;. Most of them have sizes less than 500 bytes, and none of them exceeds 1 K bytes in size. This gives you increased website&amp;nbsp;speed.&lt;/p&gt;
+&lt;h2 id="how-to-configure-the-widget"&gt;How to configure the &lt;em&gt;widget&lt;/em&gt;&lt;a class="headerlink" href="#how-to-configure-the-widget" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Define &lt;code&gt;SOCIAL&lt;/code&gt; in your &lt;code&gt;pelicanconf.py&lt;/code&gt;. &lt;code&gt;SOCIAL&lt;/code&gt; is list of tuple. Each tuple
+has three&amp;nbsp;items,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;key&lt;/code&gt;, case insensitive, must match one of the available&amp;nbsp;keys&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;URL&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt;,&amp;nbsp;optional&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SOCIAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Email&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;example@example.com&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;My Email Address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Github&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://github.com/Pelican-Elegant/&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Elegant Github Repository&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;RSS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;/feeds/all.atom.xml&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Facebook&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://facebook.com/ExamplePage/&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If &lt;code&gt;title&lt;/code&gt; is defined then it is used to populate title attribute of the&amp;nbsp;link.&lt;/p&gt;
+&lt;h2 id="available-keys"&gt;Available Keys&lt;a class="headerlink" href="#available-keys" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Calendar&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Email&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Facebook&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Github&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GitLab&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Gmail&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Goodreads&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HackerNews&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Instagram&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Keybase&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LinkedIn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Mastodon&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Reddit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RSS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Spotify&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;StackOverflow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Telegram&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Twitch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Twitter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Wire&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;YouTube&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="how-to-customize-social-profile-label"&gt;How to customize Social Profile Label&lt;a class="headerlink" href="#how-to-customize-social-profile-label" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;By default, Elegant labels social profile section as &lt;strong&gt;Contact&lt;/strong&gt;. You can
+change this label by defining a new variable &lt;code&gt;SOCIAL_PROFILE_LABEL&lt;/code&gt; in your
+&lt;code&gt;pelicanconf.py&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;u&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Stay in Touch&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="missing-social-profile"&gt;Missing Social Profile?&lt;a class="headerlink" href="#missing-social-profile" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What if the icon of your social media site is not&amp;nbsp;available?&lt;/p&gt;
+&lt;p&gt;Migrating from &lt;a href="https://dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/"&gt;font-awesome to &lt;span class="caps"&gt;SVG&lt;/span&gt; icons&lt;/a&gt; opened up a whole lot of possibilities. We are not limited to icons provided by the [font-awesome] project. Instead, we can use any &lt;span class="caps"&gt;SVG&lt;/span&gt;&amp;nbsp;icon.&lt;/p&gt;
+&lt;p&gt;If you icon of your favorite site is missing then feel free to &lt;a href="https://github.com/Pelican-Elegant/elegant/issues/new?labels=enhancement&amp;amp;title=Request:%20Add%20new%20social%20icon%20in%20the%20sidebar"&gt;open an issue&lt;/a&gt;. We will add it for you as long as a &lt;span class="caps"&gt;SVG&lt;/span&gt; icon is available for&amp;nbsp;it.&lt;/p&gt;</content><category term="Connecting With Your Readers"></category><category term="pelican-theme"></category><category term="font-awesome"></category><category term="social-media"></category><category term="web-design"></category></entry><entry><title>Comments — Thread ID</title><link href="https://dvesti.github.io/Pelican/2019/06/30/comments-thread-id/" rel="alternate"></link><published>2019-06-30T22:29:00+03:00</published><updated>2019-06-30T22:29:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-06-30:/Pelican/2019/06/30/comments-thread-id/</id><summary type="html">&lt;p&gt;Most Pelican themes pass article &lt;span class="caps"&gt;URL&lt;/span&gt; to Disqus as the &lt;a href="http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier"&gt;Disqus
+identifier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This puts you at a disadvantage. If you are forced to change &lt;span class="caps"&gt;URL&lt;/span&gt; of an article
+you will lose Disqus discussion for that article because Disqus identifier for
+the article will change&amp;nbsp;too.&lt;/p&gt;
+&lt;p&gt;Elegant offers you &lt;code&gt;comment_id&lt;/code&gt; property …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Most Pelican themes pass article &lt;span class="caps"&gt;URL&lt;/span&gt; to Disqus as the &lt;a href="http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier"&gt;Disqus
+identifier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This puts you at a disadvantage. If you are forced to change &lt;span class="caps"&gt;URL&lt;/span&gt; of an article
+you will lose Disqus discussion for that article because Disqus identifier for
+the article will change&amp;nbsp;too.&lt;/p&gt;
+&lt;p&gt;Elegant offers you &lt;code&gt;comment_id&lt;/code&gt; property that you can set in your
+article metadata. Set it to any unique string you want. It won&amp;#8217;t be effected by
+the article &lt;span class="caps"&gt;URL&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;If you choose not to use &lt;code&gt;comment_id&lt;/code&gt;, Elegant passes article &lt;span class="caps"&gt;URL&lt;/span&gt; to&amp;nbsp;Disqus.&lt;/p&gt;
+&lt;h2 id="legacy-variable"&gt;Legacy Variable&lt;a class="headerlink" href="#legacy-variable" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In previous versions, we had &lt;code&gt;disqus_identifier&lt;/code&gt;. Though Elegant is backward compatible but we recommend you to change it to &lt;code&gt;comment_id&lt;/code&gt;.&lt;/p&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category></entry><entry><title>Comments — Disable Comments in an Article</title><link href="https://dvesti.github.io/Pelican/2019/01/12/disable-comments-per-article/" rel="alternate"></link><published>2019-01-12T16:29:00+02:00</published><updated>2019-01-12T16:29:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-01-12:/Pelican/2019/01/12/disable-comments-per-article/</id><summary type="html">&lt;p&gt;If you remove your comment service configuration, say you set &lt;code&gt;DISQUS_SITENAME&lt;/code&gt; to empty string, then comments will disappear from all the&amp;nbsp;articles.&lt;/p&gt;
+&lt;p&gt;Sometimes you want to disable comments on selected articles. In which case, you can set &lt;code&gt;comments&lt;/code&gt; variable in the article metadata to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is an&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;Title …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;If you remove your comment service configuration, say you set &lt;code&gt;DISQUS_SITENAME&lt;/code&gt; to empty string, then comments will disappear from all the&amp;nbsp;articles.&lt;/p&gt;
+&lt;p&gt;Sometimes you want to disable comments on selected articles. In which case, you can set &lt;code&gt;comments&lt;/code&gt; variable in the article metadata to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is an&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Disable Comments&lt;/span&gt;
+&lt;span class="nt"&gt;date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;2019-01-12 16:29&lt;/span&gt;
+&lt;span class="nt"&gt;comments&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;false&lt;/span&gt;
+&lt;span class="nt"&gt;Category&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Commenting&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category></entry><entry><title>Newsletter — Add FreeLists</title><link href="https://dvesti.github.io/Pelican/2018/07/05/add-freelists/" rel="alternate"></link><published>2018-07-05T23:20:00+03:00</published><updated>2018-07-05T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2018-07-05:/Pelican/2018/07/05/add-freelists/</id><summary type="html">&lt;p&gt;Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every&amp;nbsp;article.&lt;/p&gt;
+&lt;p&gt;You need to put your FreeLists name in &lt;code&gt;FREELISTS_NAME&lt;/code&gt; in your configuration&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;To customize user experience you can also&amp;nbsp;define,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;EMAIL_SUBSCRIPTION_LABEL&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EMAIL_FIELD_PLACEHOLDER&lt;/code&gt; and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SUBSCRIBE_BUTTON_TITLE&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &amp;#8220;Notify me&amp;#8221; button you see …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every&amp;nbsp;article.&lt;/p&gt;
+&lt;p&gt;You need to put your FreeLists name in &lt;code&gt;FREELISTS_NAME&lt;/code&gt; in your configuration&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;To customize user experience you can also&amp;nbsp;define,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;EMAIL_SUBSCRIPTION_LABEL&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EMAIL_FIELD_PLACEHOLDER&lt;/code&gt; and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SUBSCRIBE_BUTTON_TITLE&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &amp;#8220;Notify me&amp;#8221; button you see in the sidebar of this page is an example of FreeLists subscription form. It links to Oracle database discussion list to demonstrate the&amp;nbsp;function.&lt;/p&gt;
+&lt;h2 id="show-freelists-form-by-default"&gt;Show FreeLists Form by default&lt;a class="headerlink" href="#show-freelists-form-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Just set &lt;code&gt;FREELISTS_NAME&lt;/code&gt; variable.&lt;/p&gt;
+&lt;h2 id="hide-freelists-form-by-default"&gt;Hide FreeLists Form by default&lt;a class="headerlink" href="#hide-freelists-form-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unset &lt;code&gt;FREELISTS_NAME&lt;/code&gt; variable.&lt;/p&gt;
+&lt;p&gt;This is the default&amp;nbsp;setting.&lt;/p&gt;
+&lt;h2 id="hide-freelists-form-by-default-show-on-selected"&gt;Hide FreeLists Form by default. Show on Selected&lt;a class="headerlink" href="#hide-freelists-form-by-default-show-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;FREELISTS_NAME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;FREELISTS_FILTER&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide FreeLists form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to show FreeLists form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;freelists_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;off&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="show-freelists-form-by-default-hide-on-selected"&gt;Show FreeLists Form by default. Hide on Selected&lt;a class="headerlink" href="#show-freelists-form-by-default-hide-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;FREELISTS_NAME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;FREELISTS_FILTER&lt;/code&gt; or set it to &lt;code&gt;False&lt;/code&gt; which is its default&amp;nbsp;value&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide FreeLists form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to hide FreeLists form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;freelists_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Connecting With Your Readers"></category><category term="marketing"></category><category term="network"></category><category term="subscriber"></category></entry><entry><title>Comments — Enable Disqus</title><link href="https://dvesti.github.io/Pelican/2014/04/21/enable-disqus-comments/" rel="alternate"></link><published>2014-04-21T16:39:00+03:00</published><updated>2014-04-21T16:39:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-21:/Pelican/2014/04/21/enable-disqus-comments/</id><summary type="html">&lt;p&gt;Elegant offers Disqus comments out of the box with few unique&amp;nbsp;features&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" aria-label="Disqus" role="img" viewBox="0 0 512 512" width="150" height="150" style="float:left;"&gt;&lt;rect width="512" height="512" rx="15%" fill="#fff"/&gt;&lt;path fill="#2e9fff" d="M83 387l26-65a159 159 0 1 1 42 56zm168-52q90-6 90-81t-89-80h-61v161zm2-39h-18v-82h18q43 2 43 40t-43 42"/&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;You can use Disqus for comments. You have to set &lt;code&gt;DISQUS_SITENAME&lt;/code&gt; to Disqus
+site name identifier in configuration to enable&amp;nbsp;comments.&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s it. Elegant will take care of the&amp;nbsp;rest.&lt;/p&gt;
+&lt;p&gt;You can see a working example of Disqus comments in this&amp;nbsp;article.&lt;/p&gt;
+&lt;h2 id="show-disqus-comments-by-default"&gt;Show Disqus comments by default&lt;a class="headerlink" href="#show-disqus-comments-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Just set &lt;code&gt;DISQUS_SITENAME&lt;/code&gt; variable.&lt;/p&gt;
+&lt;h2 id="hide-disqus-comments-by-default"&gt;Hide Disqus comments by default&lt;a class="headerlink" href="#hide-disqus-comments-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unset &lt;code&gt;DISQUS_SITENAME&lt;/code&gt; variable.&lt;/p&gt;
+&lt;p&gt;This is the default&amp;nbsp;setting.&lt;/p&gt;
+&lt;h2 id="hide-disqus-comments-by-default-show-on-selected"&gt;Hide Disqus comments by default. Show on Selected&lt;a class="headerlink" href="#hide-disqus-comments-by-default-show-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;DISQUS_SITENAME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;DISQUS_FILTER&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide Disqus form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to show Disqus form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;disqus_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;off&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="show-disqus-comments-by-default-hide-on-selected"&gt;Show Disqus comments by default. Hide on Selected&lt;a class="headerlink" href="#show-disqus-comments-by-default-hide-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;DISQUS_SITENAME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;DISQUS_FILTER&lt;/code&gt; or set it to &lt;code&gt;False&lt;/code&gt; which is its default&amp;nbsp;value&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide Disqus form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to hide Disqus form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;disqus_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category></entry><entry><title>Comments — Invite Visitors To Comment</title><link href="https://dvesti.github.io/Pelican/2014/04/21/invite-visitors-comment/" rel="alternate"></link><published>2014-04-21T16:39:00+03:00</published><updated>2014-04-21T16:39:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-21:/Pelican/2014/04/21/invite-visitors-comment/</id><summary type="html">&lt;p&gt;Instead of just throwing in comments form at the end of every article, Elegant
+offers you a way to write introductory text that would appear right before&amp;nbsp;comments.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Introductory text to the comments" src="https://dvesti.github.io/Pelican/images/elegant-theme_comments-introduction.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Set your message to &lt;code&gt;comments_intro&lt;/code&gt; in the article metadata. You may also
+define &lt;code&gt;COMMENTS_INTRO&lt;/code&gt; in Pelican&amp;nbsp;configuration.&lt;/p&gt;
+&lt;p&gt;Write whatever you think is …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Instead of just throwing in comments form at the end of every article, Elegant
+offers you a way to write introductory text that would appear right before&amp;nbsp;comments.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Introductory text to the comments" src="https://dvesti.github.io/Pelican/images/elegant-theme_comments-introduction.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Set your message to &lt;code&gt;comments_intro&lt;/code&gt; in the article metadata. You may also
+define &lt;code&gt;COMMENTS_INTRO&lt;/code&gt; in Pelican&amp;nbsp;configuration.&lt;/p&gt;
+&lt;p&gt;Write whatever you think is appropriate to invite the visitor to comment. Be
+creative! You can even put a link to your twitter account or newsletter&amp;nbsp;there.&lt;/p&gt;
+&lt;p&gt;Elegant first looks for &lt;code&gt;comments_intro&lt;/code&gt; in article metadata, then for
+&lt;code&gt;COMMENTS_INTRO&lt;/code&gt; in configuration. If it finds neither then no message is&amp;nbsp;displayed.&lt;/p&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category></entry><entry><title>How to show RSS feeds icon</title><link href="https://dvesti.github.io/Pelican/2014/03/17/how-to-show-rss-feeds-icon/" rel="alternate"></link><published>2014-03-17T15:28:00+02:00</published><updated>2014-03-17T15:28:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-03-17:/Pelican/2014/03/17/how-to-show-rss-feeds-icon/</id><summary type="html">&lt;p&gt;Elegant supports &lt;span class="caps"&gt;RSS&lt;/span&gt; and Atom feeds for your posts, categories and&amp;nbsp;tags&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="caps"&gt;RSS&lt;/span&gt; feeds is the oldest and arguably the most used format to publish blog
+updates. Its use is not limited to &lt;span class="caps"&gt;RSS&lt;/span&gt;
+aggregators &lt;!-- yaspeller ignore --&gt;
+and readers. Tools like
+&lt;a href="https://ifttt.com/recipes?channel=feed"&gt;&lt;span class="caps"&gt;IFTTT&lt;/span&gt;&lt;/a&gt; and
+&lt;a href="http://manual.calibre-ebook.com/news.html"&gt;Calibre&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;
+increases &lt;span class="caps"&gt;RSS&lt;/span&gt; feeds&amp;#8217; power
+and versatility by&amp;nbsp;manifolds.&lt;/p&gt;
+&lt;p&gt;To enable &lt;span class="caps"&gt;RSS&lt;/span&gt; feeds, see &lt;a href="http://docs.getpelican.com/en/latest/settings.html#feed-settings"&gt;Feed
+Settings&lt;/a&gt; in
+Pelican&amp;nbsp;documentation.&lt;/p&gt;
+&lt;p&gt;Links to &lt;span class="caps"&gt;RSS&lt;/span&gt; feeds are embedded in every page. Links to category and tag
+feeds are embedded only in the Categories and Tags pages&amp;nbsp;respectively.&lt;/p&gt;
+&lt;p&gt;Elegant does not show &lt;span class="caps"&gt;RSS&lt;/span&gt; feeds icon out of the box, though it can be easily&amp;nbsp;enabled.&lt;/p&gt;
+&lt;p&gt;All &lt;span class="caps"&gt;RSS&lt;/span&gt; consumers have the ability to capture feed links from a web address.
+For example, you need not put &lt;code&gt;http://oncrashreboot.com/feeds/all.atom.xml&lt;/code&gt; in
+your &lt;span class="caps"&gt;RSS&lt;/span&gt; reader. Just &lt;code&gt;http://oncrashreboot.com&lt;/code&gt; is enough. Your reader should
+be able to extract feed &lt;span class="caps"&gt;URL&lt;/span&gt; from the&amp;nbsp;link.&lt;/p&gt;
+&lt;p&gt;All popular browsers can detect &lt;span class="caps"&gt;RSS&lt;/span&gt; feeds on the page and show a visual cue. In
+Firefox, you can add &amp;#8220;Subscribe&amp;#8221; button to the
+&lt;a href="https://support.mozilla.org/en-US/kb/customize-firefox-controls-buttons-and-toolbars?redirectlocale=en-US&amp;amp;redirectslug=How+to+customize+the+toolbar"&gt;toolbar&lt;/a&gt;.
+For Chrome, you can use &lt;a href="https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd"&gt;&lt;span class="caps"&gt;RSS&lt;/span&gt; Subscription
+Extension&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is an example of my category feeds in&amp;nbsp;Chrome.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Display RSS Feeds in Chrome" src="https://dvesti.github.io/Pelican/images/rss-feeds-chrome-category-feeds.png" /&gt;&lt;/p&gt;
+&lt;p&gt;These options make it redundant to have a separate &lt;span class="caps"&gt;RSS&lt;/span&gt; icon on the page.
+Elegant is all about a clean and minimal &lt;span class="caps"&gt;UI&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;But it is not so hard to enable it. First &lt;a href="how-to-display-your-social-media-profiles"&gt;configure the Social
+widget&lt;/a&gt;. Then add a tuple for &lt;span class="caps"&gt;RSS&lt;/span&gt;,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SOCIAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;RSS&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://oncrashreboot.com/feeds/all.atom.xml&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Viola! You got yourself the &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;icon.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="RSS Feeds icon in Social widget" src="https://dvesti.github.io/Pelican/images/rss-feeds-icon-social-widget.png" /&gt;&lt;/p&gt;</content><category term="Connecting With Your Readers"></category><category term="pelican-theme"></category><category term="font-awesome"></category><category term="web-design"></category></entry><entry><title>How to display your Social Media Profiles</title><link href="https://dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/" rel="alternate"></link><published>2014-01-27T00:28:00+02:00</published><updated>2014-01-27T00:28:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-01-27:/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/</id><summary type="html">&lt;p&gt;Elegant displays links to your social media profiles in sidebar in a customizable&amp;nbsp;manner&lt;/p&gt;</summary><content type="html">&lt;p&gt;Bloggers use different tools to connect with their readers, engage in
+discussion with them, and create a loyal following of fans. These tools range
+from fully blown social web apps like twitter to old school &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feeds.&lt;/p&gt;
+&lt;p&gt;Bloggers add a social media widget to their blog which has links to all their
+social media profiles; inviting readers to engage with them else where on the
+web too. Most social widgets are loud and obtrusive. Their colors and placement
+takes away readers&amp;#8217; attention from the actual&amp;nbsp;content.&lt;/p&gt;
+&lt;p&gt;&lt;img class="align-right" style="width: 262.0px; height: 140.0px;"
+src="https://dvesti.github.io/Pelican/images/social-profiles-sidebar-default.png" alt="Social
+Profiles in the Sidebar" /&gt;&lt;/p&gt;
+&lt;p&gt;Elegant understands the importance of readers engagement but it makes sure
+not to push author&amp;#8217;s &lt;em&gt;&amp;#8220;online social karma&amp;#8221;&lt;/em&gt; down readers&amp;#8217;&amp;nbsp;throats.&lt;/p&gt;
+&lt;p&gt;Elegant displays the widget in the sidebar. Each icon is a link to a social
+media profile with an appropriate title attribute. Icons use muted color which
+changes when user hovers over&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;&lt;img class="align-right" style="width: 134.0px; height: 62.5px;"
+src="https://dvesti.github.io/Pelican/images/social-profiles-sidebar-facebook.png" alt="Hover over
+Facebook icon in the sidebar" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="align-right" style="width: 134.0px; height: 62.5px;"
+src="https://dvesti.github.io/Pelican/images/social-profiles-sidebar-twitter.png" alt="Hover over
+Twitter icon in the sidebar" /&gt;&lt;/p&gt;
+&lt;p&gt;Elegant uses scalable vector icons from &lt;a href="http://fortawesome.github.io/Font-Awesome/"&gt;Font
+Awesome&lt;/a&gt;. You can instantly
+customize the icons by tweaking the &lt;span class="caps"&gt;CSS&lt;/span&gt;. This customization can range from
+changing size and color to adding drop&amp;nbsp;shadow.&lt;/p&gt;
+&lt;h2 id="how-to-configure-the-widget"&gt;How to configure the &lt;em&gt;widget&lt;/em&gt;&lt;a class="headerlink" href="#how-to-configure-the-widget" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Define &lt;code&gt;SOCIAL&lt;/code&gt; in your &lt;code&gt;pelicanconf.py&lt;/code&gt;. &lt;code&gt;SOCIAL&lt;/code&gt; is list of tuple. Each tuple
+has two items, title and &lt;span class="caps"&gt;URL&lt;/span&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SOCIAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Twitter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://twitter.com/talham_&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Github&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://github.com/talha131&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In this example, &lt;code&gt;SOCIAL&lt;/code&gt; has two tuples. First tuple is &lt;code&gt;('Twitter', 'http://twitter.com/talham_')&lt;/code&gt;. First element of the tuple is the title
+&lt;code&gt;Twitter&lt;/code&gt; and second element is the &lt;span class="caps"&gt;URL&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Elegant picks icons from Font Awesome. Title of the tuple, for example
+&lt;code&gt;Twitter&lt;/code&gt;, is used to decide the icon of the social media&amp;nbsp;profile.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Twitter&lt;/code&gt; will use &lt;code&gt;fa-twitter&lt;/code&gt; &lt;span class="caps"&gt;CSS&lt;/span&gt; class, &lt;code&gt;Github&lt;/code&gt; will use &lt;code&gt;fa-github&lt;/code&gt;, and
+&lt;code&gt;Facebook&lt;/code&gt; will use &lt;code&gt;fa-facebook&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can see all the icons and their corresponding &lt;span class="caps"&gt;CSS&lt;/span&gt; classes in &lt;a href="http://fortawesome.github.io/Font-Awesome/icons/#brand"&gt;Font Awesome
+documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="how-to-customize-the-icon"&gt;How to customize the icon&lt;a class="headerlink" href="#how-to-customize-the-icon" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What if the icon of your social media site is not available in Font Awesome?
+What if the &lt;span class="caps"&gt;CSS&lt;/span&gt; class name does not follow &lt;code&gt;fa-&amp;lt;title&amp;gt;&lt;/code&gt; convention, for example
+&lt;code&gt;Stack Exchange&lt;/code&gt; is different from &lt;code&gt;fa-stack-exchange&lt;/code&gt;? What if you want to use
+&lt;code&gt;fa-youtube-play&lt;/code&gt; in place of &lt;code&gt;fa-youtube&lt;/code&gt; for your YouTube&amp;nbsp;profile?&lt;/p&gt;
+&lt;p&gt;The solution is to add a third element to the tuple. &lt;span class="caps"&gt;CSS&lt;/span&gt; class&amp;nbsp;name.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SOCIAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Twitter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://twitter.com/talham_&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;twitter-square&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Youtube&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://example.com&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;youtube-play&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This third element is optional. It should be equal to the Font Awesome &lt;span class="caps"&gt;CSS&lt;/span&gt;
+class that you want to use for the social profile, minus the &lt;code&gt;fa&lt;/code&gt; part from the
+&lt;span class="caps"&gt;CSS&lt;/span&gt; class&amp;nbsp;name.&lt;/p&gt;
+&lt;h2 id="how-to-customize-social-profile-label"&gt;How to customize Social Profile Label&lt;a class="headerlink" href="#how-to-customize-social-profile-label" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;By default, Elegant labels social profile section as &lt;strong&gt;Contact&lt;/strong&gt;. You can
+change this label by defining a new variable &lt;code&gt;SOCIAL_PROFILE_LABEL&lt;/code&gt; in your
+&lt;code&gt;pelicanconf.py&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;u&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Stay in Touch&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Connecting With Your Readers"></category><category term="pelican-theme"></category><category term="font-awesome"></category><category term="social-media"></category><category term="web-design"></category></entry><entry><title>Newsletter — Add Mailchimp</title><link href="https://dvesti.github.io/Pelican/2013/08/27/add-mailchimp/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/add-mailchimp/</id><summary type="html">&lt;p&gt;&lt;svg xmlns="http://www.w3.org/2000/svg"
+aria-label="Mailchimp" role="img"
+viewBox="0 0 512 512" width="150" height="150" style="float:left;margin-right:10px"&gt;&lt;rect
+width="512" height="512"
+rx="15%" fill="#ffe01b"/&gt;&lt;path fill="#1e1e1e" d="M418 306l-6-17s25-38-37-51c0 0 4-47-18-69 48-47 37-118-72-72C229-10 13 241 103 281c-9 12-9 72 53 78 42 90 144 96 203 69s93-113 59-122zm-263 40c-51-5-56-75-12-82s55 86 12 82zm-15-95c-14 0-31 19-31 19-68-33 123-252 164-167 0 0-100 48-133 148zm200 85c0-4-21 6-59-7 3-21 48 18 123-33l6 21c28-5 0 90-90 89-73-1-96-76-56-117 8-8-29-24-22-59 3-15 16-37 49-31s40-24 62-13 9 53 12 59 35 7 41 24-41 54-114 44c-17-2-27 20-16 34 22 32 112 11 127-20-38 29-116 40-122 9 22 10 59 4 59 0zm-58-6zm-73-152c22-27 51-43 51-43l-6 15s21-16 44-16l-8 8c26 1 37 11 37 11s-61-18-118 25zm135 39c13-1 9 29 9 29h-8s-14-28-1-29zm-59 33c-9 1-19 6-18 2 4-16 41-12 40 2s-9-6-22-4zm21 12c1 2-7 0-13 1s-12 4-12 2 23-11 25-3zm20 3c3-6 15 0 12 6s-15 0-12-6zm25 2c-6 0-6-13 0-13s6 14 0 14zm-180 53c3 3-6 9-13 4s8-29-10-35-13 17-18 14 7-35 28-22-6 33 6 39 5-2 7 0z"/&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every article. Increased visibility is said to increase number of&amp;nbsp;subscribers.&lt;/p&gt;
+&lt;p&gt;You need to put your Mailchimp form action &lt;span class="caps"&gt;URL&lt;/span&gt; in &lt;code&gt;MAILCHIMP_FORM_ACTION&lt;/code&gt; in your configuration&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;To customize user experience you can also …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;svg xmlns="http://www.w3.org/2000/svg"
+aria-label="Mailchimp" role="img"
+viewBox="0 0 512 512" width="150" height="150" style="float:left;margin-right:10px"&gt;&lt;rect
+width="512" height="512"
+rx="15%" fill="#ffe01b"/&gt;&lt;path fill="#1e1e1e" d="M418 306l-6-17s25-38-37-51c0 0 4-47-18-69 48-47 37-118-72-72C229-10 13 241 103 281c-9 12-9 72 53 78 42 90 144 96 203 69s93-113 59-122zm-263 40c-51-5-56-75-12-82s55 86 12 82zm-15-95c-14 0-31 19-31 19-68-33 123-252 164-167 0 0-100 48-133 148zm200 85c0-4-21 6-59-7 3-21 48 18 123-33l6 21c28-5 0 90-90 89-73-1-96-76-56-117 8-8-29-24-22-59 3-15 16-37 49-31s40-24 62-13 9 53 12 59 35 7 41 24-41 54-114 44c-17-2-27 20-16 34 22 32 112 11 127-20-38 29-116 40-122 9 22 10 59 4 59 0zm-58-6zm-73-152c22-27 51-43 51-43l-6 15s21-16 44-16l-8 8c26 1 37 11 37 11s-61-18-118 25zm135 39c13-1 9 29 9 29h-8s-14-28-1-29zm-59 33c-9 1-19 6-18 2 4-16 41-12 40 2s-9-6-22-4zm21 12c1 2-7 0-13 1s-12 4-12 2 23-11 25-3zm20 3c3-6 15 0 12 6s-15 0-12-6zm25 2c-6 0-6-13 0-13s6 14 0 14zm-180 53c3 3-6 9-13 4s8-29-10-35-13 17-18 14 7-35 28-22-6 33 6 39 5-2 7 0z"/&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every article. Increased visibility is said to increase number of&amp;nbsp;subscribers.&lt;/p&gt;
+&lt;p&gt;You need to put your Mailchimp form action &lt;span class="caps"&gt;URL&lt;/span&gt; in &lt;code&gt;MAILCHIMP_FORM_ACTION&lt;/code&gt; in your configuration&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;To customize user experience you can also&amp;nbsp;define,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;EMAIL_SUBSCRIPTION_LABEL&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EMAIL_FIELD_PLACEHOLDER&lt;/code&gt; and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SUBSCRIBE_BUTTON_TITLE&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can see Mailchimp Form in action in the sidebar. It&amp;#8217;s a working example. Enter your email address so that we can send you news of new Elegant releases in your&amp;nbsp;inbox.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mailchimp subscriber
+form" src="https://dvesti.github.io/Pelican/images/elegant-theme_subscribe-form.png" /&gt;&lt;/p&gt;
+&lt;h2 id="show-mailchimp-form-by-default"&gt;Show Mailchimp Form by default&lt;a class="headerlink" href="#show-mailchimp-form-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Just set &lt;code&gt;MAILCHIMP_FORM_ACTION&lt;/code&gt; variable.&lt;/p&gt;
+&lt;h2 id="hide-mailchimp-form-by-default"&gt;Hide Mailchimp Form by default&lt;a class="headerlink" href="#hide-mailchimp-form-by-default" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unset &lt;code&gt;MAILCHIMP_FORM_ACTION&lt;/code&gt; variable.&lt;/p&gt;
+&lt;p&gt;This is the default&amp;nbsp;setting.&lt;/p&gt;
+&lt;h2 id="hide-mailchimp-form-by-default-show-on-selected"&gt;Hide Mailchimp Form by default. Show on Selected&lt;a class="headerlink" href="#hide-mailchimp-form-by-default-show-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;MAILCHIMP_FORM_ACTION&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;MAILCHIMP_FILTER&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide Mailchimp form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to show Mailchimp form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;mailchimp_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;off&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="show-mailchimp-form-by-default-hide-on-selected"&gt;Show Mailchimp Form by default. Hide on Selected&lt;a class="headerlink" href="#show-mailchimp-form-by-default-hide-on-selected" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;code&gt;MAILCHIMP_FORM_ACTION&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;MAILCHIMP_FILTER&lt;/code&gt; or set it to &lt;code&gt;False&lt;/code&gt; which is its default&amp;nbsp;value&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will hide Mailchimp form on all&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;Now to hide Mailchimp form on selected posts, in article metadata&amp;nbsp;set&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;mailchimp_filter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Connecting With Your Readers"></category><category term="marketing"></category><category term="network"></category><category term="subscriber"></category></entry><entry><title>Comments — Collapse Comments Section</title><link href="https://dvesti.github.io/Pelican/2013/08/27/collapsible-comments/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/collapsible-comments/</id><summary type="html">&lt;p&gt;Readers use scroll bar to track their progress when reading inside their
+browsers. Very often comments take up more space than the actual article. When
+comments take up more space, it throws the scroll bar proportion off and reader
+cannot judge his progress correctly. Hacker News hosted &lt;a href="https://news.ycombinator.com/item?id=6246777"&gt;a
+discussion&lt;/a&gt; on …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Readers use scroll bar to track their progress when reading inside their
+browsers. Very often comments take up more space than the actual article. When
+comments take up more space, it throws the scroll bar proportion off and reader
+cannot judge his progress correctly. Hacker News hosted &lt;a href="https://news.ycombinator.com/item?id=6246777"&gt;a
+discussion&lt;/a&gt; on this&amp;nbsp;topic.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;tons of online articles list comments on the same page, so the scroll bar is
+almost a negative incentive to keep reading. &amp;#8220;I&amp;#8217;ve read this much of the
+article and I&amp;#8217;m only 1/20th of the way down?&amp;#8221;
+[user stops reading, unaware that there&amp;#8217;s 450 comments and the article is actually pretty&amp;nbsp;short]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Elegant keeps the comments section hidden by default. Reader can hide and
+unhide the section by clicking on the comments&amp;nbsp;section.&lt;/p&gt;
+&lt;p&gt;This is how comments section&amp;nbsp;appear&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Collapsed comments
+section" src="https://dvesti.github.io/Pelican/images/elegant-theme_comments-section-collapsed.png" /&gt;&lt;/p&gt;
+&lt;p&gt;It expands when reader clicks on&amp;nbsp;it&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Uncollapsed comments
+section" src="https://dvesti.github.io/Pelican/images/elegant-theme_comments-section-uncollapsed.png" /&gt;&lt;/p&gt;</content><category term="Connecting With Your Readers"></category><category term="interaction"></category></entry></feed>

@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Components</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/components.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2020-02-03T19:17:00+02:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Копируем код в буфер обмена</title><link href="https://dvesti.github.io/Pelican/2020/02/03/code-snippets-copy-to-clipboard/" rel="alternate"></link><published>2020-02-03T19:17:00+02:00</published><updated>2020-02-03T19:17:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-03:/Pelican/2020/02/03/code-snippets-copy-to-clipboard/</id><content type="html">&lt;p&gt;Elegant is the only Pelican theme that comes with a &amp;#8220;Copy To Clipboard&amp;#8221; button
+on every code&amp;nbsp;snippet.&lt;/p&gt;
+&lt;p&gt;Try it&amp;nbsp;out&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello Clipboard&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We use excellent JavaScript library, &lt;a href="https://clipboardjs.com/"&gt;clipboard.js&lt;/a&gt; for this feature. Your readers do not need Flash for this&amp;nbsp;feature.&lt;/p&gt;</content><category term="Components"></category><category term="code-snippets"></category><category term="gist"></category><category term="unique"></category></entry><entry><title>Подсветка кода</title><link href="https://dvesti.github.io/Pelican/2020/02/02/code-snippets-highlight-lines/" rel="alternate"></link><published>2020-02-02T20:12:00+02:00</published><updated>2020-02-02T20:12:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-02:/Pelican/2020/02/02/code-snippets-highlight-lines/</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/Python-Markdown/markdown/"&gt;Python-Markdown&lt;/a&gt; uses
+&lt;a href="https://python-markdown.github.io/extensions/code_hilite/"&gt;CodeHilite&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;
+extension for syntax&amp;nbsp;highlighting.&lt;/p&gt;
+&lt;p&gt;This extension lets you highlight specific lines in your code snippets. You can read the instructions &lt;a href="https://python-markdown.github.io/extensions/code_hilite/#colons"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Elegant supports this&amp;nbsp;feature.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="hll"&gt;&lt;span class="c1"&gt;# This line is emphasized&lt;/span&gt;
+&lt;/span&gt;&lt;span class="c1"&gt;# This line isn&amp;#39;t&lt;/span&gt;
+&lt;span class="hll"&gt;&lt;span class="c1"&gt;# This line is emphasized&lt;/span&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Another&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;
+&lt;span class="hll"&gt;  &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elegant-gallery&amp;quot;&lt;/span&gt;
+&lt;/span&gt;  &lt;span class="na"&gt;itemscope&lt;/span&gt;
+  &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/Python-Markdown/markdown/"&gt;Python-Markdown&lt;/a&gt; uses
+&lt;a href="https://python-markdown.github.io/extensions/code_hilite/"&gt;CodeHilite&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;
+extension for syntax&amp;nbsp;highlighting.&lt;/p&gt;
+&lt;p&gt;This extension lets you highlight specific lines in your code snippets. You can read the instructions &lt;a href="https://python-markdown.github.io/extensions/code_hilite/#colons"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Elegant supports this&amp;nbsp;feature.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="hll"&gt;&lt;span class="c1"&gt;# This line is emphasized&lt;/span&gt;
+&lt;/span&gt;&lt;span class="c1"&gt;# This line isn&amp;#39;t&lt;/span&gt;
+&lt;span class="hll"&gt;&lt;span class="c1"&gt;# This line is emphasized&lt;/span&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Another&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;
+&lt;span class="hll"&gt;  &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elegant-gallery&amp;quot;&lt;/span&gt;
+&lt;/span&gt;  &lt;span class="na"&gt;itemscope&lt;/span&gt;
+  &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageGallery&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Another&amp;nbsp;example,&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Code goes here ..&lt;/span&gt;
+&lt;span class="hll"&gt;&lt;span class="c1"&gt;# This line is emphasized&lt;/span&gt;
+&lt;/span&gt;&lt;span class="c1"&gt;# This line isn&amp;#39;t&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="Components"></category><category term="markdown"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Фотогалерея — используем PhotoSwipe</title><link href="https://dvesti.github.io/Pelican/2020/02/02/photoswipe-gallery-using-raw-html/" rel="alternate"></link><published>2020-02-02T00:00:00+02:00</published><updated>2020-02-02T00:00:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2020-02-02:/Pelican/2020/02/02/photoswipe-gallery-using-raw-html/</id><summary type="html">&lt;p&gt;Elegant integrates with &lt;a href="https://photoswipe.com/"&gt;PhotoSwipe&lt;/a&gt; to create gallery of images. Here is an&amp;nbsp;example.&lt;/p&gt;
+&lt;div class="elegant-gallery" itemscope itemtype="http://schema.org/ImageGallery"&gt;
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/1019/5472/3648.jpg" itemprop="contentUrl" data-size="5472x3648"&gt;
+            &lt;img src="https://i.picsum.photos/id/1019/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;Placeholder image from Unsplash&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/101/2621/1747.jpg" itemprop="contentUrl" data-size="2621x1747"&gt;
+            &lt;img src="https://i.picsum.photos/id/101/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;You can write anything in the caption&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/1015/6000/4000.jpg" itemprop="contentUrl" data-size="6000x4000"&gt;
+            &lt;img src="https://i.picsum.photos/id/1015/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;You can use &lt;i&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt;&lt;/i&gt; &lt;a href="https://picsum.photos/" target="_blank" rel="nofollow noopener noreferrer" &gt;Unsplash&lt;/a&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/127/4032/2272.jpg" itemprop="contentUrl" data-size="4032x2272"&gt;
+            &lt;img src="https://i.picsum.photos/id/127/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;Another sample image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/103/2592/1936.jpg" itemprop="contentUrl" data-size="2592x1936"&gt;
+            &lt;img src="https://i.picsum.photos/id/103/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;Last sample image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;To use it, you will have to add raw &lt;span class="caps"&gt;HTML&lt;/span&gt; in your markdown&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;Here …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant integrates with &lt;a href="https://photoswipe.com/"&gt;PhotoSwipe&lt;/a&gt; to create gallery of images. Here is an&amp;nbsp;example.&lt;/p&gt;
+&lt;div class="elegant-gallery" itemscope itemtype="http://schema.org/ImageGallery"&gt;
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/1019/5472/3648.jpg" itemprop="contentUrl" data-size="5472x3648"&gt;
+            &lt;img src="https://i.picsum.photos/id/1019/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;Placeholder image from Unsplash&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/101/2621/1747.jpg" itemprop="contentUrl" data-size="2621x1747"&gt;
+            &lt;img src="https://i.picsum.photos/id/101/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;You can write anything in the caption&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/1015/6000/4000.jpg" itemprop="contentUrl" data-size="6000x4000"&gt;
+            &lt;img src="https://i.picsum.photos/id/1015/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;You can use &lt;i&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt;&lt;/i&gt; &lt;a href="https://picsum.photos/" target="_blank" rel="nofollow noopener noreferrer" &gt;Unsplash&lt;/a&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/127/4032/2272.jpg" itemprop="contentUrl" data-size="4032x2272"&gt;
+            &lt;img src="https://i.picsum.photos/id/127/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;Another sample image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+        &lt;a href="https://i.picsum.photos/id/103/2592/1936.jpg" itemprop="contentUrl" data-size="2592x1936"&gt;
+            &lt;img src="https://i.picsum.photos/id/103/200/200.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption itemprop="caption description"&gt;Last sample image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;To use it, you will have to add raw &lt;span class="caps"&gt;HTML&lt;/span&gt; in your markdown&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;Here is the require &lt;span class="caps"&gt;HTML&lt;/span&gt; with two images in&amp;nbsp;it.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;
+  &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elegant-gallery&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;itemscope&lt;/span&gt;
+  &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageGallery&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;
+    &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;associatedMedia&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;itemscope&lt;/span&gt;
+    &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageObject&amp;quot;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;
+      &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/1019/5472/3648.jpg&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contentUrl&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;data-size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5472x3648&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt;
+        &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/1019/100/100.jpg&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;thumbnail&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Image description&amp;quot;&lt;/span&gt;
+      &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt; &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;caption description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      Placeholder image from Unsplash
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;
+    &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;associatedMedia&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;itemscope&lt;/span&gt;
+    &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageObject&amp;quot;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;
+      &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/101/2621/1747.jpg&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contentUrl&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;data-size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;2621x1747&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt;
+        &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/101/100/100.jpg&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;thumbnail&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Image description&amp;quot;&lt;/span&gt;
+      &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt; &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;caption description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      You can write anything in the caption
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="elegant-gallery" itemscope itemtype="http://schema.org/ImageGallery"&gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+  &lt;a href="https://i.picsum.photos/id/1019/5472/3648.jpg" itemprop="contentUrl" data-size="5472x3648"&gt;
+   &lt;img src="https://i.picsum.photos/id/1019/100/100.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+  &lt;/a&gt;
+  &lt;figcaption itemprop="caption description"&gt;Placeholder image from Unsplash&lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+  &lt;a href="https://i.picsum.photos/id/101/2621/1747.jpg" itemprop="contentUrl" data-size="2621x1747"&gt;
+   &lt;img src="https://i.picsum.photos/id/101/100/100.jpg" itemprop="thumbnail" alt="Image description" /&gt;
+  &lt;/a&gt;
+  &lt;figcaption itemprop="caption description"&gt;You can write anything in the caption&lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h2 id="define-a-div"&gt;Define a &lt;code&gt;div&lt;/code&gt;&lt;a class="headerlink" href="#define-a-div" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;
+  &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elegant-gallery&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;itemscope&lt;/span&gt;
+  &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageGallery&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Notice the class, &lt;code&gt;elegant-gallery&lt;/code&gt;. You should not change&amp;nbsp;it.&lt;/p&gt;
+&lt;h2 id="define-figure"&gt;Define &lt;code&gt;figure&lt;/code&gt;&lt;a class="headerlink" href="#define-figure" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Place it inside the &lt;code&gt;div&lt;/code&gt; defined&amp;nbsp;above.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;
+  &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;associatedMedia&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;itemscope&lt;/span&gt;
+  &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageObject&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="link-to-your-image"&gt;Link to your image&lt;a class="headerlink" href="#link-to-your-image" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Place it inside the &lt;code&gt;figure&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;
+  &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/1019/5472/3648.jpg&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contentUrl&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;data-size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5472x3648&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;data-size&lt;/code&gt; is important. It should have the correct width and height of the&amp;nbsp;image.&lt;/p&gt;
+&lt;h2 id="add-the-thumbnail"&gt;Add the thumbnail&lt;a class="headerlink" href="#add-the-thumbnail" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Create a thumbnail of your image and then place link to it inside the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; you create&amp;nbsp;above.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt;
+  &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/1019/100/100.jpg&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;thumbnail&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Image description&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is it. Your gallery should start&amp;nbsp;working.&lt;/p&gt;
+&lt;h2 id="define-caption"&gt;Define caption&lt;a class="headerlink" href="#define-caption" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You can also define the caption of your image using &lt;code&gt;figcaption&lt;/code&gt;. You must place it inside the &lt;code&gt;figure&lt;/code&gt; tag.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;figcaption&lt;/span&gt;
+  &lt;span class="na"&gt;itemprop=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;caption description&amp;quot;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  You can write anything in the caption
+&lt;span class="nt"&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can use &lt;span class="caps"&gt;HTML&lt;/span&gt; inside the &lt;code&gt;figcaption&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="admonition attention"&gt;
+&lt;p class="admonition-title"&gt;Developer&amp;nbsp;Required&lt;/p&gt;
+&lt;p&gt;Ideally, a Pelican plugin should generate this raw &lt;span class="caps"&gt;HTML&lt;/span&gt;, but at the time of writing, such a plugin does not&amp;nbsp;exist.&lt;/p&gt;
+&lt;p&gt;If you create such a plugin, then &lt;a href="https://github.com/Pelican-Elegant/elegant/issues"&gt;let us know&lt;/a&gt;. It will be a big help to thousands of Pelican&amp;nbsp;users.&lt;/p&gt;
+&lt;p&gt;The plugin, should create a thumbnail of the image, read size of the image, and then generate the required raw &lt;span class="caps"&gt;HTML&lt;/span&gt;, which then gets inserted into
+&lt;code&gt;article.content&lt;/code&gt; or &lt;code&gt;page.content&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The user should be able to insert more than one galleries in the article, at any place. (Currently, the &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/photos"&gt;Photos plugin&lt;/a&gt; forces themes to append gallery in the bottom of the&amp;nbsp;article.)&lt;/p&gt;
+&lt;p&gt;Finally, let the user define gallery images and their captions inside an article in a friendly and easy way. Like, as &lt;span class="caps"&gt;YAML&lt;/span&gt; or &lt;span class="caps"&gt;JSON&lt;/span&gt; inside the&amp;nbsp;markdown.&lt;/p&gt;
+&lt;/div&gt;</content><category term="Components"></category><category term="nuances"></category><category term="images"></category><category term="gallery"></category></entry><entry><title>Hyperlinks Styles</title><link href="https://dvesti.github.io/Pelican/2019/12/02/hyperlinks-styles/" rel="alternate"></link><published>2019-12-02T15:09:00+02:00</published><updated>2019-12-02T15:09:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-02:/Pelican/2019/12/02/hyperlinks-styles/</id><summary type="html"></summary><content type="html">&lt;p&gt;Elegant has three styles for hyperlinks that you can&amp;nbsp;use.&lt;/p&gt;
+&lt;h2 id="muted-style"&gt;Muted Style&lt;a class="headerlink" href="#muted-style" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This is the default style of&amp;nbsp;link.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.mozilla.org/en-US/firefox/new/"&gt;Example Link - Use Firefox Browser&lt;/a&gt; to support open web&amp;nbsp;standards.&lt;/p&gt;
+&lt;p&gt;This style is very suitable for long-form articles. To read the rationale behind this choice, read our help article &lt;a href="https://dvesti.github.io/Pelican/2019/07/03/look-and-feel/"&gt;Why Does Elegant Look The Way It Does?&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="amplified-style"&gt;Amplified Style&lt;a class="headerlink" href="#amplified-style" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We understand not all links should be muted. Some links require&amp;nbsp;attention.&lt;/p&gt;
+&lt;p&gt;&lt;a class="ampl" href="https://www.mozilla.org/en-US/firefox/new/"&gt;Example Link - Use Firefox Browser&lt;/a&gt; to support open web standards. &lt;!-- yaspeller ignore --&gt;&lt;/p&gt;
+&lt;p&gt;To use this style, you need to enable &lt;a class="ampl" href="https://python-markdown.github.io/extensions/attr_list/"&gt;Markdown attribute list extension&lt;/a&gt;. &lt;!-- yaspeller ignore --&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Plugins and extensions
+MARKDOWN = {
+    &amp;quot;extension_configs&amp;quot;: {
+        &amp;quot;markdown.extensions.extra&amp;quot;: {},
+        &amp;quot;markdown.extensions.meta&amp;quot;: {},
+    }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then use this style using &lt;code&gt;ampl&lt;/code&gt; class.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[Example Link](https://www.mozilla.org/){: class=&amp;quot;ampl&amp;quot;} blah blah
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="style"></category></entry><entry><title>Permalinks To Headings</title><link href="https://dvesti.github.io/Pelican/2019/12/02/permalinks-to-headings/" rel="alternate"></link><published>2019-12-02T11:05:00+02:00</published><updated>2019-12-02T11:05:00+02:00</updated><author><name>Dmitriev</name></author><id>tag:dvesti.github.io,2019-12-02:/Pelican/2019/12/02/permalinks-to-headings/</id><summary type="html"></summary><content type="html">&lt;p&gt;First, you need to enable the &lt;code&gt;toc&lt;/code&gt; extension for Markdown in your Pelican&amp;nbsp;configuration.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;extension_configs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;markdown.extensions.toc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then enable &lt;code&gt;permalink&lt;/code&gt; option available for the &lt;code&gt;toc&lt;/code&gt; extension.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;extension_configs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;markdown.extensions.toc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="s1"&gt;&amp;#39;permalink&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;true&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Enabling the &lt;code&gt;permalink&lt;/code&gt; option will provide direct links to each&amp;nbsp;heading.&lt;/p&gt;
+&lt;p&gt;Hover over following example heading to see the&amp;nbsp;permalink.&lt;/p&gt;
+&lt;h2 id="example-heading"&gt;Example Heading&lt;a class="headerlink" href="#example-heading" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You would get&amp;nbsp;this,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Permalinks example using Markdown" src="https://dvesti.github.io/Pelican/images/elegant-theme-toc-permalinks.png" /&gt;&lt;/p&gt;
+&lt;div class="admonition tip recommendation"&gt;
+&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p&gt;When set to True the paragraph symbol &lt;code&gt;¶&lt;/code&gt; or &lt;code&gt;&amp;amp;para;&lt;/code&gt; is used by Python markdown.
+This becomes part of the &lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed.&lt;/p&gt;
+&lt;p&gt;We recommend setting permalink option to a&amp;nbsp;space.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;extension_configs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;markdown.extensions.toc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="s1"&gt;&amp;#39;permalink&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="navigation"></category></entry><entry><title>Blockquote Style</title><link href="https://dvesti.github.io/Pelican/2019/12/01/blockquote-style/" rel="alternate"></link><published>2019-12-01T18:41:00+02:00</published><updated>2019-12-01T18:41:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-01:/Pelican/2019/12/01/blockquote-style/</id><summary type="html"></summary><content type="html">&lt;!-- yaspeller ignore:start --&gt;
+
+&lt;p&gt;A blockquote with a single&amp;nbsp;paragraph.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla&amp;nbsp;facilisi.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A blockquotes with multiple&amp;nbsp;paragraph.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum&amp;nbsp;id.&lt;/p&gt;
+&lt;p&gt;Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu consequat. Elit pellentesque habitant morbi tristique senectus et. Netus et malesuada fames ac turpis&amp;nbsp;egestas.&lt;/p&gt;
+&lt;p&gt;Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Augue eget arcu dictum varius duis at&amp;nbsp;consectetur.&lt;/p&gt;
+&lt;p&gt;Pharetra pharetra massa massa ultricies mi quis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Pulvinar neque laoreet suspendisse&amp;nbsp;interdum.&lt;/p&gt;
+&lt;p&gt;Ultrices eros in cursus turpis massa tincidunt dui ut ornare. Sem et tortor consequat id porta nibh venenatis. Nulla facilisi morbi tempus iaculis urna id volutpat&amp;nbsp;lacus.&lt;/p&gt;
+&lt;p&gt;Arcu ac tortor dignissim convallis aenean. Mauris pharetra et ultrices neque ornare. Scelerisque fermentum dui faucibus in ornare. Nibh tellus molestie nunc non&amp;nbsp;blandit.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- yaspeller ignore:end --&gt;</content><category term="Components"></category><category term="style"></category><category term="typography"></category></entry><entry><title>Headings Style</title><link href="https://dvesti.github.io/Pelican/2019/12/01/headings-style/" rel="alternate"></link><published>2019-12-01T10:38:00+02:00</published><updated>2019-12-01T10:38:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-12-01:/Pelican/2019/12/01/headings-style/</id><summary type="html"></summary><content type="html">&lt;p&gt;Following are the examples of headings as they appear inside an&amp;nbsp;article.&lt;/p&gt;
+&lt;!-- yaspeller ignore:start --&gt;
+
+&lt;h1 id="heading-1-code-small"&gt;Heading 1 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-1-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
+&lt;h2 id="heading-2-code-small"&gt;Heading 2 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-2-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
+&lt;h3 id="heading-3-code-small"&gt;Heading 3 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-3-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
+&lt;h4 id="heading-4-code-small"&gt;Heading 4 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-4-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
+&lt;h5 id="heading-5-code-small"&gt;Heading 5 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-5-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
+&lt;h6 id="heading-6-code-small"&gt;Heading 6 &lt;code&gt;code&lt;/code&gt; &lt;small&gt;small&lt;/small&gt;&lt;a class="headerlink" href="#heading-6-code-small" title="Permanent link"&gt; &lt;/a&gt;&lt;/h6&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Lobortis feugiat vivamus at augue. Sed augue lacus viverra vitae congue eu&amp;nbsp;consequat.&lt;/p&gt;
+&lt;!-- yaspeller ignore:end --&gt;</content><category term="Components"></category><category term="style"></category><category term="typography"></category></entry><entry><title>Tables</title><link href="https://dvesti.github.io/Pelican/2019/08/11/tables/" rel="alternate"></link><published>2019-08-11T01:16:00+03:00</published><updated>2019-08-11T01:16:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-08-11:/Pelican/2019/08/11/tables/</id><content type="html">&lt;p&gt;Tables in Elegant theme have rounded borders and striped alternating&amp;nbsp;rows.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Season&lt;/th&gt;
+&lt;th&gt;Episodes&lt;/th&gt;
+&lt;th&gt;First aired&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;June 2, 2002&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;June 1, 2003&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;September 19, 2004&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;September 10, 2006&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;January 6, 2008&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content><category term="Components"></category><category term="remarkable"></category></entry><entry><title>Code Snippets — Change Theme</title><link href="https://dvesti.github.io/Pelican/2019/07/03/change-syntax-highlight-theme/" rel="alternate"></link><published>2019-07-03T20:18:00+03:00</published><updated>2019-07-03T20:18:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-03:/Pelican/2019/07/03/change-syntax-highlight-theme/</id><summary type="html">&lt;p&gt;Elegant uses &lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized theme&lt;/a&gt; for syntax
+highlighting. To replace it, copy contents of your preferred theme&amp;#8217;s &lt;span class="caps"&gt;CSS&lt;/span&gt; style
+sheet into &lt;code&gt;custom.css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can replace contents of &lt;code&gt;pygments.css&lt;/code&gt; with your theme&amp;#8217;s
+style&amp;nbsp;sheet.&lt;/p&gt;
+&lt;p&gt;If you feel like experimenting with different themes then &lt;a href="https://github.com/uraimo/pygments-vimstyles"&gt;this
+repository&lt;/a&gt; has Pygments …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant uses &lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized theme&lt;/a&gt; for syntax
+highlighting. To replace it, copy contents of your preferred theme&amp;#8217;s &lt;span class="caps"&gt;CSS&lt;/span&gt; style
+sheet into &lt;code&gt;custom.css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can replace contents of &lt;code&gt;pygments.css&lt;/code&gt; with your theme&amp;#8217;s
+style&amp;nbsp;sheet.&lt;/p&gt;
+&lt;p&gt;If you feel like experimenting with different themes then &lt;a href="https://github.com/uraimo/pygments-vimstyles"&gt;this
+repository&lt;/a&gt; has Pygments &lt;span class="caps"&gt;CSS&lt;/span&gt; of
+Vim themes. &lt;a href="https://github.com/richleland/pygments-css"&gt;This one&lt;/a&gt; has Pygments
+&lt;span class="caps"&gt;CSS&lt;/span&gt; of built-in styles. Do not forget to change &lt;code&gt;.codehilite&lt;/code&gt; &lt;span class="caps"&gt;CSS&lt;/span&gt; class
+identifier to &lt;code&gt;.highlight&lt;/code&gt;. Code blocks in Pelican generated &lt;span class="caps"&gt;HTML&lt;/span&gt; use
+&lt;code&gt;.highlight&lt;/code&gt; class.&lt;/p&gt;</content><category term="Components"></category><category term="unique"></category></entry><entry><title>Home Page — Unique Features</title><link href="https://dvesti.github.io/Pelican/2019/07/01/unique-home-page-features/" rel="alternate"></link><published>2019-07-01T01:22:00+03:00</published><updated>2019-07-01T01:22:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/unique-home-page-features/</id><summary type="html">&lt;p&gt;This is the page that visitors see when they open your website. Your chance to
+make a good and lasting first impression. Most sites just display a list of
+recent posts. Elegant goes the extra mile. Check this&amp;nbsp;out&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can see three features&amp;nbsp;here,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Welcome&amp;nbsp;Heading&lt;/li&gt;
+&lt;li&gt;About&amp;nbsp;me&lt;/li&gt;
+&lt;li&gt;My …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;This is the page that visitors see when they open your website. Your chance to
+make a good and lasting first impression. Most sites just display a list of
+recent posts. Elegant goes the extra mile. Check this&amp;nbsp;out&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can see three features&amp;nbsp;here,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Welcome&amp;nbsp;Heading&lt;/li&gt;
+&lt;li&gt;About&amp;nbsp;me&lt;/li&gt;
+&lt;li&gt;My&amp;nbsp;Projects&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is a third section below these two sections, &amp;#8220;Recent&amp;nbsp;articles&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Recent Articles Section" src="https://dvesti.github.io/Pelican/images/elegant-theme_recent-posts.png" /&gt;&lt;/p&gt;
+&lt;h2 id="how-to-set-them-up"&gt;How to set them up&lt;a class="headerlink" href="#how-to-set-them-up" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We have detailed help articles to help you set these sections&amp;nbsp;up&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/"&gt;Write Welcome&amp;nbsp;Message&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-about-me/"&gt;Write About&amp;nbsp;Me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/projects-list/"&gt;Projects&amp;nbsp;List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dvesti.github.io/Pelican/2019/07/01/recent-articles-list/"&gt;Recent Articles&amp;nbsp;List&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><category term="Components"></category><category term="home"></category><category term="remarkable"></category><category term="unique"></category><category term="guide"></category></entry><entry><title>Home Page — Projects List</title><link href="https://dvesti.github.io/Pelican/2019/07/01/projects-list/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/projects-list/</id><summary type="html">&lt;p&gt;Projects list is read from &lt;code&gt;PROJECTS&lt;/code&gt; in your Pelican configuration
+(&lt;code&gt;pelicanconf.py&lt;/code&gt;) file. It is an array of dictionaries. Each
+dictionary has three&amp;nbsp;keys,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;name&lt;/code&gt; which will have name of your&amp;nbsp;project,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;url&lt;/code&gt; which will have &lt;span class="caps"&gt;URL&lt;/span&gt; of the project,&amp;nbsp;and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;description&lt;/code&gt; which will have the description of the&amp;nbsp;project …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Projects list is read from &lt;code&gt;PROJECTS&lt;/code&gt; in your Pelican configuration
+(&lt;code&gt;pelicanconf.py&lt;/code&gt;) file. It is an array of dictionaries. Each
+dictionary has three&amp;nbsp;keys,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;name&lt;/code&gt; which will have name of your&amp;nbsp;project,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;url&lt;/code&gt; which will have &lt;span class="caps"&gt;URL&lt;/span&gt; of the project,&amp;nbsp;and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;description&lt;/code&gt; which will have the description of the&amp;nbsp;project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can define as many projects as you want. Here
+is an&amp;nbsp;example,&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;PROJECTS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Logpad + Duration&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;url&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com/talha131/logpad-plus-duration#logpad--duration&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;description&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Vim plugin to emulate Windows Notepad logging feature,&amp;#39;&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39; and log duration of each entry&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Elegant Theme for Pelican&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;url&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://oncrashreboot.com/pelican-elegant&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;description&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;A clean and distraction free theme, with search and a&amp;#39;&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39; lot more unique features, using Jinja2 and Bootstrap&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;}]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;To configure the projects&amp;#8217; list title, set &lt;code&gt;PROJECTS_TITLE&lt;/code&gt; variable in your Pelican configuration. Its default value is &amp;#8220;My Projects&amp;#8221;. For&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;PROJECTS_TITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Related Projects&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Write About Me</title><link href="https://dvesti.github.io/Pelican/2019/07/01/write-about-me/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/write-about-me/</id><summary type="html">&lt;div class="admonition important"&gt;
+&lt;p class="admonition-title"&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. &lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/"&gt;Read&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;To write about me section, create a page. See &lt;a href="http://docs.getpelican.com/en/stable/content.html#pages"&gt;Pelican documentation&lt;/a&gt; on how to create a&amp;nbsp;page.&lt;/p&gt;
+&lt;p&gt;The slug of the page should be &lt;code&gt;landing-page-about-hidden&lt;/code&gt; and &lt;code&gt;status&lt;/code&gt; should be &lt;code&gt;hidden&lt;/code&gt;.&amp;nbsp;Example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;span class="nt"&gt;author …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition important"&gt;
+&lt;p class="admonition-title"&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;About Me&amp;#8221; section works only if you have defined &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. &lt;a href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/"&gt;Read&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;To write about me section, create a page. See &lt;a href="http://docs.getpelican.com/en/stable/content.html#pages"&gt;Pelican documentation&lt;/a&gt; on how to create a&amp;nbsp;page.&lt;/p&gt;
+&lt;p&gt;The slug of the page should be &lt;code&gt;landing-page-about-hidden&lt;/code&gt; and &lt;code&gt;status&lt;/code&gt; should be &lt;code&gt;hidden&lt;/code&gt;.&amp;nbsp;Example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;span class="nt"&gt;author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Talha Mansoor&lt;/span&gt;
+&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;What Is Elegant&lt;/span&gt;
+&lt;span class="nt"&gt;layout&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;page&lt;/span&gt;
+&lt;span class="nt"&gt;date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;2019-01-14 7:30:47 +0100&lt;/span&gt;
+&lt;span class="nt"&gt;status&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;hidden&lt;/span&gt;
+&lt;span class="nt"&gt;slug&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;landing-page-about-hidden&lt;/span&gt;
+&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The content of this will become your &amp;#8220;About me&amp;#8221; section, and title will become the heading. You can write content in any markup language, like Markdown, AsciiDoc or reST, as long as Pelican has supports&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;
+&lt;h3 id="deprecated"&gt;Deprecated&lt;a class="headerlink" href="#deprecated" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;div class="admonition danger"&gt;
+&lt;p class="admonition-title"&gt;Warning: Legacy&amp;nbsp;Variable&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;LANDING_PAGE_ABOUT&lt;/code&gt; was available in Elegant V2.5.0. It has since been passed out in favour of &lt;code&gt;landing-page-about-hidden&lt;/code&gt;. The new method lets you write &amp;#8220;About Me&amp;#8221; in your favourite markup&amp;nbsp;language.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can write up your own About me section using &lt;code&gt;LANDING_PAGE_ABOUT&lt;/code&gt; variable
+in your configuration. It is a dictionary that has two keys &lt;code&gt;title&lt;/code&gt; and
+&lt;code&gt;details&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Value of &lt;code&gt;title&lt;/code&gt; is displayed in the header of the home page, like
+in the above example it is &amp;#8220;I design and build software products for iOS and
+&lt;span class="caps"&gt;OSX&lt;/span&gt;&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;details&lt;/code&gt; is the text that appears under &amp;#8220;About me&amp;#8221; heading. You can add raw &lt;span class="caps"&gt;HTML&lt;/span&gt; to&amp;nbsp;it.&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Write Welcome Message</title><link href="https://dvesti.github.io/Pelican/2019/07/01/write-welcome-message/" rel="alternate"></link><published>2019-07-01T01:12:00+03:00</published><updated>2019-07-01T01:12:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/write-welcome-message/</id><content type="html">&lt;p&gt;Define &lt;code&gt;LANDING_PAGE_TITLE&lt;/code&gt; in your Pelican configuration. It will be displayed as the welcome heading. For&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;LANDING_PAGE_TITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;I design and build software products for iOS and OSX&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Home Page Sample" src="https://dvesti.github.io/Pelican/images/elegant-theme_home-page-features.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Home Page — Recent Articles List</title><link href="https://dvesti.github.io/Pelican/2019/07/01/recent-articles-list/" rel="alternate"></link><published>2019-07-01T01:10:00+03:00</published><updated>2019-07-01T01:10:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-01:/Pelican/2019/07/01/recent-articles-list/</id><content type="html">&lt;p&gt;Recent articles show last &lt;code&gt;RECENT_ARTICLES_COUNT&lt;/code&gt; whose default value is&amp;nbsp;10.&lt;/p&gt;
+&lt;p&gt;It also has a link to &amp;#8220;all posts&amp;#8221;, which takes user to the archives&amp;nbsp;page.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Recent Articles Section" src="https://dvesti.github.io/Pelican/images/elegant-theme_recent-posts.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="remarkable"></category><category term="unique"></category><category term="home"></category></entry><entry><title>Footer — Show Your Host Information</title><link href="https://dvesti.github.io/Pelican/2019/06/30/show-host-information/" rel="alternate"></link><published>2019-06-30T11:54:00+03:00</published><updated>2019-06-30T11:54:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-06-30:/Pelican/2019/06/30/show-host-information/</id><summary type="html">&lt;p&gt;Show the host of your&amp;nbsp;website&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally display the host of your website in the&amp;nbsp;footer.&lt;/p&gt;
+&lt;p&gt;To do so, define a dictionary &lt;code&gt;HOSTED_ON&lt;/code&gt; in your Pelican configuration. It has two&amp;nbsp;keys,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;name&lt;/code&gt;: mandatory. Value type is&amp;nbsp;string&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;url&lt;/code&gt;: optional. Value type is&amp;nbsp;string&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;HOSTED_ON&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Netlify&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;url&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://www.netlify.com/&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It will appear in the footer&amp;nbsp;as&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Demonstration of HOSTED_ON variable" src="https://dvesti.github.io/Pelican/images/hosted-on.png" /&gt;&lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;url&lt;/code&gt; is present then Elegant will add link to your host in the footer with &lt;code&gt;nofollow&lt;/code&gt; attribute. Otherwise Elegant will display the name without any&amp;nbsp;link.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Warnings and admonition boxes</title><link href="https://dvesti.github.io/Pelican/2018/12/18/warnings-admonition/" rel="alternate"></link><published>2018-12-18T09:00:00+02:00</published><updated>2018-12-18T09:00:00+02:00</updated><author><name>Andy Wegner</name></author><id>tag:dvesti.github.io,2018-12-18:/Pelican/2018/12/18/warnings-admonition/</id><summary type="html">
+&lt;p&gt;Sometimes you want to draw your reader’s attention to an important piece of
+information. You can do this using admonitions. Below are a few examples of how
+to do this, and the various styles that are available in Elegant.&lt;/p&gt;
+&lt;h1 id="set-up"&gt;Set up&lt;a class="headerlink" href="#set-up" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;To use admonitions within our Markdown, we need …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Sometimes you want to draw your reader’s attention to an important piece of
+information. You can do this using admonitions. Below are a few examples of how
+to do this, and the various styles that are available in Elegant.&lt;/p&gt;
+&lt;h1 id="set-up"&gt;Set up&lt;a class="headerlink" href="#set-up" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;To use admonitions within our Markdown, we need to enable support for them first.
+In &lt;code&gt;pelicanconfig.py&lt;/code&gt; find your &lt;code&gt;MARKDOWN&lt;/code&gt; dictionary. Add the following line to
+the dictionary (and ensure the previous line ends with a comma so that the dictionary
+is valid).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;'markdown.extensions.admonition': {},
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s it! Now your site will support Markdown admonitions.&lt;/p&gt;
+&lt;h1 id="types-of-admonitions"&gt;Types of admonitions&lt;a class="headerlink" href="#types-of-admonitions" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;There are several styles available and Elegant supports the recommended values of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;attention&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;caution&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;danger&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;error&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hint&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;important&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;note&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;warning&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="examples"&gt;Examples&lt;a class="headerlink" href="#examples" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Let’s see some examples!&lt;/p&gt;
+&lt;h2 id="default-danger-error"&gt;Default Danger, Error&lt;a class="headerlink" href="#default-danger-error" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You can use either &lt;code&gt;danger&lt;/code&gt; or &lt;code&gt;error&lt;/code&gt; to get a red admonition box.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;!!! danger
+
+    This is a danger or error admonition
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="admonition danger"&gt;
+&lt;p class="admonition-title"&gt;Danger&lt;/p&gt;
+&lt;p&gt;This is a danger or error admonition&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="default-attention-caution-warning"&gt;Default Attention, Caution, Warning&lt;a class="headerlink" href="#default-attention-caution-warning" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;An &lt;code&gt;attention&lt;/code&gt;, &lt;code&gt;caution&lt;/code&gt; or &lt;code&gt;warning&lt;/code&gt; admonition will be yellow.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;!!! warning
+
+    This is an attention, caution or warning admonition
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="admonition warning"&gt;
+&lt;p class="admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p&gt;This is an attention, caution or warning admonition&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="default-important-note"&gt;Default Important, Note&lt;a class="headerlink" href="#default-important-note" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;important&lt;/code&gt; or &lt;code&gt;note&lt;/code&gt; to get a green admonition box.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;!!! important
+
+    This is an important or note admonition
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="admonition important"&gt;
+&lt;p class="admonition-title"&gt;Important&lt;/p&gt;
+&lt;p&gt;This is an important or note admonition&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="default-hint-tip"&gt;Default Hint, Tip&lt;a class="headerlink" href="#default-hint-tip" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Use either &lt;code&gt;hint&lt;/code&gt; or &lt;code&gt;tip&lt;/code&gt; to get a blue admonition box.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;!!! hint
+
+    This is a hint or tip admonition
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="admonition hint"&gt;
+&lt;p class="admonition-title"&gt;Hint&lt;/p&gt;
+&lt;p&gt;This is a hint or tip admonition&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="custom-titles"&gt;Custom Titles&lt;a class="headerlink" href="#custom-titles" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Admonitions can have custom titles. When the default examples are used, the titles
+of each box are the same as the admonition type. This isn’t always what you want.
+If you want to use a custom title, you pass the title in double quotes after the
+type of admonition you are utilizing.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;!!! hint "Use double quotes to change the title"
+
+    This admonition box contains a custom tile because I placed it in double quotes after the `hint`.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="admonition hint"&gt;
+&lt;p class="admonition-title"&gt;Use double quotes to change the title&lt;/p&gt;
+&lt;p&gt;This admonition box contains a custom tile because I placed it in double quotes after the &lt;code&gt;hint&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="no-title"&gt;No title&lt;a class="headerlink" href="#no-title" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are times when you don’t need a title in your boxes. This can be done by
+passing an empty string (&lt;code&gt;""&lt;/code&gt;) after the admonition type.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;!!! important ""
+
+    This box doesn't require a title, but is still an `important` admonition
+    and will be highlighted as such.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="admonition important"&gt;
+&lt;p&gt;This box doesn’t require a title, but is still an &lt;code&gt;important&lt;/code&gt; admonition and will be highlighted as such.&lt;/p&gt;
+&lt;/div&gt;</content><category term="Components"></category><category term="admonitions"></category><category term="warning"></category><category term="attention"></category></entry><entry><title>Footer — Add License to your Site</title><link href="https://dvesti.github.io/Pelican/2014/04/22/add-license-to-your-site/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-22:/Pelican/2014/04/22/add-license-to-your-site/</id><summary type="html">&lt;p&gt;You can display your preferred license in the&amp;nbsp;footer&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally define &lt;code&gt;SITE_LICENSE&lt;/code&gt; variable in Pelican configuration. It will appear in the footer of the&amp;nbsp;site.&lt;/p&gt;
+&lt;p&gt;For&amp;nbsp;example,&lt;/p&gt;
+&lt;!-- yaspeller ignore:start --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SITE_LICENSE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&amp;quot;Content licensed under &amp;lt;a rel=&amp;quot;license nofollow noopener noreferrer&amp;quot;&lt;/span&gt;
+&lt;span class="s2"&gt;    href=&amp;quot;http://creativecommons.org/licenses/by/4.0/&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="s2"&gt;    Creative Commons Attribution 4.0 International License&amp;lt;/a&amp;gt;.&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;!-- yaspeller ignore:end --&gt;
+
+&lt;p&gt;It appears&amp;nbsp;as&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Site License Demonstration" src="https://dvesti.github.io/Pelican/images/elegant-theme_license.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Footer — Add Site Subtitle</title><link href="https://dvesti.github.io/Pelican/2014/04/22/add-site-subtitle/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-22:/Pelican/2014/04/22/add-site-subtitle/</id><summary type="html">&lt;p&gt;You can add and display a site&amp;nbsp;subtitle&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can optionally define &lt;code&gt;SITE_SUBTITLE&lt;/code&gt; variable in Pelican configuration. It will appear in the footer of the&amp;nbsp;site.&lt;/p&gt;
+&lt;p&gt;For&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SITESUBTITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You can, you should, and if you&amp;#39;re brave enough to start, you will.&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It appears in the footer&amp;nbsp;as&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Site subtitle" src="https://dvesti.github.io/Pelican/images/elegant-theme_site-subtitle.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Web Safe Fonts</title><link href="https://dvesti.github.io/Pelican/2014/04/22/web-safe-fonts/" rel="alternate"></link><published>2014-04-22T16:23:00+03:00</published><updated>2014-04-22T16:23:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-22:/Pelican/2014/04/22/web-safe-fonts/</id><summary type="html">&lt;p&gt;Elegant uses commonly available typefaces in every style rule. It has a list of
+closely matching fonts in the fallback&amp;nbsp;list.&lt;/p&gt;
+&lt;p&gt;For examples
+Baskerville &lt;!-- yaspeller ignore --&gt;
+is the
+first choice for headings. But if reader does not have
+Baskerville &lt;!-- yaspeller ignore --&gt;
+installed,
+Garamond &lt;!-- yaspeller ignore --&gt;
+will be used. If that too fails then Georgia will be …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant uses commonly available typefaces in every style rule. It has a list of
+closely matching fonts in the fallback&amp;nbsp;list.&lt;/p&gt;
+&lt;p&gt;For examples
+Baskerville &lt;!-- yaspeller ignore --&gt;
+is the
+first choice for headings. But if reader does not have
+Baskerville &lt;!-- yaspeller ignore --&gt;
+installed,
+Garamond &lt;!-- yaspeller ignore --&gt;
+will be used. If that too fails then Georgia will be&amp;nbsp;used.&lt;/p&gt;</content><category term="Components"></category><category term="web-design"></category></entry><entry><title>Add A Table Of Contents to Your Articles</title><link href="https://dvesti.github.io/Pelican/2014/03/18/how-elegant-displays-table-of-contents/" rel="alternate"></link><published>2014-03-18T11:03:00+02:00</published><updated>2014-03-18T11:03:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-03-18:/Pelican/2014/03/18/how-elegant-displays-table-of-contents/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a non-intrusive Table of Contents, giving a cleaner reading experience for the&amp;nbsp;user.&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;The key concept driving Elegant’s design is to provide a reading experience that
+is clean with minimal distractions. From that point of view, providing a table of
+contents does not provide any additional information, but only exists to help guide the
+reader through the article.&lt;/p&gt;
+&lt;p&gt;Therefore, Elegant places the table of contents on the left side
+of the page with a relatively smaller font. This enables the table to guide the reader without
+grabbing the focus of the reader and distracting them.&lt;/p&gt;
+&lt;h2 id="plugin-configuration"&gt;Plugin Configuration&lt;a class="headerlink" href="#plugin-configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Enabling the Elegant’ display of the table of contents is a two-step process.&lt;/p&gt;
+&lt;p&gt;In the first step,
+use the markup languages to provide table of contents.&lt;/p&gt;
+&lt;p&gt;Second step is to take the generated table of contents and display it
+on the left side of the article.&lt;/p&gt;
+&lt;p&gt;If both steps are not completed,
+the table of contents will not be displayed on the left side of the article.&lt;/p&gt;
+&lt;p&gt;For the second step, you need to enable the &lt;code&gt;extract_toc&lt;/code&gt; plugin in
+your pelican configuration.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'extract_toc'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="configuring-markdown"&gt;Configuring Markdown&lt;a class="headerlink" href="#configuring-markdown" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You need to enable the &lt;code&gt;toc&lt;/code&gt; extension for Markdown in your Pelican configuration.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="s1"&gt;'extension_configs'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;'markdown.extensions.toc'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now to generate a table of contents for you article, add the &lt;code&gt;[TOC]&lt;/code&gt; markdown tag to your document.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;My&lt;/span&gt; &lt;span class="n"&gt;sample&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;03&lt;/span&gt;
+&lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Examples&lt;/span&gt;
+
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;TOC&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+
+&lt;span class="err"&gt;##&lt;/span&gt; &lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="n"&gt;heading&lt;/span&gt;
+
+&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="n"&gt;sample&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="err"&gt;##&lt;/span&gt; &lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="n"&gt;second&lt;/span&gt; &lt;span class="n"&gt;heading&lt;/span&gt;
+
+&lt;span class="n"&gt;I&lt;/span&gt; &lt;span class="n"&gt;will&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt; &lt;span class="n"&gt;here&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="other-options"&gt;Other Options&lt;a class="headerlink" href="#other-options" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For other options available for the Markdown Table of Contents extension, refer to the
+&lt;a href="https://python-markdown.github.io/extensions/toc/"&gt;Python - Markdown - Table of Contents&lt;/a&gt; page.&lt;/p&gt;
+&lt;h3 id="debugging"&gt;Debugging&lt;a class="headerlink" href="#debugging" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Verify that your Markdown file has &lt;code&gt;[TOC]&lt;/code&gt; tag&lt;/li&gt;
+&lt;li&gt;Verify that the
+   &lt;code&gt;MARKDOWN&lt;/code&gt; configuration variable is set properly.&lt;/li&gt;
+&lt;li&gt;Verify that the &lt;code&gt;PLUGINS&lt;/code&gt; configuration variable is
+   set properly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="configuring-restructuredtext-format"&gt;Configuring reStructuredText Format&lt;a class="headerlink" href="#configuring-restructuredtext-format" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;reStructuredText format has the
+&lt;a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents"&gt;&lt;code&gt;contents&lt;/code&gt; directive&lt;/a&gt;
+that generates a table of contents in the article.&lt;/p&gt;
+&lt;p&gt;To generate a table of contents for you article, add the &lt;code&gt;.. contents::&lt;/code&gt; directive to your document.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gh"&gt;My sample title&lt;/span&gt;
+&lt;span class="gh"&gt;###############&lt;/span&gt;
+
+&lt;span class="nc"&gt;:date:&lt;/span&gt; &lt;span class="nf"&gt;2014-12-03&lt;/span&gt;
+&lt;span class="nc"&gt;:category:&lt;/span&gt; &lt;span class="nf"&gt;Examples&lt;/span&gt;
+
+&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;contents&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;
+
+&lt;span class="gh"&gt;This is my first heading&lt;/span&gt;
+&lt;span class="gh"&gt;========================&lt;/span&gt;
+
+This is the content of my sample blog post.
+
+&lt;span class="gh"&gt;This my second heading&lt;/span&gt;
+&lt;span class="gh"&gt;======================&lt;/span&gt;
+
+I will end my example here.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="hide-default-title-text"&gt;Hide Default Title Text&lt;a class="headerlink" href="#hide-default-title-text" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Possibly Deprecated&lt;/p&gt;
+&lt;p&gt;We couldn’t not reproduce this issue in our testing. This should be considered deprecated, but is retained in this document in case someone encounters this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Using the default configuration, reStructuredText will generate a default title for the table
+of contents. According to the &lt;a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents"&gt;official
+documentation&lt;/a&gt;,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Language-dependent boilerplate text will be used for the title. The English
+default title text is “Contents”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This default configuration creates two titles for your table of contents, one generated by
+reStructuredText and the other by Elegant. To disable default title generation
+&lt;sup id="fnref:disable-title"&gt;&lt;a class="footnote-ref" href="#fn:disable-title"&gt;1&lt;/a&gt;&lt;/sup&gt;, you need to add following rule in your &lt;code&gt;custom.css&lt;/code&gt; file to hide the
+duplicate title:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;contents&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;topic-title&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;first&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="footnote"&gt;
+&lt;hr/&gt;
+&lt;ol&gt;
+&lt;li id="fn:disable-title"&gt;
+&lt;p&gt;There is &lt;a href="https://github.com/Pelican-Elegant/elegant/issues/54"&gt;no straightforward way&lt;/a&gt; to disable default title generation in reStructuredText. &lt;a class="footnote-backref" href="#fnref:disable-title" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="Components"></category><category term="reST"></category><category term="markdown"></category><category term="navigation"></category><category term="web-design"></category><category term="contents"></category></entry><entry><title>Code Snippets — Display Line Numbers</title><link href="https://dvesti.github.io/Pelican/2013/11/05/display-line-numbers-in-code-snippets/" rel="alternate"></link><published>2013-11-05T17:36:00+02:00</published><updated>2013-11-05T17:36:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-11-05:/Pelican/2013/11/05/display-line-numbers-in-code-snippets/</id><summary type="html">&lt;p&gt;reStructuredText and Markdown have directives that generate line numbers for code blocks. Use them to display line numbers in code&amp;nbsp;snippets.&lt;/p&gt;</summary><content type="html">&lt;p&gt;reStructuredText and Markdown have directives that generate line numbers for
+code snippets. Install &lt;a href="http://pygments.org/"&gt;Pygments&lt;/a&gt; to use these&amp;nbsp;directives.&lt;/p&gt;
+&lt;p&gt;Following examples will generate this&amp;nbsp;output,&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;example&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h2 id="restructuredtext"&gt;reStructuredText&lt;a class="headerlink" href="#restructuredtext" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;reStructuredText has &lt;code&gt;code-block&lt;/code&gt; directive to insert code snippets in your
+markup. Use &lt;code&gt;linenos&lt;/code&gt; flag to switch on line numbers for the&amp;nbsp;snippet.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;code-block&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt; python
+    &lt;span class="nc"&gt;:linenos:&lt;/span&gt;
+
+    def example():
+        print &amp;#39;Hello World&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="markdown"&gt;Markdown&lt;a class="headerlink" href="#markdown" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/Python-Markdown/markdown/"&gt;Python-Markdown&lt;/a&gt; uses
+&lt;a href="https://python-markdown.github.io/extensions/code_hilite/"&gt;CodeHilite&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;
+extension for syntax highlighting. Setup
+CodeHilite &lt;!-- yaspeller ignore --&gt;
+, then use Shebang &lt;code&gt;#!&lt;/code&gt; to
+generate line&amp;nbsp;numbers.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!python&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;example&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="markdown"></category><category term="reST"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Article Subtitle</title><link href="https://dvesti.github.io/Pelican/2013/08/27/article-subtitle/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/article-subtitle/</id><summary type="html">&lt;p&gt;Pelican lets you define title of your article in the metadata. Elegant adds
+subtitle support. Just define &lt;code&gt;subtitle&lt;/code&gt; in your article&amp;#8217;s metadata and it
+will appear along with your title. Here is an&amp;nbsp;example,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Article subtitle
+example" src="https://dvesti.github.io/Pelican/images/elegant-theme_article-subtitle.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Article subtitle is displayed with the title in every list. To keep it visibly
+separate …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Pelican lets you define title of your article in the metadata. Elegant adds
+subtitle support. Just define &lt;code&gt;subtitle&lt;/code&gt; in your article&amp;#8217;s metadata and it
+will appear along with your title. Here is an&amp;nbsp;example,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Article subtitle
+example" src="https://dvesti.github.io/Pelican/images/elegant-theme_article-subtitle.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Article subtitle is displayed with the title in every list. To keep it visibly
+separate from title, subtitle is enclosed in &lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt; tag. When visible cue
+cannot be used, like in the title attribute of &lt;span class="caps"&gt;HTML&lt;/span&gt; anchor tag &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;, a hyphen
+is inserted between&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Article title and subtitle separated with a
+hyphen" src="https://dvesti.github.io/Pelican/images/elegant-theme_article-subtitle-hyphen.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Articles Count With Every Tag and Category</title><link href="https://dvesti.github.io/Pelican/2013/08/27/articles-count-with-every-tag-and-category/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/articles-count-with-every-tag-and-category/</id><summary type="html">&lt;p&gt;Readers of an article on your site usually look for other articles on the same
+topic. Categories and tags are a way of showing them related articles. Elegant
+displays the count of articles that you have written in a category or tag in a
+non-intrusive&amp;nbsp;manner.&lt;/p&gt;
+&lt;p&gt;Every category and tag …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Readers of an article on your site usually look for other articles on the same
+topic. Categories and tags are a way of showing them related articles. Elegant
+displays the count of articles that you have written in a category or tag in a
+non-intrusive&amp;nbsp;manner.&lt;/p&gt;
+&lt;p&gt;Every category and tag has the count of articles in superscript. So if you have
+written three articles in the C++ category or tag, it will have 3 in the
+superscript. This way visitor will know you have written other articles too on
+the same&amp;nbsp;topic.&lt;/p&gt;
+&lt;p&gt;Check out the&amp;nbsp;screenshots,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Count of articles in a category is displayed in
+superscript" src="https://dvesti.github.io/Pelican/images/elegant-theme_category-superscript-count.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Count of articles that have been tagged is displayed in
+superscript" src="https://dvesti.github.io/Pelican/images/elegant-theme_tag-superscript-count.png" /&gt;&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Code Snippets — Theme</title><link href="https://dvesti.github.io/Pelican/2013/08/27/code-snippets-theme/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/code-snippets-theme/</id><summary type="html">&lt;p&gt;Elegant uses &lt;a href="https://github.com/daveyarwood/gruvbox-pygments"&gt;Pygment port&lt;/a&gt;
+of &lt;a href="https://github.com/morhetz/gruvbox"&gt;Gruvbox&lt;/a&gt; theme for syntax&amp;nbsp;highlighting.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;printf&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;This is a sample function&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h2 id="html-example"&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt; Example&lt;a class="headerlink" href="#html-example" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;
+  &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elegant-gallery&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;itemscope&lt;/span&gt;
+  &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageGallery&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;
+    &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;associatedMedia&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;itemscope&lt;/span&gt;
+    &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageObject&amp;quot;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;
+      &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Elegant uses &lt;a href="https://github.com/daveyarwood/gruvbox-pygments"&gt;Pygment port&lt;/a&gt;
+of &lt;a href="https://github.com/morhetz/gruvbox"&gt;Gruvbox&lt;/a&gt; theme for syntax&amp;nbsp;highlighting.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;printf&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;This is a sample function&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h2 id="html-example"&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt; Example&lt;a class="headerlink" href="#html-example" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;
+  &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elegant-gallery&amp;quot;&lt;/span&gt;
+  &lt;span class="na"&gt;itemscope&lt;/span&gt;
+  &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageGallery&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;
+    &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;associatedMedia&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;itemscope&lt;/span&gt;
+    &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageObject&amp;quot;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;
+      &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/1019/5472/3648.jpg&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contentUrl&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;data-size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5472x3648&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt;
+        &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/1019/100/100.jpg&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;thumbnail&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Image description&amp;quot;&lt;/span&gt;
+      &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt; &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;caption description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      Placeholder image from Unsplash
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;
+    &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;associatedMedia&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;itemscope&lt;/span&gt;
+    &lt;span class="na"&gt;itemtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://schema.org/ImageObject&amp;quot;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;
+      &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/101/2621/1747.jpg&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contentUrl&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;data-size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;2621x1747&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt;
+        &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://i.picsum.photos/id/101/100/100.jpg&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;thumbnail&amp;quot;&lt;/span&gt;
+        &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Image description&amp;quot;&lt;/span&gt;
+      &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt; &lt;span class="na"&gt;itemprop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;caption description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      You can write anything in the caption
+    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figcaption&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="c-example"&gt;C++ example&lt;a class="headerlink" href="#c-example" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;algorithm&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;vector&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;eg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;   &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;   &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;   &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                         &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;34&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;55&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;89&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;144&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;233&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;377&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;610&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;
+  &lt;span class="n"&gt;eg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;erase&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;remove_if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+              &lt;span class="n"&gt;eg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;
+              &lt;span class="n"&gt;eg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;
+              &lt;span class="p"&gt;[](&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;99&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+              &lt;span class="p"&gt;}),&lt;/span&gt;
+           &lt;span class="n"&gt;eg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="p"&gt;());&lt;/span&gt;
+
+  &lt;span class="c1"&gt;// Print result&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;for_each&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;eg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;
+                &lt;span class="n"&gt;eg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;
+                &lt;span class="p"&gt;[](&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Components"></category><category term="markdown"></category><category term="reST"></category><category term="code-snippets"></category><category term="gist"></category></entry><entry><title>Live Filter for Tags</title><link href="https://dvesti.github.io/Pelican/2013/08/27/live-filter-for-tags/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/live-filter-for-tags/</id><summary type="html">&lt;p&gt;Elegant is a minimal theme. Instead of creating separate pages for each tag,
+Elegant shows all the tags on a single page. To help visitor find the tags he
+is interested in, Elegant offers live&amp;nbsp;filter.&lt;/p&gt;
+&lt;p&gt;Go to tags page and type your required tag in &amp;#8220;Find a tag&amp;#8221; search …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant is a minimal theme. Instead of creating separate pages for each tag,
+Elegant shows all the tags on a single page. To help visitor find the tags he
+is interested in, Elegant offers live&amp;nbsp;filter.&lt;/p&gt;
+&lt;p&gt;Go to tags page and type your required tag in &amp;#8220;Find a tag&amp;#8221; search box. Elegant
+will automatically filter the&amp;nbsp;list.&lt;/p&gt;
+&lt;p&gt;For example, this is how my tags page looks&amp;nbsp;like&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tags view unfiltered" src="https://dvesti.github.io/Pelican/images/elegant-theme_tags-live-filter-default.png" /&gt;&lt;/p&gt;
+&lt;p&gt;As soon as I type
+&amp;#8220;os&amp;#8221;, &lt;!-- yaspeller ignore --&gt;
+all other tags are filtered&amp;nbsp;out&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tags view filtered for &amp;quot;os&amp;quot;" src="https://dvesti.github.io/Pelican/images/elegant-theme_tags-live-filter-filtered.png" /&gt; &lt;!-- yaspeller ignore --&gt;&lt;/p&gt;
+&lt;p&gt;With live filter, your reader will have no difficulty in picking up his desired
+tag from the list, even if your site has hundreds of&amp;nbsp;tags.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category><category term="search"></category></entry><entry><title>Page Title</title><link href="https://dvesti.github.io/Pelican/2013/08/27/page-title/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/page-title/</id><summary type="html">&lt;p&gt;Elegant follows following format for the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Article title · Site Name
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Article title is always visible in the
+tab" src="https://dvesti.github.io/Pelican/images/elegant-theme_page-title.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Some sites put site title first and article title later in the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag.
+There is a problem with this approach. When you open too many tabs, browser
+delimits tab&amp;#8217;s title from the end. In such cases …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant follows following format for the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Article title · Site Name
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Article title is always visible in the
+tab" src="https://dvesti.github.io/Pelican/images/elegant-theme_page-title.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Some sites put site title first and article title later in the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag.
+There is a problem with this approach. When you open too many tabs, browser
+delimits tab&amp;#8217;s title from the end. In such cases, only the first few words or
+even letters of the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; are left&amp;nbsp;visible.&lt;/p&gt;
+&lt;p&gt;If visitor has opened several tabs from your website, all tabs will have &amp;#8220;Site
+Name&amp;#8230;&amp;#8221; title. User will need to click on each tab to identify his required
+tab from the content. But with Elegant&amp;#8217;s approach article title will always be
+visible, and reader will have less difficultly in identifying the tab he is&amp;nbsp;after.&lt;/p&gt;
+&lt;p&gt;Putting site title before the article title increases your site name
+visibility. Elegant achieves this by putting site name in the top navigation
+bar of every page, where it always stays above the&amp;nbsp;fold.&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category></entry><entry><title>Zero Clutter Categories</title><link href="https://dvesti.github.io/Pelican/2013/08/27/zero-clutter-categories/" rel="alternate"></link><published>2013-08-27T23:20:00+03:00</published><updated>2013-08-27T23:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-08-27:/Pelican/2013/08/27/zero-clutter-categories/</id><summary type="html">&lt;p&gt;Pelican by default creates a separate page for each category. Themes list all
+the articles filed in that category at its page. Elegant takes a different
+approach which is, &amp;#8220;all Categories but with zero&amp;nbsp;clutter&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;It lists all the categories and their articles on the same page. To reduce
+clutter …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Pelican by default creates a separate page for each category. Themes list all
+the articles filed in that category at its page. Elegant takes a different
+approach which is, &amp;#8220;all Categories but with zero&amp;nbsp;clutter&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;It lists all the categories and their articles on the same page. To reduce
+clutter and utilize space efficiently, each category and its list of articles
+is enclosed in &lt;a href="http://getbootstrap.com/2.3.2/javascript.html#collapse"&gt;collapsible accordions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is how categories appear&amp;nbsp;collapsed&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Categories accordions
+collapsed" src="https://dvesti.github.io/Pelican/images/elegant-theme_category-accordions-collapsed.png" /&gt;&lt;/p&gt;
+&lt;p&gt;And this is how they appear&amp;nbsp;uncollapsed&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Categories accordions
+uncollapsed" src="https://dvesti.github.io/Pelican/images/elegant-theme_category-accordions-uncollapsed.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Did you notice that categories are listed in ascending alphabetical order and
+articles are sorted by their date in descending&amp;nbsp;order?&lt;/p&gt;</content><category term="Components"></category><category term="nuances"></category><category term="clean"></category></entry></feed>
