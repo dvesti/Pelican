@@ -16,7 +16,7 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="Hack, Search, Test, " />
+<meta name="keywords" content="Hack, Search, Pelican, Test, " />
 
 <meta property="og:title" content="Поиск на русском языке — сделан! "/>
 <meta property="og:url" content="https://dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/" />
@@ -26,8 +26,8 @@
 <meta property="og:article:published_time" content="2020-07-31T15:43:48+03:00" />
 <meta name="twitter:title" content="Поиск на русском языке — сделан! ">
 <meta name="twitter:description" content="Наконец-то сделал поиск по сайту на русском языке. Сайт создан на Pelican. Если коротко, то взял Поиск с версии 1.3, потом добавил всё остальное. Возможно, придётся поменять некоторые скрипты в папке tipuesearch Желающие разобраться могут посмотреть файлы в репозитории (ветка gh-pages) P.S. Впрочем, нет основных файлов в репозитории …">
-<meta property="og:image" content="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" />
-<meta name="twitter:image" content="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" >
+<meta property="og:image" content="/theme/images/apple-touch-icon-152x152.png" />
+<meta name="twitter:image" content="/theme/images/apple-touch-icon-152x152.png" >
 
         <title>Поиск на русском языке — сделан!  · Pelican-200
 </title>
@@ -65,7 +65,7 @@
                                     >Главная</a>
                                 </li>
                                 <li ><a href="https://dvesti.github.io/Pelican/categories">Категории</a></li>
-                                <li ><a href="https://dvesti.github.io/Pelican/tags">Tags</a></li>
+                                <li ><a href="https://dvesti.github.io/Pelican/tags">Тэги</a></li>
                                 <li ><a href="https://dvesti.github.io/Pelican/archives">Архив</a></li>
                                 <li><form class="navbar-search" action="https://dvesti.github.io/Pelican/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                             </ul>
@@ -96,14 +96,131 @@
 <!--more--><br />
 Желающие разобраться могут посмотреть файлы <a href="https://github.com/dvesti/Pelican">в репозитории</a> (ветка <em>gh-pages</em>)</p>
 <p><strong><span class="caps">P.S.</span></strong> Впрочем, нет основных файлов в репозитории. Вот так и я по крупицам собирал в Интернете информацию.<br />
-Теперь сайт работоспособный &#8212; подумаю об обратной связи: попробую сделать комментарии. Возможно, что и перееду на свой поддомен: как дело&nbsp;пойдёт&#8230; </p>
+Теперь сайт работоспособный &#8212; подумаю об обратной связи: попробую сделать комментарии. Возможно, что и перееду на свой поддомен: как дело&nbsp;пойдёт&#8230;</p>
+<p><strong>P.S2.</strong> Необходимо вдогонку отметить, что и сам плагин <code>tipue_search</code> должен быть старым, чтоб <em>генерил</em> в формате <em><span class="caps">JSON</span></em> &lt;== <strong>это важно!</strong>)</p>
+<p>Чтобы два раза не вставать, вот код файла <code>blog-plugins\pelican-plugins\tipue_search\tipue_search.py</code></p>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Tipue Search</span>
+<span class="sd">============</span>
+<span class="sd">A Pelican plugin to serialize generated HTML to JSON</span>
+<span class="sd">that can be used by jQuery plugin - Tipue Search.</span>
+<span class="sd">Copyright (c) Talha Mansoor</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">from</span> <span class="nn">codecs</span> <span class="kn">import</span> <span class="nb">open</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">urlparse</span> <span class="kn">import</span> <span class="n">urljoin</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urljoin</span>
+
+<span class="kn">from</span> <span class="nn">pelican</span> <span class="kn">import</span> <span class="n">signals</span>
+
+
+<span class="k">class</span> <span class="nc">Tipue_Search_JSON_Generator</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">settings</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">theme</span><span class="p">,</span> <span class="n">output_path</span><span class="p">,</span> <span class="o">*</span><span class="n">null</span><span class="p">):</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">output_path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span> <span class="o">=</span> <span class="n">context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">siteurl</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;SITEURL&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tpages</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;TEMPLATE_PAGES&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">output_path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">json_nodes</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+    <span class="k">def</span> <span class="nf">create_json_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page</span><span class="p">):</span>
+
+        <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;published&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;published&#39;</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="n">soup_title</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&amp;nbsp;&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">),</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+        <span class="n">page_title</span> <span class="o">=</span> <span class="n">soup_title</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;“&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;”&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;’&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;^&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;#94;&#39;</span><span class="p">)</span>
+
+        <span class="n">soup_text</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+        <span class="n">page_text</span> <span class="o">=</span> <span class="n">soup_text</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;“&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;”&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;’&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;¶&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;^&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;#94;&#39;</span><span class="p">)</span>
+        <span class="n">page_text</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">page_text</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;None&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span>
+            <span class="n">page_category</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">page_category</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">category</span><span class="o">.</span><span class="n">name</span>
+
+        <span class="n">page_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">siteurl</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">page</span><span class="o">.</span><span class="n">url</span>
+
+        <span class="n">node</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">page_title</span><span class="p">,</span>
+                <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">page_text</span><span class="p">,</span>
+                <span class="s1">&#39;tags&#39;</span><span class="p">:</span> <span class="n">page_category</span><span class="p">,</span>
+                <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="n">page_url</span><span class="p">,</span>
+                <span class="s1">&#39;loc&#39;</span><span class="p">:</span> <span class="n">page_url</span><span class="p">}</span> <span class="c1"># changed from &#39;url&#39; following http://blog.siphos.be/2015/08/updates-on-my-pelican-adventure/ (an update to Pelican made it not work, because the update (e.g., in the theme folder, static/tipuesearch/tipuesearch.js is looking for the &#39;loc&#39; attribute.</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">json_nodes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">create_tpage_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">srclink</span><span class="p">):</span>
+
+        <span class="n">srcfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tpages</span><span class="p">[</span><span class="n">srclink</span><span class="p">]),</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">srcfile</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+        <span class="n">page_text</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+
+        <span class="c1"># What happens if there is not a title.</span>
+        <span class="k">if</span> <span class="n">soup</span><span class="o">.</span><span class="n">title</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">page_title</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">string</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">page_title</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+        <span class="c1"># Should set default category?</span>
+        <span class="n">page_category</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+        <span class="n">page_url</span> <span class="o">=</span> <span class="n">urljoin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">siteurl</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tpages</span><span class="p">[</span><span class="n">srclink</span><span class="p">])</span>
+
+        <span class="n">node</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">page_title</span><span class="p">,</span>
+                <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">page_text</span><span class="p">,</span>
+                <span class="s1">&#39;tags&#39;</span><span class="p">:</span> <span class="n">page_category</span><span class="p">,</span>
+                <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="n">page_url</span><span class="p">,</span>
+                <span class="s1">&#39;loc&#39;</span><span class="p">:</span> <span class="n">page_url</span><span class="p">}</span> <span class="c1"># changed from &#39;url&#39; following http://blog.siphos.be/2015/08/updates-on-my-pelican-adventure/ (an update to Pelican made it not work, because the update (e.g., in the theme folder, static/tipuesearch/tipuesearch.js is looking for the &#39;loc&#39; attribute. - commit 2dcdca8c8d</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">json_nodes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">generate_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">writer</span><span class="p">):</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="s1">&#39;tipuesearch_content.json&#39;</span><span class="p">)</span>
+
+        <span class="n">pages</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s1">&#39;pages&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s1">&#39;articles&#39;</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s1">&#39;articles&#39;</span><span class="p">]:</span>
+            <span class="n">pages</span> <span class="o">+=</span> <span class="n">article</span><span class="o">.</span><span class="n">translations</span>
+
+        <span class="k">for</span> <span class="n">srclink</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tpages</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">create_tpage_node</span><span class="p">(</span><span class="n">srclink</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="n">pages</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">create_json_node</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
+        <span class="n">root_node</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pages&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">json_nodes</span><span class="p">}</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">root_node</span><span class="p">,</span> <span class="n">fd</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">),</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">get_generators</span><span class="p">(</span><span class="n">generators</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">Tipue_Search_JSON_Generator</span>
+
+
+<span class="k">def</span> <span class="nf">register</span><span class="p">():</span>
+    <span class="n">signals</span><span class="o">.</span><span class="n">get_generators</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">get_generators</span><span class="p">)</span>
+</pre></div>
 
 
              
  
                 <p id="post-share-links">
     Понравилась статья? Расскажите о ней на:
-      <a href="https://twitter.com/intent/tweet?text=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20%E2%80%94%C2%A0%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%21&url=https%3A//dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/&hashtags=hack,search" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+      <a href="https://twitter.com/intent/tweet?text=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20%E2%80%94%C2%A0%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%21&url=https%3A//dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/&hashtags=hack,search,pelican" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
  ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
  ❄       <a href="mailto:?subject=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20%E2%80%94%C2%A0%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%21&amp;body=https%3A//dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
 
@@ -120,7 +237,11 @@
 <section>
     <h2>Что почитать</h2>
 <ul class="related-posts-list">
+<li><a href="https://dvesti.github.io/Pelican/2010/12/03/my-first-post/" title="Моё первое Сообщение — My First Post">Моё первое Сообщение — My First Post</a></li>
 <li><a href="https://dvesti.github.io/Pelican/2013/08/27/live-filter-for-tags/" title="Live Filter for Tags">Live Filter for Tags</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/" title="Travis-CI Automation for documentation website">Travis-CI Automation for documentation website</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2018/12/11/travis-to-trigger-build-in-another-repository/" title="Triggering a travis-ci build on another repository">Triggering a travis-ci build on another repository</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" title="Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.">Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</a></li>
 </ul>
 <hr />
 </section>
@@ -141,6 +262,9 @@
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://dvesti.github.io/Pelican/tags#hack-ref">Hack
                     <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://dvesti.github.io/Pelican/tags#pelican-ref">Pelican
+                    <span class="superscript">6</span>
 </a></li>
                 <li><a href="https://dvesti.github.io/Pelican/tags#search-ref">Search
                     <span class="superscript">2</span>
