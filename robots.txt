@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://dvesti.github.io/Pelican/sitemap.xml

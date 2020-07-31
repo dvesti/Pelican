@@ -5,43 +5,50 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://dvesti.github.io/Pelican/</loc>
-<lastmod>2020-06-11T00:41:26-00:00</lastmod>
+<lastmod>2020-07-31T19:15:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/tags</loc>
-<lastmod>2020-06-11T00:41:26-00:00</lastmod>
+<lastmod>2020-07-31T19:15:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/categories</loc>
-<lastmod>2020-06-11T00:41:26-00:00</lastmod>
+<lastmod>2020-07-31T19:15:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/archives</loc>
-<lastmod>2020-06-11T00:41:26-00:00</lastmod>
+<lastmod>2020-07-31T19:15:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://dvesti.github.io/Pelican/search</loc>
-<lastmod>2020-06-11T00:41:26-00:00</lastmod>
+<loc>https://dvesti.github.io/Pelican/search.html</loc>
+<lastmod>2020-07-31T19:15:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/404.html</loc>
-<lastmod>2020-06-11T00:41:26-00:00</lastmod>
+<lastmod>2020-07-31T19:15:25-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://dvesti.github.io/Pelican/2020/07/31/poisk-na-russkom-iazyke-sdelan/</loc>
+<lastmod>2020-07-31T15:43:48+08:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -887,7 +894,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://dvesti.github.io/Pelican/category/miscellaneous</loc>
-<lastmod>2017-08-31T15:43:48+01:39</lastmod>
+<lastmod>2020-07-31T15:43:48+01:39</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -923,6 +930,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://dvesti.github.io/Pelican/category/website</loc>
 <lastmod>2020-07-04T19:30:00+01:39</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://dvesti.github.io/Pelican/tag/hack</loc>
+<lastmod>2020-07-31T15:43:48+01:39</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

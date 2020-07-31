@@ -1,8 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
     <head>
-        <!--<meta charset="utf-8">-->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?fc5adb95">
@@ -28,8 +27,8 @@
 <meta property="og:article:modified_time" content="2020-07-04T19:30:00+03:00" />
 <meta name="twitter:title" content="Пример стандартной разметки Markdown ">
 <meta name="twitter:description" content="Пример стандартной разметки Markdown">
-<meta property="og:image" content="/theme/images/apple-touch-icon-152x152.png" />
-<meta name="twitter:image" content="/theme/images/apple-touch-icon-152x152.png" >
+<meta property="og:image" content="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" />
+<meta name="twitter:image" content="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" >
 
         <title>Пример стандартной разметки Markdown  · Pelican-200
 </title>
@@ -67,9 +66,9 @@
                                     >Главная</a>
                                 </li>
                                 <li ><a href="https://dvesti.github.io/Pelican/categories">Категории</a></li>
-                                <li ><a href="https://dvesti.github.io/Pelican/tags">Тэги</a></li>
+                                <li ><a href="https://dvesti.github.io/Pelican/tags">Tags</a></li>
                                 <li ><a href="https://dvesti.github.io/Pelican/archives">Архив</a></li>
-                                <li><form class="navbar-search" action="https://dvesti.github.io/Pelican/search" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                                <li><form class="navbar-search" action="https://dvesti.github.io/Pelican/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                             </ul>
                         </div>
                     </div>
@@ -125,7 +124,7 @@
     </div>
     <div class="span8 article-content">
             
-            <p>As I started writing my articles for my blog, I realized I needed something. To help me write articles using this flavor of Markdown<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, I needed my own cheat sheet. My hope is that it provides clear guidance on which aspects of the various forms of Markdown worked for me, and which didn’t.</p>
+            <p>Стандарт тот ещё – As I started writing my articles for my blog, I realized I needed something. To help me write articles using this flavor of Markdown<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, I needed my own cheat sheet. My hope is that it provides clear guidance on which aspects of the various forms of Markdown worked for me, and which didn’t.</p>
 
 <h2 id="introduction">Introduction<a href="#introduction" title="Permanent link"></a><a class="headerlink" href="#introduction" title="Permanent link"> </a></h2>
 <p>I am writing articles and pages on Pelican 4.0.1<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> using the Elegant<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> theme, therefore I want to make sure I have a cheat sheet that is specific to this dialect of Markdown. The base Markdown used for Pelican uses the <a href="https://python-markdown.github.io/">Python Markdown Package</a> which (with 3 exceptions) follows <a href="https://daringfireball.net/projects/markdown/syntax">John Gruber’s Markdown definition</a> very literally. Pelican configuration also supports providing Markdown with additional configuration that enables other features. Those features are documented separately in <a href="https://jackdewinter.github.io/2019/06/30/extended-markdown-examples/">the next page</a>.</p>
@@ -435,6 +434,7 @@ LINKS = (
             <nav>
             <ul class="articles-timeline">
                 <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2020/02/06/version-530/" title="Previous: Version 5.3.0">Version 5.3.0</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2020/07/31/poisk-na-russkom-iazyke-sdelan/" title="Next: Поиск на русском языке — сделан!">Поиск на русском языке — сделан!</a> »</li>
             </ul>
             </nav>
             </aside>
@@ -554,7 +554,7 @@ LINKS = (
 
     <div>
         <span class="site-name">Pelican-200</span> - Блог сайта Dmitriev.ee
-    </div>
+     </div>
 
 
 
@@ -562,9 +562,9 @@ LINKS = (
         Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
         Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
     </div>
-</footer>            <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="https://dvesti.github.io/Pelican/theme/js/elegant.prod.9e9d5ce754.js"></script>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://dvesti.github.io/Pelican/theme/js/elegant.prod.9e9d5ce754.js"></script>
         <script>
             function validateForm(query)
             {

@@ -16,3 +16,22 @@
     font-size: rfs(1.125rem);
   }
 }
+
+#tipue_search_content {
+  & div.tipue_search_content-item {
+    margin: 0 0 20px 0;
+  }
+  & p.tipue_content-fail,
+  & p.tipue_search_content-item-body {
+    font-family: var(--serifFontFamily);
+    font-size: rfs(1rem);
+    line-height: 1.6;
+    text-transform: none;
+    margin: 10px 0 0 0;
+  }
+  & p.tipue_content-fail {
+    color: maroon;
+    text-align: center;
+    font-size: rfs(1.125rem);
+  }
+}

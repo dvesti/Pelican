@@ -1,4 +1,4 @@
-function lunr_search(term) {
+﻿function lunr_search(term) {
   if (!tipuesearch) {
     console.error("Pelican Elegant: Tipue search plugin is required");
     return;
@@ -13,13 +13,35 @@ function lunr_search(term) {
     counter = counter + 1;
   }
 
-  idx = lunr(function() {
-    this.ref("id");
-    this.field("title");
-    this.field("url");
-    this.field("text", { boost: 10 });
-    this.field("tags");
+  // Делаем русский язык - https://github.com/MihaiValentin/lunr-languages //
 
+var lunr = require('./lib/lunr.js');
+  require('./lunr.stemmer.support.js')(lunr);
+  require('./lunr.ru.js')(lunr); // or any other language you want
+  require('./lunr.multi.js')(lunr);
+
+  // importScripts('lunr.stemmer.support.js');
+  // importScripts('lunr.ru.js');  
+
+var idx = lunr(function() {
+  // use the language (ru)
+  this.pipeline.reset();
+  this.pipeline.add(
+       trimmer,
+       lunr.stopWordFilter,
+       lunr.stemmer,
+       lunr.ru.stemmer
+     );
+   this.pipeline.remove(lunr.stopWordFilter);
+   this.use(lunr.ru);
+   this.use(lunr.multiLanguage('en', 'ru'));
+   this.ref("id");
+   this.field("title");
+   this.field("url");
+   this.field("text", { boost: 10 });
+   this.field("tags");
+
+   
     items.forEach(function(doc) {
       this.add(doc);
     }, this);
@@ -30,7 +52,7 @@ function lunr_search(term) {
       "lunr-search-result-heading"
     );
     const resultIntro = `
-    <h1>Вы искали: <code>${term}</code></h1>
+    <h1>Search Results for <code>${term}</code></h1>
     `;
 
     resultHeadingRoot.insertAdjacentHTML("beforeend", resultIntro);
