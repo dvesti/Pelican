@@ -5,42 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://dvesti.github.io/Pelican/</loc>
-<lastmod>2020-08-01T04:11:06-00:00</lastmod>
+<lastmod>2020-08-01T15:16:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/tags</loc>
-<lastmod>2020-08-01T04:11:06-00:00</lastmod>
+<lastmod>2020-08-01T15:16:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/categories</loc>
-<lastmod>2020-08-01T04:11:06-00:00</lastmod>
+<lastmod>2020-08-01T15:16:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/archives</loc>
-<lastmod>2020-08-01T04:11:06-00:00</lastmod>
+<lastmod>2020-08-01T15:16:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/search</loc>
-<lastmod>2020-08-01T04:11:06-00:00</lastmod>
+<lastmod>2020-08-01T15:16:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://dvesti.github.io/Pelican/404.html</loc>
-<lastmod>2020-08-01T04:11:06-00:00</lastmod>
+<lastmod>2020-08-01T15:16:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
