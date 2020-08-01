@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Advanced Features</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/advanced-features.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2019-08-10T20:44:00+03:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Clean URL</title><link href="https://dvesti.github.io/Pelican/2019/08/10/clean-url/" rel="alternate"></link><published>2019-08-10T20:44:00+03:00</published><updated>2019-08-10T20:44:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-08-10:/Pelican/2019/08/10/clean-url/</id><summary type="html">&lt;p&gt;Out of the box, Pelican generated URLs are &lt;a href="https://en.wikipedia.org/wiki/Clean_URL"&gt;unclean&lt;/a&gt;, i.e. they have &lt;code&gt;.html&lt;/code&gt; appended. Elegant lets you use clean URLs with minimal&amp;nbsp;configuration.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Advanced Features</title><link href="/" rel="alternate"></link><link href="/feeds/advanced-features.atom.xml" rel="self"></link><id>/</id><updated>2019-08-10T20:44:00+03:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Clean URL</title><link href="/2019/08/10/clean-url/" rel="alternate"></link><published>2019-08-10T20:44:00+03:00</published><updated>2019-08-10T20:44:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2019-08-10:/2019/08/10/clean-url/</id><summary type="html">&lt;p&gt;Out of the box, Pelican generated URLs are &lt;a href="https://en.wikipedia.org/wiki/Clean_URL"&gt;unclean&lt;/a&gt;, i.e. they have &lt;code&gt;.html&lt;/code&gt; appended. Elegant lets you use clean URLs with minimal&amp;nbsp;configuration.&lt;/p&gt;
 &lt;div class="admonition important"&gt;
 &lt;p class="admonition-title"&gt;Mandatory&lt;/p&gt;
 &lt;p&gt;To use clean URLs, you server must support&amp;nbsp;it.&lt;/p&gt;
@@ -49,7 +49,7 @@
 &lt;h2 id="search"&gt;Search&lt;a class="headerlink" href="#search" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;For search page,&amp;nbsp;set&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SEARCH_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;search&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Metadata</title><link href="https://dvesti.github.io/Pelican/2019/07/03/metadata/" rel="alternate"></link><published>2019-07-03T20:44:00+03:00</published><updated>2019-07-03T20:44:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-03:/Pelican/2019/07/03/metadata/</id><summary type="html">&lt;p&gt;Pelican uses &lt;a href="http://docs.getpelican.com/en/stable/content.html#file-metadata"&gt;file
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Metadata</title><link href="/2019/07/03/metadata/" rel="alternate"></link><published>2019-07-03T20:44:00+03:00</published><updated>2019-07-03T20:44:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2019-07-03:/2019/07/03/metadata/</id><summary type="html">&lt;p&gt;Pelican uses &lt;a href="http://docs.getpelican.com/en/stable/content.html#file-metadata"&gt;file
 metadata&lt;/a&gt;
 from your articles and pages text files to get information about your posts,
 like tags, authors&amp;nbsp;etc.&lt;/p&gt;
@@ -65,7 +65,7 @@ like tags, authors&amp;nbsp;etc.&lt;/p&gt;
 can use in your articles and&amp;nbsp;pages.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;summary&lt;/code&gt; used for &lt;a href="search-engine-and-social-media-optimization#search-engine-optimization-seo"&gt;Search Engine&amp;nbsp;Optimization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;subtitle&lt;/code&gt; used to set &lt;a href="https://dvesti.github.io/Pelican/2013/08/27/article-subtitle/"&gt;article&amp;nbsp;subtitle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;subtitle&lt;/code&gt; used to set &lt;a href="/2013/08/27/article-subtitle/"&gt;article&amp;nbsp;subtitle&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;keywords&lt;/code&gt; used for &lt;a href="search-engine-and-social-media-optimization#search-engine-optimization-seo"&gt;Search Engine&amp;nbsp;Optimization&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;modified&lt;/code&gt; used to set &lt;a href="how-does-modified-metadata-works"&gt;last updated time&lt;/a&gt;
    of the&amp;nbsp;article&lt;/li&gt;
@@ -74,10 +74,10 @@ can use in your articles and&amp;nbsp;pages.&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;share_post_intro&lt;/code&gt; used with &lt;a href="how-to-use-social-sharing-plugin"&gt;&lt;code&gt;share_post&lt;/code&gt;
    plugin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;comments_intro&lt;/code&gt; used with
-   &lt;a href="https://dvesti.github.io/Pelican/2014/04/21/invite-visitors-comment/"&gt;comments&lt;/a&gt;&lt;/li&gt;
+   &lt;a href="/2014/04/21/invite-visitors-comment/"&gt;comments&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;comment_id&lt;/code&gt; used with
-   &lt;a href="https://dvesti.github.io/Pelican/2019/06/30/comments-thread-id/"&gt;comments&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Change Labels</title><link href="https://dvesti.github.io/Pelican/2019/07/03/change-labels/" rel="alternate"></link><published>2019-07-03T20:20:00+03:00</published><updated>2019-07-03T20:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-03:/Pelican/2019/07/03/change-labels/</id><summary type="html">&lt;p&gt;It is quite possible you will feel the need to tweak labels of different
+   &lt;a href="/2019/06/30/comments-thread-id/"&gt;comments&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Change Labels</title><link href="/2019/07/03/change-labels/" rel="alternate"></link><published>2019-07-03T20:20:00+03:00</published><updated>2019-07-03T20:20:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2019-07-03:/2019/07/03/change-labels/</id><summary type="html">&lt;p&gt;It is quite possible you will feel the need to tweak labels of different
 sections or widgets. For example, change label of &lt;a href="/how-to-display-your-social-media-profiles"&gt;social
 widget&lt;/a&gt; from &amp;#8220;Contact&amp;#8221; to &amp;#8220;Stay in&amp;nbsp;Touch&amp;#8221;.&lt;/p&gt;
 &lt;p&gt;Don&amp;#8217;t worry! We got you&amp;nbsp;covered!&lt;/p&gt;
@@ -119,7 +119,7 @@ configuration, &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
 
 
 &lt;p&gt;That&amp;#8217;s it. The title of social widget will change. There are several others
-labels that you can customize easily without touching Elegant&amp;#8217;s source&amp;nbsp;code.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Customize Style</title><link href="https://dvesti.github.io/Pelican/2019/07/03/customize-style/" rel="alternate"></link><published>2019-07-03T20:14:00+03:00</published><updated>2019-07-03T20:14:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-03:/Pelican/2019/07/03/customize-style/</id><summary type="html">&lt;p&gt;To customize Elegant&amp;#8217;s visual style, use
+labels that you can customize easily without touching Elegant&amp;#8217;s source&amp;nbsp;code.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Customize Style</title><link href="/2019/07/03/customize-style/" rel="alternate"></link><published>2019-07-03T20:14:00+03:00</published><updated>2019-07-03T20:14:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2019-07-03:/2019/07/03/customize-style/</id><summary type="html">&lt;p&gt;To customize Elegant&amp;#8217;s visual style, use
 &lt;a href="https://github.com/Pelican-Elegant/elegant/blob/master/static/css/custom.css"&gt;&lt;code&gt;custom.css&lt;/code&gt;&lt;/a&gt;.
 You can override Elegant&amp;#8217;s visual style like font, color, spacing etc using
 this sheet. This empty style sheet is present at following path in your Elegant&amp;nbsp;folder,&lt;/p&gt;
@@ -164,12 +164,12 @@ Following is the relevant&amp;nbsp;code,&lt;/p&gt;
 
 
 &lt;p&gt;Test your website using Pelican. All links should be colored&amp;nbsp;red.&lt;/p&gt;
-&lt;p&gt;Read &lt;a href="https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/"&gt;this post&lt;/a&gt; to make sure your site&amp;#8217;s page
-speed does not decrease due to additional &lt;span class="caps"&gt;HTTP&lt;/span&gt;&amp;nbsp;request.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Custom 404 Error Page</title><link href="https://dvesti.github.io/Pelican/2019/07/03/custom-404-page/" rel="alternate"></link><published>2019-07-03T20:07:00+03:00</published><updated>2019-07-03T20:07:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-03:/Pelican/2019/07/03/custom-404-page/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a custom 404 page, giving the user the ability to search for information they expected on the missing&amp;nbsp;page.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When you go to a page that does not exist, your browser will display a default error page
+&lt;p&gt;Read &lt;a href="/2014/03/24/avoid-unnecessary-http-requests/"&gt;this post&lt;/a&gt; to make sure your site&amp;#8217;s page
+speed does not decrease due to additional &lt;span class="caps"&gt;HTTP&lt;/span&gt;&amp;nbsp;request.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Custom 404 Error Page</title><link href="/2019/07/03/custom-404-page/" rel="alternate"></link><published>2019-07-03T20:07:00+03:00</published><updated>2019-07-03T20:07:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2019-07-03:/2019/07/03/custom-404-page/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide a custom 404 page, giving the user the ability to search for information they expected on the missing&amp;nbsp;page.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When you go to a page that does not exist, your browser will display a default error page
 unless the website intervenes and provides it&amp;#8217;s own error page. Elegant provides an error
 page that allows the user to search for the page that they were trying to&amp;nbsp;reach.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the 404 page may look&amp;nbsp;like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Error 404 page" src="https://dvesti.github.io/Pelican/images/elegant-theme_error-404-page.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Error 404 page" src="/images/elegant-theme_error-404-page.png" /&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable the custom 404 page, you need to add &lt;code&gt;404&lt;/code&gt; to &lt;code&gt;DIRECT_TEMPLATES&lt;/code&gt; in your pelican&amp;nbsp;configuration.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;DIRECT_TEMPLATES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;404&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -177,14 +177,14 @@ page that allows the user to search for the page that they were trying to&amp;nb
 
 
 &lt;p&gt;Note that these values must be added to any existing values present for the &lt;code&gt;DIRECT_TEMPLATES&lt;/code&gt;
-configuration&amp;nbsp;variables.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Add Search to Your Site</title><link href="https://dvesti.github.io/Pelican/2019/07/03/add-search/" rel="alternate"></link><published>2019-07-03T19:56:00+03:00</published><updated>2019-07-03T19:56:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2019-07-03:/Pelican/2019/07/03/add-search/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide search for your static site, giving an alternate way to navigate the&amp;nbsp;site.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Static sites usually do not offer search, as they are normally considered a dynamic task.
+configuration&amp;nbsp;variables.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Add Search to Your Site</title><link href="/2019/07/03/add-search/" rel="alternate"></link><published>2019-07-03T19:56:00+03:00</published><updated>2019-07-03T19:56:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2019-07-03:/2019/07/03/add-search/</id><summary type="html">&lt;p&gt;Elegant can be configured to provide search for your static site, giving an alternate way to navigate the&amp;nbsp;site.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Static sites usually do not offer search, as they are normally considered a dynamic task.
 Elegant uses the open-source &lt;a href="https://lunrjs.com/"&gt;LunrJS&lt;/a&gt; JavaScript library, to offer
 search for your static&amp;nbsp;site.&lt;/p&gt;
 &lt;p&gt;Here is an example of what the search result may look&amp;nbsp;like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Search result for App Store" src="https://dvesti.github.io/Pelican/images/elegant-theme_search-result.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Search result for App Store" src="/images/elegant-theme_search-result.png" /&gt;&lt;/p&gt;
 &lt;p&gt;We have located the search box on the top right of the main navigation menu to allow
 visitors to search from any&amp;nbsp;page.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Search box" src="https://dvesti.github.io/Pelican/images/elegant-theme_search-box.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Search box" src="/images/elegant-theme_search-box.png" /&gt;&lt;/p&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;a class="headerlink" href="#configuration" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To enable search, you need to enable the &lt;code&gt;tipue_search&lt;/code&gt; plugin and add &lt;code&gt;search&lt;/code&gt; to
 &lt;code&gt;DIRECT_TEMPLATES&lt;/code&gt; in your pelican&amp;nbsp;configuration.&lt;/p&gt;
@@ -194,7 +194,7 @@ visitors to search from any&amp;nbsp;page.&lt;/p&gt;
 
 
 &lt;p&gt;Note that these values must be added to any existing values present for the &lt;code&gt;PLUGINS&lt;/code&gt; and
-&lt;code&gt;DIRECT_TEMPLATES&lt;/code&gt; configuration&amp;nbsp;variables.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Article redirection</title><link href="https://dvesti.github.io/Pelican/2018/11/30/article-redirect/" rel="alternate"></link><published>2018-11-30T10:32:00+02:00</published><updated>2018-11-30T10:32:00+02:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:dvesti.github.io,2018-11-30:/Pelican/2018/11/30/article-redirect/</id><summary type="html">&lt;p&gt;Use Pelican redirect yaml preamble to point to new&amp;nbsp;articles&lt;/p&gt;</summary><content type="html">&lt;p&gt;We might want to redirect a visitor to another &lt;span class="caps"&gt;URL&lt;/span&gt; or&amp;nbsp;article.&lt;/p&gt;
+&lt;code&gt;DIRECT_TEMPLATES&lt;/code&gt; configuration&amp;nbsp;variables.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="unique"></category></entry><entry><title>Article redirection</title><link href="/2018/11/30/article-redirect/" rel="alternate"></link><published>2018-11-30T10:32:00+02:00</published><updated>2018-11-30T10:32:00+02:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:None,2018-11-30:/2018/11/30/article-redirect/</id><summary type="html">&lt;p&gt;Use Pelican redirect yaml preamble to point to new&amp;nbsp;articles&lt;/p&gt;</summary><content type="html">&lt;p&gt;We might want to redirect a visitor to another &lt;span class="caps"&gt;URL&lt;/span&gt; or&amp;nbsp;article.&lt;/p&gt;
 &lt;p&gt;Ideally this is done via a &lt;code&gt;.htaccess&lt;/code&gt; so that a proper 301 code is generated, but we might not have access to the web server&amp;nbsp;configuration.&lt;/p&gt;
 &lt;p&gt;In Elegant we&amp;#8217;ve included a &lt;code&gt;redirect&lt;/code&gt; slug in the &lt;code&gt;yaml preamble&lt;/code&gt; that allows to specify a target &lt;span class="caps"&gt;URL&lt;/span&gt;, that will be load with a&amp;nbsp;http-refresh:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;refresh&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;0;URL={{ article.redirect }}&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
@@ -210,7 +210,7 @@ visitors to search from any&amp;nbsp;page.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;When the article loads, it will refresh to the new &lt;span class="caps"&gt;URL&lt;/span&gt; defined in redirect, allowing you to still provide search engines and users a way to get to the new&amp;nbsp;article.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="redirection"></category></entry><entry><title>How to set Shortcut Icons</title><link href="https://dvesti.github.io/Pelican/2014/04/24/how-to-set-shortcut-icons/" rel="alternate"></link><published>2014-04-24T16:42:00+03:00</published><updated>2014-04-24T16:42:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-24:/Pelican/2014/04/24/how-to-set-shortcut-icons/</id><summary type="html">&lt;p&gt;Elegant lets you set Favicon, Opera Speed Dial icon, and shortcut icons for Apple iOS and Android&amp;nbsp;devices.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant supports Favicon, Opera Speed Dial, and shortcut or launcher icons on
+&lt;p&gt;When the article loads, it will refresh to the new &lt;span class="caps"&gt;URL&lt;/span&gt; defined in redirect, allowing you to still provide search engines and users a way to get to the new&amp;nbsp;article.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="redirection"></category></entry><entry><title>How to set Shortcut Icons</title><link href="/2014/04/24/how-to-set-shortcut-icons/" rel="alternate"></link><published>2014-04-24T16:42:00+03:00</published><updated>2014-04-24T16:42:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2014-04-24:/2014/04/24/how-to-set-shortcut-icons/</id><summary type="html">&lt;p&gt;Elegant lets you set Favicon, Opera Speed Dial icon, and shortcut icons for Apple iOS and Android&amp;nbsp;devices.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant supports Favicon, Opera Speed Dial, and shortcut or launcher icons on
 Apple iOS and Android devices. These are disabled by default to avoid
 unnecessary &lt;span class="caps"&gt;HTTP&lt;/span&gt; requests on sites that do not use&amp;nbsp;them.&lt;/p&gt;
 &lt;p&gt;To enable, set &lt;code&gt;USE_SHORTCUT_ICONS&lt;/code&gt; in your&amp;nbsp;configuration&lt;/p&gt;
@@ -238,7 +238,7 @@ variable in your&amp;nbsp;configuration&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;I highly recommend you to use
 &lt;a href="http://iconifier.net/"&gt;Iconifier.net&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;
-to generate the set of&amp;nbsp;images.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="web-design"></category></entry><entry><title>How does modified metadata works</title><link href="https://dvesti.github.io/Pelican/2014/04/19/how-does-modified-metadata-works/" rel="alternate"></link><published>2014-04-19T14:52:00+03:00</published><updated>2014-04-19T14:52:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-19:/Pelican/2014/04/19/how-does-modified-metadata-works/</id><summary type="html">&lt;p&gt;Use modified metadata to show the date at which you last updated the&amp;nbsp;article&lt;/p&gt;</summary><content type="html">&lt;p&gt;You need to update your articles time and again. Sometimes it makes sense to
+to generate the set of&amp;nbsp;images.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="web-design"></category></entry><entry><title>How does modified metadata works</title><link href="/2014/04/19/how-does-modified-metadata-works/" rel="alternate"></link><published>2014-04-19T14:52:00+03:00</published><updated>2014-04-19T14:52:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2014-04-19:/2014/04/19/how-does-modified-metadata-works/</id><summary type="html">&lt;p&gt;Use modified metadata to show the date at which you last updated the&amp;nbsp;article&lt;/p&gt;</summary><content type="html">&lt;p&gt;You need to update your articles time and again. Sometimes it makes sense to
 display the date when you updated the&amp;nbsp;article.&lt;/p&gt;
 &lt;p&gt;Pelican release &lt;a href="http://docs.getpelican.com/en/stable/changelog.html#id9"&gt;v3.4.0&lt;/a&gt; has a new
 &lt;a href="https://github.com/getpelican/pelican/pull/1148"&gt; metadata field &lt;code&gt;modified&lt;/code&gt;&lt;/a&gt;. Type of
@@ -246,7 +246,7 @@ its value is &lt;code&gt;datetime&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You can show the last updated
 date of the article by defining &lt;code&gt;modified&lt;/code&gt; in your article&amp;nbsp;metadata.&lt;/p&gt;
 &lt;p&gt;This is how it is displayed in the side&amp;nbsp;bar,&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Modified Date" src="https://dvesti.github.io/Pelican/images/elegant-theme_last-modified.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Modified Date" src="/images/elegant-theme_last-modified.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Depending on your
 &lt;a href="http://docs.getpelican.com/en/latest/settings.html#basic-settings"&gt;&lt;code&gt;DATE_FORMATS&lt;/code&gt;&lt;/a&gt;
 setting you can put modified date in your reST formatted file&amp;nbsp;as&lt;/p&gt;
@@ -290,7 +290,7 @@ example from above, metadata in your reST formatted file should&amp;nbsp;be,&lt;
 
 &lt;p&gt;But I do &lt;strong&gt;not&lt;/strong&gt; recommend it because it will break on newer versions of
 Pelican. In fact, you should ditch Pelican 3.3 or less and move to a higher
-version if you require &lt;code&gt;modified&lt;/code&gt; metadata.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="web-design"></category><category term="metadata"></category><category term="date"></category></entry><entry><title>How to Customize Elegant</title><link href="https://dvesti.github.io/Pelican/2014/03/24/how-to-customize-elegant/" rel="alternate"></link><published>2014-03-24T14:05:00+02:00</published><updated>2014-03-24T14:05:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-03-24:/Pelican/2014/03/24/how-to-customize-elegant/</id><summary type="html">&lt;p&gt;You can customize every aspect of Elegant without touching the source&amp;nbsp;code&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+version if you require &lt;code&gt;modified&lt;/code&gt; metadata.&lt;/p&gt;</content><category term="Advanced Features"></category><category term="web-design"></category><category term="metadata"></category><category term="date"></category></entry><entry><title>How to Customize Elegant</title><link href="/2014/03/24/how-to-customize-elegant/" rel="alternate"></link><published>2014-03-24T14:05:00+02:00</published><updated>2014-03-24T14:05:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:None,2014-03-24:/2014/03/24/how-to-customize-elegant/</id><summary type="html">&lt;p&gt;You can customize every aspect of Elegant without touching the source&amp;nbsp;code&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;&lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;You can change Elegant&amp;#8217;s look, color palette, font, size, and even labels used
