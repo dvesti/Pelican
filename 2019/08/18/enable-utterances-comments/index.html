@@ -197,8 +197,8 @@
 
 
 <section>
-    <h6 style="display:none;">Comments</h6>
-    <p id="comment-message">So what do you think? Did I miss something? Is any part unclear? Leave your comments below. </p>
+    <h6 style="display:none;">Комментарии</h6>
+    <p id="comment-message"><b>Оставьте свои комментарии</b> </p>
 
     <div class="accordion" id="accordion2">
         <div class="accordion-group">
@@ -208,7 +208,7 @@
                    data-parent="#accordion2"
                    href="https://dvesti.github.io/Pelican/2019/08/18/enable-utterances-comments/#comment_thread"
                    id="comment-accordion-toggle">
-                    Comments
+                    Комментарии
                 </a>
             </div>
             <div id="comment_thread" class="accordion-body collapse">
@@ -216,7 +216,7 @@
                     <div class="comments">
 
                         <script src="https://utteranc.es/client.js"
-        data-repo=" dvesti/Pelican"
+        data-repo="dvesti/Pelican"
         data-issue-term="5b15620044"
         data-label="Comments"
         data-theme="github-light"
@@ -400,7 +400,7 @@
         var link = document.getElementById('comment-accordion-toggle');
         var old_innerHTML = link.innerHTML;
         $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
+            $(this).text('Нажмите здесь, чтобы скрыть').fadeIn(200);
         });
         $('#comment_thread').on('hidden', function () {
             $(link).fadeOut(200, function() {

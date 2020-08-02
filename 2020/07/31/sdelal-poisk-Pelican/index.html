@@ -49,7 +49,7 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="Hack, Search, Pelican, Test, " />
+<meta name="keywords" content="Hack, Search, Pelican, Blog, " />
 
 <meta property="og:title" content="Поиск на русском языке — сделан?! "/>
 <meta property="og:url" content="https://dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/" />
@@ -284,15 +284,52 @@
 
 
 
+<section>
+    <h6 style="display:none;">Комментарии</h6>
+    <p id="comment-message"><b>Оставьте свои комментарии</b> </p>
+
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle disqus-comment-count comment-count collapsed"
+                   data-toggle="collapse"
+                   data-parent="#accordion2"
+                   href="https://dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/#comment_thread"
+                   id="comment-accordion-toggle">
+                    Комментарии
+                </a>
+            </div>
+            <div id="comment_thread" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div class="comments">
+
+                        <script src="https://utteranc.es/client.js"
+        data-repo="dvesti/Pelican"
+        data-issue-term="https://dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/"
+        data-label="Comments"
+        data-theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
             <hr/>
 <section>
     <h2>Что почитать</h2>
 <ul class="related-posts-list">
-<li><a href="https://dvesti.github.io/Pelican/2010/12/03/my-first-post/" title="Моё первое Сообщение — My First Post">Моё первое Сообщение — My First Post</a></li>
 <li><a href="https://dvesti.github.io/Pelican/2013/08/27/live-filter-for-tags/" title="Live Filter for Tags">Live Filter for Tags</a></li>
 <li><a href="https://dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/" title="Travis-CI Automation for documentation website">Travis-CI Automation for documentation website</a></li>
 <li><a href="https://dvesti.github.io/Pelican/2018/12/11/travis-to-trigger-build-in-another-repository/" title="Triggering a travis-ci build on another repository">Triggering a travis-ci build on another repository</a></li>
 <li><a href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" title="Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.">Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2020/08/03/dobableny-kommentarii-utterances/" title="Добавили комментирование">Добавили комментирование</a></li>
 </ul>
 <hr />
 </section>
@@ -300,6 +337,7 @@
             <nav>
             <ul class="articles-timeline">
                 <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2020/07/04/standard-markdown-examples/" title="Previous: Пример стандартной разметки Markdown">Пример стандартной разметки Markdown</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2020/08/03/dobableny-kommentarii-utterances/" title="Next: Добавили комментирование">Добавили комментирование</a> »</li>
             </ul>
             </nav>
             </aside>
@@ -308,14 +346,14 @@
             <h4>Дата</h4>
             <time itemprop="dateCreated" datetime="2020-07-31T15:43:48+03:00">Пт, 31 июл. 2020 г.</time>
             <h4>Категория</h4>
-            <a class="category-link" href="https://dvesti.github.io/Pelican/categories#test-ref">Test</a>
+            <a class="category-link" href="https://dvesti.github.io/Pelican/categories#blog-ref">Blog</a>
             <h4>Тэги</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://dvesti.github.io/Pelican/tags#hack-ref">Hack
-                    <span class="superscript">1</span>
+                    <span class="superscript">2</span>
 </a></li>
                 <li><a href="https://dvesti.github.io/Pelican/tags#pelican-ref">Pelican
-                    <span class="superscript">6</span>
+                    <span class="superscript">7</span>
 </a></li>
                 <li><a href="https://dvesti.github.io/Pelican/tags#search-ref">Search
                     <span class="superscript">2</span>
@@ -456,7 +494,7 @@
         var link = document.getElementById('comment-accordion-toggle');
         var old_innerHTML = link.innerHTML;
         $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
+            $(this).text('Нажмите здесь, чтобы скрыть').fadeIn(200);
         });
         $('#comment_thread').on('hidden', function () {
             $(link).fadeOut(200, function() {
