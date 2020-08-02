@@ -11,6 +11,10 @@
 &lt;p class="admonition-title"&gt;Демо-поиск&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P.S4.&lt;/strong&gt; Сделал демо-поиск на отдельной страничке (&lt;strong&gt;404&lt;/strong&gt;). Пока им можно пользоваться: &lt;a href="https://dvesti.github.io/Pelican/404"&gt;он работает&lt;/a&gt;!&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class="admonition important"&gt;
+&lt;p class="admonition-title"&gt;Поиск&amp;nbsp;работает!&lt;/p&gt;
+&lt;p&gt;Основной Поиск в верхнем меню &lt;strong&gt;работает штатно&lt;/strong&gt; (русский +&amp;nbsp;english)    &lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;Наконец-то сделал поиск по сайту на русском языке. Сайт создан на &lt;em&gt;Pelican&lt;/em&gt;.&lt;br /&gt;
 Если коротко, то взял Поиск с &lt;a href="https://github.com/Pelican-Elegant/elegant/releases/tag/V1.3"&gt;версии 1.3&lt;/a&gt;, потом добавил всё остальное. Возможно, придётся поменять некоторые скрипты в папке &lt;strong&gt;tipuesearch&lt;/strong&gt;&lt;br /&gt;
 &lt;!--more--&gt;&lt;br /&gt;
