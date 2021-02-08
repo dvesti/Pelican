@@ -3,5 +3,5 @@
 
 Pelican - 200
 ==============
-Theme: Elehant  
+Theme: Elegant  
 https://dvesti.github.io/Pelican/
