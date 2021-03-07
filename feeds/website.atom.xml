@@ -1,48 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Website</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/website.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2020-07-04T19:30:00+03:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Пример стандартной разметки Markdown</title><link href="https://dvesti.github.io/Pelican/2020/07/04/standard-markdown-examples/" rel="alternate"></link><published>2020-07-04T10:20:00+03:00</published><updated>2020-07-04T19:30:00+03:00</updated><author><name>Dvesti</name></author><id>tag:dvesti.github.io,2020-07-04:/Pelican/2020/07/04/standard-markdown-examples/</id><summary type="html">&lt;p&gt;Пример стандартной разметки&amp;nbsp;Markdown&lt;/p&gt;</summary><content type="html">&lt;p&gt;Стандарт тот ещё – As I started writing my articles for my blog, I realized I needed something. To help me write articles using this flavor of Markdown&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;, I needed my own cheat sheet. My hope is that it provides clear guidance on which aspects of the various forms of Markdown worked for me, and which didn’t.&lt;/p&gt;
-
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Pelican-200 - Website</title><link href="https://dvesti.github.io/Pelican/" rel="alternate"></link><link href="https://dvesti.github.io/Pelican/feeds/website.atom.xml" rel="self"></link><id>https://dvesti.github.io/Pelican/</id><updated>2020-07-04T19:30:00+03:00</updated><subtitle>Блог сайта Dmitriev.ee</subtitle><entry><title>Extended Markdown Examples</title><link href="https://dvesti.github.io/Pelican/2019/06/30/extended-markdown-example/" rel="alternate"></link><published>2019-06-30T10:20:00+03:00</published><updated>2020-07-04T19:30:00+03:00</updated><author><name>Dvesti</name></author><id>tag:dvesti.github.io,2019-06-30:/Pelican/2019/06/30/extended-markdown-example/</id><summary type="html">&lt;p&gt;Пример расширенной разметки&amp;nbsp;Markdown&lt;/p&gt;</summary><content type="html">&lt;p&gt;Contents
+Introduction
+Table Of Contents
+CodeHilite - Code Blocks With Line Numbers
+Extra - Footnotes
+Extra - Abbreviations
+Extra - Definition Lists
+Smartypants
+Admonitions
+This is a continuation of the previous cheat sheet for my website. This article specifically addresses any extensions that are not part of the base Markdown&amp;nbsp;specification.&lt;/p&gt;
+&lt;p&gt;Each section here represents an extension that I have enabled on my website. The formatting from the previous page is continued, with one small exception. The title of each section specifies the name of the extension instead of the name of the feature being documented (see Admonitions). If an extension contains more than one feature, such as the Extra extension, the title specifies the name of the extension, a dash, and the name of the feature (see&amp;nbsp;Footnotes).&lt;/p&gt;
+&lt;p&gt;Introduction
+The authors of the Python Markdown Package anticipated the addition of extra features. To ensure people would have choice, the base package can be extended using&amp;nbsp;configuration.&lt;/p&gt;
+&lt;p&gt;The Markdown extensions have been activated on my website by inserting the following text into my&amp;nbsp;peliconconf.py:&lt;/p&gt;
+&lt;p&gt;1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+&lt;span class="caps"&gt;MARKDOWN&lt;/span&gt; = {
+    &amp;#8216;extension_configs&amp;#8217;: {
+        &amp;#8216;markdown.extensions.extra&amp;#8217;: {},
+        &amp;#8216;markdown.extensions.admonition&amp;#8217;: {},
+        &amp;#8216;markdown.extensions.codehilite&amp;#8217;: {
+            &amp;#8216;css_class&amp;#8217;: &amp;#8216;highlight&amp;#8217;
+        },
+        &amp;#8216;markdown.extensions.meta&amp;#8217;: {},
+        &amp;#8216;smarty&amp;#8217; : {
+            &amp;#8216;smart_angled_quotes&amp;#8217; : &amp;#8216;true&amp;#8217;
+        },
+        &amp;#8216;markdown.extensions.toc&amp;#8217;: {
+            &amp;#8216;permalink&amp;#8217;: &amp;#8216;true&amp;#8217;
+        },
+    }
+}
+Table Of Contents
+[&lt;span class="caps"&gt;TOC&lt;/span&gt;]
+Introduction
+Table Of Contents
+CodeHilite - Code Blocks With Line Numbers
+Extra - Footnotes
+Extra - Abbreviations
+Extra - Definition Lists
+Smartypants
+Admonitions
+CodeHilite - Code Blocks With Line&amp;nbsp;Numbers&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="c1"&gt;# Code goes here ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;1
+    # Code goes here &amp;#8230;
+Extra - Footnotes
+Here&amp;#8217;s a simple footnote,&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; and here&amp;#8217;s a longer one.&lt;sup id="fnref:bignote"&gt;&lt;a class="footnote-ref" href="#fn:bignote"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Extra - Abbreviations
+The &lt;abbr title="Hyper Text Markup Language"&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt;&lt;/abbr&gt; specification is maintained by the &lt;abbr title="World Wide Web Consortium"&gt;&lt;span class="caps"&gt;W3C&lt;/span&gt;&lt;/abbr&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;abbr title="Hyper Text Markup Language"&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt;&lt;/abbr&gt; specification is maintained by the &lt;abbr title="World Wide Web Consortium"&gt;&lt;span class="caps"&gt;W3C&lt;/span&gt;&lt;/abbr&gt;.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Extra - Definition&amp;nbsp;Lists&lt;/dt&gt;
+&lt;dt&gt;Apple&lt;/dt&gt;
+&lt;dd&gt;Pomaceous fruit of plants of the genus Malus in
+the family&amp;nbsp;Rosaceae.&lt;/dd&gt;
+&lt;dt&gt;Orange&lt;/dt&gt;
+&lt;dd&gt;The fruit of an evergreen tree of the genus Citrus.
+Apple
+Pomaceous fruit of plants of the genus Malus in the family Rosaceae.
+Orange
+The fruit of an evergreen tree of the genus Citrus.
+Smartypants
+advantage is that code blocks are unaffected
+- apostrophe &amp;#8216; by itself
+- apostrophe as in &amp;#8216;quote me&amp;#8217;
+- quotations mark &amp;#8221; by itself
+- quotations mark as in &amp;#8220;quote me&amp;#8221;
+- replacement of multi-character sequences with Unicode: &amp;lt;&amp;lt; &amp;#8230; &amp;#8212; &amp;gt;&amp;gt; &amp;#8212;-
+apostrophe ‘ by itself
+apostrophe as in ‘quote me’
+quotations mark ” by itself
+quotations mark as in “quote me”
+replacement of multi-character sequences with Unicode: « … – » —
+Admonitions
+broken down into section by the way that the Elegant theme colors the&amp;nbsp;admonitions&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Note&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;div class="admonition important"&gt;
+&lt;p class="admonition-title"&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;div class="admonition hint"&gt;
+&lt;p class="admonition-title"&gt;Hint&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Hint&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;div class="admonition warning"&gt;
+&lt;p class="admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Warning&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;div class="admonition caution"&gt;
+&lt;p class="admonition-title"&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;div class="admonition attention"&gt;
+&lt;p&gt;You should note that this will have no title due to the empty&amp;nbsp;title.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You should note that this will have no title due to the empty&amp;nbsp;title.&lt;/p&gt;
+&lt;div class="admonition danger"&gt;
+&lt;p class="admonition-title"&gt;Danger&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Danger&lt;/p&gt;
+&lt;p&gt;You should note that the title will be automatically&amp;nbsp;capitalized.&lt;/p&gt;
+&lt;div class="admonition error"&gt;
+&lt;p class="admonition-title"&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Replacement&amp;nbsp;Title&lt;/p&gt;
+&lt;p&gt;You should note that the default title will be&amp;nbsp;replaced.&lt;/p&gt;
+&lt;p&gt;This is the first footnote.&amp;nbsp;↩&lt;/p&gt;
+&lt;p&gt;Here’s one with multiple paragraphs and code.&amp;nbsp;↩  &lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;This is the first footnote.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:bignote"&gt;
+&lt;p&gt;Here&amp;#8217;s one with multiple paragraphs and code.
+Here’s a simple footnote,1 and here’s a longer one.2&amp;#160;&lt;a class="footnote-backref" href="#fnref:bignote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="Website"></category><category term="markdown"></category><category term="example"></category></entry><entry><title>Пример стандартной разметки Markdown</title><link href="https://dvesti.github.io/Pelican/2019/06/29/standard-markdown-examples/" rel="alternate"></link><published>2019-06-29T10:20:00+03:00</published><updated>2020-07-04T19:30:00+03:00</updated><author><name>Dvesti</name></author><id>tag:dvesti.github.io,2019-06-29:/Pelican/2019/06/29/standard-markdown-examples/</id><summary type="html">&lt;p&gt;Пример стандартной разметки&amp;nbsp;Markdown&lt;/p&gt;</summary><content type="html">&lt;p&gt;Стандарт тот ещё – As I started writing my articles for my blog, I realized I needed something. To help me write articles using this flavor of Markdown&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;, I needed my own cheat sheet. My hope is that it provides clear guidance on which aspects of the various forms of Markdown worked for me, and which&amp;nbsp;didn’t.&lt;/p&gt;
+&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#horizontal-break"&gt;Horizontal&amp;nbsp;Break&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#headings"&gt;Headings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#heading-level-1"&gt;Heading Level 1&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#heading-level-2"&gt;Heading Level 2&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#heading-level-3"&gt;Heading Level&amp;nbsp;3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#text-emphasis"&gt;Text&amp;nbsp;Emphasis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#numbered-lists"&gt;Numbered&amp;nbsp;lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#bulleted-list"&gt;Bulleted&amp;nbsp;List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#block-quote"&gt;Block&amp;nbsp;quote&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#code-block"&gt;Code&amp;nbsp;Block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#tables"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#links"&gt;Links&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#local-links"&gt;Local&amp;nbsp;Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#remote-links"&gt;Remote&amp;nbsp;Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#download-links"&gt;Download&amp;nbsp;Links&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#images"&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;h2 id="introduction"&gt;Introduction&lt;a href="#introduction" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I am writing articles and pages on Pelican 4.0.1&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt; using the Elegant&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="#fn:3"&gt;3&lt;/a&gt;&lt;/sup&gt; theme, therefore I want to make sure I have a cheat sheet that is specific to this dialect of Markdown. The base Markdown used for Pelican uses the &lt;a href="https://python-markdown.github.io/"&gt;Python Markdown Package&lt;/a&gt; which (with 3 exceptions) follows &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;John Gruber’s Markdown definition&lt;/a&gt; very literally. Pelican configuration also supports providing Markdown with additional configuration that enables other features. Those features are documented separately in &lt;a href="https://jackdewinter.github.io/2019/06/30/extended-markdown-examples/"&gt;the next page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The format of this cheat sheet is simple. Each section is separated from the next with a horizontal break and the name of the section. Any notes regarding that section are placed at the top of the section in point form, to ensure they are brief. Then a &lt;a href="#code-block"&gt;Code Block&lt;/a&gt; section is used to show the literal code used to produce the effects that are presented right after the code block.&lt;/p&gt;
-&lt;hr/&gt;
+&lt;p&gt;The format of this cheat sheet is simple. Each section is separated from the next with a horizontal break and the name of the section. Any notes regarding that section are placed at the top of the section in point form, to ensure they are brief. Then a &lt;a href="#code-block"&gt;Code Block&lt;/a&gt; section is used to show the literal code used to produce the effects that are presented right after the code&amp;nbsp;block.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h2 id="horizontal-break"&gt;Horizontal Break&lt;a href="#horizontal-break" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#horizontal-break" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;A horizontal break occurs after 3 or more hyphens.
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;A horizontal break occurs after 3 or more hyphens.
 
 ---
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;A horizontal break occurs after 3 or more hyphens.&lt;/p&gt;
-&lt;hr/&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A horizontal break occurs after 3 or more&amp;nbsp;hyphens.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h2 id="headings"&gt;Headings&lt;a href="#headings" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#headings" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gh"&gt;#&lt;/span&gt; Heading Level 1
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gh"&gt;#&lt;/span&gt; Heading Level 1
 
 &lt;span class="gu"&gt;##&lt;/span&gt; Heading Level 2
 
 &lt;span class="gu"&gt;###&lt;/span&gt; Heading Level 3
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h1 id="heading-level-1"&gt;Heading Level 1&lt;a class="headerlink" href="#heading-level-1" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id="heading-level-2"&gt;Heading Level 2&lt;a class="headerlink" href="#heading-level-2" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="heading-level-3"&gt;Heading Level 3&lt;a class="headerlink" href="#heading-level-3" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id="text-emphasis"&gt;Text Emphasis&lt;a href="#text-emphasis" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#text-emphasis" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;two spaces at the end of a line will be equivalent to &lt;code&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;This text is \*\*bold\*\* and this text is also \_\_bold\_\_.  
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;This text is \*\*bold\*\* and this text is also \_\_bold\_\_.  
 This text is \*italic\* and this text is also \_italic\_.  
 This text is \*\*\_italic and bold\_\*\*, but no two spaces at end.
 Single \`\`\`line\`\`\` block.  
 Inline \`code\` has \`\`\`back-ticks like this \` around\`\`\` it.  
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This text is &lt;strong&gt;bold&lt;/strong&gt; and this text is also &lt;strong&gt;bold&lt;/strong&gt;.&lt;br/&gt;
-This text is &lt;em&gt;italic&lt;/em&gt; and this text is also &lt;em&gt;italic&lt;/em&gt;.&lt;br/&gt;
-This text is &lt;strong&gt;&lt;em&gt;italic and bold&lt;/em&gt;&lt;/strong&gt;, but no two spaces at end. Single &lt;code&gt;line&lt;/code&gt; block.&lt;br/&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This text is &lt;strong&gt;bold&lt;/strong&gt; and this text is also &lt;strong&gt;bold&lt;/strong&gt;.&lt;br /&gt;
+This text is &lt;em&gt;italic&lt;/em&gt; and this text is also &lt;em&gt;italic&lt;/em&gt;.&lt;br /&gt;
+This text is &lt;strong&gt;&lt;em&gt;italic and bold&lt;/em&gt;&lt;/strong&gt;, but no two spaces at end. Single &lt;code&gt;line&lt;/code&gt; block.&lt;br /&gt;
 Inline &lt;code&gt;code&lt;/code&gt; has &lt;code&gt;back-ticks like this ` around&lt;/code&gt; it.&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id="numbered-lists"&gt;Numbered lists&lt;a href="#numbered-lists" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#numbered-lists" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;to maintain the indentation, place 4 spaces at the start of the line&lt;/li&gt;
+&lt;li&gt;to maintain the indentation, place 4 spaces at the start of the&amp;nbsp;line&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;1.&lt;/span&gt; One  
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;1.&lt;/span&gt; One  
 
     New para.  
 
@@ -57,11 +244,12 @@ Inline &lt;code&gt;code&lt;/code&gt; has &lt;code&gt;back-ticks like this ` arou
         &lt;span class="k"&gt;-&lt;/span&gt; unordered
         &lt;span class="k"&gt;-&lt;/span&gt; list
     &lt;span class="k"&gt;3.&lt;/span&gt; items
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;One&lt;/p&gt;
-&lt;p&gt;New para.&lt;/p&gt;
+&lt;p&gt;New&amp;nbsp;para.&lt;/p&gt;
 &lt;p&gt;Blah&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -80,89 +268,95 @@ Inline &lt;code&gt;code&lt;/code&gt; has &lt;code&gt;back-ticks like this ` arou
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id="bulleted-list"&gt;Bulleted List&lt;a href="#bulleted-list" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#bulleted-list" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;to maintain the indentation, place 4 spaces at the start of the line&lt;/li&gt;
+&lt;li&gt;to maintain the indentation, place 4 spaces at the start of the&amp;nbsp;line&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;-&lt;/span&gt;   This is a list item with two paragraphs.
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;-&lt;/span&gt;   This is a list item with two paragraphs.
 
-    This is the second paragraph in the list item. You're
+    This is the second paragraph in the list item. You&amp;#39;re
 only required to indent the first line. Lorem ipsum dolor
 sit amet, consectetuer adipiscing elit.
 
 &lt;span class="k"&gt;-&lt;/span&gt; Another item in the same list.
     &lt;span class="k"&gt;-&lt;/span&gt; Bulleted item
     &lt;span class="k"&gt;-&lt;/span&gt; Bulleted item
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;This is a list item with two paragraphs.&lt;/p&gt;
-&lt;p&gt;This is the second paragraph in the list item. You’re
+&lt;p&gt;This is a list item with two&amp;nbsp;paragraphs.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph in the list item. You&amp;#8217;re
 only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+sit amet, consectetuer adipiscing&amp;nbsp;elit.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Another item in the same list.&lt;/p&gt;
+&lt;p&gt;Another item in the same&amp;nbsp;list.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bulleted item&lt;/li&gt;
-&lt;li&gt;Bulleted item&lt;/li&gt;
+&lt;li&gt;Bulleted&amp;nbsp;item&lt;/li&gt;
+&lt;li&gt;Bulleted&amp;nbsp;item&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id="block-quote"&gt;Block quote&lt;a href="#block-quote" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#block-quote" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; This is the first paragraph of a blockquote with two paragraphs.
-&amp;gt; Lorem ipsum dolor sit amet,
-&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&amp;gt;
-&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&amp;gt;
-&amp;gt; This is the first level of quoting.
-&amp;gt;
-&amp;gt; &amp;gt; This is nested blockquote.
-&amp;gt;
-&amp;gt; Back to the first level.
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;&amp;gt; This is the first paragraph of a blockquote with two paragraphs.&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt; Lorem ipsum dolor sit amet,&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt; This is the first level of quoting.&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt; &amp;gt; This is nested blockquote.&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="err"&gt;&amp;gt; Back to the first level.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;This is the first paragraph of a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
+&lt;p&gt;This is the first paragraph of a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae,&amp;nbsp;risus.&lt;/p&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae,&amp;nbsp;risus.&lt;/p&gt;
+&lt;p&gt;This is the first level of&amp;nbsp;quoting.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This is nested blockquote.&lt;/p&gt;
+&lt;p&gt;This is nested&amp;nbsp;blockquote.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Back to the first level.&lt;/p&gt;
+&lt;p&gt;Back to the first&amp;nbsp;level.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id="code-block"&gt;Code Block&lt;a href="#code-block" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#code-block" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;line numbers can be added &lt;a href="https://jackdewinter.github.io/2019/06/30/extended-markdown-examples/#codehilite-code-blocks-with-line-numbers"&gt;via extensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;line numbers can be added &lt;a href="https://jackdewinter.github.io/2019/06/30/extended-markdown-examples/#codehilite-code-blocks-with-line-numbers"&gt;via&amp;nbsp;extensions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; ```text
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; ```text
 Make things only as complex as they need to be.
  ```
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Make things only as complex as they need to be.  
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; ```Python
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Make things only as complex as they need to be.  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; ```Python
 &lt;span class="gh"&gt;#&lt;/span&gt; Blogroll
 LINKS = (
-            ('Pelican', 'Pelican', 'http://getpelican.com/'),
+            (&amp;#39;Pelican&amp;#39;, &amp;#39;Pelican&amp;#39;, &amp;#39;http://getpelican.com/&amp;#39;),
          )
  ```
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Blogroll&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Blogroll&lt;/span&gt;
 &lt;span class="n"&gt;LINKS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
-            &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Pelican'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Pelican'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'http://getpelican.com/'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+            &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Pelican&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Pelican&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://getpelican.com/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
          &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 &lt;h2 id="tables"&gt;Tables&lt;a href="#tables" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#tables" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;colons can be used to align columns.&lt;/li&gt;
+&lt;li&gt;colons can be used to align&amp;nbsp;columns.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;| Column1 | Column 2 | Column 3
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;| Column1 | Column 2 | Column 3
 |---|---|---|
 | Value 1 | Value 2 | Value 3 |
 | Value 4 | Value 5 | Value 6 |
@@ -173,7 +367,8 @@ LINKS = (
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -226,52 +421,56 @@ LINKS = (
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id="links"&gt;Links&lt;a href="#links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="local-links"&gt;Local Links&lt;a href="#local-links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#local-links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{filename}&lt;/code&gt; tag indicates location in the content folder.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{filename}&lt;/code&gt; tag indicates location in the content&amp;nbsp;folder.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[&lt;span class="nt"&gt;About Page\&lt;/span&gt;](&lt;span class="na"&gt;{filename}/pages/landing-page-about-hidden.md&lt;/span&gt;)
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://jackdewinter.github.io/pages/landing-page-about-hidden.html"&gt;About Page&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[&lt;span class="nt"&gt;About Page\&lt;/span&gt;](&lt;span class="na"&gt;{filename}/pages/landing-page-about-hidden.md&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://jackdewinter.github.io/pages/landing-page-about-hidden.html"&gt;About&amp;nbsp;Page&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="remote-links"&gt;Remote Links&lt;a href="#remote-links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#remote-links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;proper &lt;span class="caps"&gt;URL&lt;/span&gt; indicates a remote website&lt;/li&gt;
+&lt;li&gt;proper &lt;span class="caps"&gt;URL&lt;/span&gt; indicates a remote&amp;nbsp;website&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[&lt;span class="nt"&gt;Python Package Index\&lt;/span&gt;](&lt;span class="na"&gt;https://pypi.org&lt;/span&gt;)
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://pypi.org"&gt;Python Package Index&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[&lt;span class="nt"&gt;Python Package Index\&lt;/span&gt;](&lt;span class="na"&gt;https://pypi.org&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://pypi.org"&gt;Python Package&amp;nbsp;Index&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="download-links"&gt;Download Links&lt;a href="#download-links" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#download-links" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;download links are not natively supported in Markdown&lt;/li&gt;
-&lt;li&gt;must explicitly create &lt;span class="caps"&gt;HTML&lt;/span&gt; text inline to achieve that Creating a link to a file to download, not display, is not natively supported in markdown.&lt;/li&gt;
+&lt;li&gt;download links are not natively supported in&amp;nbsp;Markdown&lt;/li&gt;
+&lt;li&gt;must explicitly create &lt;span class="caps"&gt;HTML&lt;/span&gt; text inline to achieve that Creating a link to a file to download, not display, is not natively supported in&amp;nbsp;markdown.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[&lt;span class="nt"&gt;Pelican Brag Document (display)\&lt;/span&gt;](&lt;span class="na"&gt;{static}/images/markdown-1/pelican.txt&lt;/span&gt;)  
-&amp;lt;a href="{static}/images/pelican.txt" download&amp;gt;Pelican Brag Document (download)&amp;lt;/a&amp;gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt"&gt;Pelican Brag Document (display)&lt;/a&gt;&lt;br/&gt;
-&lt;a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt"&gt;Pelican Brag Document (download)&lt;/a&gt;&lt;/p&gt;
-&lt;hr/&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[&lt;span class="nt"&gt;Pelican Brag Document (display)\&lt;/span&gt;](&lt;span class="na"&gt;{static}/images/markdown-1/pelican.txt&lt;/span&gt;)  
+&amp;lt;a href=&amp;quot;{static}/images/pelican.txt&amp;quot; download&amp;gt;Pelican Brag Document (download)&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt"&gt;Pelican Brag Document (display)&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://jackdewinter.github.io/images/markdown-1/pelican.txt"&gt;Pelican Brag Document&amp;nbsp;(download)&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h2 id="images"&gt;Images&lt;a href="#images" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#images" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{filename}&lt;/code&gt; tag indicates location in the content folder.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{filename}&lt;/code&gt; tag indicates location in the content&amp;nbsp;folder.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;![&lt;span class="nt"&gt;python logo&lt;/span&gt;](&lt;span class="na"&gt;https://jackdewinter.github.io/images/markdown-1/python_icon.png&lt;/span&gt;)
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img alt="python logo" src="https://jackdewinter.github.io/images/markdown-1/python_icon.png"/&gt;&lt;/p&gt;
-&lt;hr/&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![&lt;span class="nt"&gt;python logo&lt;/span&gt;](&lt;span class="na"&gt;https://jackdewinter.github.io/images/markdown-1/python_icon.png&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="python logo" src="https://jackdewinter.github.io/images/markdown-1/python_icon.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 &lt;div class="footnote"&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt; allows for &lt;span class="caps"&gt;HTML&lt;/span&gt; pages to be written using a simple text editor with no knowledge of &lt;span class="caps"&gt;HTML&lt;/span&gt;. &lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt; allows for &lt;span class="caps"&gt;HTML&lt;/span&gt; pages to be written using a simple text editor with no knowledge of &lt;span class="caps"&gt;HTML&lt;/span&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican&lt;/a&gt; is a Static Site Generator written in Python. &lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican&lt;/a&gt; is a Static Site Generator written in Python.&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:3"&gt;
-&lt;p&gt;The Elegant theme’s repository &lt;a href="https://github.com/Pelican-Elegant/elegant"&gt;is here&lt;/a&gt; &lt;a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Elegant theme’s repository &lt;a href="https://github.com/Pelican-Elegant/elegant"&gt;is here&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="Website"></category><category term="markdown"></category><category term="example"></category></entry></feed>

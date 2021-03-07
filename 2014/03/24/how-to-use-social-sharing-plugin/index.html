@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?481f5cf0">
- -->
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -38,6 +38,8 @@
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/tipuesearch/tipuesearch.css" media="screen"> 
        
         <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?fc5adb95">
+
+        <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/elegant.css">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -142,14 +144,12 @@ benefit of not having any ability to be used for online&nbsp;tracking.</p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link"> </a></h2>
 <p>To enable the Social Media Sharing links for your articles, add <code>share_post</code> to the <code>PLUGINS</code>
 configuration variable in your Pelican&nbsp;configuration.</p>
-<div class="highlight"><pre><span></span><span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;share_post&#39;</span><span class="p">]</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;share_post&#39;</span><span class="p">]</span>
+</code></pre></div>
 
 <p>Optionally, customize the list of networks where the article can be shared using <code>SHARE_LINKS</code>.</p>
-<div class="highlight"><pre><span></span><span class="n">SHARE_LINKS</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="s1">&#39;twitter&#39;</span><span class="p">,</span> <span class="s1">&#39;Twitter&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;facebook&#39;</span><span class="p">,</span> <span class="s1">&#39;Facebook&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;Email&#39;</span><span class="p">)</span> <span class="p">]</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="n">SHARE_LINKS</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="s1">&#39;twitter&#39;</span><span class="p">,</span> <span class="s1">&#39;Twitter&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;facebook&#39;</span><span class="p">,</span> <span class="s1">&#39;Facebook&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;Email&#39;</span><span class="p">)</span> <span class="p">]</span>
+</code></pre></div>
 
 <p>The first item in each pair refers to a network recognized by <code>share_post</code>. Currently the list of supported networks includes <code>twitter</code>, <code>facebook</code>, <code>email</code>, <code>hacker-news</code>, <code>linkedin</code> and <code>reddit</code>. The second item in each pair is the text displayed for the link on the&nbsp;page.</p>
 <p>The sharing links are displayed in the order of <code>SHARE_LINKS</code>, therefore this variable can also be used to customize the link&nbsp;order.</p>
@@ -160,9 +160,8 @@ configuration variable in your Pelican&nbsp;configuration.</p>
 <p>The default text used to lead into the Social Media Sharing links is &#8220;Share On:&#8221;. This can
 be overridden by defining the <code>SHARE_POST_INTRO</code> configuration variable with the text you
 want to replace&nbsp;it.</p>
-<div class="highlight"><pre><span></span><span class="n">SHARE_POST_INTRO</span> <span class="o">=</span> <span class="s2">&quot;Share me with your friends on&quot;</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="n">SHARE_POST_INTRO</span> <span class="o">=</span> <span class="s2">&quot;Share me with your friends on&quot;</span>
+</code></pre></div>
 
 <h2 id="article-metadata">Article Metadata<a class="headerlink" href="#article-metadata" title="Permanent link"> </a></h2>
 <p>Once the configuration for Sharing Media Links is enabled in the configuration file, using
@@ -173,9 +172,8 @@ As documented above, the <code>SHARE_POST_INTRO</code> can be used to provide an
 for the Social Media Sharing links. This text can be further overridden on an
 article-by-article basis by specifying the <code>share_post_intro</code> metadata field value for an
 article as&nbsp;follows:</p>
-<div class="highlight"><pre><span></span><span class="nt">share_post_intro</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Share this article on Elegant with</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="nt">share_post_intro</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Share this article on Elegant with</span>
+</code></pre></div>
 
 <h2 id="online-trackers-and-links">Online Trackers and Links<a class="headerlink" href="#online-trackers-and-links" title="Permanent link"> </a></h2>
 <p>There are a plethora of social sharing widgets available online. The unfortunate problem with
@@ -203,18 +201,13 @@ is&nbsp;avoided.</p>
 
              
  
-                <p id="post-share-links">
-    Понравилась статья? Расскажите о ней на:
-      <a href="https://twitter.com/intent/tweet?text=Add%20Social%20Sharing%C2%A0Links%20&url=https%3A//dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/&hashtags=pelican-theme,pelican-plugin,social-media" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Add%20Social%20Sharing%C2%A0Links%20&amp;body=https%3A//dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-
+            
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
             <span class="author-name">Talha Mansoor</span>
         </a>
-        is the creator and lead developer of Elegant theme.
+        is the creator and lead developer of Elegant theme
     </div>
     <div class="author-blurb">
         <a href="http://jackdewinter.github.io" target="_blank" rel="nofollow noopener noreferrer">
@@ -232,29 +225,10 @@ is&nbsp;avoided.</p>
 
 
             <hr/>
-<section>
-    <h2>Что почитать</h2>
-<ul class="related-posts-list">
-<li><a href="https://dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/" title="How to display your Social Media Profiles - Deprecated">How to display your Social Media Profiles <small>Deprecated</small></a></li>
-<li><a href="https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/" title="How To Improve the Download Time For Your Pages">How To Improve the Download Time For Your Pages</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/" title="Creating a Photo Gallery Article">Creating a Photo Gallery Article</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin-advanced/" title="Advanced Configuration for an Image Gallery Article">Advanced Configuration for an Image Gallery Article</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2019/08/12/how-to-display-your-social-media-profiles/" title="How to display your Social Media Profiles">How to display your Social Media Profiles</a></li>
-</ul>
-<hr />
-</section>
-            <aside>
-            <nav>
-            <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2014/03/24/avoid-unnecessary-http-requests/" title="Previous: How To Improve the Download Time For Your Pages">How To Improve the Download Time For Your Pages</a></li>
-                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2014/04/19/how-does-modified-metadata-works/" title="Next: How does modified metadata works">How does modified metadata works</a> »</li>
-            </ul>
-            </nav>
-            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>
-            <time itemprop="dateCreated" datetime="2014-03-24T20:14:00+02:00">Пн, 24 мар. 2014 г.</time>
+            <time itemprop="dateCreated" datetime="2014-03-24T20:14:00+02:00">Mon, 24 Mar. 2014 г.</time>
             <h4>Категория</h4>
             <a class="category-link" href="https://dvesti.github.io/Pelican/categories#supported-plugins-ref">Supported Plugins</a>
             <h4>Тэги</h4>
@@ -283,7 +257,7 @@ is&nbsp;avoided.</p>
     <a href="mailto:diagonaal@gmail.com" title="Diagonaal" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><rect width="362" height="272" x="75" y="120" fill="#f2f2f2" rx="8%"/><path fill="#d54c3f" d="M120 392H97c-12 0-22-10-22-23V143h45z"/><path fill="#b63524" d="M392 392h23c12 0 22-10 22-23V143h-45z"/><path fill-opacity=".05" d="M256 286L120 392V187z"/><path fill-opacity=".08" d="M82 159l235 233h75V159z"/><path stroke-linecap="round" fill="none" stroke="#de5145" stroke-width="45" d="M97 143l159 115 159-115"/><path fill="#f2f2f2" d="M415 120c-5 0-10 2-13 4L256 230 110 124c-3-2-8-4-13-4z"/></svg>
     </a>
-    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+    <a href="/Pelican/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
     </a>
 </div>

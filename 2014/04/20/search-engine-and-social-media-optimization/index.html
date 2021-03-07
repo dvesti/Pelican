@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?481f5cf0">
- -->
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -38,6 +38,8 @@
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/tipuesearch/tipuesearch.css" media="screen"> 
        
         <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?fc5adb95">
+
+        <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/elegant.css">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -126,94 +128,84 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h4>Содержание</h4>
-        <div class="toc">
+        <div class="span8 offset2 article-content">
+            
+            <div class="toc">
 <ul>
 <li><a href="#social-media-optimization-smo">Social Media Optimization (<span class="caps">SMO</span>)</a><ul>
-<li><a href="#open-graph-protocol">Open Graph protocol</a></li>
-<li><a href="#twitter-cards">Twitter Cards</a></li>
+<li><a href="#open-graph-protocol">Open Graph&nbsp;protocol</a></li>
+<li><a href="#twitter-cards">Twitter&nbsp;Cards</a></li>
 </ul>
 </li>
 <li><a href="#search-engine-optimization-seo">Search Engine Optimization (<span class="caps">SEO</span>)</a></li>
 </ul>
 </div>
-        </nav>
-    </div>
-    <div class="span8 article-content">
-            
-            
 <p>Search Engine Optimization(<span class="caps">SEO</span>) is a moving target which is often
 misunderstood. Rise of social media has changed the traditional <span class="caps">SEO</span>
-techniques. Changes in search algorithms has made several <span class="caps">SEO</span> techniques obsolete.</p>
+techniques. Changes in search algorithms has made several <span class="caps">SEO</span> techniques&nbsp;obsolete.</p>
 <p>Elegant does its best to leverage all available search and social media tags to
 give your site higher ranking in search results and optimize it for sharing via
-social media.</p>
+social&nbsp;media.</p>
 <h2 id="social-media-optimization-smo">Social Media Optimization (<span class="caps">SMO</span>)<a class="headerlink" href="#social-media-optimization-smo" title="Permanent link"> </a></h2>
-<p>Inspired by the post <a href="https://medium.com/on-startups/f15264e5d790">“What is the New <span class="caps">SEO</span>? Pubcon 2013 <!-- yaspeller ignore -->
-Takeaways”</a>, I looked into the
+<p>Inspired by the post <a href="https://medium.com/on-startups/f15264e5d790">&#8220;What is the New <span class="caps">SEO</span>? Pubcon 2013 <!-- yaspeller ignore -->
+Takeaways&#8221;</a>, I looked into the
 tags that social media sites use. They can be broadly divided into two
 categories, <a href="http://ogp.me/">Open Graph protocol</a> and <a href="https://dev.twitter.com/docs/cards">Twitter
 Cards</a>.</p>
 <h3 id="open-graph-protocol">Open Graph protocol<a class="headerlink" href="#open-graph-protocol" title="Permanent link"> </a></h3>
-<p>Elegant uses following tags,</p>
+<p>Elegant uses following&nbsp;tags,</p>
 <ol>
 <li><code>og:url</code> is set to article <span class="caps">URL</span></li>
-<li><code>og:type</code> is set to “article”</li>
-<li><code>og:title</code> is set to article tile and optional subtitle</li>
-<li><code>og:site_name</code> is set to <code>SITENAME</code> from your Pelican configuration</li>
-<li><code>og:description</code> is set to article summary</li>
-<li><code>og:article:author</code> is set to article author</li>
-<li><code>og:article:published_time</code> is set to article date</li>
+<li><code>og:type</code> is set to&nbsp;&#8220;article&#8221;</li>
+<li><code>og:title</code> is set to article tile and optional&nbsp;subtitle</li>
+<li><code>og:site_name</code> is set to <code>SITENAME</code> from your Pelican&nbsp;configuration</li>
+<li><code>og:description</code> is set to article&nbsp;summary</li>
+<li><code>og:article:author</code> is set to article&nbsp;author</li>
+<li><code>og:article:published_time</code> is set to article&nbsp;date</li>
 <li><code>og:image</code> is an optional tag. It is set to value of <code>featured_image</code></li>
 </ol>
 <p><code>featured_image</code> should be the complete <span class="caps">URL</span> of an image. This image is
-displayed with the article link on most social sites.</p>
+displayed with the article link on most social&nbsp;sites.</p>
 <p>Elegant looks for it first in the article metadata, here is metadata for an
-example reST formatted file.</p>
-<div class="highlight"><pre><span></span><span class="nc">:featured_image:</span> <span class="nf">http://oncrashreboot.com/images/article-1-image.jpg</span>
-</pre></div>
+example reST formatted&nbsp;file.</p>
+<div class="highlight"><pre><span></span><code><span class="nc">:featured_image:</span> http://oncrashreboot.com/images/article-1-image.jpg
+</code></pre></div>
+
 <p>Then it looks for <code>FEATURED_IMAGE</code> in Pelican configuration. If it finds
-neither, <code>og:image</code> is not used.</p>
+neither, <code>og:image</code> is not&nbsp;used.</p>
 <p>If you want to use <code>og:image</code> tag then make sure you define <code>featured_image</code> in
 your article metadata. You should also define <code>FEATURED_IMAGE</code> in your
 Pelican configuration to be used as a generic image in case an article does not
 have <code>featured_image</code> defined.</p>
 <h3 id="twitter-cards">Twitter Cards<a class="headerlink" href="#twitter-cards" title="Permanent link"> </a></h3>
-<p>Elegant uses following tags,</p>
+<p>Elegant uses following&nbsp;tags,</p>
 <ol>
-<li><code>twitter:card</code> is set to “summary”</li>
-<li><code>twitter:title</code> is set to article title and optional subtitle</li>
-<li><code>twitter:creator</code> is set to <code>TWITTER_USERNAME</code> if defined in Pelican configuration</li>
-<li><code>twitter:description</code> is set to article summary</li>
+<li><code>twitter:card</code> is set to&nbsp;&#8220;summary&#8221;</li>
+<li><code>twitter:title</code> is set to article title and optional&nbsp;subtitle</li>
+<li><code>twitter:creator</code> is set to <code>TWITTER_USERNAME</code> if defined in Pelican&nbsp;configuration</li>
+<li><code>twitter:description</code> is set to article&nbsp;summary</li>
 <li><code>twitter:image</code> is set to <code>featured_image</code>. The <code>featured_image</code> discussion
-   above is also applicable in this case</li>
+   above is also applicable in this&nbsp;case</li>
 </ol>
 <p>Please note you need to be
 <a href="https://dev.twitter.com/docs/cards/validation/validator">approved</a> by Twitter
-before you can start using Twitter Cards.</p>
+before you can start using Twitter&nbsp;Cards.</p>
 <h2 id="search-engine-optimization-seo">Search Engine Optimization (<span class="caps">SEO</span>)<a class="headerlink" href="#search-engine-optimization-seo" title="Permanent link"> </a></h2>
 <p>Elegant puts tags and category of your article in keywords tag <code>&lt;meta name="keywords"</code>.</p>
-<p>You can add your own keywords by defining <code>keywords</code> in article metadata.</p>
+<p>You can add your own keywords by defining <code>keywords</code> in article&nbsp;metadata.</p>
 <p><code>SITE_DESCRIPTION</code> and article <code>summary</code> is used in description tag <code>&lt;meta name="description"</code>.</p>
 <p>Your <code>AUTHOR</code> name is used in copyright tag <code>&lt;meta name="copyright"</code>.</p>
 
 
              
  
-                <p id="post-share-links">
-    Понравилась статья? Расскажите о ней на:
-      <a href="https://twitter.com/intent/tweet?text=Search%20Engine%20and%20Social%20Media%C2%A0Optimization&url=https%3A//dvesti.github.io/Pelican/2014/04/20/search-engine-and-social-media-optimization/&hashtags=crawler,social-media,web-analytics" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2014/04/20/search-engine-and-social-media-optimization/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Search%20Engine%20and%20Social%20Media%C2%A0Optimization&amp;body=https%3A//dvesti.github.io/Pelican/2014/04/20/search-engine-and-social-media-optimization/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-
+            
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
             <span class="author-name">Talha Mansoor</span>
         </a>
-        is the creator and lead developer of Elegant theme.
+        is the creator and lead developer of Elegant theme
     </div>
 
             
@@ -225,29 +217,10 @@ before you can start using Twitter Cards.</p>
 
 
             <hr/>
-<section>
-    <h2>Что почитать</h2>
-<ul class="related-posts-list">
-<li><a href="https://dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/" title="How to display your Social Media Profiles - Deprecated">How to display your Social Media Profiles <small>Deprecated</small></a></li>
-<li><a href="https://dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/" title="Add Social Sharing Links">Add Social Sharing Links</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2019/03/31/how-to-use-heap-analytics/" title="How to use Heap Analytics">How to use Heap Analytics</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2019/06/27/website-claim/" title="Claim website on Google, Yandex and Bing">Claim website on Google, Yandex and Bing</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2019/08/12/how-to-display-your-social-media-profiles/" title="How to display your Social Media Profiles">How to display your Social Media Profiles</a></li>
-</ul>
-<hr />
-</section>
-            <aside>
-            <nav>
-            <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2014/04/19/how-does-modified-metadata-works/" title="Previous: How does modified metadata works">How does modified metadata works</a></li>
-                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2014/04/20/how-to-use-multi-part-plugin/" title="Next: Displaying a Series Information for Your Multipart Articles - Deprecated">Displaying a Series Information for Your Multipart Articles <small class="subtitle">Deprecated</small></a> »</li>
-            </ul>
-            </nav>
-            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>
-            <time itemprop="dateCreated" datetime="2014-04-20T16:31:00+03:00">Вс, 20 апр. 2014 г.</time>
+            <time itemprop="dateCreated" datetime="2014-04-20T16:31:00+03:00">Sun, 20 Apr. 2014 г.</time>
             <h4>Категория</h4>
             <a class="category-link" href="https://dvesti.github.io/Pelican/categories#analytics-seo-and-smo-ref">Analytics, SEO and SMO</a>
             <h4>Тэги</h4>
@@ -276,7 +249,7 @@ before you can start using Twitter Cards.</p>
     <a href="mailto:diagonaal@gmail.com" title="Diagonaal" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><rect width="362" height="272" x="75" y="120" fill="#f2f2f2" rx="8%"/><path fill="#d54c3f" d="M120 392H97c-12 0-22-10-22-23V143h45z"/><path fill="#b63524" d="M392 392h23c12 0 22-10 22-23V143h-45z"/><path fill-opacity=".05" d="M256 286L120 392V187z"/><path fill-opacity=".08" d="M82 159l235 233h75V159z"/><path stroke-linecap="round" fill="none" stroke="#de5145" stroke-width="45" d="M97 143l159 115 159-115"/><path fill="#f2f2f2" d="M415 120c-5 0-10 2-13 4L256 230 110 124c-3-2-8-4-13-4z"/></svg>
     </a>
-    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+    <a href="/Pelican/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
     </a>
 </div>

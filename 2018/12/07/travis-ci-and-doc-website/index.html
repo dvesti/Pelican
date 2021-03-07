@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?481f5cf0">
- -->
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -39,12 +39,14 @@
        
         <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?fc5adb95">
 
+        <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/elegant.css">
+
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
         <meta name="author" content="Pablo Iranzo Gómez" />
 
-        <meta name="description" content="Outdated Elegant no longer uses the procedure described in this article Background Elegant theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the tasks to accomplish, has been the decoupling from author blog to project site for documentation. As …
+        <meta name="description" content="Background Under the hood Image setup Preparation of environment Actual tests After tests passed Wrap up Outdated Elegant no longer uses the procedure described in this article Background Elegant theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the …
 " /> 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -53,12 +55,12 @@
 
 <meta property="og:title" content="Travis-CI Automation for documentation website "/>
 <meta property="og:url" content="https://dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/" />
-<meta property="og:description" content="Outdated Elegant no longer uses the procedure described in this article Background Elegant theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the tasks to accomplish, has been the decoupling from author blog to project site for documentation. As …" />
+<meta property="og:description" content="Background Under the hood Image setup Preparation of environment Actual tests After tests passed Wrap up Outdated Elegant no longer uses the procedure described in this article Background Elegant theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the …" />
 <meta property="og:site_name" content="Pelican-200" />
 <meta property="og:article:author" content="Pablo Iranzo Gómez" />
 <meta property="og:article:published_time" content="2018-12-07T16:00:47+01:00" />
 <meta name="twitter:title" content="Travis-CI Automation for documentation website ">
-<meta name="twitter:description" content="Outdated Elegant no longer uses the procedure described in this article Background Elegant theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the tasks to accomplish, has been the decoupling from author blog to project site for documentation. As …">
+<meta name="twitter:description" content="Background Under the hood Image setup Preparation of environment Actual tests After tests passed Wrap up Outdated Elegant no longer uses the procedure described in this article Background Elegant theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the …">
 <meta property="og:image" content="/theme/images/apple-touch-icon-152x152.png" />
 <meta name="twitter:image" content="/theme/images/apple-touch-icon-152x152.png" >
 
@@ -127,51 +129,45 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h4>Содержание</h4>
-        <div class="toc">
+        <div class="span8 offset2 article-content">
+            
+            <div class="toc">
 <ul>
 <li><a href="#background">Background</a></li>
 <li><a href="#under-the-hood">Under the hood</a><ul>
-<li><a href="#image-setup">Image setup</a></li>
-<li><a href="#preparation-of-environment">Preparation of environment</a></li>
-<li><a href="#actual-tests">Actual tests</a></li>
-<li><a href="#after-tests-passed">After tests passed</a></li>
+<li><a href="#image-setup">Image&nbsp;setup</a></li>
+<li><a href="#preparation-of-environment">Preparation of&nbsp;environment</a></li>
+<li><a href="#actual-tests">Actual&nbsp;tests</a></li>
+<li><a href="#after-tests-passed">After tests&nbsp;passed</a></li>
 </ul>
 </li>
-<li><a href="#wrap-up">Wrap up</a></li>
+<li><a href="#wrap-up">Wrap&nbsp;up</a></li>
 </ul>
 </div>
-        </nav>
-    </div>
-    <div class="span8 article-content">
-            
-            
 <div class="admonition warning">
 <p class="admonition-title">Outdated</p>
-<p>Elegant no longer uses the procedure described in this article</p>
+<p>Elegant no longer uses the procedure described in this&nbsp;article</p>
 </div>
 <h1 id="background">Background<a class="headerlink" href="#background" title="Permanent link"> </a></h1>
-<p><a href="https://github.com/Pelican-Elegant/elegant">Elegant</a> theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the tasks to accomplish, has been the decoupling from author blog to project site for documentation.</p>
+<p><a href="https://github.com/Pelican-Elegant/elegant">Elegant</a> theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the tasks to accomplish, has been the decoupling from author blog to project site for&nbsp;documentation.</p>
 <p>As we wanted this process to be both automated and allowed us to demonstrate via
 dogfooding <!-- yaspeller ignore -->
-that the theme works and how it looks, the idea was to automate the rendering of pelican website with new documents.</p>
+that the theme works and how it looks, the idea was to automate the rendering of pelican website with new&nbsp;documents.</p>
 <h1 id="under-the-hood">Under the hood<a class="headerlink" href="#under-the-hood" title="Permanent link"> </a></h1>
-<p>Setting an automated build required several steps to be done:</p>
+<p>Setting an automated build required several steps to be&nbsp;done:</p>
 <ul>
 <li>Get a GitHub token that could be used by Travis for pushing to a repository (and configure it in Travis environment variables for the repository in a variable named <code>GITHUB_TOKEN</code>)</li>
-<li>run unit tests for validating new <span class="caps">PR</span> before merging</li>
-<li>configure Travis so that it downloads required dependencies in order to run pelican and then publish the generated web to the repository</li>
-<li>a GitHub pages enabled repository so that resulting files can be viewed as a webpage.</li>
+<li>run unit tests for validating new <span class="caps">PR</span> before&nbsp;merging</li>
+<li>configure Travis so that it downloads required dependencies in order to run pelican and then publish the generated web to the&nbsp;repository</li>
+<li>a GitHub pages enabled repository so that resulting files can be viewed as a&nbsp;webpage.</li>
 </ul>
-<p>One of the key pieces is a properly configured <code>.travis.yaml</code> like the one we started using:</p>
-<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
+<p>One of the key pieces is a properly configured <code>.travis.yaml</code> like the one we started&nbsp;using:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
 <span class="nt">dist</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">trusty</span>
 <span class="nt">sudo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">required</span>
 
 <span class="nt">python</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">"3.5"</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;3.5&quot;</span>
 
 <span class="nt">before_install</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span>
@@ -189,31 +185,33 @@ that the theme works and how it looks, the idea was to automate the rendering of
 <span class="nt">after_success</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rm -rf .git/</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git init</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.name "Travis CI"</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.email "travis@domain.com"</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.name &quot;Travis CI&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.email &quot;travis@domain.com&quot;</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config --global push.default simple</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make github</span>
-</pre></div>
+</code></pre></div>
+
 <h2 id="image-setup">Image setup<a class="headerlink" href="#image-setup" title="Permanent link"> </a></h2>
-<p>So, from above file we do:</p>
-<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
+<p>So, from above file we&nbsp;do:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
 <span class="nt">dist</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">trusty</span>
 <span class="nt">sudo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">required</span>
 
 <span class="nt">python</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">"3.5"</span>
-</pre></div>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;3.5&quot;</span>
+</code></pre></div>
+
 <ul>
-<li>Configure language as python</li>
-<li>Select distribution</li>
-<li>Confirm we require ‘sudo’ access</li>
-<li>Configure python version as 3.5</li>
+<li>Configure language as&nbsp;python</li>
+<li>Select&nbsp;distribution</li>
+<li>Confirm we require &#8216;sudo&#8217;&nbsp;access</li>
+<li>Configure python version as&nbsp;3.5</li>
 </ul>
-<p>All of this depends on Travis Image being used and their documentation</p>
+<p>All of this depends on Travis Image being used and their&nbsp;documentation</p>
 <h2 id="preparation-of-environment">Preparation of environment<a class="headerlink" href="#preparation-of-environment" title="Permanent link"> </a></h2>
-<p>Now, we’ll prepare the environment for our tests:</p>
-<div class="highlight"><pre><span></span><span class="nt">before_install</span><span class="p">:</span>
+<p>Now, we&#8217;ll prepare the environment for our&nbsp;tests:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">before_install</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
@@ -221,49 +219,47 @@ that the theme works and how it looks, the idea was to automate the rendering of
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install peru</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">peru sync</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install tox</span>
-</pre></div>
-<p>We do install pip, setuptools, repository and test requirements, peru and tox.</p>
-<p>Peru is used to grab additional dependencies for elegant (plugins, latest theme, etc)</p>
+</code></pre></div>
+
+<p>We do install pip, setuptools, repository and test requirements, peru and&nbsp;tox.</p>
+<p>Peru is used to grab additional dependencies for elegant (plugins, latest theme,&nbsp;etc)</p>
 <h2 id="actual-tests">Actual tests<a class="headerlink" href="#actual-tests" title="Permanent link"> </a></h2>
-<p>This is really easy in our case:</p>
-<div class="highlight"><pre><span></span><span class="nt">script</span><span class="p">:</span>
+<p>This is really easy in our&nbsp;case:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">script</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">tox</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make html</span>
-</pre></div>
-<p>We run ‘tox’ that allows to automate Python virtualenv and tests and then, use the Makefile from Pelican to build the site and tests plugins, etc</p>
-<p>If everything succeeds, we’re ready for the next step (publishing)</p>
+</code></pre></div>
+
+<p>We run &#8216;tox&#8217; that allows to automate Python virtualenv and tests and then, use the Makefile from Pelican to build the site and tests plugins,&nbsp;etc</p>
+<p>If everything succeeds, we&#8217;re ready for the next step&nbsp;(publishing)</p>
 <h2 id="after-tests-passed">After tests passed<a class="headerlink" href="#after-tests-passed" title="Permanent link"> </a></h2>
-<p>All the environment setup and tests have succeed now, we do need to push the site ‘live’</p>
-<div class="highlight"><pre><span></span><span class="nt">after_success</span><span class="p">:</span>
+<p>All the environment setup and tests have succeed now, we do need to push the site&nbsp;&#8216;live&#8217;</p>
+<div class="highlight"><pre><span></span><code><span class="nt">after_success</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rm -rf .git/</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git init</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.name "Travis CI"</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.email "travis@domain.com"</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.name &quot;Travis CI&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.email &quot;travis@domain.com&quot;</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config --global push.default simple</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make github</span>
-</pre></div>
-<p>This piece does the final step, first removes info about the repository containing the actual documentation and allows us to initialize a new one, that we make it point towards the repository we’re pushing (so that we keep separate actual website content from ‘rendered’ website).</p>
-<p>In the final step, ‘make github’ uses the Makefile provided with pelican to push the changes to the ‘master’ branch of the target repository, that then, is ready to be served via github pages as a regular web server would do.</p>
+</code></pre></div>
+
+<p>This piece does the final step, first removes info about the repository containing the actual documentation and allows us to initialize a new one, that we make it point towards the repository we&#8217;re pushing (so that we keep separate actual website content from &#8216;rendered&#8217;&nbsp;website).</p>
+<p>In the final step, &#8216;make github&#8217; uses the Makefile provided with pelican to push the changes to the &#8216;master&#8217; branch of the target repository, that then, is ready to be served via github pages as a regular web server would&nbsp;do.</p>
 <h1 id="wrap-up">Wrap up<a class="headerlink" href="#wrap-up" title="Permanent link"> </a></h1>
-<p>So, right now we’ve accomplished several things:</p>
+<p>So, right now we&#8217;ve accomplished several&nbsp;things:</p>
 <ul>
-<li>We do use pelican in the same way that we’ll do for our own website</li>
-<li>We do also have as a consequence, a <a href="https://elegant.oncrashreboot.com">‘live’ demo</a> of latest master branch showcasing features</li>
-<li>We did automate publishing of webpage as soon as contributors send new articles and are approved for merge</li>
-<li>All requires no extra change to regular workflow as <travis-ci.org> is the glue here putting together all the pieces.</travis-ci.org></li>
+<li>We do use pelican in the same way that we&#8217;ll do for our own&nbsp;website</li>
+<li>We do also have as a consequence, a <a href="https://elegant.oncrashreboot.com">&#8216;live&#8217; demo</a> of latest master branch showcasing&nbsp;features</li>
+<li>We did automate publishing of webpage as soon as contributors send new articles and are approved for&nbsp;merge</li>
+<li>All requires no extra change to regular workflow as <Travis-CI.org> is the glue here putting together all the&nbsp;pieces.</li>
 </ul>
-<p>Let us know via an <a href="https://github.com/Pelican-Elegant/elegant/issues/new">issue</a> if any problem is spotted on the generated documentation website.</p>
+<p>Let us know via an <a href="https://github.com/Pelican-Elegant/elegant/issues/new">issue</a> if any problem is spotted on the generated documentation&nbsp;website.</p>
 
 
              
  
-                <p id="post-share-links">
-    Понравилась статья? Расскажите о ней на:
-      <a href="https://twitter.com/intent/tweet?text=Travis-CI%20Automation%20for%20documentation%C2%A0website&url=https%3A//dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/&hashtags=pelican,foss,travis,cicd,elegant,python" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Travis-CI%20Automation%20for%20documentation%C2%A0website&amp;body=https%3A//dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-
+            
                 <hr />
     <div class="author-blurb">
         <a href="http://iranzo.github.io" target="_blank" rel="nofollow noopener noreferrer">
@@ -282,29 +278,10 @@ that the theme works and how it looks, the idea was to automate the rendering of
 
 
             <hr/>
-<section>
-    <h2>Что почитать</h2>
-<ul class="related-posts-list">
-<li><a href="https://dvesti.github.io/Pelican/2010/12/03/my-first-post/" title="Моё первое Сообщение — My First Post">Моё первое Сообщение — My First Post</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2018/12/11/travis-to-trigger-build-in-another-repository/" title="Triggering a travis-ci build on another repository">Triggering a travis-ci build on another repository</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" title="Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.">Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-Pelican/" title="Поиск на русском языке — сделан?!">Поиск на русском языке — сделан?!</a></li>
-<li><a href="https://dvesti.github.io/Pelican/2020/08/03/dobableny-kommentarii-utterances/" title="Добавили комментирование">Добавили комментирование</a></li>
-</ul>
-<hr />
-</section>
-            <aside>
-            <nav>
-            <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2018/12/07/adding-author-blurbs/" title="Previous: Add Author Blurbs to Your Articles">Add Author Blurbs to Your Articles</a></li>
-                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2018/12/11/travis-to-trigger-build-in-another-repository/" title="Next: Triggering a travis-ci build on another repository">Triggering a travis-ci build on another repository</a> »</li>
-            </ul>
-            </nav>
-            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>
-            <time itemprop="dateCreated" datetime="2018-12-07T16:00:47+01:00">Пт, 07 дек. 2018 г.</time>
+            <time itemprop="dateCreated" datetime="2018-12-07T16:00:47+01:00">Fri, 07 Dec. 2018 г.</time>
             <h4>Категория</h4>
             <a class="category-link" href="https://dvesti.github.io/Pelican/categories#contributing-ref">Contributing</a>
             <h4>Тэги</h4>
@@ -342,7 +319,7 @@ that the theme works and how it looks, the idea was to automate the rendering of
     <a href="mailto:diagonaal@gmail.com" title="Diagonaal" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><rect width="362" height="272" x="75" y="120" fill="#f2f2f2" rx="8%"/><path fill="#d54c3f" d="M120 392H97c-12 0-22-10-22-23V143h45z"/><path fill="#b63524" d="M392 392h23c12 0 22-10 22-23V143h-45z"/><path fill-opacity=".05" d="M256 286L120 392V187z"/><path fill-opacity=".08" d="M82 159l235 233h75V159z"/><path stroke-linecap="round" fill="none" stroke="#de5145" stroke-width="45" d="M97 143l159 115 159-115"/><path fill="#f2f2f2" d="M415 120c-5 0-10 2-13 4L256 230 110 124c-3-2-8-4-13-4z"/></svg>
     </a>
-    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+    <a href="/Pelican/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
     </a>
 </div>

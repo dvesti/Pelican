@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?481f5cf0">
- -->
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -38,6 +38,8 @@
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/tipuesearch/tipuesearch.css" media="screen"> 
        
         <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?fc5adb95">
+
+        <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/elegant.css">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -127,98 +129,95 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h4>Содержание</h4>
-        <div class="toc">
+        <div class="span8 offset2 article-content">
+            
+            <div class="toc">
 <ul>
-<li><a href="#arent-git-hooks-hard-to-get-right">Aren’t Git Hooks Hard to Get Right?</a></li>
-<li><a href="#why-use-pre-commit-locally">Why Use Pre-commit Locally?</a></li>
-<li><a href="#how-do-i-install-it">How Do I Install It?</a></li>
-<li><a href="#how-do-i-use-it-locally">How Do I Use It Locally?</a></li>
-<li><a href="#can-i-run-the-hooks-without-a-commit">Can I Run The Hooks Without a Commit?</a></li>
-<li><a href="#how-does-the-project-run-the-hooks-for-submissions">How Does The Project Run the Hooks For Submissions?</a></li>
+<li><a href="#arent-git-hooks-hard-to-get-right">Aren&#8217;t Git Hooks Hard to Get&nbsp;Right?</a></li>
+<li><a href="#why-use-pre-commit-locally">Why Use Pre-commit&nbsp;Locally?</a></li>
+<li><a href="#how-do-i-install-it">How Do I Install&nbsp;It?</a></li>
+<li><a href="#how-do-i-use-it-locally">How Do I Use It&nbsp;Locally?</a></li>
+<li><a href="#can-i-run-the-hooks-without-a-commit">Can I Run The Hooks Without a&nbsp;Commit?</a></li>
+<li><a href="#how-does-the-project-run-the-hooks-for-submissions">How Does The Project Run the Hooks For&nbsp;Submissions?</a></li>
 </ul>
 </div>
-        </nav>
-    </div>
-    <div class="span8 article-content">
-            
-            
 <p>When there was a single developer working on the Elegant project, there were none of the
 common problems associated with team projects: different styles and different processes. After
 the project was moved to the current
 <a href="https://dvesti.github.io/Pelican/2019/01/05/community-led-project/">bazaar development model</a>, the team thought it
-best that all changes should follow the same set of stylistic guidelines.</p>
+best that all changes should follow the same set of stylistic&nbsp;guidelines.</p>
 <p>The Git clients provide a concept called
 <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks">Git hooks</a>. Git hooks allow for
 custom code to be triggered when certain actions are performed with Git. One of the most
 common triggers is the pre-commit trigger, used to activate a program between a client
 request to commit and the actual act of committing the change. If the program reports a
 failure, the commit is aborted, hopefully with the failed program providing enough information
-for the user to diagnose the issue.</p>
-<h2 id="arent-git-hooks-hard-to-get-right">Aren’t Git Hooks Hard to Get Right?<a class="headerlink" href="#arent-git-hooks-hard-to-get-right" title="Permanent link"> </a></h2>
+for the user to diagnose the&nbsp;issue.</p>
+<h2 id="arent-git-hooks-hard-to-get-right">Aren&#8217;t Git Hooks Hard to Get Right?<a class="headerlink" href="#arent-git-hooks-hard-to-get-right" title="Permanent link"> </a></h2>
 <p>If you have tried to set up Git hooks before, there are usually two problems you have faced:
 the concept can be hard for people to understand and Git hooks are often frustrating difficult
 to debug. Add onto this the different operating systems and versions of those systems on top
-of that, and you can quickly get into nightmare territory for maintaining a Git hook.</p>
+of that, and you can quickly get into nightmare territory for maintaining a Git&nbsp;hook.</p>
 <p>To solve most of these problems, the team decided to use the
 <a href="https://pre-commit.com/">Pre-Commit</a>
 Python package which provides a simple layer of abstraction over the Git hooks. The Pre-commit
 package makes managing, sharing and updating the Git hooks very easy. As it installs itself as
-a Git hook, once you have installed it properly, you may easily confuse it as a part of Git’s
-commit process.</p>
+a Git hook, once you have installed it properly, you may easily confuse it as a part of Git&#8217;s
+commit&nbsp;process.</p>
 <h2 id="why-use-pre-commit-locally">Why Use Pre-commit Locally?<a class="headerlink" href="#why-use-pre-commit-locally" title="Permanent link"> </a></h2>
-<p>Pre-commit runs Git hooks that among other things:</p>
+<p>Pre-commit runs Git hooks that among other&nbsp;things:</p>
 <ul>
 <li>Run <a href="https://github.com/prettier/prettier">Prettier</a></li>
-<li>applies common styling for Markdown, <span class="caps">CSS</span>, <span class="caps">JS</span> and json files</li>
+<li>applies common styling for Markdown, <span class="caps">CSS</span>, <span class="caps">JS</span> and json&nbsp;files</li>
 <li>Run <a href="https://github.com/python/black">Black</a></li>
-<li>applies common styling for Python files</li>
-<li>Removes trailing whitespace on lines</li>
-<li>Fixes the end of files to a common style</li>
+<li>applies common styling for Python&nbsp;files</li>
+<li>Removes trailing whitespace on&nbsp;lines</li>
+<li>Fixes the end of files to a common&nbsp;style</li>
 </ul>
 <p>Addressing any failures reported by these hooks locally will result in a smaller turn around
 time in getting those issues addressed. This in turn will save time when submitting changes
-in a Pull Request, as you have already dealt with any errors that this tool may report.</p>
+in a Pull Request, as you have already dealt with any errors that this tool may&nbsp;report.</p>
 <h2 id="how-do-i-install-it">How Do I Install It?<a class="headerlink" href="#how-do-i-install-it" title="Permanent link"> </a></h2>
-<p>The package itself is installed in typical Python fashion by using the Pip command:</p>
-<div class="highlight"><pre><span></span>pip install pre-commit
-</pre></div>
+<p>The package itself is installed in typical Python fashion by using the Pip&nbsp;command:</p>
+<div class="highlight"><pre><span></span><code>pip install pre-commit
+</code></pre></div>
+
 <p>Once installed in your environment, you can install the Git hooks for your local repository
-by changing your directory to the root of that repository and executing the following command:</p>
-<div class="highlight"><pre><span></span>pre-commit install
-</pre></div>
+by changing your directory to the root of that repository and executing the following&nbsp;command:</p>
+<div class="highlight"><pre><span></span><code>pre-commit install
+</code></pre></div>
+
 <h2 id="how-do-i-use-it-locally">How Do I Use It Locally?<a class="headerlink" href="#how-do-i-use-it-locally" title="Permanent link"> </a></h2>
 <p>Once installed, Pre-commit appears to be part of the Git commit process. When you perform
 your next <code>git commit</code> command (including using the <code>git-cz</code> command for the
 <a href="https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/">Commitizen tool</a>), the Pre-commit package will download any tools
 it requires to properly run any required hooks. These tools are cached, so you will typically
-only experience a long wait on the first time the Pre-commit package is executed.</p>
+only experience a long wait on the first time the Pre-commit package is&nbsp;executed.</p>
 <p>If the hooks run by the Pre-commit package fail for some reason, they will clearly notify
 you of which of the hooks failed and typically present you with a reason why the hook failed.
 Note that some of the hooks, such as the <code>prettier</code> hook, may make some changes to your
-files to bring them in line with the project’s common style. If any changes occur, they
+files to bring them in line with the project&#8217;s common style. If any changes occur, they
 will not be staged to your local repository, making any changes visible using the <code>git status</code>
 command.</p>
 <p>If the hook failed due to an error, you need to fix that error before it will allow you to
 continue. If the hook failed because it made a change, make sure to verify the change that
 was made for you, after making sure it will not have a negative effect on your changes. It
 is then your responsibility to stage all changes to the repository before committing the
-change again.</p>
+change&nbsp;again.</p>
 <div class="admonition warning">
-<p class="admonition-title">For Windows Users</p>
-<p>If you run these checks on Windows, the <code>check-executables-have-shebangs</code> hook will fail as Windows does not require that executable files start with a <a href="shebang">shebang</a> and all files implicitly have the <code>execute</code> or <code>+x</code> permission for Linux.</p>
-<p>To skip this check, enter <code>set SKIP=check-executables-have-shebangs</code> on the command line before you execute the Pre-commit package, either from a Git hook as detailed above, or manually, as detail in the following section.</p>
+<p class="admonition-title">For Windows&nbsp;Users</p>
+<p>If you run these checks on Windows, the <code>check-executables-have-shebangs</code> hook will fail as Windows does not require that executable files start with a <a href="shebang">shebang</a> and all files implicitly have the <code>execute</code> or <code>+x</code> permission for&nbsp;Linux.</p>
+<p>To skip this check, enter <code>set SKIP=check-executables-have-shebangs</code> on the command line before you execute the Pre-commit package, either from a Git hook as detailed above, or manually, as detail in the following&nbsp;section.</p>
 </div>
 <h2 id="can-i-run-the-hooks-without-a-commit">Can I Run The Hooks Without a Commit?<a class="headerlink" href="#can-i-run-the-hooks-without-a-commit" title="Permanent link"> </a></h2>
-<p>The full set of hooks are available by entering the following command:</p>
-<div class="highlight"><pre><span></span>pre-commit run -a
-</pre></div>
+<p>The full set of hooks are available by entering the following&nbsp;command:</p>
+<div class="highlight"><pre><span></span><code>pre-commit run -a
+</code></pre></div>
+
 <p>This will run the full set of hooks and report any errors. It is often useful to run this
 command before committing, even if you are using
 <a href="./commitizien.md">Commitizen</a>
-for your commits as is recommended.</p>
+for your commits as is&nbsp;recommended.</p>
 <h2 id="how-does-the-project-run-the-hooks-for-submissions">How Does The Project Run the Hooks For Submissions?<a class="headerlink" href="#how-does-the-project-run-the-hooks-for-submissions" title="Permanent link"> </a></h2>
 <p>The Elegant team fully believes in the Git hooks and their benefit to the team. As such, the
 Pre-commit package is executed on all of our team builds (using Travis <span class="caps">CI</span>) for any commits and
@@ -229,18 +228,13 @@ build the project, check out the article on
 
              
  
-                <p id="post-share-links">
-    Понравилась статья? Расскажите о ней на:
-      <a href="https://twitter.com/intent/tweet?text=Using%20Pre-Commit%20Git%C2%A0Hooks%20&url=https%3A//dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Using%20Pre-Commit%20Git%C2%A0Hooks%20&amp;body=https%3A//dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-
+            
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
             <span class="author-name">Talha Mansoor</span>
         </a>
-        is the creator and lead developer of Elegant theme.
+        is the creator and lead developer of Elegant theme
     </div>
     <div class="author-blurb">
         <a href="http://jackdewinter.github.io" target="_blank" rel="nofollow noopener noreferrer">
@@ -258,18 +252,10 @@ build the project, check out the article on
 
 
             <hr/>
-            <aside>
-            <nav>
-            <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/22/elegant-logo/" title="Previous: Elegant Logo">Elegant Logo</a></li>
-                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/07/22/developing-for-elegant/" title="Next: Developing Features For Elegant">Developing Features For Elegant</a> »</li>
-            </ul>
-            </nav>
-            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>
-            <time itemprop="dateCreated" datetime="2019-07-22T23:17:00+03:00">Пн, 22 июл. 2019 г.</time>
+            <time itemprop="dateCreated" datetime="2019-07-22T23:17:00+03:00">Mon, 22 Jul. 2019 г.</time>
             <h4>Категория</h4>
             <a class="category-link" href="https://dvesti.github.io/Pelican/categories#contributing-ref">Contributing</a>
 <h4>Будьте с нами</h4>
@@ -286,7 +272,7 @@ build the project, check out the article on
     <a href="mailto:diagonaal@gmail.com" title="Diagonaal" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><rect width="362" height="272" x="75" y="120" fill="#f2f2f2" rx="8%"/><path fill="#d54c3f" d="M120 392H97c-12 0-22-10-22-23V143h45z"/><path fill="#b63524" d="M392 392h23c12 0 22-10 22-23V143h-45z"/><path fill-opacity=".05" d="M256 286L120 392V187z"/><path fill-opacity=".08" d="M82 159l235 233h75V159z"/><path stroke-linecap="round" fill="none" stroke="#de5145" stroke-width="45" d="M97 143l159 115 159-115"/><path fill="#f2f2f2" d="M415 120c-5 0-10 2-13 4L256 230 110 124c-3-2-8-4-13-4z"/></svg>
     </a>
-    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+    <a href="/Pelican/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
     </a>
 </div>

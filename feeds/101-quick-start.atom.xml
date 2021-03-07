@@ -11,12 +11,11 @@ a standalone repository and as part of the Pelican-Themes&amp;nbsp;repository.&l
 the themes available in that project will be located at a level one down from the
 directory where you installed the repository into. For example, if you installed
 the repository with the following&amp;nbsp;command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone --recursive https://github.com/getpelican/pelican-themes ../blog-themes
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone --recursive https://github.com/getpelican/pelican-themes ../blog-themes
 &lt;span class="nb"&gt;cd&lt;/span&gt; ../blog-themes
 git submodule update --init elegant
 git submodule update --remote elegant
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;it installed every theme known to the project in the current directory where the command
 was executed from. Along with (at last count) 125 other themes, the Elegant theme is
@@ -26,10 +25,9 @@ located under the &lt;code&gt;elegant&lt;/code&gt; directory.&lt;/p&gt;
 called sub-modules. Because of the ways that sub-modules work, if you want to update
 one sub-module in a project, it is almost always desired to remove the sub-module that
 you want to update and clone it in again. This is accomplished with the following&amp;nbsp;script:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;rm -rf ../blog-themes/elegant
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rm -rf ../blog-themes/elegant
 git clone --jobs &lt;span class="m"&gt;8&lt;/span&gt; --recurse-submodules --depth &lt;span class="m"&gt;1&lt;/span&gt; --shallow-submodules https://github.com/Pelican-Elegant/elegant.git ../blog-themes/elegant
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Assuming the &lt;code&gt;blog-themes&lt;/code&gt; directory is at the same level as your Pelican directory, the
 script removes the Elegant directory under the &lt;code&gt;blog-themes&lt;/code&gt; directory, only to recreate
@@ -43,10 +41,9 @@ repository while making sure you have the latest release of&amp;nbsp;Elegant.&lt
 &lt;h2 id="via-a-standalone-repository"&gt;Via a Standalone Repository&lt;a class="headerlink" href="#via-a-standalone-repository" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;If you installed the Elegant theme as a standalone repository, you most likely followed
 directions like the following to clone the Elegant&amp;nbsp;repository:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir ../blog-theme/Elegant
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir ../blog-theme/Elegant
 git clone https://github.com/Pelican-Elegant/elegant ../blog-theme/Elegant
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;For this example, the assumption is that the Pelican directory where your website is
 stored is at the same level as the &lt;code&gt;blog-theme&lt;/code&gt; directory. As such, the &lt;code&gt;../blog-theme&lt;/code&gt;
@@ -59,9 +56,8 @@ repository or recreate your repository as noted in the following two&amp;nbsp;se
 &lt;p&gt;The &lt;code&gt;master&lt;/code&gt; branch of Elegant&amp;#8217;s Git repository always contains the latest release. To
 update to that release, go into the Elegant theme directory (&lt;code&gt;../blog-theme/Elegant&lt;/code&gt;
 from the example above), and enter the following&amp;nbsp;command.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git pull origin master
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git pull origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Note that this is the most effective way of updating your standalone repository if you
 have not made any changes to the the theme. If you have made some changes, you may be
@@ -73,9 +69,8 @@ have messed up the contents of your theme repository. If you have made any chang
 base Elegant theme, it is inevitable that at some point you will need to reset the
 repository to a known good state. Assuming that the repository is in the directory
 &lt;code&gt;../blog-theme/Elegant&lt;/code&gt;, per the example above, executing the following&amp;nbsp;command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;rmdir -rf ../blog-theme/Elegant
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rmdir -rf ../blog-theme/Elegant
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;will remove the entire theme from your local system. Once this is done, you can follow
 the clone directions in the example at the top of this section on standalone
@@ -89,24 +84,22 @@ master branch on&amp;nbsp;GitHub.&lt;/p&gt;
 &lt;p&gt;If you are using the Python &lt;code&gt;invoke&lt;/code&gt; framework, then this work is already done for you by
 using the &lt;code&gt;theme_sync&lt;/code&gt; task in &lt;code&gt;documentation/tasks.py&lt;/code&gt; file. The &lt;code&gt;invoke&lt;/code&gt; package can
 be installed in the usual&amp;nbsp;manner:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install invoke
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install invoke
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Once installed, typing &lt;code&gt;invoke theme_sync&lt;/code&gt; will execute that task as defined in the
 file &lt;code&gt;tasks.py&lt;/code&gt; as&amp;nbsp;follows:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@task&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nd"&gt;@task&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;theme_sync&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Make a fresh shallow copy of pelican-elegant theme&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rm -rf themes&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
         &lt;span class="s2"&gt;&amp;quot;git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git themes/elegant&amp;quot;&lt;/span&gt;
     &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Note that this script makes a couple of assumptions about where you are invoking the
-task from and where you have your themes stored. If you are okay with that, give it a&amp;nbsp;try!&lt;/p&gt;</content><category term="101 — Quick Start"></category><category term="pelican-theme"></category><category term="new-releases"></category></entry><entry><title>Getting Notified About New Releases</title><link href="https://dvesti.github.io/Pelican/2019/12/05/getting-notified-about-new-releases/" rel="alternate"></link><published>2019-12-05T00:00:00+02:00</published><updated>2019-12-05T00:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-12-05:/Pelican/2019/12/05/getting-notified-about-new-releases/</id><summary type="html">&lt;p&gt;Unlike a number of themes that exist for Pelican, the Elegant theme is currently under
+task from and where you have your themes stored. If you are okay with that, give it a&amp;nbsp;try!&lt;/p&gt;</content><category term="101 — Quick Start"></category><category term="pelican-theme"></category><category term="new-releases"></category></entry><entry><title>Getting Notified About New Releases</title><link href="https://dvesti.github.io/Pelican/2019/12/05/getting-notified-about-new-releases/" rel="alternate"></link><published>2019-12-05T12:00:00+02:00</published><updated>2019-12-05T12:00:00+02:00</updated><author><name>Jack De Winter</name></author><id>tag:dvesti.github.io,2019-12-05:/Pelican/2019/12/05/getting-notified-about-new-releases/</id><summary type="html">&lt;p&gt;Unlike a number of themes that exist for Pelican, the Elegant theme is currently under
 active development. The immediate benefit of this for you is that Elegant supports
 recent technologies/services such as &lt;a href="https://utteranc.es/"&gt;Utterances&lt;/a&gt; for comments and
 the &lt;a href="https://applause-button.com/"&gt;Applause button&lt;/a&gt; for quick and simple user feedback.
@@ -143,43 +136,72 @@ new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="https://mathiasbynens.github.io/rel-noopener/"&gt;About rel=noopener&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md"&gt;react/jsx-no-target-blank&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><category term="101 — Quick Start"></category><category term="security"></category></entry><entry><title>Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</title><link href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" rel="alternate"></link><published>2019-01-11T17:30:47+01:00</published><updated>2019-01-11T17:30:47+01:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:dvesti.github.io,2019-01-11:/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/</id><summary type="html">
-&lt;h1 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download plugins, theme, doing configuration, etc.&lt;/p&gt;
-&lt;p&gt;Based on this feedback, a new ‘blog-o-matic’ approach has been tested:&lt;/p&gt;
-&lt;h1 id="the-approach"&gt;The approach&lt;a class="headerlink" href="#the-approach" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/iranzo/blog-o-matic/"&gt;Blog-o-Matic …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">
-&lt;h1 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;We’re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download plugins, theme, doing configuration, etc.&lt;/p&gt;
-&lt;p&gt;Based on this feedback, a new ‘blog-o-matic’ approach has been tested:&lt;/p&gt;
-&lt;h1 id="the-approach"&gt;The approach&lt;a class="headerlink" href="#the-approach" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/iranzo/blog-o-matic/"&gt;Blog-o-Matic&lt;/a&gt;, uses several discussed topics so far:&lt;/p&gt;
+&lt;/ol&gt;</content><category term="101 — Quick Start"></category><category term="security"></category></entry><entry><title>Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</title><link href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" rel="alternate"></link><published>2019-01-11T17:30:47+01:00</published><updated>2019-01-11T17:30:47+01:00</updated><author><name>Pablo Iranzo Gómez</name></author><id>tag:dvesti.github.io,2019-01-11:/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com"&gt;Github&lt;/a&gt; and &lt;span class="caps"&gt;GH&lt;/span&gt; Pages for hosting the source and the website&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://travis-ci.org"&gt;Travis-&lt;span class="caps"&gt;CI&lt;/span&gt;.org&lt;/a&gt; for automating the update and generation process&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.getpelican.com/"&gt;&lt;span class="quo"&gt;‘&lt;/span&gt;Pelican’&lt;/a&gt; for static rendering of your blog from the markdown or AsciiDoc articles&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/Pelican-Elegant/elegant"&gt;&lt;span class="quo"&gt;‘&lt;/span&gt;Elegant’&lt;/a&gt; for the ‘Theme’&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/buildinspace/peru"&gt;peru&lt;/a&gt; for automating repository upgrades for plugins, etc&lt;/li&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-approach"&gt;The&amp;nbsp;approach&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#how-does-it-work-under-the-hood"&gt;How does it work under the hood?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#setup"&gt;Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#automation-workflow"&gt;Automation workflow&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#validation"&gt;Validation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#deployment"&gt;Deployment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The setup process is outlined at its &lt;a href="https://github.com/iranzo/blog-o-matic/"&gt;&lt;span class="caps"&gt;README&lt;/span&gt;.md&lt;/a&gt; and just requires a few steps to setup that, from that point, will allow you to get your website published each time you commit a new document to the content folder.&lt;/p&gt;
-&lt;p&gt;You can also check the ‘generated’ website after installation via &lt;a href="https://iranzo.github.io/blog-o-matic"&gt;https://iranzo.github.io/blog-o-matic&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#blog-is-ready"&gt;Blog is&amp;nbsp;ready!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h1 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;We&amp;#8217;re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download …&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-approach"&gt;The&amp;nbsp;approach&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#how-does-it-work-under-the-hood"&gt;How does it work under the hood?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#setup"&gt;Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#automation-workflow"&gt;Automation workflow&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#validation"&gt;Validation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#deployment"&gt;Deployment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#blog-is-ready"&gt;Blog is&amp;nbsp;ready!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h1 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;We&amp;#8217;re using automation for some of the aspects of Elegant development, but one of the issues for users trying to setup a new site with Pelican is to download plugins, theme, doing configuration,&amp;nbsp;etc.&lt;/p&gt;
+&lt;p&gt;Based on this feedback, a new &amp;#8216;blog-o-matic&amp;#8217; approach has been&amp;nbsp;tested:&lt;/p&gt;
+&lt;h1 id="the-approach"&gt;The approach&lt;a class="headerlink" href="#the-approach" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/iranzo/blog-o-matic/"&gt;Blog-o-Matic&lt;/a&gt;, uses several discussed topics so&amp;nbsp;far:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com"&gt;Github&lt;/a&gt; and &lt;span class="caps"&gt;GH&lt;/span&gt; Pages for hosting the source and the&amp;nbsp;website&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://travis-ci.org"&gt;Travis-&lt;span class="caps"&gt;CI&lt;/span&gt;.org&lt;/a&gt; for automating the update and generation&amp;nbsp;process&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.getpelican.com/"&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;Pelican&amp;#8217;&lt;/a&gt; for static rendering of your blog from the markdown or AsciiDoc&amp;nbsp;articles&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Pelican-Elegant/elegant"&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;Elegant&amp;#8217;&lt;/a&gt; for the&amp;nbsp;&amp;#8216;Theme&amp;#8217;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/buildinspace/peru"&gt;peru&lt;/a&gt; for automating repository upgrades for plugins,&amp;nbsp;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The setup process is outlined at its &lt;a href="https://github.com/iranzo/blog-o-matic/"&gt;&lt;span class="caps"&gt;README&lt;/span&gt;.md&lt;/a&gt; and just requires a few steps to setup that, from that point, will allow you to get your website published each time you commit a new document to the content&amp;nbsp;folder.&lt;/p&gt;
+&lt;p&gt;You can also check the &amp;#8216;generated&amp;#8217; website after installation via &lt;a href="https://iranzo.github.io/blog-o-matic"&gt;https://iranzo.github.io/blog-o-matic&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id="how-does-it-work-under-the-hood"&gt;How does it work under the hood?&lt;a class="headerlink" href="#how-does-it-work-under-the-hood" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;The repository, contains already the required setups and configurations for setting up a blog using github pages.&lt;/p&gt;
-&lt;p&gt;It requires some manual steps like configuring authentication token in order for automation to ‘push’ to github the ‘rendered webpage’, plus enabling ‘Travis &lt;span class="caps"&gt;CI&lt;/span&gt;’ automation for doing that step.&lt;/p&gt;
-&lt;p&gt;Check the updated &lt;a href="https://github.com/iranzo/blog-o-matic"&gt;&lt;span class="caps"&gt;README&lt;/span&gt; on Blog-o-Matic&lt;/a&gt; if you’re interested in the setup, but thing is:&lt;/p&gt;
+&lt;p&gt;The repository, contains already the required setups and configurations for setting up a blog using github&amp;nbsp;pages.&lt;/p&gt;
+&lt;p&gt;It requires some manual steps like configuring authentication token in order for automation to &amp;#8216;push&amp;#8217; to github the &amp;#8216;rendered webpage&amp;#8217;, plus enabling &amp;#8216;Travis &lt;span class="caps"&gt;CI&lt;/span&gt;&amp;#8217; automation for doing that&amp;nbsp;step.&lt;/p&gt;
+&lt;p&gt;Check the updated &lt;a href="https://github.com/iranzo/blog-o-matic"&gt;&lt;span class="caps"&gt;README&lt;/span&gt; on Blog-o-Matic&lt;/a&gt; if you&amp;#8217;re interested in the setup, but thing&amp;nbsp;is:&lt;/p&gt;
 &lt;h2 id="setup"&gt;Setup&lt;a class="headerlink" href="#setup" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Repository contains already predefined Travis &lt;span class="caps"&gt;CI&lt;/span&gt; configuration&lt;/li&gt;
-&lt;li&gt;A &lt;span class="caps"&gt;GH&lt;/span&gt; token is needed for Travis &lt;span class="caps"&gt;CI&lt;/span&gt; to push to the ‘master’ branch that is used by github pages&lt;/li&gt;
-&lt;li&gt;The token needs to be configured as environment variable in ‘travis-ci.org’ which needs to be enabled for your repository&lt;/li&gt;
-&lt;li&gt;Once this is done, all the automation is ready.&lt;/li&gt;
+&lt;li&gt;Repository contains already predefined Travis &lt;span class="caps"&gt;CI&lt;/span&gt;&amp;nbsp;configuration&lt;/li&gt;
+&lt;li&gt;A &lt;span class="caps"&gt;GH&lt;/span&gt; token is needed for Travis &lt;span class="caps"&gt;CI&lt;/span&gt; to push to the &amp;#8216;master&amp;#8217; branch that is used by github&amp;nbsp;pages&lt;/li&gt;
+&lt;li&gt;The token needs to be configured as environment variable in &amp;#8216;travis-ci.org&amp;#8217; which needs to be enabled for your&amp;nbsp;repository&lt;/li&gt;
+&lt;li&gt;Once this is done, all the automation is&amp;nbsp;ready.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="automation-workflow"&gt;Automation workflow&lt;a class="headerlink" href="#automation-workflow" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The automation, on a new ‘commit’ (new config, new article, whatever), that can be even done via github.com Web User Interface, will launch a set of tasks:&lt;/p&gt;
+&lt;p&gt;The automation, on a new &amp;#8216;commit&amp;#8217; (new config, new article, whatever), that can be even done via github.com Web User Interface, will launch a set of&amp;nbsp;tasks:&lt;/p&gt;
 &lt;h3 id="preparation"&gt;Preparation&lt;a class="headerlink" href="#preparation" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Setup python environment (Pelican uses python)&lt;/li&gt;
-&lt;li&gt;Install tool ‘peru’ to sync from other repositories (for later syncing plugins, latest theme, etc)&lt;/li&gt;
+&lt;li&gt;Setup python environment (Pelican uses&amp;nbsp;python)&lt;/li&gt;
+&lt;li&gt;Install tool &amp;#8216;peru&amp;#8217; to sync from other repositories (for later syncing plugins, latest theme,&amp;nbsp;etc)&lt;/li&gt;
 &lt;li&gt;Launch the synchronization of themes, plugins etc (as defined in &lt;code&gt;peru.yaml&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="validation"&gt;Validation&lt;a class="headerlink" href="#validation" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
@@ -189,15 +211,15 @@ new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></
 &lt;/ul&gt;
 &lt;h3 id="deployment"&gt;Deployment&lt;a class="headerlink" href="#deployment" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Copy extra files to generated website&lt;/li&gt;
+&lt;li&gt;Copy extra files to generated&amp;nbsp;website&lt;/li&gt;
 &lt;li&gt;Update the checked out git config to use https so that we can use the token defined in environment variable &lt;code&gt;GHTOKEN&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Regenerate website and push to github&lt;/li&gt;
+&lt;li&gt;Regenerate website and push to&amp;nbsp;github&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="blog-is-ready"&gt;Blog is ready!&lt;a class="headerlink" href="#blog-is-ready" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;At this point, Travis &lt;span class="caps"&gt;CI&lt;/span&gt; will have built the blog with the sample content &lt;code&gt;content/welcome.md&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Keep adding new files to your new repository in the &lt;code&gt;content/&lt;/code&gt; folder and check the configuration settings in &lt;code&gt;pelicanconf.py&lt;/code&gt; to customize your name, twitter, &lt;span class="caps"&gt;SEO&lt;/span&gt;, etc&lt;/p&gt;
-&lt;p&gt;Bear in mind, that at this point you’re using a regular Elegant setup with Pelican and some Pelican Plugins, so refer to &lt;code&gt;peru.yaml&lt;/code&gt; for the URLs containing the files and extra information that might be helpful for you to learn on the features and customization possibilities.&lt;/p&gt;
-&lt;p&gt;Enjoy your Elegant blog!&lt;/p&gt;</content><category term="101 — Quick Start"></category><category term="pelican"></category><category term="foss"></category><category term="travis"></category><category term="ci/cd"></category><category term="elegant"></category><category term="blog"></category><category term="python"></category><category term="github"></category><category term="blog-o-matic"></category></entry><entry><title>Not Convinced?</title><link href="https://dvesti.github.io/Pelican/2014/06/01/what-people-say-about-elegant/" rel="alternate"></link><published>2014-06-01T23:45:00+03:00</published><updated>2014-06-01T23:45:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-06-01:/Pelican/2014/06/01/what-people-say-about-elegant/</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Keep adding new files to your new repository in the &lt;code&gt;content/&lt;/code&gt; folder and check the configuration settings in &lt;code&gt;pelicanconf.py&lt;/code&gt; to customize your name, twitter, &lt;span class="caps"&gt;SEO&lt;/span&gt;,&amp;nbsp;etc&lt;/p&gt;
+&lt;p&gt;Bear in mind, that at this point you&amp;#8217;re using a regular Elegant setup with Pelican and some Pelican Plugins, so refer to &lt;code&gt;peru.yaml&lt;/code&gt; for the URLs containing the files and extra information that might be helpful for you to learn on the features and customization&amp;nbsp;possibilities.&lt;/p&gt;
+&lt;p&gt;Enjoy your Elegant&amp;nbsp;blog!&lt;/p&gt;</content><category term="101 — Quick Start"></category><category term="pelican"></category><category term="foss"></category><category term="travis"></category><category term="ci/cd"></category><category term="elegant"></category><category term="blog"></category><category term="python"></category><category term="github"></category><category term="blog-o-matic"></category></entry><entry><title>Not Convinced?</title><link href="https://dvesti.github.io/Pelican/2014/06/01/what-people-say-about-elegant/" rel="alternate"></link><published>2014-06-01T23:45:00+03:00</published><updated>2014-06-01T23:45:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-06-01:/Pelican/2014/06/01/what-people-say-about-elegant/</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Thanks for this amazing&amp;nbsp;project.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://github.com/Pelican-Elegant/elegant/issues/111#issuecomment-40943827"&gt;Sebastian Lauwers&lt;/a&gt; &lt;!-- yaspeller ignore --&gt;&lt;/p&gt;
@@ -230,17 +252,14 @@ new&amp;nbsp;release.&lt;/p&gt;</content><category term="101 — Quick Start"></
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://github.com/Pelican-Elegant/elegant/pull/2#issue-19502670"&gt;悟道洞穴人&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;&lt;a href="https://twitter.com/talham_"&gt;@talham_&lt;/a&gt; yours is the most innovative Pelican theme I&amp;#39;ve seen yet: &lt;a href="http://t.co/worboJFRuX"&gt;http://t.co/worboJFRuX&lt;/a&gt;. I love the search&amp;nbsp;feature.&lt;/p&gt;&amp;mdash; Tshepang Lekhonkhobe (@tshepang_dev) &lt;a href="https://twitter.com/tshepang_dev/statuses/384347807387095040"&gt;September 29, 2013&lt;/a&gt;&lt;/blockquote&gt;
+&lt;!-- yaspeller ignore --&gt;&lt;script async src="//platform.twitter.com/widgets.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;!-- yaspeller ignore --&gt;
-&lt;script async src="//platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;&lt;a href="https://twitter.com/talham_"&gt;@talham_&lt;/a&gt; Thanks for the Elegant theme. It is really elegant&amp;nbsp;:).&lt;/p&gt;&amp;mdash; Simon Cahuk (@cahuk) &lt;a href="https://twitter.com/cahuk/statuses/391533360830775296"&gt;October 19, 2013&lt;/a&gt;&lt;/blockquote&gt;
+&lt;!-- yaspeller ignore --&gt;&lt;script async src="//platform.twitter.com/widgets.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;!-- yaspeller ignore --&gt;
-&lt;script async src="//platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;&lt;a href="https://twitter.com/talham_"&gt;@talham_&lt;/a&gt; Hi, Elegant is a cool theme. Checking it&amp;nbsp;out.&lt;/p&gt;&amp;mdash; Fayad Fami (@fayadfami) &lt;a href="https://twitter.com/fayadfami/statuses/451420620241137664"&gt;April 2, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;!-- yaspeller ignore --&gt;&lt;script async src="//platform.twitter.com/widgets.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;!-- yaspeller ignore --&gt;
-&lt;script async src="//platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;I&amp;#8217;m hugely impressed with your work on the theme; thank you for opening the
 code for&amp;nbsp;it.&lt;/p&gt;

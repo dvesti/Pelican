@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?481f5cf0">
- -->
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -38,6 +38,8 @@
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/tipuesearch/tipuesearch.css" media="screen"> 
        
         <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?fc5adb95">
+
+        <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/elegant.css">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -130,55 +132,50 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h4>Содержание</h4>
-        <div class="toc">
+        <div class="span8 offset2 article-content">
+            
+            <div class="toc">
 <ul>
-<li><a href="#what-to-do-with-spelling-mistakes">What To Do With Spelling Mistakes</a></li>
-<li><a href="#adding-a-word-to-the-project-dictionary">Adding A Word to the Project Dictionary</a></li>
-<li><a href="#a-single-intentional-misspellings-within-a-line-of-text">A Single Intentional Misspellings within a Line of Text</a></li>
-<li><a href="#intentional-misspellings-within-a-block-of-text">Intentional Misspellings within a Block of Text</a></li>
+<li><a href="#what-to-do-with-spelling-mistakes">What To Do With Spelling&nbsp;Mistakes</a></li>
+<li><a href="#adding-a-word-to-the-project-dictionary">Adding A Word to the Project&nbsp;Dictionary</a></li>
+<li><a href="#a-single-intentional-misspellings-within-a-line-of-text">A Single Intentional Misspellings within a Line of&nbsp;Text</a></li>
+<li><a href="#intentional-misspellings-within-a-block-of-text">Intentional Misspellings within a Block of&nbsp;Text</a></li>
 <li><a href="#why-spell-check-locally">Why Spell Check Locally</a><ul>
-<li><a href="#prerequisites-for-local-installation">Prerequisites For Local Installation</a></li>
-<li><a href="#how-do-i-install-it-locally">How Do I Install It Locally</a></li>
-<li><a href="#how-do-i-use-it-locally">How Do I Use It Locally</a></li>
+<li><a href="#prerequisites-for-local-installation">Prerequisites For Local&nbsp;Installation</a></li>
+<li><a href="#how-do-i-install-it-locally">How Do I Install It&nbsp;Locally</a></li>
+<li><a href="#how-do-i-use-it-locally">How Do I Use It&nbsp;Locally</a></li>
 </ul>
 </li>
 </ul>
 </div>
-        </nav>
-    </div>
-    <div class="span8 article-content">
-            
-            
 <p>Even with most code editors having a spell checker installed and active by default, there is a
 need to have the Elegant builds verify spelling against a known dictionary. The spell check
 tool that was decided on by the team is the
 <a href="https://github.com/hcodes/yaspeller">yaspeller tool</a>.</p>
 <p>This tool is useful in that it has a number of options for altering what it considers eligible
 for scanning. In its default mode, the <code>yaspeller</code> tool will scan everything in a Markdown
-document except for text encapsulated within code blocks, such as:</p>
-<div class="highlight"><pre><span></span>```text
+document except for text encapsulated within code blocks, such&nbsp;as:</p>
+<div class="highlight"><pre><span></span><code>```text
 [text ommitted for breverity]
 ```
 
 OR
 
 this `yaspeller` tool is cool
-</pre></div>
+</code></pre></div>
+
 <p>While <code>yaspeller</code> is a useful tool, it is not foolproof. When scanning the documentation
 files, it often requires a bit of assistance in determining how to properly handle words which
-do not appear in the standard dictionary.</p>
+do not appear in the standard&nbsp;dictionary.</p>
 <h2 id="what-to-do-with-spelling-mistakes">What To Do With Spelling Mistakes<a class="headerlink" href="#what-to-do-with-spelling-mistakes" title="Permanent link"> </a></h2>
 <p>There are typically 4 categories of spelling mistakes: an honest mistake, a word to be added
 to the project dictionary, a single situational misspelling, and intentional misspellings
-within a block of text.</p>
+within a block of&nbsp;text.</p>
 <p>The way to address mistakes in the first category is simple. Fix them. If you are not 100%
 sure that the word is spelled properly, consider using
 <a href="https://www.dictionary.com/">dictionary.com</a> to verify the spelling. If you search for a
 given word and a simpler form of that word appears, scroll down to the related words section
-and see if it is there.</p>
+and see if it is&nbsp;there.</p>
 <h2 id="adding-a-word-to-the-project-dictionary">Adding A Word to the Project Dictionary<a class="headerlink" href="#adding-a-word-to-the-project-dictionary" title="Permanent link"> </a></h2>
 <p>If the spelling mistake has been verified to be a properly spelled word, then the word jumps
 over to the second category: a word to be added to the project dictionary. The root directory
@@ -186,25 +183,27 @@ of the project contains
 <a href="https://github.com/Pelican-Elegant/elegant/blob/master/.yaspeller.json">the project dictionary</a>
 with a list of words that <code>yaspeller</code> should consider acceptable. Words added to the
 dictionary in lower case will match upper case and lower case versions of the word, while words
-added with any capitalization will force <code>yaspeller</code> to perform a case-sensitive match.</p>
+added with any capitalization will force <code>yaspeller</code> to perform a case-sensitive&nbsp;match.</p>
 <h2 id="a-single-intentional-misspellings-within-a-line-of-text">A Single Intentional Misspellings within a Line of Text<a class="headerlink" href="#a-single-intentional-misspellings-within-a-line-of-text" title="Permanent link"> </a></h2>
 <p>For the third category, a single situational misspelling, the best example is included in the
 article <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/">Git Commit Guidelines</a>.
 In that article, there is <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/#type">a section</a> describing the
 legal values that can be associated with a commit type. While most of the values are fine,
-there is one value that is the short form for “performance”:</p>
-<div class="highlight"><pre><span></span>- **perf**: A code change that improves performance &lt;!-- yaspeller ignore --&gt;
-</pre></div>
+there is one value that is the short form for&nbsp;&#8220;performance&#8221;:</p>
+<div class="highlight"><pre><span></span><code>- **perf**: A code change that improves performance &lt;!-- yaspeller ignore --&gt;
+</code></pre></div>
+
 <p>As this is the only word in the article that is intentionally spelled the way it is, the
 line ends with the <code>&lt;!-- yaspeller ignore --&gt;</code> suffix to tell the <code>yaspeller</code> tool to ignore
 the entire line. While we could add that single word to the project dictionary, it is more
-clear to ignore the word for this given situation instead of adding it to the dictionary.</p>
+clear to ignore the word for this given situation instead of adding it to the&nbsp;dictionary.</p>
 <h2 id="intentional-misspellings-within-a-block-of-text">Intentional Misspellings within a Block of Text<a class="headerlink" href="#intentional-misspellings-within-a-block-of-text" title="Permanent link"> </a></h2>
 <p>The final category, intentional misspellings within a block of text, is an extension of the
 previous category, but dealing with multiple intentional misspellings, instead of a single
 one. A good example of that would be specifying the contents for a table to show an example
-to the user, such as the following:</p>
+to the user, such as the&nbsp;following:</p>
 <!-- yaspeller ignore:start -->
+
 <table>
 <thead>
 <tr>
@@ -227,15 +226,16 @@ to the user, such as the following:</p>
 </tbody>
 </table>
 <!-- yaspeller ignore:end -->
+
 <p>If you look at the <a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/">Markdown for this article</a>,
 notice how the table is surrounded with two <span class="caps">HTML</span> comments:
 <code>&lt;!-- yaspeller ignore:start --&gt;</code> and <code>&lt;!-- yaspeller ignore:end --&gt;</code> with blank lines between
-the comments and the block they are there to ignore.</p>
+the comments and the block they are there to&nbsp;ignore.</p>
 <p>With those comments in place, the <code>yaspeller</code> tool does not raise any issues with the Markdown
 that generates this file, as it has been told to ignore everything starting with the first
 comment and ending with the second comment. If these are removed, the <code>yaspeller</code> tool will
-output the following errors:</p>
-<div class="highlight"><pre><span></span>[ERR] /enlistments/elegant/documentation/content/articles/Contributing/ya-spell-check.md 3450 ms
+output the following&nbsp;errors:</p>
+<div class="highlight"><pre><span></span><code>[ERR] /enlistments/elegant/documentation/content/articles/Contributing/ya-spell-check.md 3450 ms
 -----
 Typos: 2
 1. def (129:3)
@@ -244,43 +244,42 @@ Typos: 2
 Capitalization: 1
 1. abc (128:3, suggest: ABC)
 -----
-</pre></div>
+</code></pre></div>
+
 <h2 id="why-spell-check-locally">Why Spell Check Locally<a class="headerlink" href="#why-spell-check-locally" title="Permanent link"> </a></h2>
 <p>Similar to the other checks that are performed on every submission, a spell check failure will
-cause the build to fail.</p>
+cause the build to&nbsp;fail.</p>
 <p>Addressing any failures reported locally by this tool results in a smaller turn around time in
 getting any spelling mistakes addressed. This in turn will save time when submitting changes
-in a Pull Request, as you have already dealt with any errors that this tool may report.</p>
+in a Pull Request, as you have already dealt with any errors that this tool may&nbsp;report.</p>
 <h3 id="prerequisites-for-local-installation">Prerequisites For Local Installation<a class="headerlink" href="#prerequisites-for-local-installation" title="Permanent link"> </a></h3>
 <p>Either <a href="https://nodejs.org/en/download/">Node.js</a> or
-<a href="https://yarnpkg.com/en/docs/install">Yarn</a> must be installed on your system.</p>
+<a href="https://yarnpkg.com/en/docs/install">Yarn</a> must be installed on your&nbsp;system.</p>
 <h3 id="how-do-i-install-it-locally">How Do I Install It Locally<a class="headerlink" href="#how-do-i-install-it-locally" title="Permanent link"> </a></h3>
-<p>You can install the <code>yaspeller</code> package using either <span class="caps">NPM</span> (Node.js) or Yarn as follows:</p>
-<div class="highlight"><pre><span></span>npm install -g yaspeller
-</pre></div>
+<p>You can install the <code>yaspeller</code> package using either <span class="caps">NPM</span> (Node.js) or Yarn as&nbsp;follows:</p>
+<div class="highlight"><pre><span></span><code>npm install -g yaspeller
+</code></pre></div>
+
 <p><span class="caps">OR</span></p>
-<div class="highlight"><pre><span></span>yarn global add yaspeller
-</pre></div>
+<div class="highlight"><pre><span></span><code>yarn global add yaspeller
+</code></pre></div>
+
 <h3 id="how-do-i-use-it-locally">How Do I Use It Locally<a class="headerlink" href="#how-do-i-use-it-locally" title="Permanent link"> </a></h3>
 <p>To invoke the <code>yaspeller</code> package for the documentation files for the Elegant project, go to
-the root directory of your local repository and enter the following command:</p>
-<div class="highlight"><pre><span></span>yaspeller --only-errors documentation/content/ *.md
-</pre></div>
+the root directory of your local repository and enter the following&nbsp;command:</p>
+<div class="highlight"><pre><span></span><code>yaspeller --only-errors documentation/content/ *.md
+</code></pre></div>
+
 <p>When executed, the <code>yaspeller</code> tool will recursively scan all of the <code>*.md</code> files under the
 <code>documentation/content/</code> directory from the root of your local repository. The <code>--only-errors</code>
 flags merely restricts any of the output to any errors that occur, instead of an ongoing stream
 of what files it is scanning. As omitting the <code>--only-errors</code> flag only affects the output
-and not the detection of spelling mistakes, feel free to not use it when running locally.</p>
+and not the detection of spelling mistakes, feel free to not use it when running&nbsp;locally.</p>
 
 
              
  
-                <p id="post-share-links">
-    Понравилась статья? Расскажите о ней на:
-      <a href="https://twitter.com/intent/tweet?text=Using%20%E2%80%98yaspeller%E2%80%99%20with%C2%A0Elegant%20subtitle&url=https%3A//dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Using%20%E2%80%98yaspeller%E2%80%99%20with%C2%A0Elegant%20subtitle&amp;body=https%3A//dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-
+            
                 <hr />
     <div class="author-blurb">
         <a href="http://jackdewinter.github.io" target="_blank" rel="nofollow noopener noreferrer">
@@ -298,18 +297,10 @@ and not the detection of spelling mistakes, feel free to not use it when running
 
 
             <hr/>
-            <aside>
-            <nav>
-            <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/08/04/how-to-contribute/" title="Previous: Как я могу внести свой вклад?">Как я могу внести свой вклад?</a></li>
-                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/08/10/clean-url/" title="Next: Clean URL">Clean URL</a> »</li>
-            </ul>
-            </nav>
-            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>
-            <time itemprop="dateCreated" datetime="2019-08-04T23:17:00+03:00">Вс, 04 авг. 2019 г.</time>
+            <time itemprop="dateCreated" datetime="2019-08-04T23:17:00+03:00">Sun, 04 Aug. 2019 г.</time>
             <h4>Категория</h4>
             <a class="category-link" href="https://dvesti.github.io/Pelican/categories#contributing-ref">Contributing</a>
 <h4>Будьте с нами</h4>
@@ -326,7 +317,7 @@ and not the detection of spelling mistakes, feel free to not use it when running
     <a href="mailto:diagonaal@gmail.com" title="Diagonaal" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><rect width="362" height="272" x="75" y="120" fill="#f2f2f2" rx="8%"/><path fill="#d54c3f" d="M120 392H97c-12 0-22-10-22-23V143h45z"/><path fill="#b63524" d="M392 392h23c12 0 22-10 22-23V143h-45z"/><path fill-opacity=".05" d="M256 286L120 392V187z"/><path fill-opacity=".08" d="M82 159l235 233h75V159z"/><path stroke-linecap="round" fill="none" stroke="#de5145" stroke-width="45" d="M97 143l159 115 159-115"/><path fill="#f2f2f2" d="M415 120c-5 0-10 2-13 4L256 230 110 124c-3-2-8-4-13-4z"/></svg>
     </a>
-    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+    <a href="/Pelican/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
     </a>
 </div>
