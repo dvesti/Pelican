@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -162,9 +162,10 @@ changing size and color to adding drop&nbsp;shadow.</p>
 <h2 id="how-to-configure-the-widget">How to configure the <em>widget</em><a class="headerlink" href="#how-to-configure-the-widget" title="Permanent link"> </a></h2>
 <p>Define <code>SOCIAL</code> in your <code>pelicanconf.py</code>. <code>SOCIAL</code> is list of tuple. Each tuple
 has two items, title and <span class="caps">URL</span>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Twitter&#39;</span><span class="p">,</span> <span class="s1">&#39;http://twitter.com/talham_&#39;</span><span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Twitter&#39;</span><span class="p">,</span> <span class="s1">&#39;http://twitter.com/talham_&#39;</span><span class="p">),</span>
     <span class="p">(</span><span class="s1">&#39;Github&#39;</span><span class="p">,</span> <span class="s1">&#39;http://github.com/talha131&#39;</span><span class="p">))</span>
-</code></pre></div>
+</pre></div>
+
 
 <p>In this example, <code>SOCIAL</code> has two tuples. First tuple is <code>('Twitter', 'http://twitter.com/talham_')</code>. First element of the tuple is the title
 <code>Twitter</code> and second element is the <span class="caps">URL</span>.</p>
@@ -180,9 +181,10 @@ What if the <span class="caps">CSS</span> class name does not follow <code>fa-&l
 <code>Stack Exchange</code> is different from <code>fa-stack-exchange</code>? What if you want to use
 <code>fa-youtube-play</code> in place of <code>fa-youtube</code> for your YouTube&nbsp;profile?</p>
 <p>The solution is to add a third element to the tuple. <span class="caps">CSS</span> class&nbsp;name.</p>
-<div class="highlight"><pre><span></span><code><span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Twitter&#39;</span><span class="p">,</span> <span class="s1">&#39;http://twitter.com/talham_&#39;</span><span class="p">,</span> <span class="s1">&#39;twitter-square&#39;</span><span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Twitter&#39;</span><span class="p">,</span> <span class="s1">&#39;http://twitter.com/talham_&#39;</span><span class="p">,</span> <span class="s1">&#39;twitter-square&#39;</span><span class="p">),</span>
     <span class="p">(</span><span class="s1">&#39;Youtube&#39;</span><span class="p">,</span> <span class="s1">&#39;http://example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;youtube-play&#39;</span><span class="p">))</span>
-</code></pre></div>
+</pre></div>
+
 
 <p>This third element is optional. It should be equal to the Font Awesome <span class="caps">CSS</span>
 class that you want to use for the social profile, minus the <code>fa</code> part from the
@@ -191,13 +193,18 @@ class that you want to use for the social profile, minus the <code>fa</code> par
 <p>By default, Elegant labels social profile section as <strong>Contact</strong>. You can
 change this label by defining a new variable <code>SOCIAL_PROFILE_LABEL</code> in your
 <code>pelicanconf.py</code> file.</p>
-<div class="highlight"><pre><span></span><code><span class="n">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Stay in Touch&#39;</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="n">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Stay in Touch&#39;</span>
+</pre></div>
 
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=How%20to%20display%20your%20Social%20Media%C2%A0Profiles%20Deprecated&url=https%3A//dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/&hashtags=pelican-theme,font-awesome,social-media,web-design" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=How%20to%20display%20your%20Social%20Media%C2%A0Profiles%20Deprecated&amp;body=https%3A//dvesti.github.io/Pelican/2014/01/27/how-to-display-your-social-media-profiles-deprecated/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -215,6 +222,25 @@ change this label by defining a new variable <code>SOCIAL_PROFILE_LABEL</code> i
 
 
             <hr/>
+<section>
+    <h2>Что почитать</h2>
+<ul class="related-posts-list">
+<li><a href="https://dvesti.github.io/Pelican/2014/03/17/how-to-show-rss-feeds-icon/" title="How to show RSS feeds icon">How to show RSS feeds icon</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/" title="Add Social Sharing Links">Add Social Sharing Links</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/08/12/how-to-display-your-social-media-profiles/" title="How to display your Social Media Profiles">How to display your Social Media Profiles</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/12/05/getting-notified-about-new-releases/" title="Getting Notified About New Releases">Getting Notified About New Releases</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/12/06/updating-elegant-to-the-latest-release/" title="Обновляем тему Elegant">Обновляем тему Elegant</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2014/01/27/how-to-show-previous-and-next-article/" title="Previous: Add Previous and Next Article Links">Add Previous and Next Article Links</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2014/03/17/how-to-show-rss-feeds-icon/" title="Next: How to show RSS feeds icon">How to show RSS feeds icon</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -137,8 +137,9 @@ widget</a> from &#8220;Contact&#8221; to &#8220;Stay in&nbsp;Touch&#8221;.</p>
 <p>Don&#8217;t worry! We got you&nbsp;covered!</p>
 <p>Elegant has all the customizable variables in one place. <a href="https://github.com/Pelican-Elegant/elegant/blob/master/templates/_includes/_defaults.html"><code>_defaults.html</code>
 file</a>.</p>
-<div class="highlight"><pre><span></span><code>templates/_includes/_defaults.html
-</code></pre></div>
+<div class="highlight"><pre><span></span>templates/_includes/_defaults.html
+</pre></div>
+
 
 <p>Let&#8217;s see how can we change social widget&nbsp;label.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -146,22 +147,24 @@ file</a>.</p>
 3
 4
 5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">{# Label for the list of social profiles #}</span><span class="x"></span>
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c">{# Label for the list of social profiles #}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">if</span> <span class="k">not</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">set</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="s1">&#39;Contact&#39;</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">set</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span><span class="x"></span>
-</code></pre></div>
+</pre></div>
 </td></tr></table>
+
 <p>Line 1, text enclosed in <code>{# #}</code> is a comment, which says this section is about
 &#8220;Label for the list of social&nbsp;profiles&#8221;.</p>
 <p>The text in all capital case <code>SOCIAL_PROFILE_LABEL</code> is the actual&nbsp;variable.</p>
 <p>Line 3 says <code>SOCIAL_PROFILE_LABEL</code> is set to <code>Contact</code>.</p>
 <p>To change this value, assign it a different value in your Pelican
 configuration, <code>pelicanconf.py</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="s1">&#39;Stay in Touch&#39;</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="n">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="s1">&#39;Stay in Touch&#39;</span>
+</pre></div>
+
 
 <p>That&#8217;s it. The title of social widget will change. There are several others
 labels that you can customize easily without touching Elegant&#8217;s source&nbsp;code.</p>
@@ -169,7 +172,12 @@ labels that you can customize easily without touching Elegant&#8217;s source&nbs
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=Change%C2%A0Labels&url=https%3A//dvesti.github.io/Pelican/2019/07/03/change-labels/&hashtags=unique" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/07/03/change-labels/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Change%C2%A0Labels&amp;body=https%3A//dvesti.github.io/Pelican/2019/07/03/change-labels/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -187,6 +195,25 @@ labels that you can customize easily without touching Elegant&#8217;s source&nbs
 
 
             <hr/>
+<section>
+    <h2>Что почитать</h2>
+<ul class="related-posts-list">
+<li><a href="https://dvesti.github.io/Pelican/2019/07/03/customize-style/" title="Customize Style">Customize Style</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/07/03/change-syntax-highlight-theme/" title="Code Snippets — Change Theme">Code Snippets — Change Theme</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/07/03/metadata/" title="Metadata">Metadata</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/08/10/clean-url/" title="Clean URL">Clean URL</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2020/02/03/code-snippets-copy-to-clipboard/" title="Копируем код в буфер обмена">Копируем код в буфер обмена</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/03/change-syntax-highlight-theme/" title="Previous: Code Snippets — Change Theme">Code Snippets — Change Theme</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/07/03/metadata/" title="Next: Metadata">Metadata</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

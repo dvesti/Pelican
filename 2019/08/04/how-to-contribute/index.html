@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -129,87 +129,93 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-            <div class="toc">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Содержание</h4>
+        <div class="toc">
 <ul>
-<li><a href="#before-we-start">Before We&nbsp;Start</a></li>
-<li><a href="#getting-the-big-rule-out-of-the-way">Getting The Big Rule Out of the&nbsp;Way</a></li>
-<li><a href="#primary-goal">Primary&nbsp;Goal</a></li>
+<li><a href="#before-we-start">Before We Start</a></li>
+<li><a href="#getting-the-big-rule-out-of-the-way">Getting The Big Rule Out of the Way</a></li>
+<li><a href="#primary-goal">Primary Goal</a></li>
 <li><a href="#developing-changes-locally">Developing Changes Locally</a><ul>
-<li><a href="#read-the-guides">Read The&nbsp;Guides</a></li>
+<li><a href="#read-the-guides">Read The Guides</a></li>
 <li><a href="#optional-setup">Optional Setup</a><ul>
-<li><a href="#running-pre-commit-hooks-locally">Running Pre-Commit Hooks&nbsp;Locally</a></li>
-<li><a href="#running-the-spell-checker-locally">Running the Spell Checker&nbsp;Locally</a></li>
+<li><a href="#running-pre-commit-hooks-locally">Running Pre-Commit Hooks Locally</a></li>
+<li><a href="#running-the-spell-checker-locally">Running the Spell Checker Locally</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#making-your-changes-to-elegant">Making Your Changes to&nbsp;Elegant</a></li>
-<li><a href="#submitting-a-change-for-consideration">Submitting a Change For&nbsp;Consideration</a></li>
+<li><a href="#making-your-changes-to-elegant">Making Your Changes to Elegant</a></li>
+<li><a href="#submitting-a-change-for-consideration">Submitting a Change For Consideration</a></li>
 <li><a href="#building-your-changes-on-the-github-server">Building Your Changes on the GitHub Server</a><ul>
 <li><a href="#build-verification-actions">Build Verification Actions</a><ul>
-<li><a href="#previewing-changes">Previewing&nbsp;Changes</a></li>
-<li><a href="#view-previews-for-other-pull-requests">View Previews For Other Pull&nbsp;Requests</a></li>
+<li><a href="#previewing-changes">Previewing Changes</a></li>
+<li><a href="#view-previews-for-other-pull-requests">View Previews For Other Pull Requests</a></li>
 </ul>
 </li>
 <li><a href="#what-happens-if-the-build-detects-errors">What Happens If The Build Detects Errors?</a><ul>
-<li><a href="#consider-using-a-draft-pull-request">Consider Using a Draft Pull&nbsp;Request</a></li>
+<li><a href="#consider-using-a-draft-pull-request">Consider Using a Draft Pull Request</a></li>
 </ul>
 </li>
-<li><a href="#what-happens-if-team-members-ask-for-changes">What Happens If Team Members Ask For&nbsp;Changes?</a></li>
+<li><a href="#what-happens-if-team-members-ask-for-changes">What Happens If Team Members Ask For Changes?</a></li>
 </ul>
 </li>
 </ul>
 </div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+            
 <p>Once you have decided to <a href="https://dvesti.github.io/Pelican/2019/07/03/invitation-to-participate/">contribute to the project</a>, we need to
 go over some rules and guidelines before you can start. These rules and guidelines help us
 work together as a team and give us a common set of directions that keep us all on the same
 page. In the case of any disagreements on what needs to be done, we can always refer to the
-guidelines to help us find our way from disagreement to&nbsp;consensus.</p>
+guidelines to help us find our way from disagreement to consensus.</p>
 <h2 id="before-we-start">Before We Start<a class="headerlink" href="#before-we-start" title="Permanent link"> </a></h2>
 <p>This document strives to provide a solid path through contributing a change to Elegant, from
-setting up your environment to submitting and responding to a Pull&nbsp;Request.</p>
+setting up your environment to submitting and responding to a Pull Request.</p>
 <p>To stay focused on that solid path, additional information that is typically needed to provide
 a complete picture of the topic being discussed will be presented in other articles and linked
-to from this&nbsp;article.</p>
+to from this article.</p>
 <p>Please take the time to familiarize yourself with the information in the attached articles,
-as they will help you build a complete understanding of our entire contribution&nbsp;process.</p>
+as they will help you build a complete understanding of our entire contribution process.</p>
 <h2 id="getting-the-big-rule-out-of-the-way">Getting The Big Rule Out of the Way<a class="headerlink" href="#getting-the-big-rule-out-of-the-way" title="Permanent link"> </a></h2>
 <p>As the project is an open source project, anything you contribute to the project is covered by
-the project&#8217;s <a href="https://dvesti.github.io/Pelican/2019/07/03/contribution-license/">Contributions License</a>. If you are not
-willing or unable to abide by those licenses, we cannot have you contribute to the&nbsp;project.</p>
+the project’s <a href="https://dvesti.github.io/Pelican/2019/07/03/contribution-license/">Contributions License</a>. If you are not
+willing or unable to abide by those licenses, we cannot have you contribute to the project.</p>
 <h2 id="primary-goal">Primary Goal<a class="headerlink" href="#primary-goal" title="Permanent link"> </a></h2>
 <p>The primary goal of this project is to provide a theme for Pelican that provides the
-<a href="https://dvesti.github.io/Pelican/2019/07/03/look-and-feel/">Elegant Look and Feel</a> to our user&#8217;s websites. To that end,
-any features or changes&nbsp;must:</p>
+<a href="https://dvesti.github.io/Pelican/2019/07/03/look-and-feel/">Elegant Look and Feel</a> to our user’s websites. To that end,
+any features or changes must:</p>
 <ul>
-<li>not negatively effect readability and reading&nbsp;experience</li>
-<li>not cause distraction for the&nbsp;reader</li>
-<li>any changes must work out of the box with sensible defaults for the&nbsp;user</li>
+<li>not negatively effect readability and reading experience</li>
+<li>not cause distraction for the reader</li>
+<li>any changes must work out of the box with sensible defaults for the user</li>
 </ul>
-<p>These are not&nbsp;negotiable.</p>
+<p>These are not negotiable.</p>
 <h2 id="developing-changes-locally">Developing Changes Locally<a class="headerlink" href="#developing-changes-locally" title="Permanent link"> </a></h2>
 <p>The Elegant project is <a href="https://github.com/Pelican-Elegant/elegant">hosted in GitHub</a> and
 requires your machine to have a local <a href="https://git-scm.com/downloads">Git Client</a> to
 contribute. The <a href="https://git-scm.com/doc">Git documentation site</a> has good instructions and
 videos on how to get started with Git, as well as numerous instructional videos on
 <a href="https://www.youtube.com/results?search_query=git+clients">YouTube</a> to get you going. If you
-are new to Git, they are a great place to&nbsp;start!</p>
+are new to Git, they are a great place to start!</p>
 <h3 id="read-the-guides">Read The Guides<a class="headerlink" href="#read-the-guides" title="Permanent link"> </a></h3>
 <p>In addition to installing Git locally, we request that you take a solid look through the
 following guides. The first guide,
 <a href="https://dvesti.github.io/Pelican/2019/07/03/git-tips-for-beginners/">Git Tips For Beginners</a>, is a walk through of things that our
 team has found useful in the past to help get people up and going with their contributions.
 While this guide is optional, pointing people at this guide has resolved a fair number of
-questions in the&nbsp;past.</p>
-<p>The second guide, our team&#8217;s <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/">Git Commit Guidelines</a>,
+questions in the past.</p>
+<p>The second guide, our team’s <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/">Git Commit Guidelines</a>,
 is required reading for all contributors. These guidelines document the rules we require every
-contributor to follow when submitting commits for&nbsp;consideration.</p>
+contributor to follow when submitting commits for consideration.</p>
 <p>To make things easier for contributors, the repository includes configuration to
 <a href="https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/">use Commitizen for Git commits</a>. Entering <code>git-cz</code> on the command
 line within the repository will walk you through a series of prompts to build a commit message
-that is fully compliant with our guidelines. It&#8217;s usage is highly recommended to avoid&nbsp;issues.</p>
+that is fully compliant with our guidelines. It’s usage is highly recommended to avoid issues.</p>
 <h3 id="optional-setup">Optional Setup<a class="headerlink" href="#optional-setup" title="Permanent link"> </a></h3>
 <p>To assist you in preparing your contributions with minimal friction, you can optionally run
 one or more pieces of our automated build pipeline on your local machine. Depending on the
@@ -218,7 +224,7 @@ time saver in terms of detecting bugs before you submit a
 <a href="#submitting-a-change-for-consideration">Pull Request for your changes</a>.</p>
 <p>Choosing to run any of these checks locally will shorten the minimum time required to notice a
 failure from 3-5 minutes for them to run on the GitHub machines to an average of 60 seconds or
-less for those same checks to run on your local&nbsp;machine.</p>
+less for those same checks to run on your local machine.</p>
 <h4 id="running-pre-commit-hooks-locally">Running Pre-Commit Hooks Locally<a class="headerlink" href="#running-pre-commit-hooks-locally" title="Permanent link"> </a></h4>
 <p>Facilitating the early detecting of pre-commit hook failures, an option is to install the
 <a href="https://dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/">Pre-commit tool</a> in your local repository. With the
@@ -233,16 +239,16 @@ contributors, the team has elected to include a the
 <a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/">yaspeller tool</a>
 as part of our build pipeline. While this does not integrate with your local repository
 like the Pre-commit tool, running this locally can help shorten the cycle for ensuring that
-your spelling is spot&nbsp;on!</p>
+your spelling is spot on!</p>
 <h2 id="making-your-changes-to-elegant">Making Your Changes to Elegant<a class="headerlink" href="#making-your-changes-to-elegant" title="Permanent link"> </a></h2>
 <p>With all of the required, recommended and optional setup behind us, and all of the submitting
 of the changes ahead of us, it is time to focus on how to develop features for Elegant. To
 ensure that this topic is given the focus it requires, the article
 <a href="https://dvesti.github.io/Pelican/2019/07/22/developing-for-elegant/">Developing Features For Elegant</a>
-is dedicated to providing that information to&nbsp;contributors.</p>
+is dedicated to providing that information to contributors.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While this section rightfully belongs where it is in terms of workflow, it is recommended that you continue reading this article to it&#8217;s end.  This will allow you to understand what comes after your changes, and may influence implementtion changes to avoid possible problems later on in the&nbsp;workflow.</p>
+<p>While this section rightfully belongs where it is in terms of workflow, it is recommended that you continue reading this article to it’s end.  This will allow you to understand what comes after your changes, and may influence implementtion changes to avoid possible problems later on in the workflow.</p>
 </div>
 <h2 id="submitting-a-change-for-consideration">Submitting a Change For Consideration<a class="headerlink" href="#submitting-a-change-for-consideration" title="Permanent link"> </a></h2>
 <p>Submitting your changes is performed using the GitHub
@@ -250,58 +256,58 @@ is dedicated to providing that information to&nbsp;contributors.</p>
 starting the Pull Request, you must push any committed changes from your local repository to
 your forked Elegant repository on GitHub. Once that has been done, go to the
 <a href="https://github.com/Pelican-Elegant/elegant/compare">Compare Changes page</a> and click on the
-<code>compare across forks</code> text right underneath the&nbsp;title.</p>
-<p>Across the top of the page, you will see 4 selection drop downs that look like&nbsp;this:</p>
-<p><img alt="fork drop downs" src="https://dvesti.github.io/Pelican/images/compare-changes.png" /></p>
+<code>compare across forks</code> text right underneath the title.</p>
+<p>Across the top of the page, you will see 4 selection drop downs that look like this:</p>
+<p><img alt="fork drop downs" src="https://dvesti.github.io/Pelican/images/compare-changes.png"/></p>
 <p>These drop downs allow you to select where to compare changes from and to. Leave the first
 selection alone, and unless instructed otherwise, select <code>next</code> from the second selection.
 Select the name of your repository fork from the third selection, typically your GitHub account
 name followed by <code>/Elegant</code>. Finally, select the branch that your changes are in on the
-forked repository in the last&nbsp;selection.</p>
+forked repository in the last selection.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Typically, most people synchronize the branch name of their local repository with the branch name they push to on their forked repository.  If you push your local changes to a different branch on your forked repository, select the name of the branch in the last&nbsp;selection.</p>
+<p>Typically, most people synchronize the branch name of their local repository with the branch name they push to on their forked repository.  If you push your local changes to a different branch on your forked repository, select the name of the branch in the last selection.</p>
 </div>
 <p>Once you confirm that the changes that are now visible at the bottom of the page are the ones
 you intend to submit, press the <code>Create New Pull Request</code> button. The edit field at the
 top of the page must have a name that identifies what the change is and is important to relay
-the scope of your change. However, the editor field below it is where most of the required information&nbsp;is.</p>
+the scope of your change. However, the editor field below it is where most of the required information is.</p>
 <p>Currently there are 2 pre-requisites steps and 3 recommended steps as requirements of every
 Pull Request. If you have satisfied these requirements, change the <code>[ ]</code> text to <code>[x]</code>
 indicating that you have complied with the pre-requisite. Then proceed to the <code>Description</code> at
 the bottom and add a description that provides a good amount of information about what you
-changed and why. If there were any reported issues that you resolved, it doesn&#8217;t hurt to
-mention them in this&nbsp;section.</p>
+changed and why. If there were any reported issues that you resolved, it doesn’t hurt to
+mention them in this section.</p>
 <p>When you are done with adding that information, double check it and press the
-<code>Create pull request</code> button to submit the&nbsp;request.</p>
+<code>Create pull request</code> button to submit the request.</p>
 <h2 id="building-your-changes-on-the-github-server">Building Your Changes on the GitHub Server<a class="headerlink" href="#building-your-changes-on-the-github-server" title="Permanent link"> </a></h2>
 <p>After pushing the <code>Create pull request</code> button, you are transferred to another page that is
 mostly the same as any other GitHub Pull Request page. The main difference is the merge
-section near the bottom, where you will see something like the&nbsp;following:</p>
-<p><img alt="image" src="https://dvesti.github.io/Pelican/images/started-pull-request.png" /></p>
+section near the bottom, where you will see something like the following:</p>
+<p><img alt="image" src="https://dvesti.github.io/Pelican/images/started-pull-request.png"/></p>
 <p>If the build verifies your changes, all 6 of the current checks will either have a grey box
 in front of them or a green checkmark. If any of the verifications fail, they will have a
 red X in front of the verification that failed. Click on the <code>Details</code> text on the right side
-to get more information on why those checks&nbsp;failed.</p>
+to get more information on why those checks failed.</p>
 <h3 id="build-verification-actions">Build Verification Actions<a class="headerlink" href="#build-verification-actions" title="Permanent link"> </a></h3>
 <p>To ensure each Pull Request contains solid changes, there are 3 sets of verification actions
-performed on each Pull&nbsp;Request.</p>
+performed on each Pull Request.</p>
 <p>The first set of actions are the <code>Header rules</code>,
 <code>Mixed content</code>, <code>Pages changed</code>, and <code>Redirect rules</code> which are simple checks with
 pre-defined rule sets. These rules employ simple rule sets looking for changes that are
 outside the scope of the rest of the project, and rarely fire if you keep to the format
-of the other files in the&nbsp;repository.</p>
+of the other files in the repository.</p>
 <p>The next verification action is the Travis <span class="caps">CI</span> action that performs a complete build of the
 project, represented by the <code>continuous-integration/travis-ci/pr</code> action. A complete build
 of the project often takes 3-5 minutes, so this is the verification action you will be
-waiting on the&nbsp;longest.</p>
+waiting on the longest.</p>
 <p>It is this part of the build that puts all of the changes through strict checks to make
-sure that the submitted changes are&nbsp;solid.</p>
+sure that the submitted changes are solid.</p>
 <ul>
-<li>install pre-requisites for&nbsp;building</li>
-<li><a href="https://dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/">Pre-commit</a> on the project&nbsp;source</li>
-<li><a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/">yaspeller</a> on the project&nbsp;source</li>
-<li>publish for the documentation&nbsp;site</li>
+<li>install pre-requisites for building</li>
+<li><a href="https://dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/">Pre-commit</a> on the project source</li>
+<li><a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/">yaspeller</a> on the project source</li>
+<li>publish for the documentation site</li>
 <li><a href="https://pypi.org/project/Online-W3C-Validator/">w3c_validator</a> on the documentation site <!-- yaspeller ignore --></li>
 <li><a href="https://pypi.org/project/html5validator/">html5validator</a> on the documentation site <!-- yaspeller ignore --></li>
 </ul>
@@ -314,16 +320,16 @@ sure that the submitted changes are&nbsp;solid.</p>
 right side of the action will redirect your browser to temporary deployment of the
 documentation website deployed using <a href="https://www.netlify.com/">Netlify</a>. If the changes
 that your are submitting are documentation changes or have an impact on the look and feel
-of Elegant, you should use the preview to manually verify your&nbsp;changes.</p>
+of Elegant, you should use the preview to manually verify your changes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The documentation preview is deployed to Netlify without performing a full build as detailed above, and is not dependant on the full build step.  As such, you can manually verify your changes on the preview website while the full build is&nbsp;ongoing.</p>
+<p>The documentation preview is deployed to Netlify without performing a full build as detailed above, and is not dependant on the full build step.  As such, you can manually verify your changes on the preview website while the full build is ongoing.</p>
 </div>
 <h4 id="view-previews-for-other-pull-requests">View Previews For Other Pull Requests<a class="headerlink" href="#view-previews-for-other-pull-requests" title="Permanent link"> </a></h4>
 <p>This Netlify temporary deployment is also useful tool that can be used to see the effects
 of any Pull Request on the documentation website. For example, if we want to look at what
 the effects of <a href="https://github.com/Pelican-Elegant/elegant/pull/458">Pull Request #458</a> were,
-we have a solid path to view those&nbsp;changes.</p>
+we have a solid path to view those changes.</p>
 <p>Each of the
 <a href="https://github.com/Pelican-Elegant/elegant/pulls?q=is%3Apr+is%3Aclosed">recently close Pull Requests</a>
 was built with Netlify support enabled. As such, if you switch from the default
@@ -332,7 +338,7 @@ succeed, there will be a <code>View more details on Netlify</code> link at the b
 which will take you to the Netlify deployment of the Pull Request. At the top of the
 <code>Deploy Log</code> section is a <code>Preview</code> button that will take you to the temporary deployment
 of the documentation website, as if you had clicked on the <code>Details</code> link from the
-Pull Request page&nbsp;itself.</p>
+Pull Request page itself.</p>
 <h3 id="what-happens-if-the-build-detects-errors">What Happens If The Build Detects Errors?<a class="headerlink" href="#what-happens-if-the-build-detects-errors" title="Permanent link"> </a></h3>
 <p>Once you fix any errors that the build detected, go through your normal verification process
 and submit the changes to your forked repository. If your Pull Request is still open, when
@@ -340,12 +346,12 @@ GitHub detects that one of the repository/branch pairings in a Pull Request has 
 it will execute any required checks from the beginning. At that point, you are effectively
 back at the
 <a href="#building-your-changes-on-the-github-server">Building Your Changes on the GitHub Server</a>
-section&nbsp;above.</p>
+section above.</p>
 <p>This looping will continue until one of two things happen: all errors are dealt with <span class="caps">OR</span> you
 give up. At any point before the Pull Request is accepted and merged with the main
 repository, you can push the <code>Close pull request</code> button at the bottom of the page and close
-the Pull Request. This will perform a &#8220;soft close&#8221; on the Pull Request, with the option to
-re-open the Pull Request at a later&nbsp;date.</p>
+the Pull Request. This will perform a “soft close” on the Pull Request, with the option to
+re-open the Pull Request at a later date.</p>
 <h4 id="consider-using-a-draft-pull-request">Consider Using a Draft Pull Request<a class="headerlink" href="#consider-using-a-draft-pull-request" title="Permanent link"> </a></h4>
 <p>If you want to make sure that your Pull Request builds on the server before submitting it for
 consideration by the team, consider using a Draft Pull Request. Instead of pressing the
@@ -353,35 +359,40 @@ consideration by the team, consider using a Draft Pull Request. Instead of press
 <a href="#building-your-changes-on-the-github-server">Building Your Changes on the GitHub Server</a>
 section, click on the arrow on the right side of the button and select
 <code>Create draft pull request</code>.</p>
-<p><img alt="draft pull request" src="https://dvesti.github.io/Pelican/images/draft-pull-request.png" /></p>
+<p><img alt="draft pull request" src="https://dvesti.github.io/Pelican/images/draft-pull-request.png"/></p>
 <p>A draft request is exactly like a normal Pull Request except that it is not visible to anyone
 other than yourself. In this way, you can make sure the Pull Request is exactly the way
-you want it before asking for it to be considered part of the&nbsp;project.</p>
+you want it before asking for it to be considered part of the project.</p>
 <p>Something that is often forgotten about Pull Requests, and therefore Draft Pull Requests, is
 that you can edit most of the contents of the Pull Request after you have created it. Use this
-to your advantage as you get your Pull Request&nbsp;ready!</p>
+to your advantage as you get your Pull Request ready!</p>
 <h3 id="what-happens-if-team-members-ask-for-changes">What Happens If Team Members Ask For Changes?<a class="headerlink" href="#what-happens-if-team-members-ask-for-changes" title="Permanent link"> </a></h3>
 <p>As we are a team, when changes are submitted for consideration, the team will offer feedback
-on the changes. The feedback will generally fall into 3 categories: yes, no, or&nbsp;almost.</p>
-<p>With the &#8220;yes&#8221; category, the changes will be accepted &#8220;as is&#8221; into the&nbsp;project.</p>
-<p>Conversely, in the &#8220;no&#8221; category, the changes are rejected, usually with a decent description
+on the changes. The feedback will generally fall into 3 categories: yes, no, or almost.</p>
+<p>With the “yes” category, the changes will be accepted “as is” into the project.</p>
+<p>Conversely, in the “no” category, the changes are rejected, usually with a decent description
 of why they were rejected. Depending on the rejection reason, it may be possible to adjust
 your changes according to feedback in the rejection reason and submit it as a new Pull Request
-at a later&nbsp;date.</p>
-<p>In the &#8220;almost&#8221; category, the feedback will usually contain specific things that one or more of
+at a later date.</p>
+<p>In the “almost” category, the feedback will usually contain specific things that one or more of
 the team members want to see changed before it can be merged. This feedback can be a simple
 as a grammar error they want to see fixed, or asking for a more complete article documenting
 how to use your changes. The important part to note about this category is that the team
-feels that after the suggested changes have been performed, you can easily move to the &#8220;yes&#8221;&nbsp;category.</p>
+feels that after the suggested changes have been performed, you can easily move to the “yes” category.</p>
 <p>Regardless of what category the feedback for your changes falls into, please remember that we
 are a team and we are at our best when we work together. If you have a disagreement, ask for
 clarifications and initiate a conversation to understand where the reviewer of the Pull Request
-is coming from. Work with that person to help yourself see their&nbsp;viewpoint.</p>
+is coming from. Work with that person to help yourself see their viewpoint.</p>
 
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=%D0%9A%D0%B0%D0%BA%20%D1%8F%20%D0%BC%D0%BE%D0%B3%D1%83%20%D0%B2%D0%BD%D0%B5%D1%81%D1%82%D0%B8%20%D1%81%D0%B2%D0%BE%D0%B9%C2%A0%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%3F%20&url=https%3A//dvesti.github.io/Pelican/2019/08/04/how-to-contribute/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/08/04/how-to-contribute/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=%D0%9A%D0%B0%D0%BA%20%D1%8F%20%D0%BC%D0%BE%D0%B3%D1%83%20%D0%B2%D0%BD%D0%B5%D1%81%D1%82%D0%B8%20%D1%81%D0%B2%D0%BE%D0%B9%C2%A0%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%3F%20&amp;body=https%3A//dvesti.github.io/Pelican/2019/08/04/how-to-contribute/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="http://jackdewinter.github.io" target="_blank" rel="nofollow noopener noreferrer">
@@ -399,8 +410,18 @@ is coming from. Work with that person to help yourself see their&nbsp;viewpoint.
 
 
             <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/31/version-3-2-0-release-notes/" title="Previous: Version 3.2.0">Version 3.2.0</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/08/04/yaspeller-for-elegant/" title="Next: Using ‘yaspeller’ with Elegant - subtitle">Using ‘yaspeller’ with Elegant <small class="subtitle">subtitle</small></a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
+    <h4>Время чтения</h4>
+    <p>~10 мин.</p>
             <h4>Дата</h4>
             <time itemprop="dateCreated" datetime="2019-08-04T22:17:00+03:00">Вс, 04 авг 2019 г.</time>
             <h4>Категория</h4>

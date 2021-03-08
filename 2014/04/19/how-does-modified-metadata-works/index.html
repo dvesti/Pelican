@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -143,8 +143,9 @@ date of the article by defining <code>modified</code> in your article&nbsp;metad
 <p>Depending on your
 <a href="http://docs.getpelican.com/en/latest/settings.html#basic-settings"><code>DATE_FORMATS</code></a>
 setting you can put modified date in your reST formatted file&nbsp;as</p>
-<div class="highlight"><pre><span></span><code><span class="nc">:modified:</span> 2014-01-22 14:30
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="nc">:modified:</span> <span class="nf">2014-01-22 14:30</span>
+</pre></div>
+
 
 <p>Elegant will process it and display the last updated as &#8220;Jan 22,&nbsp;2014&#8221;.</p>
 <div class="admonition important">
@@ -171,12 +172,14 @@ sure you assign it a value exactly the way you want it to appear.
 Whatever you type, it will appear as it&nbsp;is.</p>
 <p>Taking the
 example from above, metadata in your reST formatted file should&nbsp;be,</p>
-<div class="highlight"><pre><span></span><code><span class="nc">:modified:</span> Jan 22, 2014
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="nc">:modified:</span> <span class="nf">Jan 22, 2014</span>
+</pre></div>
+
 
 <p>You can also assign raw <span class="caps">HTML</span> to it. For&nbsp;example,</p>
-<div class="highlight"><pre><span></span><code>:modified: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://github.com/talha131/onCrashReboot/&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Revision History&quot;</span><span class="p">&gt;</span>Aug 29, 2013<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span>:modified: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://github.com/talha131/onCrashReboot/&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Revision History&quot;</span><span class="p">&gt;</span>Aug 29, 2013<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+
 
 <p>But I do <strong>not</strong> recommend it because it will break on newer versions of
 Pelican. In fact, you should ditch Pelican 3.3 or less and move to a higher
@@ -185,7 +188,12 @@ version if you require <code>modified</code> metadata.</p>
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=How%20does%20modified%20metadata%C2%A0works&url=https%3A//dvesti.github.io/Pelican/2014/04/19/how-does-modified-metadata-works/&hashtags=web-design,metadata,date" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2014/04/19/how-does-modified-metadata-works/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=How%20does%20modified%20metadata%C2%A0works&amp;body=https%3A//dvesti.github.io/Pelican/2014/04/19/how-does-modified-metadata-works/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -203,6 +211,25 @@ version if you require <code>modified</code> metadata.</p>
 
 
             <hr/>
+<section>
+    <h2>Что почитать</h2>
+<ul class="related-posts-list">
+<li><a href="https://dvesti.github.io/Pelican/2014/04/24/how-to-set-shortcut-icons/" title="How to set Shortcut Icons">How to set Shortcut Icons</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2018/12/07/adding-author-blurbs/" title="Add Author Blurbs to Your Articles">Add Author Blurbs to Your Articles</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/08/12/how-to-display-your-social-media-profiles/" title="How to display your Social Media Profiles">How to display your Social Media Profiles</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/12/07/how-to-use-series-plugin/" title="Много-страничная статья — Часть 1">Много-страничная статья — Часть 1</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/12/08/how-to-use-series-plugin-2/" title="Много-страничная статья — Часть 2">Много-страничная статья — Часть 2</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2014/03/24/how-to-use-social-sharing-plugin/" title="Previous: Add Social Sharing Links">Add Social Sharing Links</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2014/04/20/search-engine-and-social-media-optimization/" title="Next: Search Engine and Social Media Optimization">Search Engine and Social Media Optimization</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -132,18 +132,24 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-            <div class="toc">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Содержание</h4>
+        <div class="toc">
 <ul>
 <li><a href="#prerequisites">Prerequisites</a><ul>
-<li><a href="#install-commitizen">Install&nbsp;Commitizen</a></li>
+<li><a href="#install-commitizen">Install Commitizen</a></li>
 </ul>
 </li>
-<li><a href="#use-commitizen">Use&nbsp;Commitizen</a></li>
-<li><a href="#video-demonstration">Video&nbsp;Demonstration</a></li>
+<li><a href="#use-commitizen">Use Commitizen</a></li>
+<li><a href="#video-demonstration">Video Demonstration</a></li>
 </ul>
 </div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+            
 <p>The <a href="https://dvesti.github.io/Pelican/2019/08/04/how-to-contribute/">Elegant Contribution Guidelines</a> require that
 each commit submitted for consideration be formatted according to the
 <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/">Git Commit Guidelines</a>.</p>
@@ -154,37 +160,41 @@ formatting allows for our release process to be
 <a href="https://dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/">fully automated</a>.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link"> </a></h2>
 <p>Both <a href="https://nodejs.org/en/download/">Node.js</a> and <a href="https://yarnpkg.com/en/docs/install">Yarn</a>
-must be installed on your&nbsp;system.</p>
+must be installed on your system.</p>
 <h3 id="install-commitizen">Install Commitizen<a class="headerlink" href="#install-commitizen" title="Permanent link"> </a></h3>
 <p>From your command line terminal, go into the directory containing your fork of the Elegant
-repository, then execute the following&nbsp;commands:</p>
-<div class="highlight"><pre><span></span><code>yarn global add commitizen
+repository, then execute the following commands:</p>
+<div class="highlight"><pre><span></span>yarn global add commitizen
 yarn install
-</code></pre></div>
-
+</pre></div>
 <h2 id="use-commitizen">Use Commitizen<a class="headerlink" href="#use-commitizen" title="Permanent link"> </a></h2>
 <p>As the Elegant team has already made the repository
 <a href="https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly">Commitizen friendly</a>,
 you can start using it for your commits by entering <code>git-cz</code> in your command shell instead
-of <code>git commit</code>. Make sure the changes that you want to commit to your fork are&nbsp;staged.</p>
+of <code>git commit</code>. Make sure the changes that you want to commit to your fork are staged.</p>
 <p>Once invoked, Commitizen will prompt you for answers to a number of questions. As mentioned
 previously, the answers to these questions are formatted according to the
 <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/">Git Commit Guidelines</a>
 before being placed into the message field for the commit. Commitizen then follows through and
 invokes <code>git commit</code>, committing the staged changes along with the formatted message that was
-crafted for you from the answers you&nbsp;provided.</p>
+crafted for you from the answers you provided.</p>
 <p>In some cases, such as a <a href="https://dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/">Git pre-commit hook failure</a>, you may
 not want to re-answer the questions again. Once you fix the issues that prevented the
 commit from happening, you can use <code>git-cz --retry</code> to submit the commit again using the same
-answers that were used in the failed&nbsp;attempt.</p>
+answers that were used in the failed attempt.</p>
 <h2 id="video-demonstration">Video Demonstration<a class="headerlink" href="#video-demonstration" title="Permanent link"> </a></h2>
-<p>For a quick video on how this process works in real life, click on the play button&nbsp;below.</p>
-<script id="asciicast-258540" src="https://asciinema.org/a/258540.js" async></script>
+<p>For a quick video on how this process works in real life, click on the play button below.</p>
+<script async="" id="asciicast-258540" src="https://asciinema.org/a/258540.js"></script>
 
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=How%20To%20Use%20Commitizen%20for%20Git%C2%A0Commits%20Recommended&url=https%3A//dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=How%20To%20Use%20Commitizen%20for%20Git%C2%A0Commits%20Recommended&amp;body=https%3A//dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -208,6 +218,14 @@ answers that were used in the failed&nbsp;attempt.</p>
 
 
             <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/" title="Previous: Automated Version Management and Release">Automated Version Management and Release</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/07/22/elegant-logo/" title="Next: Elegant Logo">Elegant Logo</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

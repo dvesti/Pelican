@@ -33,72 +33,63 @@ authors: Talha&amp;nbsp;Mansoor  &lt;/p&gt;
 &lt;p&gt;From your &lt;a href="https://heapanalytics.com/app/account"&gt;Heap console&lt;/a&gt;, navigate to
 &lt;em&gt;Settings&lt;/em&gt; → &lt;em&gt;Projects&lt;/em&gt;. You need to copy the Project &lt;span class="caps"&gt;ID&lt;/span&gt; you want to log to.
 Set &lt;code&gt;HEAP_ANALYTICS&lt;/code&gt; in your configuration with this&amp;nbsp;value.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;HEAP_ANALYTICS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1234567890&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;HEAP_ANALYTICS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1234567890&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;That&amp;#8217;s it. Elegant will take care of the&amp;nbsp;rest.&lt;/p&gt;</content><category term="Analytics, SEO and SMO"></category><category term="web-analytics"></category></entry><entry><title>Search Engine and Social Media Optimization</title><link href="https://dvesti.github.io/Pelican/2014/04/20/search-engine-and-social-media-optimization/" rel="alternate"></link><published>2014-04-20T16:31:00+03:00</published><updated>2014-04-20T16:31:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-20:/Pelican/2014/04/20/search-engine-and-social-media-optimization/</id><summary type="html"></summary><content type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#social-media-optimization-smo"&gt;Social Media Optimization (&lt;span class="caps"&gt;SMO&lt;/span&gt;)&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#open-graph-protocol"&gt;Open Graph&amp;nbsp;protocol&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#twitter-cards"&gt;Twitter&amp;nbsp;Cards&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#search-engine-optimization-seo"&gt;Search Engine Optimization (&lt;span class="caps"&gt;SEO&lt;/span&gt;)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
+
+&lt;p&gt;That&amp;#8217;s it. Elegant will take care of the&amp;nbsp;rest.&lt;/p&gt;</content><category term="Analytics, SEO and SMO"></category><category term="web-analytics"></category></entry><entry><title>Search Engine and Social Media Optimization</title><link href="https://dvesti.github.io/Pelican/2014/04/20/search-engine-and-social-media-optimization/" rel="alternate"></link><published>2014-04-20T16:31:00+03:00</published><updated>2014-04-20T16:31:00+03:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2014-04-20:/Pelican/2014/04/20/search-engine-and-social-media-optimization/</id><summary type="html"></summary><content type="html">
 &lt;p&gt;Search Engine Optimization(&lt;span class="caps"&gt;SEO&lt;/span&gt;) is a moving target which is often
 misunderstood. Rise of social media has changed the traditional &lt;span class="caps"&gt;SEO&lt;/span&gt;
-techniques. Changes in search algorithms has made several &lt;span class="caps"&gt;SEO&lt;/span&gt; techniques&amp;nbsp;obsolete.&lt;/p&gt;
+techniques. Changes in search algorithms has made several &lt;span class="caps"&gt;SEO&lt;/span&gt; techniques obsolete.&lt;/p&gt;
 &lt;p&gt;Elegant does its best to leverage all available search and social media tags to
 give your site higher ranking in search results and optimize it for sharing via
-social&amp;nbsp;media.&lt;/p&gt;
+social media.&lt;/p&gt;
 &lt;h2 id="social-media-optimization-smo"&gt;Social Media Optimization (&lt;span class="caps"&gt;SMO&lt;/span&gt;)&lt;a class="headerlink" href="#social-media-optimization-smo" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Inspired by the post &lt;a href="https://medium.com/on-startups/f15264e5d790"&gt;&amp;#8220;What is the New &lt;span class="caps"&gt;SEO&lt;/span&gt;? Pubcon 2013 &lt;!-- yaspeller ignore --&gt;
-Takeaways&amp;#8221;&lt;/a&gt;, I looked into the
+&lt;p&gt;Inspired by the post &lt;a href="https://medium.com/on-startups/f15264e5d790"&gt;“What is the New &lt;span class="caps"&gt;SEO&lt;/span&gt;? Pubcon 2013 &lt;!-- yaspeller ignore --&gt;
+Takeaways”&lt;/a&gt;, I looked into the
 tags that social media sites use. They can be broadly divided into two
 categories, &lt;a href="http://ogp.me/"&gt;Open Graph protocol&lt;/a&gt; and &lt;a href="https://dev.twitter.com/docs/cards"&gt;Twitter
 Cards&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id="open-graph-protocol"&gt;Open Graph protocol&lt;a class="headerlink" href="#open-graph-protocol" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Elegant uses following&amp;nbsp;tags,&lt;/p&gt;
+&lt;p&gt;Elegant uses following tags,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;og:url&lt;/code&gt; is set to article &lt;span class="caps"&gt;URL&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;og:type&lt;/code&gt; is set to&amp;nbsp;&amp;#8220;article&amp;#8221;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;og:title&lt;/code&gt; is set to article tile and optional&amp;nbsp;subtitle&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;og:site_name&lt;/code&gt; is set to &lt;code&gt;SITENAME&lt;/code&gt; from your Pelican&amp;nbsp;configuration&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;og:description&lt;/code&gt; is set to article&amp;nbsp;summary&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;og:article:author&lt;/code&gt; is set to article&amp;nbsp;author&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;og:article:published_time&lt;/code&gt; is set to article&amp;nbsp;date&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;og:type&lt;/code&gt; is set to “article”&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;og:title&lt;/code&gt; is set to article tile and optional subtitle&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;og:site_name&lt;/code&gt; is set to &lt;code&gt;SITENAME&lt;/code&gt; from your Pelican configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;og:description&lt;/code&gt; is set to article summary&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;og:article:author&lt;/code&gt; is set to article author&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;og:article:published_time&lt;/code&gt; is set to article date&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;og:image&lt;/code&gt; is an optional tag. It is set to value of &lt;code&gt;featured_image&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;featured_image&lt;/code&gt; should be the complete &lt;span class="caps"&gt;URL&lt;/span&gt; of an image. This image is
-displayed with the article link on most social&amp;nbsp;sites.&lt;/p&gt;
+displayed with the article link on most social sites.&lt;/p&gt;
 &lt;p&gt;Elegant looks for it first in the article metadata, here is metadata for an
-example reST formatted&amp;nbsp;file.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nc"&gt;:featured_image:&lt;/span&gt; http://oncrashreboot.com/images/article-1-image.jpg
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+example reST formatted file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nc"&gt;:featured_image:&lt;/span&gt; &lt;span class="nf"&gt;http://oncrashreboot.com/images/article-1-image.jpg&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then it looks for &lt;code&gt;FEATURED_IMAGE&lt;/code&gt; in Pelican configuration. If it finds
-neither, &lt;code&gt;og:image&lt;/code&gt; is not&amp;nbsp;used.&lt;/p&gt;
+neither, &lt;code&gt;og:image&lt;/code&gt; is not used.&lt;/p&gt;
 &lt;p&gt;If you want to use &lt;code&gt;og:image&lt;/code&gt; tag then make sure you define &lt;code&gt;featured_image&lt;/code&gt; in
 your article metadata. You should also define &lt;code&gt;FEATURED_IMAGE&lt;/code&gt; in your
 Pelican configuration to be used as a generic image in case an article does not
 have &lt;code&gt;featured_image&lt;/code&gt; defined.&lt;/p&gt;
 &lt;h3 id="twitter-cards"&gt;Twitter Cards&lt;a class="headerlink" href="#twitter-cards" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Elegant uses following&amp;nbsp;tags,&lt;/p&gt;
+&lt;p&gt;Elegant uses following tags,&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;twitter:card&lt;/code&gt; is set to&amp;nbsp;&amp;#8220;summary&amp;#8221;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;twitter:title&lt;/code&gt; is set to article title and optional&amp;nbsp;subtitle&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;twitter:creator&lt;/code&gt; is set to &lt;code&gt;TWITTER_USERNAME&lt;/code&gt; if defined in Pelican&amp;nbsp;configuration&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;twitter:description&lt;/code&gt; is set to article&amp;nbsp;summary&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;twitter:card&lt;/code&gt; is set to “summary”&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;twitter:title&lt;/code&gt; is set to article title and optional subtitle&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;twitter:creator&lt;/code&gt; is set to &lt;code&gt;TWITTER_USERNAME&lt;/code&gt; if defined in Pelican configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;twitter:description&lt;/code&gt; is set to article summary&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;twitter:image&lt;/code&gt; is set to &lt;code&gt;featured_image&lt;/code&gt;. The &lt;code&gt;featured_image&lt;/code&gt; discussion
-   above is also applicable in this&amp;nbsp;case&lt;/li&gt;
+   above is also applicable in this case&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Please note you need to be
 &lt;a href="https://dev.twitter.com/docs/cards/validation/validator"&gt;approved&lt;/a&gt; by Twitter
-before you can start using Twitter&amp;nbsp;Cards.&lt;/p&gt;
+before you can start using Twitter Cards.&lt;/p&gt;
 &lt;h2 id="search-engine-optimization-seo"&gt;Search Engine Optimization (&lt;span class="caps"&gt;SEO&lt;/span&gt;)&lt;a class="headerlink" href="#search-engine-optimization-seo" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Elegant puts tags and category of your article in keywords tag &lt;code&gt;&amp;lt;meta name="keywords"&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You can add your own keywords by defining &lt;code&gt;keywords&lt;/code&gt; in article&amp;nbsp;metadata.&lt;/p&gt;
+&lt;p&gt;You can add your own keywords by defining &lt;code&gt;keywords&lt;/code&gt; in article metadata.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;SITE_DESCRIPTION&lt;/code&gt; and article &lt;code&gt;summary&lt;/code&gt; is used in description tag &lt;code&gt;&amp;lt;meta name="description"&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Your &lt;code&gt;AUTHOR&lt;/code&gt; name is used in copyright tag &lt;code&gt;&amp;lt;meta name="copyright"&lt;/code&gt;.&lt;/p&gt;</content><category term="Analytics, SEO and SMO"></category><category term="crawler"></category><category term="social-media"></category><category term="web-analytics"></category></entry><entry><title>How to use Google Analytics</title><link href="https://dvesti.github.io/Pelican/2013/11/11/how-to-use-google-analytics/" rel="alternate"></link><published>2013-11-11T23:05:00+02:00</published><updated>2013-11-11T23:05:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-11-11:/Pelican/2013/11/11/how-to-use-google-analytics/</id><summary type="html">&lt;p&gt;Elegant Pelican theme supports Google Analytics out of the box. This articles describes how to set it&amp;nbsp;up.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant supports the popular web tracking service,
 &lt;a href="http://www.google.com/analytics/"&gt;Google Analytics&lt;/a&gt;.&lt;/p&gt;
@@ -106,8 +97,9 @@ before you can start using Twitter&amp;nbsp;Cards.&lt;/p&gt;
 &lt;span class="caps"&gt;ID&lt;/span&gt;&lt;/a&gt; from your Google
 Analytics account. It has this format &lt;code&gt;UA-XXXXX-X&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Set &lt;code&gt;GOOGLE_ANALYTICS&lt;/code&gt; variable to it in your&amp;nbsp;configuration.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;GOOGLE_ANALYTICS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;u&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;UA-00000000-1&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;GOOGLE_ANALYTICS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;u&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;UA-00000000-1&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 
 &lt;p&gt;That&amp;#8217;s it. Elegant will take care of the&amp;nbsp;rest.&lt;/p&gt;</content><category term="Analytics, SEO and SMO"></category><category term="web-analytics"></category></entry><entry><title>How to use StatCounter</title><link href="https://dvesti.github.io/Pelican/2013/11/11/how-to-use-statcounter-analytics/" rel="alternate"></link><published>2013-11-11T23:05:00+02:00</published><updated>2013-11-11T23:05:00+02:00</updated><author><name>Talha Mansoor</name></author><id>tag:dvesti.github.io,2013-11-11:/Pelican/2013/11/11/how-to-use-statcounter-analytics/</id><summary type="html">&lt;p&gt;Elegant Pelican theme supports StatCounter out of the box. This articles describes how to set them&amp;nbsp;up.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Elegant has support for popular web tracking service,
 &lt;a href="http://statcounter.com/"&gt;StatCounter&lt;/a&gt;.&lt;/p&gt;
@@ -117,18 +109,20 @@ Analytics account. It has this format &lt;code&gt;UA-XXXXX-X&lt;/code&gt;.&lt;/p
 &lt;p&gt;It will show you a &lt;a href="http://statcounter.com/support/knowledge-base/14/"&gt;standard
 code&lt;/a&gt;
 that a website must have in order to use&amp;nbsp;StatCounter.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;&amp;lt;!--&lt;/span&gt; &lt;span class="nx"&gt;Start&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="nx"&gt;StatCounter&lt;/span&gt; &lt;span class="nx"&gt;Code&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;Default&lt;/span&gt; &lt;span class="nx"&gt;Guide&lt;/span&gt; &lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--&lt;/span&gt; &lt;span class="nx"&gt;Start&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="nx"&gt;StatCounter&lt;/span&gt; &lt;span class="nx"&gt;Code&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;Default&lt;/span&gt; &lt;span class="nx"&gt;Guide&lt;/span&gt; &lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
 &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;sc_project&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;5555555&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;sc_invisible&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;sc_security&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;XXXXXXXX&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;...&lt;/span&gt;
 &lt;span class="c"&gt;&amp;lt;!--&lt;/span&gt; &lt;span class="nx"&gt;End&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="nx"&gt;StatCounter&lt;/span&gt; &lt;span class="nx"&gt;Code&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;Default&lt;/span&gt; &lt;span class="nx"&gt;Guide&lt;/span&gt; &lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 
 &lt;p&gt;Assign &lt;code&gt;sc_project&lt;/code&gt; value to &lt;code&gt;STAT_COUNTER_PROJECT&lt;/code&gt; and &lt;code&gt;sc_security&lt;/code&gt; to &lt;code&gt;STAT_COUNTER_SECURITY&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;STAT_COUNTER_PROJECT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5555555&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;STAT_COUNTER_PROJECT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5555555&lt;/span&gt;
 &lt;span class="n"&gt;STAT_COUNTER_SECURITY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;u&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;XXXXXXXX&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 
 &lt;p&gt;That&amp;#8217;s it. Elegant will take care of the&amp;nbsp;rest.&lt;/p&gt;</content><category term="Analytics, SEO and SMO"></category><category term="web-analytics"></category></entry></feed>

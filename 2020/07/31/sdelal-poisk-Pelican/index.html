@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -145,14 +145,14 @@
 <p>Основной Поиск в верхнем меню <strong>работает штатно</strong> (русский +&nbsp;english)    </p>
 </div>
 <p>Наконец-то сделал поиск по сайту на русском языке. Сайт создан на <em>Pelican</em>.<br />
-Если коротко, то взял Поиск с <a href="https://github.com/Pelican-Elegant/elegant/releases/tag/V1.3">версии 1.3</a>, потом добавил всё остальное. Возможно, придётся поменять некоторые скрипты в папке <strong>tipuesearch</strong>  </p>
-<!--more-->
-<p>Желающие разобраться могут посмотреть файлы <a href="https://github.com/dvesti/Pelican">в репозитории</a> (ветка <em>gh-pages</em>)</p>
+Если коротко, то взял Поиск с <a href="https://github.com/Pelican-Elegant/elegant/releases/tag/V1.3">версии 1.3</a>, потом добавил всё остальное. Возможно, придётся поменять некоторые скрипты в папке <strong>tipuesearch</strong><br />
+<!--more--><br />
+Желающие разобраться могут посмотреть файлы <a href="https://github.com/dvesti/Pelican">в репозитории</a> (ветка <em>gh-pages</em>)</p>
 <p><strong><span class="caps">P.S.</span></strong> Впрочем, нет основных файлов в репозитории. Вот так и я по крупицам собирал в Интернете информацию.<br />
 Теперь сайт работоспособный &#8212; подумаю об обратной связи: попробую сделать комментарии. Возможно, что и перееду на свой поддомен: как дело&nbsp;пойдёт&#8230;</p>
 <p><strong>P.S2.</strong> Необходимо вдогонку отметить, что и сам плагин <code>tipue_search</code> должен быть старым, чтоб <em>генерил</em> в формате <em><span class="caps">JSON</span></em> &lt;== <strong>это важно!</strong>)</p>
 <p>Чтобы два раза не вставать, вот код файла <code>blog-plugins\pelican-plugins\tipue_search\tipue_search.py</code></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># -*- coding: utf-8 -*-</span>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Tipue Search</span>
 <span class="sd">============</span>
@@ -193,10 +193,10 @@
             <span class="k">return</span>
 
         <span class="n">soup_title</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&amp;nbsp;&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">),</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
-        <span class="n">page_title</span> <span class="o">=</span> <span class="n">soup_title</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;“&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;”&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;’&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;^&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;#94;&#39;</span><span class="p">)</span>
+        <span class="n">page_title</span> <span class="o">=</span> <span class="n">soup_title</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;“&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;”&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;’&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;^&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;#94;&#39;</span><span class="p">)</span>
 
         <span class="n">soup_text</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
-        <span class="n">page_text</span> <span class="o">=</span> <span class="n">soup_text</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;“&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;”&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;’&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;¶&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;^&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;#94;&#39;</span><span class="p">)</span>
+        <span class="n">page_text</span> <span class="o">=</span> <span class="n">soup_text</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;“&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;”&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;’&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;¶&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;^&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;#94;&#39;</span><span class="p">)</span>
         <span class="n">page_text</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">page_text</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 
         <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;None&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span>
@@ -222,7 +222,7 @@
         <span class="n">page_text</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
 
         <span class="c1"># What happens if there is not a title.</span>
-        <span class="k">if</span> <span class="n">soup</span><span class="o">.</span><span class="n">title</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">soup</span><span class="o">.</span><span class="n">title</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
             <span class="n">page_title</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">string</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">page_title</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
@@ -257,7 +257,7 @@
         <span class="n">root_node</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pages&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">json_nodes</span><span class="p">}</span>
 
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
-            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">root_node</span><span class="p">,</span> <span class="n">fd</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">),</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">root_node</span><span class="p">,</span> <span class="n">fd</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">),</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">get_generators</span><span class="p">(</span><span class="n">generators</span><span class="p">):</span>
@@ -266,12 +266,17 @@
 
 <span class="k">def</span> <span class="nf">register</span><span class="p">():</span>
     <span class="n">signals</span><span class="o">.</span><span class="n">get_generators</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">get_generators</span><span class="p">)</span>
-</code></pre></div>
+</pre></div>
 
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20%E2%80%94%C2%A0%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%3F%21&url=https%3A//dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-pelican/&hashtags=hack,search,pelican" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-pelican/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20%E2%80%94%C2%A0%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%3F%21&amp;body=https%3A//dvesti.github.io/Pelican/2020/07/31/sdelal-poisk-pelican/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://dvesti.github.io/Pelican" target="_blank" rel="nofollow noopener noreferrer">
@@ -326,6 +331,25 @@
 </section>
 
             <hr/>
+<section>
+    <h2>Что почитать</h2>
+<ul class="related-posts-list">
+<li><a href="https://dvesti.github.io/Pelican/2013/08/27/live-filter-for-tags/" title="Live Filter for Tags">Live Filter for Tags</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2018/12/07/travis-ci-and-doc-website/" title="Travis-CI Automation for documentation website">Travis-CI Automation for documentation website</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2018/12/11/travis-to-trigger-build-in-another-repository/" title="Triggering a travis-ci build on another repository">Triggering a travis-ci build on another repository</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2019/01/11/quickly-get-a-github-hosted-blog-with-pelican-elegant-with-little-setup-steps/" title="Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.">Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.</a></li>
+<li><a href="https://dvesti.github.io/Pelican/2020/08/03/dobableny-kommentarii-utterances/" title="Добавили комментирование">Добавили комментирование</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2020/02/06/version-530/" title="Previous: Version 5.3.0">Version 5.3.0</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2020/08/03/dobableny-kommentarii-utterances/" title="Next: Добавили комментирование">Добавили комментирование</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

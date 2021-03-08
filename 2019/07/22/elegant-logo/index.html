@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -156,18 +156,20 @@
 <p>The we cleaned it using
 <a href="https://github.com/svg/svgo">svgo</a> <!-- yaspeller ignore -->
 tool. It reduced file size by around&nbsp;50%.</p>
-<div class="highlight"><pre><span></span><code>$ svgo -i elegant_logo.svg --pretty
+<div class="highlight"><pre><span></span>$ svgo -i elegant_logo.svg --pretty
 
 elegant_logo.svg:
 Done in <span class="m">80</span> ms!
 <span class="m">8</span>.029 KiB - <span class="m">52</span>.5% <span class="o">=</span> <span class="m">3</span>.815 KiB
-</code></pre></div>
+</pre></div>
+
 
 <p>Then, we converted <span class="caps">SVG</span> to <span class="caps">PNG</span> using
 <a href="https://github.com/shakiba/svgexport">svgexport</a> <!-- yaspeller ignore -->
 .</p>
-<div class="highlight"><pre><span></span><code>$ svgexport elegant_logo.svg elegant_logo.png <span class="m">100</span>%
-</code></pre></div>
+<div class="highlight"><pre><span></span>$ svgexport elegant_logo.svg elegant_logo.png <span class="m">100</span>%
+</pre></div>
+
 
 <p>The resultant file was around <span class="caps">1MB</span> is size. So we optimized it using
 <a href="https://imageoptim.com/mac">ImageOptim</a> <!-- yaspeller ignore -->
@@ -178,7 +180,12 @@ Done in <span class="m">80</span> ms!
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=Elegant%C2%A0Logo%20&url=https%3A//dvesti.github.io/Pelican/2019/07/22/elegant-logo/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/07/22/elegant-logo/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Elegant%C2%A0Logo%20&amp;body=https%3A//dvesti.github.io/Pelican/2019/07/22/elegant-logo/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -196,6 +203,14 @@ Done in <span class="m">80</span> ms!
 
 
             <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/" title="Previous: How To Use Commitizen for Git Commits - Recommended">How To Use Commitizen for Git Commits <small class="subtitle">Recommended</small></a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/07/22/use-pre-commit-git-hooks/" title="Next: Using Pre-Commit Git Hooks">Using Pre-Commit Git Hooks</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

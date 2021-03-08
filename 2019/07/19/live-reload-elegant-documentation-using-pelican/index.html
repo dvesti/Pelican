@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -133,16 +133,19 @@
             
             <p>Pelican introduced support for LiveReload in <a href="https://github.com/getpelican/pelican/releases/tag/4.1.0">Version 4.1.0</a>.</p>
 <p>To use it, you need to install LiveReload pip&nbsp;package.</p>
-<div class="highlight"><pre><span></span><code>pip install livereload
-</code></pre></div>
+<div class="highlight"><pre><span></span>pip install livereload
+</pre></div>
+
 
 <p>Then run from the root of the&nbsp;documentation,</p>
-<div class="highlight"><pre><span></span><code><span class="err">invoke livereload</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span>invoke livereload
+</pre></div>
+
 
 <p>You need to install <code>invoke</code> and <code>tasks.py</code> for this feature. It does <strong>not</strong> work with&nbsp;Makefile.</p>
-<div class="highlight"><pre><span></span><code>pip install invoke
-</code></pre></div>
+<div class="highlight"><pre><span></span>pip install invoke
+</pre></div>
+
 
 <h3 id="known-issue">Known Issue<a class="headerlink" href="#known-issue" title="Permanent link"> </a></h3>
 <div class="admonition danger">
@@ -152,13 +155,15 @@
 <p>Unfortunately, Pelican LiveReload depends on <a href="https://github.com/lepture/python-livereload">Python-LiveReload</a>, which <a href="https://github.com/lepture/python-livereload/pull/131">does not support extension less files</a>.</p>
 <p>What does it&nbsp;mean?</p>
 <p>Your <span class="caps">URL</span> must end at <code>.html</code>,&nbsp;like,</p>
-<div class="highlight"><pre><span></span><code><span class="c">http://127.0.0.1:9000/live-reload-elegant-documentation.html</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span>http://127.0.0.1:9000/live-reload-elegant-documentation.html
+</pre></div>
+
 
 <p>If it does not have the <code>.html</code> in the end, then LiveReload will return 404&nbsp;error.</p>
 <p>This can happen if your Pelican configuration&nbsp;has</p>
-<div class="highlight"><pre><span></span><code><span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{slug}</span><span class="s2">&quot;</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s2">&quot;{slug}&quot;</span>
+</pre></div>
+
 
 <p>Therefore, to make LiveReload work, comment out the above&nbsp;line.</p>
 <p>This issues has been reported to the Pelican team. You can track it <a href="https://github.com/getpelican/pelican/issues/2595">here</a>.</p>
@@ -166,7 +171,12 @@
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=LiveReload%20Elegant%20Documentation%20Using%C2%A0Pelican&url=https%3A//dvesti.github.io/Pelican/2019/07/19/live-reload-elegant-documentation-using-pelican/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/07/19/live-reload-elegant-documentation-using-pelican/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=LiveReload%20Elegant%20Documentation%20Using%C2%A0Pelican&amp;body=https%3A//dvesti.github.io/Pelican/2019/07/19/live-reload-elegant-documentation-using-pelican/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -184,6 +194,14 @@
 
 
             <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/19/what-is-live-reload/" title="Previous: What is LiveReload">What is LiveReload</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/07/19/live-reload-elegant-documentation-using-gulpjs/" title="Next: LiveReload Elegant Documentation Using Gulp.js">LiveReload Elegant Documentation Using Gulp.js</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

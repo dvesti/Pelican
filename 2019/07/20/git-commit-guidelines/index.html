@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -132,13 +132,14 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-            <div class="toc">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Содержание</h4>
+        <div class="toc">
 <ul>
-<li><a href="#why-have-commit-message-rules">Why Have Commit Message&nbsp;Rules?</a></li>
+<li><a href="#why-have-commit-message-rules">Why Have Commit Message Rules?</a></li>
 <li><a href="#what-are-those-rules">What are those rules?</a><ul>
-<li><a href="#is-there-something-to-help-me-with-the-rules">Is There Something to Help Me With The&nbsp;Rules?</a></li>
+<li><a href="#is-there-something-to-help-me-with-the-rules">Is There Something to Help Me With The Rules?</a></li>
 </ul>
 </li>
 <li><a href="#commit-message-format">Commit Message Format</a><ul>
@@ -146,127 +147,130 @@
 <li><a href="#type">Type</a></li>
 <li><a href="#scope">Scope</a></li>
 <li><a href="#subject">Subject</a><ul>
-<li><a href="#what-is-imperative-mode">What is Imperative&nbsp;mode?</a></li>
+<li><a href="#what-is-imperative-mode">What is Imperative mode?</a></li>
 </ul>
 </li>
-<li><a href="#revert-commits">Revert&nbsp;Commits</a></li>
+<li><a href="#revert-commits">Revert Commits</a></li>
 </ul>
 </li>
 <li><a href="#body">Body</a></li>
-<li><a href="#breaking-changes">Breaking&nbsp;changes</a></li>
+<li><a href="#breaking-changes">Breaking changes</a></li>
 <li><a href="#footer">Footer</a><ul>
-<li><a href="#referencing-issues">Referencing&nbsp;issues</a></li>
+<li><a href="#referencing-issues">Referencing issues</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#correct-message-format-examples">Correct Message Format Examples</a><ul>
-<li><a href="#new-features">New&nbsp;Features</a></li>
+<li><a href="#new-features">New Features</a></li>
 <li><a href="#fixes">Fixes</a></li>
 <li><a href="#documentation">Documentation</a></li>
 <li><a href="#miscellaneous">Miscellaneous</a></li>
 </ul>
 </li>
-<li><a href="#incorrect-message-format-examples">Incorrect Message Format&nbsp;Examples</a></li>
+<li><a href="#incorrect-message-format-examples">Incorrect Message Format Examples</a></li>
 </ul>
 </div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+            
 <p>The Elegant release process is <a href="https://dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/">fully automated</a>. To make
-this work, all commit message must adhere to a given set of&nbsp;rules.</p>
+this work, all commit message must adhere to a given set of rules.</p>
 <h2 id="why-have-commit-message-rules">Why Have Commit Message Rules?<a class="headerlink" href="#why-have-commit-message-rules" title="Permanent link"> </a></h2>
 <p>From the <a href="https://github.com/semantic-release/semantic-release#commit-message-format">semantic-release project</a>:</p>
 <blockquote>
-<p>semantic-release uses the commit messages to determine the type of changes in the codebase. Following formalized conventions for commit messages, semantic-release automatically determines the next semantic version number, generates a changelog and publishes the&nbsp;release.</p>
+<p>semantic-release uses the commit messages to determine the type of changes in the codebase. Following formalized conventions for commit messages, semantic-release automatically determines the next semantic version number, generates a changelog and publishes the release.</p>
 </blockquote>
 <p>What does that mean? It means that semantic-release parses the commit messages to arrive
 at a unbiased version number for a new release, and then creates that new release. This
-allows for a new release to be put together with little human&nbsp;involvement.</p>
+allows for a new release to be put together with little human involvement.</p>
 <h2 id="what-are-those-rules">What are those rules?<a class="headerlink" href="#what-are-those-rules" title="Permanent link"> </a></h2>
 <p>The Elegant development team chose to use the
 <a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines">Angular Commit Message Conventions</a>
-as the baseline for the team&#8217;s commit message&nbsp;conventions.</p>
-<p>Our conventions are largely derived from the Angular team&#8217;s guidelines
+as the baseline for the team’s commit message conventions.</p>
+<p>Our conventions are largely derived from the Angular team’s guidelines
 <a href="https://gist.github.com/stephenparish/9941e89d80e2bc58a153">as documented here</a>.</p>
 <h3 id="is-there-something-to-help-me-with-the-rules">Is There Something to Help Me With The Rules?<a class="headerlink" href="#is-there-something-to-help-me-with-the-rules" title="Permanent link"> </a></h3>
 <p>Reading, understanding, and then getting used to following guidelines may take time. Even
-then, if you are in a hurry, you can sometimes forget what the rules are. It&#8217;s only&nbsp;human.</p>
+then, if you are in a hurry, you can sometimes forget what the rules are. It’s only human.</p>
 <p>Our team has found life easier since we started using
 <a href="https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/">Commitizen for Git commits</a>.
 Our project includes configuration for Commitizen that automatically formats each commit
 message to conform to our guidelines by walking you through a series of prompts. When you
 finish those prompts, a new commit messages is authored for you with the information from those
-prompts, following all of the rules in the following sections on the Commit Message&nbsp;Format.</p>
+prompts, following all of the rules in the following sections on the Commit Message Format.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><a href="https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/">Use Commitizen for Git commits</a>.  It does make life easier.   It automatically formats the commit message to conform to our&nbsp;guidelines.</p>
+<p><a href="https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/">Use Commitizen for Git commits</a>.  It does make life easier.   It automatically formats the commit message to conform to our guidelines.</p>
 </div>
 <h2 id="commit-message-format">Commit Message Format<a class="headerlink" href="#commit-message-format" title="Permanent link"> </a></h2>
 <p>Each line of the commit message must be shorter than 101 characters! This allows the message
-to be easier to read on GitHub as well as in various git&nbsp;tools.</p>
-<p>Each commit message consists of a <strong>header</strong>, a <strong>body</strong> and a <strong>footer</strong>, as&nbsp;follows:</p>
-<div class="highlight"><pre><span></span><code>&lt;header&gt;
+to be easier to read on GitHub as well as in various git tools.</p>
+<p>Each commit message consists of a <strong>header</strong>, a <strong>body</strong> and a <strong>footer</strong>, as follows:</p>
+<div class="highlight"><pre><span></span>&lt;header&gt;
 &lt;BLANK LINE&gt;
 &lt;body&gt;
 &lt;BLANK LINE&gt;
 &lt;footer&gt;
-</code></pre></div>
-
+</pre></div>
 <h3 id="header">Header<a class="headerlink" href="#header" title="Permanent link"> </a></h3>
 <p>The header is mandatory. It has a special format that includes a required <strong>type</strong>, an
 optional <strong>scope</strong> and a required <strong>subject</strong>:</p>
-<div class="highlight"><pre><span></span><code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
-</code></pre></div>
-
+<div class="highlight"><pre><span></span>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
+</pre></div>
 <h4 id="type">Type<a class="headerlink" href="#type" title="Permanent link"> </a></h4>
-<p>The type must be one of the&nbsp;following:</p>
+<p>The type must be one of the following:</p>
 <ul>
-<li><strong>feat</strong>: A new&nbsp;feature</li>
-<li><strong>fix</strong>: A bug&nbsp;fix</li>
-<li><strong>docs</strong>: Documentation only&nbsp;changes</li>
-<li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons,&nbsp;etc.)</li>
-<li><strong>refactor</strong>: A code change that neither fixes a bug nor adds a&nbsp;feature</li>
+<li><strong>feat</strong>: A new feature</li>
+<li><strong>fix</strong>: A bug fix</li>
+<li><strong>docs</strong>: Documentation only changes</li>
+<li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)</li>
+<li><strong>refactor</strong>: A code change that neither fixes a bug nor adds a feature</li>
 <li><strong>perf</strong>: A code change that improves performance <!-- yaspeller ignore --></li>
-<li><strong>test</strong>: Adding missing or correcting existing&nbsp;tests</li>
-<li><strong>chore</strong>: Changes to the build process or auxiliary tools and libraries such as documentation&nbsp;generation</li>
-<li><strong>revert</strong>: A revert to a previous commit. See the section <a href="#revert-commits">Revert Commits</a>&nbsp;below.</li>
+<li><strong>test</strong>: Adding missing or correcting existing tests</li>
+<li><strong>chore</strong>: Changes to the build process or auxiliary tools and libraries such as documentation generation</li>
+<li><strong>revert</strong>: A revert to a previous commit. See the section <a href="#revert-commits">Revert Commits</a> below.</li>
 </ul>
 <h4 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link"> </a></h4>
 <p>The scope is intended to provide extra context on the changes included in the commit is for.
 This context should provide useful information to someone reading the commit log, including
-the reading of the commit log in the release&nbsp;notes.</p>
+the reading of the commit log in the release notes.</p>
 <p>For example, if you fix something in the
 <a href="https://dvesti.github.io/Pelican/2018/12/07/adding-author-blurbs/">authors blurb</a> section, a scope of <code>authors</code> would be appropriate. If you are changing something with how the
 <a href="https://dvesti.github.io/Pelican/2019/07/01/unique-home-page-features/">landing page</a>
-works, a scope of <code>landing page</code> or <code>home</code> would be&nbsp;appropriate.</p>
+works, a scope of <code>landing page</code> or <code>home</code> would be appropriate.</p>
 <h4 id="subject">Subject<a class="headerlink" href="#subject" title="Permanent link"> </a></h4>
-<p>The subject part of the header must follow these&nbsp;rules:</p>
+<p>The subject part of the header must follow these rules:</p>
 <ol>
-<li>always use the imperative, present tense: &#8220;change&#8221; not &#8220;changed&#8221;, &#8220;changes&#8221;, or&nbsp;&#8220;changing&#8221;</li>
-<li>do not capitalize the first&nbsp;letter</li>
-<li>no period (<code>.</code>) at the end of the&nbsp;line</li>
+<li>always use the imperative, present tense: “change” not “changed”, “changes”, or “changing”</li>
+<li>do not capitalize the first letter</li>
+<li>no period (<code>.</code>) at the end of the line</li>
 </ol>
 <h5 id="what-is-imperative-mode">What is Imperative mode?<a class="headerlink" href="#what-is-imperative-mode" title="Permanent link"> </a></h5>
 <p>Chris Beams, in his article on
 <a href="https://chris.beams.io/posts/git-commit/#imperative">how to write a good commit message</a>,
-gives a very good explanation of imperative&nbsp;mode.</p>
+gives a very good explanation of imperative mode.</p>
 <blockquote>
-<p>Imperative mood just means &#8220;spoken or written as if giving a command or instruction&#8221;. A few&nbsp;examples:</p>
+<p>Imperative mood just means “spoken or written as if giving a command or instruction”. A few examples:</p>
 <ol>
-<li>Clean your&nbsp;room</li>
-<li>Close the&nbsp;door</li>
-<li>Take out the&nbsp;trash</li>
+<li>Clean your room</li>
+<li>Close the door</li>
+<li>Take out the trash</li>
 </ol>
-<p>The imperative can sound a little rude; that&#8217;s why we don&#8217;t often use it. But it&#8217;s perfect for Git commit subject&nbsp;lines.</p>
+<p>The imperative can sound a little rude; that’s why we don’t often use it. But it’s perfect for Git commit subject lines.</p>
 </blockquote>
 <h4 id="revert-commits">Revert Commits<a class="headerlink" href="#revert-commits" title="Permanent link"> </a></h4>
 <p>If the commit reverts a previous commit, it must be specified with the <code>revert</code> type, followed
 by the complete header of the reverted commit as the subject. The body of the commit must
 start with the text: <code>This reverts commit &lt;hash&gt;.</code>, where the hash is the <span class="caps">SHA</span> of the commit
-being&nbsp;reverted.</p>
+being reverted.</p>
 <h3 id="body">Body<a class="headerlink" href="#body" title="Permanent link"> </a></h3>
-<p>The body of the commit message must follow these&nbsp;rules:</p>
+<p>The body of the commit message must follow these rules:</p>
 <ol>
-<li>always use the imperative, present tense: &#8220;change&#8221; not &#8220;changed&#8221;, &#8220;changes&#8221;, or&nbsp;&#8220;changing&#8221;</li>
-<li>include your motivation for the change and how it contrasts with the previous&nbsp;behavior</li>
+<li>always use the imperative, present tense: “change” not “changed”, “changes”, or “changing”</li>
+<li>include your motivation for the change and how it contrasts with the previous behavior</li>
 </ol>
 <h3 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link"> </a></h3>
 <p>All breaking changes have to be mentioned in the body with the description of the change,
@@ -275,8 +279,8 @@ justification and migration notes. The body must be prefixed with the text <code
 <a href="https://github.com/Pelican-Elegant/elegant/commit/9b5b2eca2a34a5d9898173a8118cb5e37621dfd5">Elegant project repository</a>.
 After the required prefix, it describes the problem it is solving, and why it was needed.
 In retrospect, while it does mention that <code>LANDING_PAGE_ABOUT</code> is no longer used, it should
-have gone into more detail on where to look up information on what was replacing&nbsp;it.</p>
-<div class="highlight"><pre><span></span><code>feat(home): write about me in markdown, reST or asciidoc
+have gone into more detail on where to look up information on what was replacing it.</p>
+<div class="highlight"><pre><span></span>feat(home): write about me in markdown, reST or asciidoc
 
 BREAKING CHANGE: Previously LANDING_PAGE_ABOUT was a dictionary that contained html tags. We used it
 to create landing page. But users have demanded from the very beginning to be able to write the
@@ -284,63 +288,59 @@ landing page in markdown. This patch adds this feature. But in order to use it, 
 your configuration.
 
 Closes #85
-</code></pre></div>
-
+</pre></div>
 <h3 id="footer">Footer<a class="headerlink" href="#footer" title="Permanent link"> </a></h3>
 <h4 id="referencing-issues">Referencing issues<a class="headerlink" href="#referencing-issues" title="Permanent link"> </a></h4>
 <p>Closed bugs should be listed on a separate line in the footer prefixed with the <code>Closes</code>
 keyword.</p>
-<div class="highlight"><pre><span></span><code>Closes #234
-</code></pre></div>
-
-<p>If your commit closes multiple issues, list them on the same line separated by a&nbsp;comma.</p>
-<div class="highlight"><pre><span></span><code>Closes #123, #245, #992
-</code></pre></div>
-
-<p>If your commit affects an issue, but does not fix it completely, use the &#8220;Updates&#8221;&nbsp;keyword</p>
-<div class="highlight"><pre><span></span><code>Updates #234
-</code></pre></div>
-
+<div class="highlight"><pre><span></span>Closes #234
+</pre></div>
+<p>If your commit closes multiple issues, list them on the same line separated by a comma.</p>
+<div class="highlight"><pre><span></span>Closes #123, #245, #992
+</pre></div>
+<p>If your commit affects an issue, but does not fix it completely, use the “Updates” keyword</p>
+<div class="highlight"><pre><span></span>Updates #234
+</pre></div>
 <h2 id="correct-message-format-examples">Correct Message Format Examples<a class="headerlink" href="#correct-message-format-examples" title="Permanent link"> </a></h2>
-<p>The following are commits from our own repository that shows how Elegant has used these&nbsp;guidelines.</p>
+<p>The following are commits from our own repository that shows how Elegant has used these guidelines.</p>
 <h3 id="new-features">New Features<a class="headerlink" href="#new-features" title="Permanent link"> </a></h3>
-<div class="highlight"><pre><span></span><code>feat(monetization): add BestAzon support
+<div class="highlight"><pre><span></span>feat(monetization): add BestAzon support
 feat(Chinese): add better font support for Chinese language
 feat(footer): make external links Nofollow
-</code></pre></div>
-
+</pre></div>
 <h3 id="fixes">Fixes<a class="headerlink" href="#fixes" title="Permanent link"> </a></h3>
-<div class="highlight"><pre><span></span><code>fix(reST): indents in line blocks is not preserved
+<div class="highlight"><pre><span></span>fix(reST): indents in line blocks is not preserved
 fix(gist): embedded Github gist are not laid out correctly
-</code></pre></div>
-
+</pre></div>
 <h3 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link"> </a></h3>
-<div class="highlight"><pre><span></span><code>docs(add): metadata variables
+<div class="highlight"><pre><span></span>docs(add): metadata variables
 docs(add): release notes for 3.0.0
 docs(update): change category of reading-time article
 docs(update): set author information
-</code></pre></div>
-
+</pre></div>
 <h3 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link"> </a></h3>
-<div class="highlight"><pre><span></span><code>chore(livereload): use es2015 syntax for gulp configuration
+<div class="highlight"><pre><span></span>chore(livereload): use es2015 syntax for gulp configuration
 ci(docs): use sitemap plugin in production only
 ci(docs): add default tasks.py file
 refactor: move Google and Bing claims to their individual files
-</code></pre></div>
-
+</pre></div>
 <h2 id="incorrect-message-format-examples">Incorrect Message Format Examples<a class="headerlink" href="#incorrect-message-format-examples" title="Permanent link"> </a></h2>
-<p>This commit message starts with a capital letter and ends with a&nbsp;period</p>
-<div class="highlight"><pre><span></span><code>doc(changes): Rewrite of multi-part plugin per issue 308.
-</code></pre></div>
-
-<p>This commit message does not use imperative&nbsp;mode.</p>
-<div class="highlight"><pre><span></span><code>docs(change): updating status doc to reflect current state
-</code></pre></div>
+<p>This commit message starts with a capital letter and ends with a period</p>
+<div class="highlight"><pre><span></span>doc(changes): Rewrite of multi-part plugin per issue 308.
+</pre></div>
+<p>This commit message does not use imperative mode.</p>
+<div class="highlight"><pre><span></span>docs(change): updating status doc to reflect current state
+</pre></div>
 
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=Git%20Commit%C2%A0Guidelines%20Mandatory&url=https%3A//dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Git%20Commit%C2%A0Guidelines%20Mandatory&amp;body=https%3A//dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -364,8 +364,18 @@ refactor: move Google and Bing claims to their individual files
 
 
             <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/19/live-reload-elegant-documentation-using-gulpjs/" title="Previous: LiveReload Elegant Documentation Using Gulp.js">LiveReload Elegant Documentation Using Gulp.js</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/" title="Next: Automated Version Management and Release">Automated Version Management and Release</a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
+    <h4>Время чтения</h4>
+    <p>~5 мин.</p>
             <h4>Дата</h4>
             <time itemprop="dateCreated" datetime="2019-07-20T23:17:00+03:00">Сб, 20 июл 2019 г.</time>
             <h4>Категория</h4>

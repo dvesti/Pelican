@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -129,43 +129,48 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-            <div class="toc">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Содержание</h4>
+        <div class="toc">
 <ul>
 <li><a href="#release-versions">Release Versions</a><ul>
-<li><a href="#how-does-versioning-work">How Does Versioning&nbsp;Work?</a></li>
+<li><a href="#how-does-versioning-work">How Does Versioning Work?</a></li>
 </ul>
 </li>
 <li><a href="#changelog-file-updates"><span class="caps">CHANGELOG</span> File Updates</a><ul>
-<li><a href="#example-of-an-automated-release">Example of an Automated&nbsp;Release</a></li>
+<li><a href="#example-of-an-automated-release">Example of an Automated Release</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<p>The Elegant project follows a &#8220;release early, release often&#8221; software development philosophy.
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+            
+<p>The Elegant project follows a “release early, release often” software development philosophy.
 By employing this philosophy, we are able to have each team member working on a different
-aspect of the project with next to no friction from each other&#8217;s changes. At any point, any
+aspect of the project with next to no friction from each other’s changes. At any point, any
 team member can pull changes that have been made in another branch to their fork of the
-repository and exercise their changes with complete&nbsp;confidence.</p>
-<p>Release process should be fully automated to materialize this&nbsp;goal.</p>
+repository and exercise their changes with complete confidence.</p>
+<p>Release process should be fully automated to materialize this goal.</p>
 <h2 id="release-versions">Release Versions<a class="headerlink" href="#release-versions" title="Permanent link"> </a></h2>
 <p>Version management and publishing is accomplished using the
-<a href="https://github.com/semantic-release/semantic-release">semantic-release</a> tool and it&#8217;s
+<a href="https://github.com/semantic-release/semantic-release">semantic-release</a> tool and it’s
 <a href="https://github.com/Pelican-Elegant/elegant/blob/master/.releaserc.json">configuration file</a>.
-This tool entirely removes human intervention from deciding the type and label of the next release of the&nbsp;project.</p>
+This tool entirely removes human intervention from deciding the type and label of the next release of the project.</p>
 <h3 id="how-does-versioning-work">How Does Versioning Work?<a class="headerlink" href="#how-does-versioning-work" title="Permanent link"> </a></h3>
-<p>Semantic release bases it&#8217;s decisions on the
-<a href="https://semver.org/">Semantic Versioning 2.0.0 specification</a>, which is very&nbsp;specific.</p>
+<p>Semantic release bases it’s decisions on the
+<a href="https://semver.org/">Semantic Versioning 2.0.0 specification</a>, which is very specific.</p>
 <p>A quick summary is as follows. Each version is detailed in the form: <code>MAJOR.MINOR.PATCH</code>.
 The <strong><span class="caps">PATCH</span></strong> version is incremented when only backwards compatible bug fixes are made in the
 release. The <strong><span class="caps">MINOR</span></strong> version is incremented (and <strong><span class="caps">PATCH</span></strong> reset to 0) when functionality
 is added in a backwards compatible manner to the release, along with any backwards compatible
 bug fixes. The <strong><span class="caps">MAJOR</span></strong> version is incremented (and <strong><span class="caps">MINOR</span></strong> and <strong><span class="caps">PATCH</span></strong> reset to 0) when
-incompatible <span class="caps">API</span> changes are introduced, along with any backwards compatible features or&nbsp;fixes.</p>
-<p>Here are some examples of release types that are generated based on commit&nbsp;messages:</p>
+incompatible <span class="caps">API</span> changes are introduced, along with any backwards compatible features or fixes.</p>
+<p>Here are some examples of release types that are generated based on commit messages:</p>
 <!-- yaspeller ignore:start -->
-
 <table>
 <thead>
 <tr>
@@ -179,42 +184,41 @@ incompatible <span class="caps">API</span> changes are introduced, along with an
 <td>Patch Release</td>
 </tr>
 <tr>
-<td>feat(pencil): add &#8216;graphiteWidth&#8217; option</td>
+<td>feat(pencil): add ‘graphiteWidth’ option</td>
 <td>Minor Feature Release</td>
 </tr>
 <tr>
-<td>perf(pencil): remove graphiteWidth option<br><br><span class="caps">BREAKING</span> <span class="caps">CHANGE</span>: The graphiteWidth option has been removed.<br>The default graphite width of 10mm is always used for performance reasons.</td>
+<td>perf(pencil): remove graphiteWidth option<br/><br/><span class="caps">BREAKING</span> <span class="caps">CHANGE</span>: The graphiteWidth option has been removed.<br/>The default graphite width of 10mm is always used for performance reasons.</td>
 <td>Major Breaking Release</td>
 </tr>
 </tbody>
 </table>
 <!-- yaspeller ignore:end -->
-
 <p>Note that the release type is specified as if that commit was the only commit in the release.
 If the first two commits were put together in the release, the <code>Minor Feature Release</code> of the
 second commit would take precedence over the <code>Patch Release</code> of the first commit. In the same
 manner, the <code>Major Breaking Release</code> of the third commit would take precedence if all three
-commits were submitted in the same&nbsp;release.</p>
+commits were submitted in the same release.</p>
 <h2 id="changelog-file-updates"><span class="caps">CHANGELOG</span> File Updates<a class="headerlink" href="#changelog-file-updates" title="Permanent link"> </a></h2>
 <p>An integral part of the release is updating the
 <a href="https://github.com/Pelican-Elegant/elegant/blob/master/CHANGELOG.md"><span class="caps">CHANGELOG</span></a>.
 By mandating that any commits for the project follow a
 <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/">mandated format for the commit messages</a>,
 the commits being added to the release can have their commit messages scanned by a tool,
-including relevant portions into the release notes. This too is done&nbsp;automatically.</p>
+including relevant portions into the release notes. This too is done automatically.</p>
 <h3 id="example-of-an-automated-release">Example of an Automated Release<a class="headerlink" href="#example-of-an-automated-release" title="Permanent link"> </a></h3>
 <p>Here is an example of an automated release. This is the
 <a href="https://github.com/Pelican-Elegant/elegant/releases/tag/V3.2.0">Version 3.2.0</a> that
 was released on 30-Jul-2019. The specifics about the release can be obtained by clicking
 on the 7 digit hexadecimal number below the version tag on the left side of the page, which
 will take you to the <a href="https://github.com/Pelican-Elegant/elegant/commit/48f39643edd6c3b7449af5dae8ade6323bc7c21f">release commit</a>.</p>
-<p><img alt="automated release" src="https://dvesti.github.io/Pelican/images/automated-release.png" /></p>
+<p><img alt="automated release" src="https://dvesti.github.io/Pelican/images/automated-release.png"/></p>
 <p>This release can also be viewed by performing a <code>git log --grep=chore(release)</code> command and
 looking for the specific release information in the logs. You can then view the specific
-information for that commit by using the <code>git show</code> command with the hash for the release&#8217;s
+information for that commit by using the <code>git show</code> command with the hash for the release’s
 commit, <code>git show 48f39643edd6c3b7449af5dae8ade6323bc7c21f</code>.</p>
-<p>Using either process, the result will look&nbsp;like:</p>
-<div class="highlight"><pre><span></span><code>commit 48f39643edd6c3b7449af5dae8ade6323bc7c21f
+<p>Using either process, the result will look like:</p>
+<div class="highlight"><pre><span></span>commit 48f39643edd6c3b7449af5dae8ade6323bc7c21f
 Author: semantic-release-bot &lt;semantic-release-bot@martynus.net&gt;
 Date:   Tue Jul 30 19:56:10 2019 +0000
 
@@ -235,24 +239,28 @@ Date:   Tue Jul 30 19:56:10 2019 +0000
     * **filter:** add black list, white list feature for Disqus ([4887aec](https://github.com/Pelican-Elegant/elegant/commit/4887aec))
     * **filter:** add black list, white list feature for FreeLists ([2407cc8](https://github.com/Pelican-Elegant/elegant/commit/2407cc8))
     * **filter:** add black list, white list feature for Mailchimp ([b96122d](https://github.com/Pelican-Elegant/elegant/commit/b96122d))
-</code></pre></div>
-
+</pre></div>
 <p>In the main body of the output, there are links with associated text which are 7 digit
 hexadecimal numbers. Each of these links is to a specific commit that was part of the
 release. If you follow the link, you can verify that the correct text is being used for the
-release&nbsp;notes.</p>
+release notes.</p>
 <p>Additionally, there are links that are associated with text that starts with the <code>#</code>
 character followed by an integer. Each of these links is to an issue that was either updated or
 fixed by the given commit. As with the above paragraph, you can verify that the correct
 issue was associated with the commit in the release notes by following the commit links and
-looking for any issue number at the end of the commit&nbsp;text.</p>
+looking for any issue number at the end of the commit text.</p>
 <p>As the commits added in to this release included features, the <code>Minor Feature Release</code> release
-type was used, incrementing the minor part of the version number from 3.1.0 to&nbsp;3.2.0.</p>
+type was used, incrementing the minor part of the version number from 3.1.0 to 3.2.0.</p>
 
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=Automated%20Version%20Management%20and%C2%A0Release%20&url=https%3A//dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Automated%20Version%20Management%20and%C2%A0Release%20&amp;body=https%3A//dvesti.github.io/Pelican/2019/07/20/fully-automated-version-management-and-release/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="https://www.oncrashreboot.com/" target="_blank" rel="nofollow noopener noreferrer">
@@ -276,6 +284,14 @@ type was used, incrementing the minor part of the version number from 3.1.0 to&n
 
 
             <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2019/07/20/git-commit-guidelines/" title="Previous: Git Commit Guidelines - Mandatory">Git Commit Guidelines <small class="subtitle">Mandatory</small></a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/07/22/use-commitizen-for-git-commits/" title="Next: How To Use Commitizen for Git Commits - Recommended">How To Use Commitizen for Git Commits <small class="subtitle">Recommended</small></a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>

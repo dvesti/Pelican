@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://dvesti.github.io/Pelican/theme/css/custom.css" media="screen">
+      <!--  <link rel="stylesheet" href="https://dvesti.github.io/Pelican/theme/css/style.min.css?3beac6ab">
+ -->
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -133,17 +133,19 @@
             
             <p>Elegant supports <a href="https://affiliate-program.amazon.com/onelink/">Amazon OneLink</a>, so that you may monetize your traffic using affiliate&nbsp;links.</p>
 <p>Visit Amazon website and create your OneLink account. Amazon will provide you a code snippet similar to&nbsp;following,</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;amzn-assoc-ad-$UUID&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;amzn-assoc-ad-$UUID&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span>
   <span class="na">async</span>
   <span class="na">src</span><span class="o">=</span><span class="s">&quot;//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=$UUID&quot;</span>
 <span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
+</pre></div>
+
 
 <p>Pay close attention to the <code>amzn-assoc-ad-</code> part. The value following it is your Amazon OneLink&nbsp;id.</p>
 <p>In your pelican configuration, preferably in the file <code>publishconf.py</code>, set <code>AMAZON_ONELINK</code> to your Amazon OneLink id, for&nbsp;example,</p>
-<div class="highlight"><pre><span></span><code><span class="n">AMAZON_ONELINK</span> <span class="o">=</span> <span class="s2">&quot;b63a2115-85f7-43a9-b169-5f4c8c275655&quot;</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="n">AMAZON_ONELINK</span> <span class="o">=</span> <span class="s2">&quot;b63a2115-85f7-43a9-b169-5f4c8c275655&quot;</span>
+</pre></div>
+
 
 <p>When the site is generated, <code>$UUID</code> in the snippet above is substituted with your id. Thus, ensuring that correct referral code is passed to the&nbsp;script.</p>
 <p>Now, when international visitors of your site click on a link on your site to buy from Amazon, they are redirected to their local or nearest Amazon market place.
@@ -159,7 +161,12 @@ Amazon Associates states that you need to disclose your affiliation with Amazon 
 
              
  
-            
+                <p id="post-share-links">
+    Понравилась статья? Расскажите о ней на:
+      <a href="https://twitter.com/intent/tweet?text=Amazon%20OneLink%C2%A0Support&url=https%3A//dvesti.github.io/Pelican/2019/01/02/amazon-onelink/&hashtags=amazon,affiliates,income" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dvesti.github.io/Pelican/2019/01/02/amazon-onelink/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Amazon%20OneLink%C2%A0Support&amp;body=https%3A//dvesti.github.io/Pelican/2019/01/02/amazon-onelink/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
                 <hr />
     <div class="author-blurb">
         <a href="http://iranzo.github.io" target="_blank" rel="nofollow noopener noreferrer">
@@ -184,6 +191,21 @@ Amazon Associates states that you need to disclose your affiliation with Amazon 
 
 
             <hr/>
+<section>
+    <h2>Что почитать</h2>
+<ul class="related-posts-list">
+<li><a href="https://dvesti.github.io/Pelican/2019/07/14/amazon-bestazon/" title="BestAzon Support">BestAzon Support</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://dvesti.github.io/Pelican/2018/12/18/warnings-admonition/" title="Previous: Warnings and admonition boxes">Warnings and admonition boxes</a></li>
+                <li class="next-article"><a href="https://dvesti.github.io/Pelican/2019/01/05/community-led-project/" title="Next: Elegant grows into a community-led project - The beginning of a beautiful friendship">Elegant grows into a community-led project <small class="subtitle">The beginning of a beautiful friendship</small></a> »</li>
+            </ul>
+            </nav>
+            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Дата</h4>
