@@ -142,19 +142,19 @@ file</a>.</p>
 
 
 <p>Let&#8217;s see how can we change social widget&nbsp;label.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c">{# Label for the list of social profiles #}</span><span class="x"></span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><span class="c">{# Label for the list of social profiles #}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">if</span> <span class="k">not</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">set</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="s1">&#39;Contact&#39;</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">set</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="o">=</span> <span class="nv">SOCIAL_PROFILE_LABEL</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span><span class="x"></span>
-</pre></div>
-</td></tr></table>
+</pre></div></td></tr></table></div>
+
 
 <p>Line 1, text enclosed in <code>{# #}</code> is a comment, which says this section is about
 &#8220;Label for the list of social&nbsp;profiles&#8221;.</p>

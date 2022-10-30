@@ -167,7 +167,7 @@ variable must first be set to the full path of the directory containing all of t
 For example, in the previous article,
 <a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/#article-metadata">Creating a Photo Gallery Article</a>,
 the gallery was added to the article as follows:</p>
-<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span> <span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance</span>
+<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance</span><span class="w"></span>
 </pre></div>
 <p>Assuming that you have installed a standard installation of Pelican in the directory
 <code>/home/stuff/blog-content</code> and inferring from the above metadata that all photo galleries are
@@ -183,7 +183,7 @@ gallery, and the <code>image.jpg</code> is the filename of the photo within the 
 <p>For example, say you want to highlight one of the photos, <code>photo-1.jpg</code>, that was contained
 within the <code>dragondance</code> gallery presented in your article. To include it in a Markdown
 article, add the following text to the article:</p>
-<div class="highlight"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">first</span> <span class="n">image</span><span class="p">]({</span><span class="n">photo</span><span class="p">}</span><span class="n">dragondance</span><span class="o">/</span><span class="n">photo</span><span class="o">-</span><span class="mf">1.</span><span class="n">jpg</span><span class="p">)</span>
+<div class="highlight"><pre><span></span>![<span class="nt">first image</span>](<span class="na">{photo}dragondance/photo-1.jpg</span>)
 </pre></div>
 <p>In addition, using the prefix <code>{lightbox}</code> instead of <code>{photo}</code> will cause the thumbnail of the
 photo to be displayed in the article. Clicking on the thumbnail will bring up the full sized

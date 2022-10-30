@@ -196,7 +196,7 @@ feature for a given article requires that the article contains the <code>gallery
 <p>The text assigned to the <code>gallery</code> metadata field is the location of the directory where the
 images to be displayed resides. This location is relative to the article in which the
 <code>gallery</code> metadata field is placed.</p>
-<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span> <span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance</span>
+<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance</span><span class="w"></span>
 </pre></div>
 <p>In the above example, the actual directory containing the images to display is the
 <code>dragondance</code> directory. While not specified in the example, the directory <code>articles</code> and the
@@ -209,13 +209,13 @@ path to the <code>dragondance</code> directory from the article becomes <code>..
 <p>Titles for a photo gallery are displayed in a large font directly above the first row of the
 photo gallery. To specify the title for a gallery, add the required title to the metadata in
 the <code>gallery</code> metadata field within curly braces (‘{‘ and ‘}’) as follows:</p>
-<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span> <span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance{Dragon Dance}</span>
+<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance{Dragon Dance}</span><span class="w"></span>
 </pre></div>
 <h3 id="multiple-photo-galleries-in-the-same-article">Multiple Photo Galleries in the Same Article<a class="headerlink" href="#multiple-photo-galleries-in-the-same-article" title="Permanent link"> </a></h3>
 <p>Multiple photo galleries can be display, in order, within a single article. This is
 accomplished by specify a comma separated list of photo galleries to display in the <code>gallery</code>
 metadata field. For example:</p>
-<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span> <span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance{Dragon Dance}, {filename}../gallery-source/hamsterdance{Hamster Dance}</span>
+<div class="highlight"><pre><span></span><span class="nt">gallery</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">filename</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">../gallery-source/dragondance{Dragon Dance}, {filename}../gallery-source/hamsterdance{Hamster Dance}</span><span class="w"></span>
 </pre></div>
 <p>will display the title <code>Dragon Dance</code>, the Dragon Dance photo gallery, the title
 <code>Hamster Dance</code>, and finally the Hamster Dance photo gallery. The title of the specific

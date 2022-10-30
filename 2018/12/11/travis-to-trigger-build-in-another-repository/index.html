@@ -154,85 +154,85 @@
 <h1 id="the-technical-solution">The technical solution<a class="headerlink" href="#the-technical-solution" title="Permanent link"> </a></h1>
 <p>The approach goes via tweaking the ‘test validation’ <code>.travis.yaml</code> and adding some more steps:</p>
 <p>The initial file (similar to the one in our previous article, but for running the ‘page build’ with latest repository checkout) looks like:</p>
-<div class="highlight"><pre><span></span><span class="c1"># Copyright (C) 2017, 2018 Pablo Iranzo Gómez &lt;Pablo.Iranzo@gmail.com&gt;</span>
+<div class="highlight"><pre><span></span><span class="c1"># Copyright (C) 2017, 2018 Pablo Iranzo Gómez &lt;Pablo.Iranzo@gmail.com&gt;</span><span class="w"></span>
 
-<span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
-<span class="nt">dist</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">trusty</span>
-<span class="nt">sudo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">required</span>
+<span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="nt">dist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">trusty</span><span class="w"></span>
+<span class="nt">sudo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">required</span><span class="w"></span>
 
-<span class="nt">python</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">"3.5"</span>
+<span class="nt">python</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"3.5"</span><span class="w"></span>
 
-<span class="c1"># prepare and move data for execution</span>
+<span class="c1"># prepare and move data for execution</span><span class="w"></span>
 
-<span class="nt">before_install</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r tests/requirements.txt</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r tests/test-requirements.txt</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install peru</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mkdir -p tests/themes/elegant</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mv templates tests/themes/elegant/</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mv static tests/themes/elegant/</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">cd tests &amp;&amp; peru sync</span>
+<span class="nt">before_install</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r tests/requirements.txt</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r tests/test-requirements.txt</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install peru</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir -p tests/themes/elegant</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mv templates tests/themes/elegant/</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mv static tests/themes/elegant/</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cd tests &amp;&amp; peru sync</span><span class="w"></span>
 
-<span class="nt">script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pelican content/ -o output/</span>
+<span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pelican content/ -o output/</span><span class="w"></span>
 </pre></div>
 <p>Is then modified to add:</p>
-<div class="highlight"><pre><span></span><span class="nt">before_script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">npm install travis-ci</span>
+<div class="highlight"><pre><span></span><span class="nt">before_script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm install travis-ci</span><span class="w"></span>
 
-<span class="nt">after_success</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">node trigger-build.js</span>
+<span class="nt">after_success</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node trigger-build.js</span><span class="w"></span>
 </pre></div>
 <p>This installs Travis-<span class="caps">CI</span> utilities and runs a custom script ‘trigger-build.js’ with node, which in turn actually triggers Travis build.</p>
 <p>The script, downloaded from
 <a href="https://kamranicus.com/posts/2015-02-26-continuous-deployment-with-travis-ci">Kamran Ayub blog</a> <!-- yaspeller ignore -->
 has been edited to specify the ‘repository’ we will trigger and the name of the environment variable containing the token:</p>
 <!-- yaspeller ignore:start -->
-<div class="highlight"><pre><span></span><span class="err">#</span><span class="o">!</span><span class="nx">js</span>
-<span class="kd">var</span> <span class="nx">Travis</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"travis-ci"</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="err">#</span><span class="o">!</span><span class="nx">js</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">Travis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">"travis-ci"</span><span class="p">);</span><span class="w"></span>
 
-<span class="c1">// change this</span>
-<span class="kd">var</span> <span class="nx">repo</span> <span class="o">=</span> <span class="s2">"Pelican-Elegant/documentation"</span><span class="p">;</span>
+<span class="c1">// change this</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">repo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Pelican-Elegant/documentation"</span><span class="p">;</span><span class="w"></span>
 
-<span class="kd">var</span> <span class="nx">travis</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Travis</span><span class="p">({</span>
-  <span class="nx">version</span><span class="o">:</span> <span class="s2">"2.0.0"</span>
-<span class="p">});</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">travis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Travis</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="s2">"2.0.0"</span><span class="w"></span>
+<span class="p">});</span><span class="w"></span>
 
-<span class="nx">travis</span><span class="p">.</span><span class="nx">authenticate</span><span class="p">(</span>
-  <span class="p">{</span>
-    <span class="c1">// available through Travis CI</span>
-    <span class="c1">// see: http://kamranicus.com/blog/2015/02/26/continuous-deployment-with-travis-ci/</span>
-    <span class="nx">github_token</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">TRATOKEN</span>
-  <span class="p">},</span>
-  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="nx">travis</span><span class="p">.</span><span class="nx">authenticate</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// available through Travis CI</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// see: http://kamranicus.com/blog/2015/02/26/continuous-deployment-with-travis-ci/</span><span class="w"></span>
+<span class="w">    </span><span class="nx">github_token</span><span class="o">:</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">TRATOKEN</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="nx">travis</span>
-      <span class="p">.</span><span class="nx">repos</span><span class="p">(</span><span class="nx">repo</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="nx">repo</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
-      <span class="p">.</span><span class="nx">builds</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-          <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
-        <span class="p">}</span>
+<span class="w">    </span><span class="nx">travis</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">repos</span><span class="p">(</span><span class="nx">repo</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="nx">repo</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="mf">1</span><span class="p">])</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">builds</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
 
-        <span class="nx">travis</span><span class="p">.</span><span class="nx">requests</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span>
-          <span class="p">{</span>
-            <span class="nx">build_id</span><span class="o">:</span> <span class="nx">res</span><span class="p">.</span><span class="nx">builds</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">id</span>
-          <span class="p">},</span>
-          <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-              <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
-            <span class="p">}</span>
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">flash</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">notice</span><span class="p">);</span>
-          <span class="p">}</span>
-        <span class="p">);</span>
-      <span class="p">});</span>
-  <span class="p">}</span>
-<span class="p">);</span>
+<span class="w">        </span><span class="nx">travis</span><span class="p">.</span><span class="nx">requests</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nx">build_id</span><span class="o">:</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">builds</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">id</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="k">return</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">flash</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">notice</span><span class="p">);</span><span class="w"></span>
+<span class="w">          </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="p">});</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
 </pre></div>
 <!-- yaspeller ignore:end -->
 <p>As you can see, in line 14, it grabs the github token from environment variable ‘<span class="caps">TRATOKEN</span>’ that we’ve defined in Travis-<span class="caps">CI</span> environment for the build.</p>

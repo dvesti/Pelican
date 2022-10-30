@@ -146,24 +146,24 @@ Copy the element&#8217;s selector and styles, and paste it in <code>custom.css</
 <p>Your customizations will override whatever rules are defined in <code>elegant.css</code>.</p>
 <p>Let&#8217;s take a look how you can change the style of hyperlinks in an article.
 Following is the relevant&nbsp;code,</p>
-<div class="highlight"><pre><span></span><span class="nt">article</span> <span class="nt">p</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">list-of-translations</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">post-share-links</span><span class="o">)</span> <span class="nt">a</span><span class="o">,</span>
-<span class="nt">article</span> <span class="nt">ol</span> <span class="nt">a</span><span class="o">,</span>
-<span class="nt">article</span> <span class="nt">div</span><span class="p">.</span><span class="nc">article-content</span> <span class="nt">ul</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">articles-timeline</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">related-posts-list</span><span class="o">)</span> <span class="nt">a</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="nt">article</span><span class="w"> </span><span class="nt">p</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">list-of-translations</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">post-share-links</span><span class="o">)</span><span class="w"> </span><span class="nt">a</span><span class="o">,</span><span class="w"></span>
+<span class="nt">article</span><span class="w"> </span><span class="nt">ol</span><span class="w"> </span><span class="nt">a</span><span class="o">,</span><span class="w"></span>
+<span class="nt">article</span><span class="w"> </span><span class="nt">div</span><span class="p">.</span><span class="nc">article-content</span><span class="w"> </span><span class="nt">ul</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">articles-timeline</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">related-posts-list</span><span class="o">)</span><span class="w"> </span><span class="nt">a</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-    <span class="k">border-bottom</span><span class="p">:</span> <span class="kc">thin</span> <span class="kc">dashed</span> <span class="mh">#A9A9A9</span><span class="p">;</span>
-    <span class="k">color</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="kc">thin</span><span class="w"> </span><span class="kc">dashed</span><span class="w"> </span><span class="mh">#A9A9A9</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#000</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 
 
 <p>Copy and paste it in <code>custom.css</code>. Change color to red for&nbsp;example,</p>
-<div class="highlight"><pre><span></span><span class="nt">article</span> <span class="nt">p</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">list-of-translations</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">post-share-links</span><span class="o">)</span> <span class="nt">a</span><span class="o">,</span>
-<span class="nt">article</span> <span class="nt">ol</span> <span class="nt">a</span><span class="o">,</span>
-<span class="nt">article</span> <span class="nt">div</span><span class="p">.</span><span class="nc">article-content</span> <span class="nt">ul</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">articles-timeline</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">related-posts-list</span><span class="o">)</span> <span class="nt">a</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="nt">article</span><span class="w"> </span><span class="nt">p</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">list-of-translations</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">#</span><span class="nn">post-share-links</span><span class="o">)</span><span class="w"> </span><span class="nt">a</span><span class="o">,</span><span class="w"></span>
+<span class="nt">article</span><span class="w"> </span><span class="nt">ol</span><span class="w"> </span><span class="nt">a</span><span class="o">,</span><span class="w"></span>
+<span class="nt">article</span><span class="w"> </span><span class="nt">div</span><span class="p">.</span><span class="nc">article-content</span><span class="w"> </span><span class="nt">ul</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">articles-timeline</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">related-posts-list</span><span class="o">)</span><span class="w"> </span><span class="nt">a</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-    <span class="k">border-bottom</span><span class="p">:</span> <span class="kc">thin</span> <span class="kc">dashed</span> <span class="mh">#A9A9A9</span><span class="p">;</span>
-    <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="kc">thin</span><span class="w"> </span><span class="kc">dashed</span><span class="w"> </span><span class="mh">#A9A9A9</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 
 

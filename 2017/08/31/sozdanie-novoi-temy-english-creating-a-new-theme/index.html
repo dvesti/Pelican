@@ -218,11 +218,11 @@
 <p>We’ll start with creating a new site with a very basic template. Then we’ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.</p>
 <p>In this tutorial, commands that you enter will start with the “$” prompt. The output will follow. Lines that start with “#” are comments that I’ve added to explain a point. When I show updates to a file, the “:wq” on the last line means to save the file.</p>
 <p>Here’s an example:</p>
-<div class="highlight"><pre><span></span><span class="gu">##</span> this is a comment
+<div class="highlight"><pre><span></span><span class="gu">## this is a comment</span>
 $ echo this is a command
 this is a command
 
-<span class="gu">##</span> edit the file
+<span class="gu">## edit the file</span>
 $vi foo.md
 +++
 date = "2014-09-28"
@@ -232,7 +232,7 @@ title = "creating a new theme"
 bah and humbug
 :wq
 
-<span class="gu">##</span> show it
+<span class="gu">## show it</span>
 $ cat foo.md
 +++
 date = "2014-09-28"
@@ -298,7 +298,7 @@ $
 <div class="highlight"><pre><span></span>$ hugo --verbose
 INFO: 2014/09/29 Using config file: config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
-WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
+WARN: 2014/09/29 Unable to locate layout: [index.html <span class="ge">_default/list.html _</span>default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
 0 draft content
 0 future content
@@ -316,15 +316,15 @@ $
 <span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span>  <span class="mi">1</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="mi">82</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">16</span><span class="p">:</span><span class="mi">49</span> <span class="n">config</span><span class="o">.</span><span class="n">toml</span>
 <span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">2</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="mi">68</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">16</span><span class="p">:</span><span class="mi">49</span> <span class="n">content</span>
 <span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">2</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="mi">68</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">16</span><span class="p">:</span><span class="mi">49</span> <span class="n">layouts</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">4</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">136</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="p">:</span><span class="mo">02</span> <span class="n">public</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">4</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">136</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="p">:</span><span class="mi">02</span> <span class="n">public</span>
 <span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">2</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="mi">68</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">16</span><span class="p">:</span><span class="mi">49</span> <span class="n">static</span>
 <span class="err">$</span>
 </pre></div>
 <p>See that new public/ directory? Hugo placed all generated content there. When you’re ready to publish your web site, that’s the place to start. For now, though, let’s just confirm that we have what we’d expect from a site with no content.</p>
 <div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="n">public</span>
 <span class="n">total</span> <span class="mi">16</span>
-<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span>  <span class="mi">1</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">416</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="p">:</span><span class="mo">02</span> <span class="n">index</span><span class="o">.</span><span class="n">xml</span>
-<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span>  <span class="mi">1</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">262</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="p">:</span><span class="mo">02</span> <span class="n">sitemap</span><span class="o">.</span><span class="n">xml</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span>  <span class="mi">1</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">416</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="p">:</span><span class="mi">02</span> <span class="n">index</span><span class="o">.</span><span class="n">xml</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span>  <span class="mi">1</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">262</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="p">:</span><span class="mi">02</span> <span class="n">sitemap</span><span class="o">.</span><span class="n">xml</span>
 <span class="err">$</span>
 </pre></div>
 <p>Hugo created two <span class="caps">XML</span> files, which is standard, but there are no <span class="caps">HTML</span> files.</p>
@@ -351,8 +351,8 @@ sitemap.xml
 </pre></div>
 <p>That’s a listing of your public/ directory. Hugo didn’t create a home page because our site has no content. When there’s no index.html file in a directory, the server lists the files in the directory, which is what you should see in your browser.</p>
 <p>Let’s go back and look at those warnings again.</p>
-<div class="highlight"><pre><span></span><span class="n">WARN</span><span class="o">:</span> <span class="mi">2014</span><span class="sr">/09/29 Unable to locate layout: [index.html _default/list.html _default/si</span><span class="n">ngle</span><span class="o">.</span><span class="na">html</span><span class="o">]</span>
-<span class="n">WARN</span><span class="o">:</span> <span class="mi">2014</span><span class="sr">/09/</span><span class="mi">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="n">layout</span><span class="o">:</span> <span class="o">[</span><span class="mi">404</span><span class="o">.</span><span class="na">html</span><span class="o">]</span>
+<div class="highlight"><pre><span></span><span class="n">WARN</span><span class="o">:</span><span class="w"> </span><span class="mi">2014</span><span class="sr">/09/29 Unable to locate layout: [index.html _default/list.html _default/si</span><span class="n">ngle</span><span class="o">.</span><span class="na">html</span><span class="o">]</span><span class="w"></span>
+<span class="n">WARN</span><span class="o">:</span><span class="w"> </span><span class="mi">2014</span><span class="sr">/09/</span><span class="mi">29</span><span class="w"> </span><span class="n">Unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">locate</span><span class="w"> </span><span class="n">layout</span><span class="o">:</span><span class="w"> </span><span class="o">[</span><span class="mi">404</span><span class="o">.</span><span class="na">html</span><span class="o">]</span><span class="w"></span>
 </pre></div>
 <p>That second warning is easier to explain. We haven’t created a template to be used to generate “page not found errors.” The 404 message is a topic for a separate tutorial.</p>
 <p>Now for the first warning. It is for the home page. You can tell because the first layout that it looked for was “index.html.” That’s only used by the home page.</p>
@@ -389,17 +389,17 @@ $
 </pre></div>
 <p>The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.</p>
 <p>Please take a minute to fill out the theme.toml and <span class="caps">LICENSE</span>.md files. They’re optional, but if you’re going to be distributing your theme, it tells the world who to praise (or blame). It’s also nice to declare the license so that people will know how they can use the theme.</p>
-<div class="highlight"><pre><span></span><span class="nx">$</span> <span class="nx">vi</span> <span class="nx">themes</span><span class="o">/</span><span class="nx">zafta</span><span class="o">/</span><span class="nx">theme</span><span class="p">.</span><span class="nx">toml</span>
-<span class="nx">author</span> <span class="o">=</span> <span class="s2">"michael d henderson"</span>
-<span class="nx">description</span> <span class="o">=</span> <span class="s2">"a minimal working template"</span>
-<span class="nx">license</span> <span class="o">=</span> <span class="s2">"MIT"</span>
-<span class="nx">name</span> <span class="o">=</span> <span class="s2">"zafta"</span>
-<span class="nx">source_repo</span> <span class="o">=</span> <span class="s2">""</span>
-<span class="nx">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"tags"</span><span class="p">,</span> <span class="s2">"categories"</span><span class="p">]</span>
-<span class="o">:</span><span class="nx">wq</span>
+<div class="highlight"><pre><span></span><span class="nx">$</span><span class="w"> </span><span class="nx">vi</span><span class="w"> </span><span class="nx">themes</span><span class="o">/</span><span class="nx">zafta</span><span class="o">/</span><span class="nx">theme</span><span class="p">.</span><span class="nx">toml</span><span class="w"></span>
+<span class="nx">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"michael d henderson"</span><span class="w"></span>
+<span class="nx">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"a minimal working template"</span><span class="w"></span>
+<span class="nx">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"MIT"</span><span class="w"></span>
+<span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"zafta"</span><span class="w"></span>
+<span class="nx">source_repo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="w"></span>
+<span class="nx">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="s2">"categories"</span><span class="p">]</span><span class="w"></span>
+<span class="o">:</span><span class="nx">wq</span><span class="w"></span>
 
-<span class="err">##</span> <span class="nx">also</span> <span class="nx">edit</span> <span class="nx">themes</span><span class="o">/</span><span class="nx">zafta</span><span class="o">/</span><span class="nx">LICENSE</span><span class="p">.</span><span class="nx">md</span> <span class="nx">and</span> <span class="nx">change</span>
-<span class="err">##</span> <span class="nx">the</span> <span class="nx">bit</span> <span class="nx">that</span> <span class="nx">says</span> <span class="s2">"YOUR_NAME_HERE"</span>
+<span class="err">##</span><span class="w"> </span><span class="nx">also</span><span class="w"> </span><span class="nx">edit</span><span class="w"> </span><span class="nx">themes</span><span class="o">/</span><span class="nx">zafta</span><span class="o">/</span><span class="nx">LICENSE</span><span class="p">.</span><span class="nx">md</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">change</span><span class="w"></span>
+<span class="err">##</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">bit</span><span class="w"> </span><span class="nx">that</span><span class="w"> </span><span class="nx">says</span><span class="w"> </span><span class="s2">"YOUR_NAME_HERE"</span><span class="w"></span>
 </pre></div>
 <p>Note that the the skeleton’s template files are empty. Don’t worry, we’ll be changing that shortly.</p>
 <div class="highlight"><pre><span></span><span class="x">$ find themes/zafta -name '*.html' | xargs ls -l</span>
@@ -435,19 +435,19 @@ WARN: <span class="m">2014</span>/09/29 Unable to locate layout: <span class="o"
 <span class="m">0</span> pages created
 <span class="m">0</span> tags created
 <span class="m">0</span> categories created
-in <span class="m">2</span> ms
+<span class="k">in</span> <span class="m">2</span> ms
 $
 </pre></div>
 <p>Did you notice that the output is different? The warning message for the home page has disappeared and we have an additional information line saying that Hugo is syncing from the theme’s directory.</p>
 <p>Let’s check the public/ directory to see what Hugo’s created.</p>
-<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">ls</span> <span class="p">-</span><span class="n">l</span> <span class="k">public</span>
-<span class="n">total</span> <span class="m">16</span>
-<span class="n">drwxr</span><span class="p">-</span><span class="n">xr</span><span class="p">-</span><span class="n">x</span>  <span class="m">2</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="m">68</span> <span class="n">Sep</span> <span class="m">29</span> <span class="m">17</span><span class="p">:</span><span class="m">56</span> <span class="n">css</span>
-<span class="p">-</span><span class="n">rw</span><span class="p">-</span><span class="n">r</span><span class="p">--</span><span class="n">r</span><span class="p">--</span>  <span class="m">1</span> <span class="n">quoha</span>  <span class="n">staff</span>    <span class="m">0</span> <span class="n">Sep</span> <span class="m">29</span> <span class="m">17</span><span class="p">:</span><span class="m">56</span> <span class="n">index</span><span class="p">.</span><span class="n">html</span>
-<span class="p">-</span><span class="n">rw</span><span class="p">-</span><span class="n">r</span><span class="p">--</span><span class="n">r</span><span class="p">--</span>  <span class="m">1</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="m">407</span> <span class="n">Sep</span> <span class="m">29</span> <span class="m">17</span><span class="p">:</span><span class="m">56</span> <span class="n">index</span><span class="p">.</span><span class="n">xml</span>
-<span class="n">drwxr</span><span class="p">-</span><span class="n">xr</span><span class="p">-</span><span class="n">x</span>  <span class="m">2</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="m">68</span> <span class="n">Sep</span> <span class="m">29</span> <span class="m">17</span><span class="p">:</span><span class="m">56</span> <span class="n">js</span>
-<span class="p">-</span><span class="n">rw</span><span class="p">-</span><span class="n">r</span><span class="p">--</span><span class="n">r</span><span class="p">--</span>  <span class="m">1</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="m">243</span> <span class="n">Sep</span> <span class="m">29</span> <span class="m">17</span><span class="p">:</span><span class="m">56</span> <span class="n">sitemap</span><span class="p">.</span><span class="n">xml</span>
-<span class="err">$</span>
+<div class="highlight"><pre><span></span><span class="err">$</span><span class="w"> </span><span class="n">ls</span><span class="w"> </span><span class="p">-</span><span class="n">l</span><span class="w"> </span><span class="k">public</span><span class="w"></span>
+<span class="n">total</span><span class="w"> </span><span class="m">16</span><span class="w"></span>
+<span class="n">drwxr</span><span class="p">-</span><span class="n">xr</span><span class="p">-</span><span class="n">x</span><span class="w">  </span><span class="m">2</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">   </span><span class="m">68</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">17</span><span class="p">:</span><span class="m">56</span><span class="w"> </span><span class="n">css</span><span class="w"></span>
+<span class="p">-</span><span class="n">rw</span><span class="p">-</span><span class="n">r</span><span class="p">--</span><span class="n">r</span><span class="p">--</span><span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">    </span><span class="m">0</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">17</span><span class="p">:</span><span class="m">56</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">html</span><span class="w"></span>
+<span class="p">-</span><span class="n">rw</span><span class="p">-</span><span class="n">r</span><span class="p">--</span><span class="n">r</span><span class="p">--</span><span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="m">407</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">17</span><span class="p">:</span><span class="m">56</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">xml</span><span class="w"></span>
+<span class="n">drwxr</span><span class="p">-</span><span class="n">xr</span><span class="p">-</span><span class="n">x</span><span class="w">  </span><span class="m">2</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">   </span><span class="m">68</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">17</span><span class="p">:</span><span class="m">56</span><span class="w"> </span><span class="n">js</span><span class="w"></span>
+<span class="p">-</span><span class="n">rw</span><span class="p">-</span><span class="n">r</span><span class="p">--</span><span class="n">r</span><span class="p">--</span><span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="m">243</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">17</span><span class="p">:</span><span class="m">56</span><span class="w"> </span><span class="n">sitemap</span><span class="p">.</span><span class="n">xml</span><span class="w"></span>
+<span class="err">$</span><span class="w"></span>
 </pre></div>
 <p>Notice four things:</p>
 <ol>
@@ -458,7 +458,7 @@ $
 </ol>
 <h4 id="the-home-page_1">The Home Page<a class="headerlink" href="#the-home-page_1" title="Permanent link"> </a></h4>
 <p>Hugo supports many different types of templates. The home page is special because it gets its own type of template and its own template file. The file, layouts/index.html, is used to generate the <span class="caps">HTML</span> for the home page. The Hugo documentation says that this is the only required template, but that depends. Hugo’s warning message shows that it looks for three different templates:</p>
-<div class="highlight"><pre><span></span><span class="nl">WARN</span><span class="p">:</span> <span class="mi">2014</span><span class="o">/</span><span class="mi">09</span><span class="o">/</span><span class="mi">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="nl">layout</span><span class="p">:</span> <span class="p">[</span><span class="n">index</span><span class="p">.</span><span class="n">html</span> <span class="n">_default</span><span class="o">/</span><span class="n">list</span><span class="p">.</span><span class="n">html</span> <span class="n">_default</span><span class="o">/</span><span class="n">single</span><span class="p">.</span><span class="n">html</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><span class="nl">WARN</span><span class="p">:</span><span class="w"> </span><span class="mi">2014</span><span class="o">/</span><span class="mi">09</span><span class="o">/</span><span class="mi">29</span><span class="w"> </span><span class="n">Unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">locate</span><span class="w"> </span><span class="n">layout</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="n">index</span><span class="p">.</span><span class="n">html</span><span class="w"> </span><span class="n">_default</span><span class="o">/</span><span class="n">list</span><span class="p">.</span><span class="n">html</span><span class="w"> </span><span class="n">_default</span><span class="o">/</span><span class="n">single</span><span class="p">.</span><span class="n">html</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 <p>If it can’t find any of these, it completely skips creating the home page. We noticed that when we built the site without having a theme installed.</p>
 <p>When Hugo created our theme, it created an empty home page template. Now, when we build the site, Hugo finds the template and uses it to generate the <span class="caps">HTML</span> for the home page. Since the template file is empty, the <span class="caps">HTML</span> file is empty, too. If the template had any rules in it, then Hugo would have used them to generate the home page.</p>
@@ -470,16 +470,16 @@ $
 <h4 id="the-magic-of-static">The Magic of Static<a class="headerlink" href="#the-magic-of-static" title="Permanent link"> </a></h4>
 <p>Hugo does two things when generating the site. It uses templates to transform content into <span class="caps">HTML</span> and it copies static files into the site. Unlike content, static files are not transformed. They are copied exactly as they are.</p>
 <p>Hugo assumes that your site will use both <span class="caps">CSS</span> and JavaScript, so it creates directories in your theme to hold them. Remember opinions? Well, Hugo’s opinion is that you’ll store your <span class="caps">CSS</span> in a directory named css/ and your JavaScript in a directory named js/. If you don’t like that, you can change the directory names in your theme directory or jane delete them completely. Hugo’s nice enough to offer its opinion, then behave nicely if you disagree.</p>
-<div class="highlight"><pre><span></span><span class="n">$</span> <span class="n">find</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span> <span class="o">-</span><span class="n">type</span> <span class="n">d</span> <span class="o">|</span> <span class="n">xargs</span> <span class="n">ls</span> <span class="o">-</span><span class="n">ld</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">7</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">238</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">38</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">3</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">102</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">31</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">archetypes</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">5</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">170</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">31</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">layouts</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">4</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">136</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">31</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">layouts</span><span class="o">/</span><span class="n">_default</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">4</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">136</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">31</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">layouts</span><span class="o">/</span><span class="n">partials</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">4</span> <span class="n">quoha</span>  <span class="n">staff</span>  <span class="mi">136</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">31</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="kd">static</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">2</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="mi">68</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">31</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="kd">static</span><span class="o">/</span><span class="n">css</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>  <span class="mi">2</span> <span class="n">quoha</span>  <span class="n">staff</span>   <span class="mi">68</span> <span class="n">Sep</span> <span class="mi">29</span> <span class="mi">17</span><span class="o">:</span><span class="mi">31</span> <span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="kd">static</span><span class="o">/</span><span class="n">js</span>
-<span class="n">$</span>
+<div class="highlight"><pre><span></span><span class="n">$</span><span class="w"> </span><span class="n">find</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="w"> </span><span class="o">-</span><span class="n">type</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">xargs</span><span class="w"> </span><span class="n">ls</span><span class="w"> </span><span class="o">-</span><span class="n">ld</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">7</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="mi">238</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">38</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">3</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="mi">102</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">archetypes</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">5</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="mi">170</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">layouts</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">4</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="mi">136</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">layouts</span><span class="o">/</span><span class="n">_default</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">4</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="mi">136</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">layouts</span><span class="o">/</span><span class="n">partials</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">4</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">  </span><span class="mi">136</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="kd">static</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">2</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">   </span><span class="mi">68</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="kd">static</span><span class="o">/</span><span class="n">css</span><span class="w"></span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="mi">2</span><span class="w"> </span><span class="n">quoha</span><span class="w">  </span><span class="n">staff</span><span class="w">   </span><span class="mi">68</span><span class="w"> </span><span class="n">Sep</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="w"> </span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="kd">static</span><span class="o">/</span><span class="n">js</span><span class="w"></span>
+<span class="n">$</span><span class="w"></span>
 </pre></div>
 <h2 id="the-theme-development-cycle">The Theme Development Cycle<a class="headerlink" href="#the-theme-development-cycle" title="Permanent link"> </a></h2>
 <p>When you’re working on a theme, you will make changes in the theme’s directory, rebuild the site, and check your changes in the browser. Hugo makes this very easy:</p>
@@ -502,13 +502,13 @@ $
 <p>Hugo’s built in web server supports live reload. As pages are saved on the server, the browser is told to refresh the page. Usually, this happens faster than you can say, “Wow, that’s totally amazing.”</p>
 <h3 id="development-commands">Development Commands<a class="headerlink" href="#development-commands" title="Permanent link"> </a></h3>
 <p>Use the following commands as the basis for your workflow.</p>
-<div class="highlight"><pre><span></span><span class="gu">##</span> purge old files. hugo will recreate the public directory.
-##
-$ rm -rf public
-##
-<span class="gu">##</span> run hugo in watch mode
-##
-$ hugo server --watch --verbose
+<div class="highlight"><pre><span></span><span class="gu">## purge old files. hugo will recreate the public directory.</span>
+<span class="gu">##</span>
+<span class="gu">$ rm -rf public</span>
+<span class="gu">##</span>
+<span class="gu">## run hugo in watch mode</span>
+<span class="gu">##</span>
+<span class="gu">$ hugo server --watch --verbose</span>
 </pre></div>
 <p>Here’s sample output showing Hugo detecting a change to the template for the home page. Once generated, the web browser automatically reloaded the page. I’ve said this before, it’s amazing.</p>
 <div class="highlight"><pre><span></span><span class="o">$</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">public</span>
@@ -516,7 +516,7 @@ $ hugo server --watch --verbose
 <span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Using</span> <span class="n">config</span> <span class="n">file</span><span class="o">:</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">config.toml</span>
 <span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">syncing</span> <span class="n">from</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">static</span><span class="o">/</span> <span class="n">to</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">public</span><span class="o">/</span>
 <span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">syncing</span> <span class="n">from</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">static</span><span class="o">/</span> <span class="n">to</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">public</span><span class="o">/</span>
-<span class="n">WARN</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="n">layout</span><span class="o">:</span> <span class="n">[404.html</span> <span class="n">theme</span><span class="o">/</span><span class="m">404</span><span class="n">.html]</span>
+<span class="n">WARN</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="n">layout</span><span class="o">:</span> <span class="p">[</span><span class="m">404</span><span class="n">.html</span> <span class="n">theme</span><span class="o">/</span><span class="m">404</span><span class="n">.html</span><span class="p">]</span>
 <span class="m">0</span> <span class="n">draft</span> <span class="n">content</span>
 <span class="m">0</span> <span class="n">future</span> <span class="n">content</span>
 <span class="m">0</span> <span class="n">pages</span> <span class="n">created</span>
@@ -527,10 +527,10 @@ $ hugo server --watch --verbose
 <span class="n">Serving</span> <span class="n">pages</span> <span class="n">from</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">public</span>
 <span class="n">Web</span> <span class="n">Server</span> <span class="n">is</span> <span class="n">available</span> <span class="n">at</span> <span class="n">http</span><span class="o">://</span><span class="n">localhost</span><span class="o">:</span><span class="m">1313</span>
 <span class="n">Press</span> <span class="n">Ctrl</span><span class="o">+</span><span class="n">C</span> <span class="n">to</span> <span class="n">stop</span>
-<span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">File</span> <span class="n">System</span> <span class="n">Event</span><span class="o">:</span> <span class="n">[</span><span class="s">"/Users/quoha/Sites/zafta/themes/zafta/layouts/index.html"</span><span class="o">:</span> <span class="n">MODIFY</span><span class="o">|</span><span class="n">ATTRIB]</span>
+<span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">File</span> <span class="n">System</span> <span class="n">Event</span><span class="o">:</span> <span class="p">[</span><span class="s">"/Users/quoha/Sites/zafta/themes/zafta/layouts/index.html"</span><span class="o">:</span> <span class="n">MODIFY</span><span class="o">|</span><span class="n">ATTRIB</span><span class="p">]</span>
 <span class="n">Change</span> <span class="n">detected</span><span class="p">,</span> <span class="n">rebuilding</span> <span class="n">site</span>
 
-<span class="n">WARN</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="n">layout</span><span class="o">:</span> <span class="n">[404.html</span> <span class="n">theme</span><span class="o">/</span><span class="m">404</span><span class="n">.html]</span>
+<span class="n">WARN</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="n">layout</span><span class="o">:</span> <span class="p">[</span><span class="m">404</span><span class="n">.html</span> <span class="n">theme</span><span class="o">/</span><span class="m">404</span><span class="n">.html</span><span class="p">]</span>
 <span class="m">0</span> <span class="n">draft</span> <span class="n">content</span>
 <span class="m">0</span> <span class="n">future</span> <span class="n">content</span>
 <span class="m">0</span> <span class="n">pages</span> <span class="n">created</span>
@@ -672,8 +672,8 @@ $
 <span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Using</span> <span class="n">config</span> <span class="n">file</span><span class="o">:</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">config.toml</span>
 <span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">syncing</span> <span class="n">from</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">themes</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">static</span><span class="o">/</span> <span class="n">to</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">public</span><span class="o">/</span>
 <span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">syncing</span> <span class="n">from</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">static</span><span class="o">/</span> <span class="n">to</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">quoha</span><span class="o">/</span><span class="n">Sites</span><span class="o">/</span><span class="n">zafta</span><span class="o">/</span><span class="n">public</span><span class="o">/</span>
-<span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">found</span> <span class="n">taxonomies</span><span class="o">:</span> <span class="n">map[string]string</span><span class="p">{</span><span class="s">"category"</span><span class="o">:</span><span class="s">"categories"</span><span class="p">,</span> <span class="s">"tag"</span><span class="o">:</span><span class="s">"tags"</span><span class="p">}</span>
-<span class="n">WARN</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="n">layout</span><span class="o">:</span> <span class="n">[404.html</span> <span class="n">theme</span><span class="o">/</span><span class="m">404</span><span class="n">.html]</span>
+<span class="n">INFO</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">found</span> <span class="n">taxonomies</span><span class="o">:</span> <span class="n">map</span><span class="p">[</span><span class="n">string</span><span class="p">]</span><span class="n">string</span><span class="p">{</span><span class="s">"category"</span><span class="o">:</span><span class="s">"categories"</span><span class="p">,</span> <span class="s">"tag"</span><span class="o">:</span><span class="s">"tags"</span><span class="p">}</span>
+<span class="n">WARN</span><span class="o">:</span> <span class="m">2014</span><span class="o">/</span><span class="m">09</span><span class="o">/</span><span class="m">29</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">locate</span> <span class="n">layout</span><span class="o">:</span> <span class="p">[</span><span class="m">404</span><span class="n">.html</span> <span class="n">theme</span><span class="o">/</span><span class="m">404</span><span class="n">.html</span><span class="p">]</span>
 <span class="m">0</span> <span class="n">draft</span> <span class="n">content</span>
 <span class="m">0</span> <span class="n">future</span> <span class="n">content</span>
 <span class="m">2</span> <span class="n">pages</span> <span class="n">created</span>
@@ -741,15 +741,15 @@ $ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/second/index.html
 $ cat public/index.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
-    <span class="nt">&lt;h1&gt;</span>second<span class="nt">&lt;/h1&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>second<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 
-    <span class="nt">&lt;h1&gt;</span>first<span class="nt">&lt;/h1&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>first<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 $
 </pre></div>
 <p>Congratulations, the home page shows the title of the two posts. The posts themselves are still empty, but let’s take a moment to appreciate what we’ve done. Your template now generates output dynamically. Believe it or not, by inserting the range command inside of those curly braces, you’ve learned everything you need to know to build a theme. All that’s really left is understanding which template will be used to generate each content file and becoming familiar with the commands for the template engine.</p>
@@ -767,15 +767,15 @@ $
 <h4 id="update-the-template-file">Update the Template File<a class="headerlink" href="#update-the-template-file" title="Permanent link"> </a></h4>
 <div class="highlight"><pre><span></span>$ vi themes/zafta/layouts/_default/single.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;h1&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="nt">&lt;/h1&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="cp">{{</span> <span class="nv">.Content</span> <span class="cp">}}</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 :wq
 
 $
@@ -803,29 +803,29 @@ $ find public -type f -name '*.html' | xargs ls -l
 
 $ cat public/post/first/index.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span>first<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;h1&gt;</span>first<span class="nt">&lt;/h1&gt;</span>
-  <span class="nt">&lt;p&gt;</span>my first post<span class="nt">&lt;/p&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>first<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>first<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>my first post<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 
 $ cat public/post/second/index.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span>second<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;h1&gt;</span>second<span class="nt">&lt;/h1&gt;</span>
-  <span class="nt">&lt;p&gt;</span>my second post<span class="nt">&lt;/p&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>second<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>second<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>my second post<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 $
 </pre></div>
 <p>Notice that the posts now have content. You can go to localhost:1313/post/first to verify.</p>
@@ -833,13 +833,13 @@ $
 <p>The posts are on the home page. Let’s add a link from there to the post. Since this is the home page, we’ll update its template.</p>
 <div class="highlight"><pre><span></span>$ vi themes/zafta/layouts/index.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
   <span class="cp">{{</span> <span class="nv">range</span> <span class="nv">first</span> <span class="m">10</span> <span class="nv">.Data.Pages</span> <span class="cp">}}</span>
-    <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">.Permalink</span> <span class="cp">}}</span><span class="s">"</span><span class="nt">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">.Permalink</span> <span class="cp">}}</span><span class="s">"</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="cp">{{</span> <span class="nv">end</span> <span class="cp">}}</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 <p>Build the web site and verify the results.</p>
 <div class="highlight"><pre><span></span>$ rm -rf public
@@ -864,15 +864,15 @@ $ find public -type f -name '*.html' | xargs ls -l
 
 $ cat public/index.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
-    <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/post/second/"</span><span class="nt">&gt;</span>second<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/post/second/"</span><span class="p">&gt;</span>second<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 
-    <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/post/first/"</span><span class="nt">&gt;</span>first<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/post/first/"</span><span class="p">&gt;</span>first<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 
 $
 </pre></div>
@@ -911,38 +911,38 @@ i<span class="err">'</span>m speechless
 <p>One other thing. Take a look at the home page.</p>
 <div class="highlight"><pre><span></span>$ cat public/index.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://localhost:1313/post/theme/"</span><span class="nt">&gt;</span>creating a new theme<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
-    <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://localhost:1313/about-time/"</span><span class="nt">&gt;</span>about<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
-    <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://localhost:1313/post/second-post/"</span><span class="nt">&gt;</span>second<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
-    <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://localhost:1313/post/first-post/"</span><span class="nt">&gt;</span>first<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
-<span class="nt">&lt;script&gt;</span>document.write('<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"http://'</span>
-<span class="s">        + (location.host || 'localhost').split(':')[0]</span>
-<span class="s">        + ':1313/livereload.js?mindelay=10"</span><span class="nt">&gt;</span><span class="err">&lt;</span>/'
-        + 'script&gt;')<span class="nt">&lt;/script&gt;&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://localhost:1313/post/theme/"</span><span class="p">&gt;</span>creating a new theme<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://localhost:1313/about-time/"</span><span class="p">&gt;</span>about<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://localhost:1313/post/second-post/"</span><span class="p">&gt;</span>second<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://localhost:1313/post/first-post/"</span><span class="p">&gt;</span>first<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">'&lt;script src="http://'</span><span class="w"></span>
+<span class="w">        </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">host</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">'localhost'</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">':'</span><span class="p">)[</span><span class="mf">0</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="o">+</span><span class="w"> </span><span class="s1">':1313/livereload.js?mindelay=10"&gt;&lt;/'</span><span class="w"></span>
+<span class="w">        </span><span class="o">+</span><span class="w"> </span><span class="s1">'script&gt;'</span><span class="p">)&lt;/</span><span class="nt">script</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 <p>Notice that the “about” link is listed with the posts? That’s not desirable, so let’s change that first.</p>
 <div class="highlight"><pre><span></span>$ vi themes/zafta/layouts/index.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;h1&gt;</span>posts<span class="nt">&lt;/h1&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>posts<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="cp">{{</span> <span class="nv">range</span> <span class="nv">first</span> <span class="m">10</span> <span class="nv">.Data.Pages</span> <span class="cp">}}</span>
     <span class="cp">{{</span> <span class="k">if</span> <span class="nv">eq</span> <span class="nv">.Type</span> <span class="s2">"post"</span><span class="cp">}}</span>
-      <span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">.Permalink</span> <span class="cp">}}</span><span class="s">"</span><span class="nt">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">.Permalink</span> <span class="cp">}}</span><span class="s">"</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
     <span class="cp">{{</span> <span class="nv">end</span> <span class="cp">}}</span>
   <span class="cp">{{</span> <span class="nv">end</span> <span class="cp">}}</span>
 
-  <span class="nt">&lt;h1&gt;</span>pages<span class="nt">&lt;/h1&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>pages<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="cp">{{</span> <span class="nv">range</span> <span class="nv">.Data.Pages</span> <span class="cp">}}</span>
     <span class="cp">{{</span> <span class="k">if</span> <span class="nv">eq</span> <span class="nv">.Type</span> <span class="s2">"page"</span> <span class="cp">}}</span>
-      <span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">.Permalink</span> <span class="cp">}}</span><span class="s">"</span><span class="nt">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">.Permalink</span> <span class="cp">}}</span><span class="s">"</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
     <span class="cp">{{</span> <span class="nv">end</span> <span class="cp">}}</span>
   <span class="cp">{{</span> <span class="nv">end</span> <span class="cp">}}</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 :wq
 </pre></div>
 <p>Generate the web site and verify the results. The home page has two sections, posts and pages, and each section has the right set of headings and links in it.</p>
@@ -955,10 +955,10 @@ i<span class="err">'</span>m speechless
 -rw-rw-r--  <span class="m">1</span> mdhender  staff    <span class="m">342</span> Sep <span class="m">27</span> <span class="m">15</span>:33 public/post/second-post/index.html
 </pre></div>
 <p>Knowing that hugo is using the slug to generate the file name, the simplest solution is to change the slug. Let’s do it the hard way and change the permalink in the configuration file.</p>
-<div class="highlight"><pre><span></span>$ vi config.toml
-<span class="o">[</span>permalinks<span class="o">]</span>
-    <span class="nv">page</span> <span class="o">=</span> <span class="s2">"/:title/"</span>
-    <span class="nv">about</span> <span class="o">=</span> <span class="s2">"/:filename/"</span>
+<div class="highlight"><pre><span></span><span class="err">$</span><span class="w"> </span><span class="n">vi</span><span class="w"> </span><span class="n">config</span><span class="p">.</span><span class="n">toml</span><span class="w"></span>
+<span class="o">[</span><span class="n">permalinks</span><span class="o">]</span><span class="w"></span>
+<span class="w">    </span><span class="n">page</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"/:title/"</span><span class="w"></span>
+<span class="w">    </span><span class="n">about</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"/:filename/"</span><span class="w"></span>
 </pre></div>
 <p>Generate the web site and verify that this didn’t work. Hugo lets “slug” or “<span class="caps">URL</span>” override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.</p>
 <h2 id="sharing-templates">Sharing Templates<a class="headerlink" href="#sharing-templates" title="Permanent link"> </a></h2>
@@ -968,16 +968,16 @@ i<span class="err">'</span>m speechless
 <p>In Hugo, a partial is a sugar-coated template. Normally a template reference has a path specified. Partials are different. Hugo searches for them along a <span class="caps">TODO</span> defined search path. This makes it easier for end-users to override the theme’s presentation.</p>
 <div class="highlight"><pre><span></span>$ vi themes/zafta/layouts/partials/header.html
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">.Title</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 :wq
 
 $ vi themes/zafta/layouts/partials/footer.html
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 :wq
 </pre></div>
 <h3 id="update-the-home-page-template-to-use-the-partials">Update the Home Page Template to Use the Partials<a class="headerlink" href="#update-the-home-page-template-to-use-the-partials" title="Permanent link"> </a></h3>

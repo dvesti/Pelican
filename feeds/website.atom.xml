@@ -56,9 +56,9 @@ Extra - Definition Lists
 Smartypants
 Admonitions
 CodeHilite - Code Blocks With Line&amp;nbsp;Numbers&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="c1"&gt;# Code goes here ...&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;div class="highlight"&gt;&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="c1"&gt;# Code goes here ...&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
 
 &lt;p&gt;1
     # Code goes here &amp;#8230;
@@ -152,11 +152,11 @@ Here’s a simple footnote,1 and here’s a longer one.2&amp;#160;&lt;a class="f
 &lt;p&gt;A horizontal break occurs after 3 or more hyphens.&lt;/p&gt;
 &lt;hr/&gt;
 &lt;h2 id="headings"&gt;Headings&lt;a href="#headings" title="Permanent link"&gt;&lt;/a&gt;&lt;a class="headerlink" href="#headings" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gh"&gt;#&lt;/span&gt; Heading Level 1
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gh"&gt;# Heading Level 1&lt;/span&gt;
 
-&lt;span class="gu"&gt;##&lt;/span&gt; Heading Level 2
+&lt;span class="gu"&gt;## Heading Level 2&lt;/span&gt;
 
-&lt;span class="gu"&gt;###&lt;/span&gt; Heading Level 3
+&lt;span class="gu"&gt;### Heading Level 3&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h1 id="heading-level-1"&gt;Heading Level 1&lt;a class="headerlink" href="#heading-level-1" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id="heading-level-2"&gt;Heading Level 2&lt;a class="headerlink" href="#heading-level-2" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
@@ -278,18 +278,18 @@ sit amet, consectetuer adipiscing elit.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;line numbers can be added &lt;a href="https://jackdewinter.github.io/2019/06/30/extended-markdown-examples/#codehilite-code-blocks-with-line-numbers"&gt;via extensions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; ```text
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sb"&gt; ```text&lt;/span&gt;
 Make things only as complex as they need to be.
- ```
+&lt;span class="sb"&gt; ```&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Make things only as complex as they need to be.  
 &lt;/pre&gt;&lt;/div&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; ```Python
-&lt;span class="gh"&gt;#&lt;/span&gt; Blogroll
-LINKS = (
-            ('Pelican', 'Pelican', 'http://getpelican.com/'),
-         )
- ```
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sb"&gt; ```Python&lt;/span&gt;
+&lt;span class="c1"&gt;# Blogroll&lt;/span&gt;
+&lt;span class="n"&gt;LINKS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+            &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Pelican'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Pelican'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'http://getpelican.com/'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+         &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="sb"&gt; ```&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Blogroll&lt;/span&gt;
 &lt;span class="n"&gt;LINKS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;

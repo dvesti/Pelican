@@ -138,7 +138,7 @@
 
 
 <p>Then run from the root of the&nbsp;documentation,</p>
-<div class="highlight"><pre><span></span>invoke livereload
+<div class="highlight"><pre><span></span><span class="n">invoke</span><span class="w"> </span><span class="n">livereload</span><span class="w"></span>
 </pre></div>
 
 
@@ -155,13 +155,13 @@
 <p>Unfortunately, Pelican LiveReload depends on <a href="https://github.com/lepture/python-livereload">Python-LiveReload</a>, which <a href="https://github.com/lepture/python-livereload/pull/131">does not support extension less files</a>.</p>
 <p>What does it&nbsp;mean?</p>
 <p>Your <span class="caps">URL</span> must end at <code>.html</code>,&nbsp;like,</p>
-<div class="highlight"><pre><span></span>http://127.0.0.1:9000/live-reload-elegant-documentation.html
+<div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">9000</span><span class="o">/</span><span class="n">live</span><span class="o">-</span><span class="n">reload</span><span class="o">-</span><span class="n">elegant</span><span class="o">-</span><span class="n">documentation</span><span class="o">.</span><span class="n">html</span><span class="w"></span>
 </pre></div>
 
 
 <p>If it does not have the <code>.html</code> in the end, then LiveReload will return 404&nbsp;error.</p>
 <p>This can happen if your Pelican configuration&nbsp;has</p>
-<div class="highlight"><pre><span></span><span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s2">&quot;{slug}&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{slug}</span><span class="s2">&quot;</span>
 </pre></div>
 
 

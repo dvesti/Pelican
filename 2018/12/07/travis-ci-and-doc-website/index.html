@@ -168,43 +168,43 @@ that the theme works and how it looks, the idea was to automate the rendering of
 <li>a GitHub pages enabled repository so that resulting files can be viewed as a webpage.</li>
 </ul>
 <p>One of the key pieces is a properly configured <code>.travis.yaml</code> like the one we started using:</p>
-<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
-<span class="nt">dist</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">trusty</span>
-<span class="nt">sudo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">required</span>
+<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="nt">dist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">trusty</span><span class="w"></span>
+<span class="nt">sudo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">required</span><span class="w"></span>
 
-<span class="nt">python</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">"3.5"</span>
+<span class="nt">python</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"3.5"</span><span class="w"></span>
 
-<span class="nt">before_install</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r test-requirements.txt</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install peru</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">peru sync</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install tox</span>
+<span class="nt">before_install</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r test-requirements.txt</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install peru</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peru sync</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install tox</span><span class="w"></span>
 
-<span class="nt">script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">tox</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make html</span>
+<span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tox</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">make html</span><span class="w"></span>
 
-<span class="nt">after_success</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rm -rf .git/</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git init</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.name "Travis CI"</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.email "travis@domain.com"</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config --global push.default simple</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make github</span>
+<span class="nt">after_success</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rm -rf .git/</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git init</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config user.name "Travis CI"</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config user.email "travis@domain.com"</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config --global push.default simple</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">make github</span><span class="w"></span>
 </pre></div>
 <h2 id="image-setup">Image setup<a class="headerlink" href="#image-setup" title="Permanent link"> </a></h2>
 <p>So, from above file we do:</p>
-<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
-<span class="nt">dist</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">trusty</span>
-<span class="nt">sudo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">required</span>
+<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="nt">dist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">trusty</span><span class="w"></span>
+<span class="nt">sudo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">required</span><span class="w"></span>
 
-<span class="nt">python</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">"3.5"</span>
+<span class="nt">python</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"3.5"</span><span class="w"></span>
 </pre></div>
 <ul>
 <li>Configure language as python</li>
@@ -215,35 +215,35 @@ that the theme works and how it looks, the idea was to automate the rendering of
 <p>All of this depends on Travis Image being used and their documentation</p>
 <h2 id="preparation-of-environment">Preparation of environment<a class="headerlink" href="#preparation-of-environment" title="Permanent link"> </a></h2>
 <p>Now, we’ll prepare the environment for our tests:</p>
-<div class="highlight"><pre><span></span><span class="nt">before_install</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r test-requirements.txt</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install peru</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">peru sync</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install tox</span>
+<div class="highlight"><pre><span></span><span class="nt">before_install</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r test-requirements.txt</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install peru</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peru sync</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install tox</span><span class="w"></span>
 </pre></div>
 <p>We do install pip, setuptools, repository and test requirements, peru and tox.</p>
 <p>Peru is used to grab additional dependencies for elegant (plugins, latest theme, etc)</p>
 <h2 id="actual-tests">Actual tests<a class="headerlink" href="#actual-tests" title="Permanent link"> </a></h2>
 <p>This is really easy in our case:</p>
-<div class="highlight"><pre><span></span><span class="nt">script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">tox</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make html</span>
+<div class="highlight"><pre><span></span><span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tox</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">make html</span><span class="w"></span>
 </pre></div>
 <p>We run ‘tox’ that allows to automate Python virtualenv and tests and then, use the Makefile from Pelican to build the site and tests plugins, etc</p>
 <p>If everything succeeds, we’re ready for the next step (publishing)</p>
 <h2 id="after-tests-passed">After tests passed<a class="headerlink" href="#after-tests-passed" title="Permanent link"> </a></h2>
 <p>All the environment setup and tests have succeed now, we do need to push the site ‘live’</p>
-<div class="highlight"><pre><span></span><span class="nt">after_success</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rm -rf .git/</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git init</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.name "Travis CI"</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.email "travis@domain.com"</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config --global push.default simple</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make github</span>
+<div class="highlight"><pre><span></span><span class="nt">after_success</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rm -rf .git/</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git init</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config user.name "Travis CI"</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config user.email "travis@domain.com"</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config --global push.default simple</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">make github</span><span class="w"></span>
 </pre></div>
 <p>This piece does the final step, first removes info about the repository containing the actual documentation and allows us to initialize a new one, that we make it point towards the repository we’re pushing (so that we keep separate actual website content from ‘rendered’ website).</p>
 <p>In the final step, ‘make github’ uses the Makefile provided with pelican to push the changes to the ‘master’ branch of the target repository, that then, is ready to be served via github pages as a regular web server would do.</p>

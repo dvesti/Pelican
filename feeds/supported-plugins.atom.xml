@@ -15,8 +15,8 @@ created, Pelican provides Elegant with a list of all pages that have the same va
 &lt;code&gt;series&lt;/code&gt; metadata field. By default, Elegant sorts that list according to the publish date for
 each article. The titles for those pages is then displayed in sorted order, with the current
 page presented in &lt;em&gt;italics&lt;/em&gt; and the other pages presented as a link to those&amp;nbsp;pages.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Maximizing&lt;/span&gt; &lt;span class="n"&gt;Elegant&lt;/span&gt;
-&lt;span class="n"&gt;series_index&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;series: Maximizing Elegant
+series_index: 2
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -127,7 +127,7 @@ feature for a given article requires that the article contains the &lt;code&gt;g
 &lt;p&gt;The text assigned to the &lt;code&gt;gallery&lt;/code&gt; metadata field is the location of the directory where the
 images to be displayed resides. This location is relative to the article in which the
 &lt;code&gt;gallery&lt;/code&gt; metadata field is placed.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In the above example, the actual directory containing the images to display is the
 &lt;code&gt;dragondance&lt;/code&gt; directory. While not specified in the example, the directory &lt;code&gt;articles&lt;/code&gt; and the
@@ -140,13 +140,13 @@ path to the &lt;code&gt;dragondance&lt;/code&gt; directory from the article beco
 &lt;p&gt;Titles for a photo gallery are displayed in a large font directly above the first row of the
 photo gallery. To specify the title for a gallery, add the required title to the metadata in
 the &lt;code&gt;gallery&lt;/code&gt; metadata field within curly braces (‘{‘ and ‘}’) as follows:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance{Dragon Dance}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance{Dragon Dance}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id="multiple-photo-galleries-in-the-same-article"&gt;Multiple Photo Galleries in the Same Article&lt;a class="headerlink" href="#multiple-photo-galleries-in-the-same-article" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Multiple photo galleries can be display, in order, within a single article. This is
 accomplished by specify a comma separated list of photo galleries to display in the &lt;code&gt;gallery&lt;/code&gt;
 metadata field. For example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance{Dragon Dance}, {filename}../gallery-source/hamsterdance{Hamster Dance}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance{Dragon Dance}, {filename}../gallery-source/hamsterdance{Hamster Dance}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;will display the title &lt;code&gt;Dragon Dance&lt;/code&gt;, the Dragon Dance photo gallery, the title
 &lt;code&gt;Hamster Dance&lt;/code&gt;, and finally the Hamster Dance photo gallery. The title of the specific
@@ -176,7 +176,7 @@ variable must first be set to the full path of the directory containing all of t
 For example, in the previous article,
 &lt;a href="https://dvesti.github.io/Pelican/2019/06/09/how-to-use-photos-plugin/#article-metadata"&gt;Creating a Photo Gallery Article&lt;/a&gt;,
 the gallery was added to the article as follows:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;gallery&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p p-Indicator"&gt;}&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;../gallery-source/dragondance&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Assuming that you have installed a standard installation of Pelican in the directory
 &lt;code&gt;/home/stuff/blog-content&lt;/code&gt; and inferring from the above metadata that all photo galleries are
@@ -192,7 +192,7 @@ gallery, and the &lt;code&gt;image.jpg&lt;/code&gt; is the filename of the photo
 &lt;p&gt;For example, say you want to highlight one of the photos, &lt;code&gt;photo-1.jpg&lt;/code&gt;, that was contained
 within the &lt;code&gt;dragondance&lt;/code&gt; gallery presented in your article. To include it in a Markdown
 article, add the following text to the article:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="n"&gt;image&lt;/span&gt;&lt;span class="p"&gt;]({&lt;/span&gt;&lt;span class="n"&gt;photo&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="n"&gt;dragondance&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;photo&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="n"&gt;jpg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;![&lt;span class="nt"&gt;first image&lt;/span&gt;](&lt;span class="na"&gt;{photo}dragondance/photo-1.jpg&lt;/span&gt;)
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In addition, using the prefix &lt;code&gt;{lightbox}&lt;/code&gt; instead of &lt;code&gt;{photo}&lt;/code&gt; will cause the thumbnail of the
 photo to be displayed in the article. Clicking on the thumbnail will bring up the full sized
@@ -401,7 +401,7 @@ found using a case-sensitive exact match, a blurb will be generated for that aut
 author is not found, it will be silently ignored.&lt;/p&gt;
 &lt;p&gt;A good example of the &lt;code&gt;authors&lt;/code&gt; metadata field is available by looking at the
 &lt;a href="https://raw.githubusercontent.com/Pelican-Elegant/elegant/master/documentation/content/Supported%20Plugins/author-blurbs.md"&gt;raw Markdown&lt;/a&gt; for this page.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;Authors&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Talha Mansoor, Jack De Winter&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;Authors&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Talha Mansoor, Jack De Winter&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="admonition warning"&gt;
 &lt;p class="admonition-title"&gt;Common Mistake&lt;/p&gt;
@@ -456,8 +456,8 @@ created, Pelican provides Elegant with a list of all pages that have the same va
 &lt;code&gt;series&lt;/code&gt; metadata field. By default, Elegant sorts that list according to the publish date for
 each article. The titles for those pages is then displayed in sorted order, with the current
 page presented in &lt;em&gt;italics&lt;/em&gt; and the other pages presented as a link to those&amp;nbsp;pages.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Maximizing&lt;/span&gt; &lt;span class="n"&gt;Elegant&lt;/span&gt;
-&lt;span class="n"&gt;series_index&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;series: Maximizing Elegant
+series_index: 2
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -507,7 +507,7 @@ As documented above, the &lt;code&gt;SHARE_POST_INTRO&lt;/code&gt; can be used t
 for the Social Media Sharing links. This text can be further overridden on an
 article-by-article basis by specifying the &lt;code&gt;share_post_intro&lt;/code&gt; metadata field value for an
 article as&amp;nbsp;follows:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;share_post_intro&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Share this article on Elegant with&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;share_post_intro&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Share this article on Elegant with&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

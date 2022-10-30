@@ -35,14 +35,14 @@
 &lt;/ol&gt;
 &lt;h2 id="articles"&gt;Articles&lt;a class="headerlink" href="#articles" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;For clean URLs for articles, just&amp;nbsp;set&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ARTICLE_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;{slug}&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ARTICLE_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{slug}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2 id="pages"&gt;Pages&lt;a class="headerlink" href="#pages" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;For pages,&amp;nbsp;set&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;PAGE_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;{slug}&amp;quot;&lt;/span&gt;
-&lt;span class="n"&gt;PAGE_SAVE_AS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;{slug}.html&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;PAGE_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{slug}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;PAGE_SAVE_AS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{slug}&lt;/span&gt;&lt;span class="s2"&gt;.html&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -94,19 +94,19 @@ file&lt;/a&gt;.&lt;/p&gt;
 
 
 &lt;p&gt;Let&amp;#8217;s see how can we change social widget&amp;nbsp;label.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
-2
-3
-4
-5
-6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;{# Label for the list of social profiles #}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;
+&lt;span class="normal"&gt;3&lt;/span&gt;
+&lt;span class="normal"&gt;4&lt;/span&gt;
+&lt;span class="normal"&gt;5&lt;/span&gt;
+&lt;span class="normal"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;{# Label for the list of social profiles #}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Contact&amp;#39;&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endif&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
 
 &lt;p&gt;Line 1, text enclosed in &lt;code&gt;{# #}&lt;/code&gt; is a comment, which says this section is about
 &amp;#8220;Label for the list of social&amp;nbsp;profiles&amp;#8221;.&lt;/p&gt;
@@ -142,24 +142,24 @@ Copy the element&amp;#8217;s selector and styles, and paste it in &lt;code&gt;cu
 &lt;p&gt;Your customizations will override whatever rules are defined in &lt;code&gt;elegant.css&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Let&amp;#8217;s take a look how you can change the style of hyperlinks in an article.
 Following is the relevant&amp;nbsp;code,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;list-of-translations&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;post-share-links&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
-&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;ol&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
-&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;article-content&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;articles-timeline&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;related-posts-list&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;list-of-translations&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;post-share-links&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;ol&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;article-content&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;articles-timeline&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;related-posts-list&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;thin&lt;/span&gt; &lt;span class="kc"&gt;dashed&lt;/span&gt; &lt;span class="mh"&gt;#A9A9A9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;thin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;dashed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#A9A9A9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Copy and paste it in &lt;code&gt;custom.css&lt;/code&gt;. Change color to red for&amp;nbsp;example,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;list-of-translations&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;post-share-links&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
-&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;ol&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
-&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;article-content&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;articles-timeline&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;related-posts-list&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;list-of-translations&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;post-share-links&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;ol&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;article-content&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;articles-timeline&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;related-posts-list&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;thin&lt;/span&gt; &lt;span class="kc"&gt;dashed&lt;/span&gt; &lt;span class="mh"&gt;#A9A9A9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;thin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;dashed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#A9A9A9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -202,11 +202,11 @@ visitors to search from any&amp;nbsp;page.&lt;/p&gt;
 
 
 &lt;p&gt;The actual code to define a redirection in an article is to include &lt;code&gt;redirect&lt;/code&gt; in the yaml&amp;nbsp;preamble:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
-&lt;span class="nt"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Article redirection&lt;/span&gt;
-&lt;span class="nt"&gt;Slug&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;article-redirect&lt;/span&gt;
-&lt;span class="nt"&gt;redirect&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;https://pelican-elegant.github.io/&lt;/span&gt;
-&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Article redirection&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;Slug&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;article-redirect&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;redirect&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;https://pelican-elegant.github.io/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -214,7 +214,7 @@ visitors to search from any&amp;nbsp;page.&lt;/p&gt;
 Apple iOS and Android devices. These are disabled by default to avoid
 unnecessary &lt;span class="caps"&gt;HTTP&lt;/span&gt; requests on sites that do not use&amp;nbsp;them.&lt;/p&gt;
 &lt;p&gt;To enable, set &lt;code&gt;USE_SHORTCUT_ICONS&lt;/code&gt; in your&amp;nbsp;configuration&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;USE_SHORTCUT_ICONS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;USE_SHORTCUT_ICONS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -250,7 +250,7 @@ date of the article by defining &lt;code&gt;modified&lt;/code&gt; in your articl
 &lt;p&gt;Depending on your
 &lt;a href="http://docs.getpelican.com/en/latest/settings.html#basic-settings"&gt;&lt;code&gt;DATE_FORMATS&lt;/code&gt;&lt;/a&gt;
 setting you can put modified date in your reST formatted file&amp;nbsp;as&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nc"&gt;:modified:&lt;/span&gt; &lt;span class="nf"&gt;2014-01-22 14:30&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nc"&gt;:modified:&lt;/span&gt; 2014-01-22 14:30
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -279,7 +279,7 @@ sure you assign it a value exactly the way you want it to appear.
 Whatever you type, it will appear as it&amp;nbsp;is.&lt;/p&gt;
 &lt;p&gt;Taking the
 example from above, metadata in your reST formatted file should&amp;nbsp;be,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nc"&gt;:modified:&lt;/span&gt; &lt;span class="nf"&gt;Jan 22, 2014&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nc"&gt;:modified:&lt;/span&gt; Jan 22, 2014
 &lt;/pre&gt;&lt;/div&gt;
 
 

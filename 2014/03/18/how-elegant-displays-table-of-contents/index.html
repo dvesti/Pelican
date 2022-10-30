@@ -179,19 +179,19 @@ your pelican configuration.</p>
 <span class="p">}</span>
 </pre></div>
 <p>Now to generate a table of contents for you article, add the <code>[TOC]</code> markdown tag to your document.</p>
-<div class="highlight"><pre><span></span><span class="n">Title</span><span class="o">:</span> <span class="n">My</span> <span class="n">sample</span> <span class="n">title</span>
-<span class="n">Date</span><span class="o">:</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span>
-<span class="n">Category</span><span class="o">:</span> <span class="n">Examples</span>
+<div class="highlight"><pre><span></span>Title: My sample title
+Date: 2014-12-03
+Category: Examples
 
-<span class="o">[</span><span class="n">TOC</span><span class="o">]</span>
+[TOC]
 
-<span class="err">##</span> <span class="n">This</span> <span class="k">is</span> <span class="n">my</span> <span class="n">first</span> <span class="n">heading</span>
+<span class="gu">## This is my first heading</span>
 
-<span class="n">This</span> <span class="k">is</span> <span class="n">the</span> <span class="n">content</span> <span class="n">of</span> <span class="n">my</span> <span class="n">sample</span> <span class="n">blog</span> <span class="n">post</span><span class="o">.</span>
+This is the content of my sample blog post.
 
-<span class="err">##</span> <span class="n">This</span> <span class="n">my</span> <span class="n">second</span> <span class="n">heading</span>
+<span class="gu">## This my second heading</span>
 
-<span class="n">I</span> <span class="n">will</span> <span class="n">end</span> <span class="n">my</span> <span class="n">example</span> <span class="n">here</span><span class="o">.</span>
+I will end my example here.
 </pre></div>
 <h3 id="other-options">Other Options<a class="headerlink" href="#other-options" title="Permanent link"> </a></h3>
 <p>For other options available for the Markdown Table of Contents extension, refer to the
@@ -212,8 +212,8 @@ that generates a table of contents in the article.</p>
 <div class="highlight"><pre><span></span><span class="gh">My sample title</span>
 <span class="gh">###############</span>
 
-<span class="nc">:date:</span> <span class="nf">2014-12-03</span>
-<span class="nc">:category:</span> <span class="nf">Examples</span>
+<span class="nc">:date:</span> 2014-12-03
+<span class="nc">:category:</span> Examples
 
 <span class="p">..</span> <span class="ow">contents</span><span class="p">::</span>
 
@@ -243,9 +243,9 @@ default title text is “Contents”.</p>
 reStructuredText and the other by Elegant. To disable default title generation
 <sup id="fnref:disable-title"><a class="footnote-ref" href="#fn:disable-title">1</a></sup>, you need to add following rule in your <code>custom.css</code> file to hide the
 duplicate title:</p>
-<div class="highlight"><pre><span></span><span class="nt">div</span><span class="p">#</span><span class="nn">contents</span> <span class="nt">p</span><span class="p">.</span><span class="nc">topic-title</span><span class="p">.</span><span class="nc">first</span> <span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="nt">div</span><span class="p">#</span><span class="nn">contents</span><span class="w"> </span><span class="nt">p</span><span class="p">.</span><span class="nc">topic-title</span><span class="p">.</span><span class="nc">first</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 <div class="footnote">
 <hr/>
